@@ -1,4 +1,4 @@
-file = open("data\\phonetic_alphabet.txt")
+file = open("data/phonetic_alphabet.txt")
 file_text = file.read()
 file.close()
 
