@@ -1,4 +1,5 @@
-import pandas as pd
+import pandas as pd 
+ 
 data = {
 'country': ['France', 'Spain', 'Italy'],
 'city':['Paris', 'Madrid', 'Rome'], 
