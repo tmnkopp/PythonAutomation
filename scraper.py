@@ -13,7 +13,9 @@ class statistics:
     def __init__(self, symbol):
         '''
         :param symbol: stock symbol in all caps
+
         please note that any Canadian TSX stocks are followed with ".TO" ... check the relevant URL for formatting.
+        
         '''
         self.symbol = symbol.upper()
         self.path = "quote/{0}/key-statistics?p={0}".format(symbol)
@@ -55,6 +57,7 @@ class statistics:
     def label_stats(self, table_list):
         '''
         :param table_list: uses the output of the scrape_page method
+
         :return: creates attributes for the statistics class object,
                  uses indexLabel method to label columns and set the dataframes' index
         
@@ -70,8 +73,10 @@ class statistics:
         '''
         
         :param df: Takes a dataframe as input.
+
         :return: returns a dataframe with column labels and a set index.
                 'df.columns = ['Measure', 'Value']
+
         'df = df.set_index('Measure')
         '''
 
