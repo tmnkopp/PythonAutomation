@@ -41,13 +41,13 @@ class Logger:
         self.__log.append(self.__get_log_item(LogLevel.Warn, source, message)) 
     def LogException(self, source, message):
         self.__log.append(self.__get_log_item(LogLevel.Exception, source, message)) 
-    def GetLog(self):
+    def GetLogged(self):
         logs = [ l for l in self.__log if l['severity'] >= self.logLevel.value ]
         return logs  
     def ShowLog(self): 
-        for d in self.GetLog():
+        for d in self.GetLogged():
             print(f" {LogLevel(d['severity'])}: {d['source']} {d['message']} ({d['runtime']}s) " )
     def to_json(self, path):  
         with open(f'{path}', "w") as f:
-            json.dump(self.GetLog(), f, indent=4 )
+            json.dump(self.GetLogged(), f, indent=4 )
  
