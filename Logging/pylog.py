@@ -55,7 +55,7 @@ class Logger:
     def to_txt(self, path):  
         s=""
         for d in self.GetLogged():
-            s=s+f"[{d['source']} {LogLevel(d['severity'])} {d['runtime']}s]:{d['message']}\n"  
+            s=s+f"[{d['source']} {LogLevel(d['severity'])} {d['runtime']}s:{d['elapsed']}s] {d['message']}\n"  
         path = path.replace("~", self.dir_path)
         with open(f'{path}', "w") as f: 
             f.write(s)
