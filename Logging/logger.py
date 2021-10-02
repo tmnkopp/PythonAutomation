@@ -8,13 +8,13 @@ class LogLevel(Enum):
 
 class Logger:
     __log = []
-    Verbose = False
+    Verbose = True
     def __init__(self, Level): 
         self.logLevel = Level 
         self.__log = []
         self.time_init = time.time()
         self.time_last = time.time()
-        self.Verbose = False
+        self.Verbose = True
     def __get_log_item(self, loglevel, src, msg):
         d = {}
         d['level'] = str(LogLevel(loglevel))
