@@ -50,4 +50,9 @@ class Logger:
     def to_json(self, path):  
         with open(f'{path}', "w") as f:
             json.dump(self.GetLogged(), f, indent=4 )
- 
+    def to_txt(self, path):  
+        s=""
+        for d in self.GetLogged():
+            s=s+f"[{LogLevel(d['severity'])} ({d['runtime']}s)]: {d['source']} \n{d['message']}\n"  
+        with open(f'{path}', "w") as f: 
+            f.write(s)
