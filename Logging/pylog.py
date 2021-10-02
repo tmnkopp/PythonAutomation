@@ -2,19 +2,19 @@ import json, time
 from enum import Enum
 class LogLevel(Enum):
      Info = 10
-     Debug = 90
+     Debug = 20
      Warn = 30
      Exception = 50
 
 class Logger:
     __log = []
-    Verbose = True
-    def __init__(self, Level): 
-        self.logLevel = Level 
+    Debug = False 
+    def __init__(self, level=LogLevel.Exception, debug = True): 
+        self.logLevel = level 
         self.__log = []
         self.time_init = time.time()
         self.time_last = time.time()
-        self.Verbose = True
+        self.Debug = debug
     def __get_log_item(self, loglevel, src, msg):
         d = {}
         d['level'] = str(LogLevel(loglevel))
@@ -32,11 +32,11 @@ class Logger:
         return t 
     def LogInfo(self, source, message): 
         self.__log.append(self.__get_log_item(LogLevel.Info, source, message))  
-    def Debug(self, source, message):
+    def LogDebug(self, source, message):
         d = self.__get_log_item(LogLevel.Debug, source, message)
         self.__log.append(d) 
-        if self.Verbose: 
-            print(f"DEBUG: ({d['runtime']}) {d['source']}: {d['message']} ")
+        if self.Debug: 
+            print(f"DEBUG: ({d['runtime']}s) {d['source']}: {d['message']} ")
     def LogWarn(self, source, message):
         self.__log.append(self.__get_log_item(LogLevel.Warn, source, message)) 
     def LogException(self, source, message):
@@ -46,7 +46,7 @@ class Logger:
         return logs  
     def ShowLog(self): 
         for d in self.GetLog():
-            print(f" {LogLevel(d['severity'])}: {d['source']} {d['message']} ({d['runtime']}) " )
+            print(f" {LogLevel(d['severity'])}: {d['source']} {d['message']} ({d['runtime']}s) " )
     def to_json(self, path):  
         with open(f'{path}', "w") as f:
             json.dump(self.GetLog(), f, indent=4 )
