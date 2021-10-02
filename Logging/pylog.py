@@ -1,4 +1,4 @@
-import json, time
+import json, time, os
 from enum import Enum
 class LogLevel(Enum):
      Info = 10
@@ -15,6 +15,7 @@ class Logger:
         self.time_init = time.time()
         self.time_last = time.time()
         self.Debug = debug
+        self.dir_path = os.path.dirname(os.path.realpath(__file__)) 
     def __get_log_item(self, loglevel, src, msg):
         d = {}
         d['level'] = str(LogLevel(loglevel))
@@ -48,11 +49,13 @@ class Logger:
         for d in self.GetLogged():
             print(f" {LogLevel(d['severity'])}: {d['source']} {d['message']} ({d['runtime']}s) " )
     def to_json(self, path):  
+        path = path.replace("~", self.dir_path)
         with open(f'{path}', "w") as f:
             json.dump(self.GetLogged(), f, indent=4 )
     def to_txt(self, path):  
         s=""
         for d in self.GetLogged():
-            s=s+f"[{d['source']} {LogLevel(d['severity'])} {d['runtime']}s]:\n{d['message']}\n"  
+            s=s+f"[{d['source']} {LogLevel(d['severity'])} {d['runtime']}s]:{d['message']}\n"  
+        path = path.replace("~", self.dir_path)
         with open(f'{path}', "w") as f: 
             f.write(s)
