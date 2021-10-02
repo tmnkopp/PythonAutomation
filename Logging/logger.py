@@ -13,17 +13,23 @@ class Logger:
         self.logLevel = Level 
         self.__log = []
         self.time_init = time.time()
+        self.time_last = time.time()
         self.Verbose = False
     def __get_log_item(self, loglevel, src, msg):
         d = {}
         d['level'] = str(LogLevel(loglevel))
         d['severity'] = loglevel.value
+        d['elapsed'] = self.__log_time_elapse()
         d['time'] = self.__log_time()
         d['source'] = src
         d['message'] = msg
         return d
-    def __log_time(self):
+    def __log_time_elapse(self):
         return str(round(time.time()-self.time_init, 2))
+    def __log_time(self):
+        t = str(round(time.time()-self.time_last, 2))
+        self.time_last = time.time()
+        return t 
     def LogInfo(self, source, message): 
         self.__log.append(self.__get_log_item(LogLevel.Info, source, message))  
     def Debug(self, source, message):
