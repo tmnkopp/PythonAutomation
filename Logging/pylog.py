@@ -53,6 +53,6 @@ class Logger:
     def to_txt(self, path):  
         s=""
         for d in self.GetLogged():
-            s=s+f"[{LogLevel(d['severity'])} ({d['runtime']}s)]: {d['source']} \n{d['message']}\n"  
+            s=s+f"[{d['source']} {LogLevel(d['severity'])} {d['runtime']}s]:\n{d['message']}\n"  
         with open(f'{path}', "w") as f: 
             f.write(s)
