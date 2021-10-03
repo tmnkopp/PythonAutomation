@@ -46,16 +46,17 @@ class Logger:
         logs = [ l for l in self.__log if l['severity'] >= self.logLevel.value ]
         return logs  
     def ShowLog(self): 
+        print(self.__format_log())
+    def __format_log(self):
+        s=""
         for d in self.GetLogged():
-            print(f" {LogLevel(d['severity'])}: {d['source']} {d['message']} ({d['runtime']}s) " )
+            s=s+f"[{d['source']} {LogLevel(d['severity'])} {d['runtime']}s:{d['elapsed']}s] {d['message']}\n" 
+        return s
     def to_json(self, path):  
         path = path.replace("~", self.dir_path)
         with open(f'{path}', "w") as f:
             json.dump(self.GetLogged(), f, indent=4 )
     def to_txt(self, path):  
-        s=""
-        for d in self.GetLogged():
-            s=s+f"[{d['source']} {LogLevel(d['severity'])} {d['runtime']}s:{d['elapsed']}s] {d['message']}\n"  
         path = path.replace("~", self.dir_path)
         with open(f'{path}', "w") as f: 
-            f.write(s)
+            f.write( self.__format_log() )

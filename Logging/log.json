@@ -2,39 +2,39 @@
     {
         "level": "LogLevel.Info",
         "severity": 10,
-        "elapsed": "0.001",
-        "runtime": "0.001",
+        "elapsed": "0.002",
+        "runtime": "0.002",
         "source": "main",
         "message": "open connection"
     },
     {
         "level": "LogLevel.Warn",
         "severity": 30,
-        "elapsed": "0.2133",
-        "runtime": "0.2123",
+        "elapsed": "0.2111",
+        "runtime": "0.2091",
         "source": "main",
         "message": "warning"
     },
     {
         "level": "LogLevel.Exception",
         "severity": 50,
-        "elapsed": "0.2603",
-        "runtime": "0.047",
+        "elapsed": "0.2574",
+        "runtime": "0.0463",
         "source": "main",
         "message": "Exception name 'err' is not defined"
     },
     {
         "level": "LogLevel.Info",
         "severity": 10,
-        "elapsed": "0.3694",
-        "runtime": "0.1092",
+        "elapsed": "0.3664",
+        "runtime": "0.109",
         "source": "main",
         "message": "close connection"
     },
     {
         "level": "LogLevel.Warn",
         "severity": 30,
-        "elapsed": "0.3694",
+        "elapsed": "0.3664",
         "runtime": "0.0",
         "source": "init_conn",
         "message": "warning"
@@ -42,7 +42,7 @@
     {
         "level": "LogLevel.Exception",
         "severity": 50,
-        "elapsed": "0.3694",
+        "elapsed": "0.3664",
         "runtime": "0.0",
         "source": "init_conn",
         "message": "Exception name 'err' is not defined"
@@ -50,7 +50,7 @@
     {
         "level": "LogLevel.Info",
         "severity": 10,
-        "elapsed": "0.3694",
+        "elapsed": "0.3664",
         "runtime": "0.0",
         "source": "init_conn",
         "message": "close connection"
@@ -58,8 +58,8 @@
     {
         "level": "LogLevel.Debug",
         "severity": 20,
-        "elapsed": "0.3694",
-        "runtime": "0.0",
+        "elapsed": "0.3674",
+        "runtime": "0.001",
         "source": "init_conn",
         "message": "block init_conn complete"
     }
