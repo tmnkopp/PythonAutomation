@@ -26,9 +26,9 @@ class Logger:
         d['message'] = msg
         return d
     def __log_time_elapse(self):
-        return str(round(time.time()-self.time_init, 4))
+        return round(time.time()-self.time_init, 4)
     def __log_time(self):
-        t = str(round(time.time()-self.time_last, 4))
+        t = round(time.time()-self.time_last, 4)
         self.time_last = time.time()
         return t 
     def LogInfo(self, source, message): 
