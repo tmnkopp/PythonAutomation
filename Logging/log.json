@@ -2,39 +2,39 @@
     {
         "level": "LogLevel.Info",
         "severity": 10,
-        "elapsed": 0.001,
-        "runtime": 0.001,
+        "elapsed": 0.0,
+        "runtime": 0.0,
         "source": "main",
         "message": "open connection"
     },
     {
         "level": "LogLevel.Warn",
         "severity": 30,
-        "elapsed": 0.2026,
-        "runtime": 0.2016,
+        "elapsed": 0.2139,
+        "runtime": 0.2139,
         "source": "main",
         "message": "warning"
     },
     {
         "level": "LogLevel.Exception",
         "severity": 50,
-        "elapsed": 0.2489,
-        "runtime": 0.0464,
+        "elapsed": 0.2594,
+        "runtime": 0.0455,
         "source": "main",
         "message": "Exception name 'err' is not defined"
     },
     {
         "level": "LogLevel.Info",
         "severity": 10,
-        "elapsed": 0.3596,
-        "runtime": 0.1107,
+        "elapsed": 0.3679,
+        "runtime": 0.1085,
         "source": "main",
         "message": "close connection"
     },
     {
         "level": "LogLevel.Warn",
         "severity": 30,
-        "elapsed": 0.3596,
+        "elapsed": 0.3679,
         "runtime": 0.0,
         "source": "init_conn",
         "message": "warning"
@@ -42,7 +42,7 @@
     {
         "level": "LogLevel.Exception",
         "severity": 50,
-        "elapsed": 0.3596,
+        "elapsed": 0.3679,
         "runtime": 0.0,
         "source": "init_conn",
         "message": "Exception name 'err' is not defined"
@@ -50,7 +50,7 @@
     {
         "level": "LogLevel.Info",
         "severity": 10,
-        "elapsed": 0.3596,
+        "elapsed": 0.3679,
         "runtime": 0.0,
         "source": "init_conn",
         "message": "close connection"
@@ -58,7 +58,7 @@
     {
         "level": "LogLevel.Debug",
         "severity": 20,
-        "elapsed": 0.3596,
+        "elapsed": 0.3679,
         "runtime": 0.0,
         "source": "init_conn",
         "message": "block init_conn complete"

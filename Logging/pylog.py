@@ -9,7 +9,7 @@ class LogLevel(Enum):
 class Logger:
     __log = []
     Debug = False 
-    def __init__(self, level=LogLevel.Exception, debug = True): 
+    def __init__(self, level=LogLevel.Exception, debug = False): 
         self.logLevel = level 
         self.__log = []
         self.time_init = time.time()
