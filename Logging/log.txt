@@ -1,5 +1,5 @@
-[main LogLevel.Info 0.0s:0.0s] open connection
-[main LogLevel.Warn 0.2111s:0.2111s] warning
-[main LogLevel.Exception 0.0469s:0.258s] Exception name 'err' is not defined
-[main LogLevel.Info 0.1106s:0.3686s] close connection
-[init_conn LogLevel.Debug 0.0s:0.3686s] block init_conn complete
+[main LogLevel.Info 0.001s:0.001s] open connection
+[main LogLevel.Warn 0.2062s:0.2072s] warning
+[main LogLevel.Exception 0.0452s:0.2524s] Exception name 'err' is not defined
+[main LogLevel.Info 0.1117s:0.3641s] close connection
+[init_conn LogLevel.Debug 0.0s:0.3641s] block init_conn complete
