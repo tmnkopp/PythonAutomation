@@ -13,7 +13,7 @@ options = Options()
 options.add_argument("--start-minimized")
 
 driver = webdriver.Chrome(executable_path=ChromeDriverManager().install() ,chrome_options=options) 
-driver.get("https://www.kristhamdy.com/forum/") 
+ 
 stat = driver.find_element(By.XPATH, '//*[contains(@class, "statistics")]')
 who = driver.find_element(By.XPATH, '//*[contains(@class, "online-list")]')
 try:
@@ -25,16 +25,4 @@ except Exception as e:
 finally: 
     driver.quit()
  
-stats = stats.replace('Most users ever online was 14 on Wed Nov 21, 2018 10:23 am Statistics\n', '')
-stats = stats.replace('Our newest member LilAnnyCat.', '') 
-stats = stats.replace('(based on users active over the past 15 minutes)', '')  
-stats = stats.replace('In total there are ', '') 
-stats = re.sub('\d{1,3} registered and \d{1,3} hidden', '', stats) 
-stats = re.sub('::  \n', '::', stats)  
-
-with open("C:\\Users\\timko\\source\\repos\\PythonBoiler\\Selenium\\out.txt", "a") as f:
-    f.write(f"{ stats }\n")
-
-#with open("C:\\Users\\timko\\source\\repos\\PythonBoiler\\Selenium\\out.txt", "r") as f:
-#    print ( f.read() ) 
 
