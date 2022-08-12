@@ -1,6 +1,5 @@
 import json, re,  os, time, random 
-from bs4 import BeautifulSoup   
-import pandas as pd 
+from bs4 import BeautifulSoup    
 from webdriver_manager.chrome import ChromeDriverManager
 from selenium.webdriver.chrome.options import Options
 from selenium import webdriver
