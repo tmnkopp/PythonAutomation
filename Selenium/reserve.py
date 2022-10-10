@@ -33,7 +33,7 @@ def click_cal(driver, time):
     ele.click() 
     ele.send_keys(f'{time}:00 PM')  
     cal = driver.find_elements(By.XPATH, '//*[contains(@class, "RadCalendarTimeView")]')[0]
-    cal.find_element_by_link_text(f'{time}:00 PM').click()     
+    cal.find_element( By.LINK_TEXT , f'{time}:00 PM').click()     
 
 
 i=0 
