@@ -3,7 +3,7 @@
     "sheet":"2",
     "template" :"~picklists.sql",
     "parser":"questionnaire_picklist_parser",
-    "indexes":[{"PKEY":100, "ORDER":1}], 
+    "indexes":[{"field":"PKEY", "index":500,"gap_on":"ID"}], 
     "gapon":"ID",
     "encoding":"utf-8",
     "connstr":"",

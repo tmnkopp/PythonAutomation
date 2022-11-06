@@ -5,3 +5,4 @@ config.*
 .vscode/
 __pycache__/
 chase.ipynb
+*config.json

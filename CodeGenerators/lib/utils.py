@@ -7,24 +7,21 @@ ps=PorterStemmer()
 
 def apply_indexes(d, ctx):
     indexes=ctx.config['indexes'] 
-    if 'prevgap' not in ctx.config.keys():
-        ctx.config['prevgap']=''
-    prevgap=ctx.config['prevgap']
-    if 'gapon' not in ctx.config.keys():
-        ctx.config['gapon']=''
-    gapon=ctx.config['gapon'] 
-    if 'gapsize' not in ctx.config.keys():
-        ctx.config['gapsize']=15
-    gapsize=ctx.config['gapsize'] 
-    igap=1
-    if gapon in d.keys():
-        if d[gapon] != prevgap: 
-            ctx.config['prevgap']=d[gapon]
-            igap=gapsize
-    for di in indexes:
-        for key in di:
-            di[key]=di[key]+igap
-            d[key]=di[key]-1
+    for j,e in enumerate(indexes):
+        field=e['field'] 
+        if 'gap_on' in e.keys():
+            if 'gap_on_pval' not in e.keys(): e['gap_on_pval']=d[e['gap_on']]  
+            if d[e['gap_on']] != e['gap_on_pval']:
+                e['gap_on_pval']=d[e['gap_on']]
+                e['index']=e['index']+9
+        if 'reset_on' in e.keys(): 
+            if 'reset_on_pval' not in e.keys(): e['reset_on_pval']=d[e['reset_on']] 
+            if d[e['reset_on']] != e['reset_on_pval']:
+                e['reset_on_pval']=d[e['reset_on']]
+                e['index']=1
+        e['index']=e['index']+1  
+        ctx.config['indexes'][j]=e
+        d[field]=e['index']-1
     return d
 def generate_id(t, limit=15): 
     t = ' '.join([w for w in t.split(' ') if w not in sw])
