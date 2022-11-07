@@ -1,494 +1,88 @@
-Row,ID,Text,Code,PKEY
-1,CQ1,.GOV Domain Registration Systems,GOV_DOMAINYSTEM,500
-2,CQ1,Access to Data systems,ACCESS_DATA_SYS,501
-3,CQ1,Agency support tool ,AGENC_SUPPORT_T,502
-4,CQ1,Business Intelligence Services,BUSI_INTELLIG_S,503
-5,CQ1,Collaboration Tools (SharePoint),COLLABOR_TPOINT,504
-6,CQ1,"Collect, analyze, maintain and share data",COLLECT_AN_DATA,505
-7,CQ1,Consulate Database (VISA),CONSUL_DATABAS_,506
-8,CQ1,Cybersecurity Monitoring,CYBERSECUR_MONI,507
-9,CQ1,Cybersecurity tools/solutions,CYBERSECURSOLUT,508
-10,CQ1,Data Repository,DATA_REPOSITORI,509
-11,CQ1,Decision making tool,DECIS_MAKE_TOOL,510
-12,CQ1,Diplomatic and Incident Response Communications,DIPLOMAT_IOMMUN,511
-13,CQ1,Email services and/or internet access,EMAIL_SERVCCESS,512
-14,CQ1,Emergency management System,EMERG_MANAG_SYS,513
-15,CQ1,Emergency response plans and personnel,EMERG_RESPONNEL,514
-16,CQ1,Enterprise resource planning,ENTERPRIS__PLAN,515
-17,CQ1,Explosive Threat Profiles,EXPLOS_THREAT_P,516
-18,CQ1,Financial [Agency Level],FINANCI_AGENC_L,517
-19,CQ1,Financial [National Level],FINANCI_NATION_,518
-20,CQ1,Financial System ,FINANCI_SYSTEM,519
-21,CQ1,Fingerprint Database,FINGERPRINT_DAT,520
-22,CQ1,General Support System (GSS) [WAN / Mainframe / Gateway],GENER_SUPPTEWAY,521
-23,CQ1,General System and Infrastructure Support,GENER_SYSTPPORT,522
-24,CQ1,Human Resource (HR),HUMAN_RESOURC_H,523
-25,CQ1,"Identity and Access Management (IDAM) / Identity, Credential, and Access Management (ICAM) / Authentication / Active Directory",IDENT_ACCECTORI,524
-26,CQ1,Immigration (most),IMMIGR_MOST,525
-27,CQ1,Imports-Exports Compliance [Port of Entry],IMPORTS_EXENTRY,526
-28,CQ1,Internet-Based / Web-Based (Front-Facing Applications),INTERNET_BTIONS,527
-29,CQ1,IT support services,IT_SUPPORT_SERV,528
-30,CQ1,Law enforcement services,LAW_ENFORC_SERV,529
-31,CQ1,Local Area Network (LAN),LOCAL_AREAK_LAN,530
-32,CQ1,Loss of Life Potential ,LOSS_LIFE_POTEN,531
-33,CQ1,Manage medical related data,MANAG_MEDI_DATA,532
-34,CQ1,Office of the Inspector General (OIG),OFFIC_INSPR_OIG,533
-35,CQ1,Other,OTHER,534
-36,CQ1,Payroll ,PAYROL,535
-37,CQ1,Physical Access Control Systems (PACS),PHYSIC_ACC_PACS,536
-38,CQ1,Procurement systems,PROCUR_SYSTEM,537
-39,CQ1,Radio communications,RADIO_COMMUN,538
-40,CQ1,Real-time data alerts and updates,REAL_TIM_DUPDAT,539
-41,CQ1,Real-time imagery,REAL_TIM_IMAGER,540
-42,CQ1,Security Clearance / Background Investigations ,SECUR_CLEATIONS,541
-43,CQ1,Security Operations Center (SOC),SECUR_OPERR_SOC,542
-44,CQ1,Supervisory Control and Data Acquisition (SCADA) – electrical systems,SUPERVISORYSTEM,543
-45,CQ1,Support to Vulnerability  Assessments,SUPPORT_VUSSESS,544
-46,CQ1,Tactical communications,TACTIC_COMMUN,545
-47,CQ1,Trusted Internet Connection (TIC),TRUST_INTET_TIC,546
-48,CQ1,Weather warning and analysis services,WEATHER_WAERVIC,547
-49,CQ1,Web based monitoring system,WEB_BASE_MYSTEM,548
-50,CQ1,Other ,OTHER,549
-51,CQ2,Cyber Security Support,CYBER_SECUR_SUP,559
-52,CQ2,Financial Information Support,FINANCI_INPPORT,560
-53,CQ2,Medical/health care Support,MEDICAL_HEPPORT,561
-54,CQ2,Data storage and management,DATA_STORAG_MAN,562
-55,CQ2,Legal Services,LEGAL_SERVIC,563
-56,CQ2,Law enforcement services,LAW_ENFORC_SERV,564
-57,CQ2,Veteran support services,VETERAN_SUERVIC,565
-58,CQ2,Immigration services,IMMIGR_SERVIC,566
-59,CQ2,Data Access and Sharing,DATA_ACCESS_SHA,567
-60,CQ2,NASA and space services,NASA_SPACE_SERV,568
-61,CQ2,Access control,ACCESS_CONTROL,569
-62,CQ2,Visitor management,VISITOR_MANAG,570
-63,CQ2,Video surveillance,VIDEO_SURVEIL,571
-64,CQ2,PII data control,PII_DATA_CONTRO,572
-65,CQ2,Communication,COMMUN,573
-66,CQ2,Emergency dispatch,EMERG_DISPATCH,574
-67,CQ2,IT Support service,IT_SUPPORT_SERV,575
-68,CQ2,Data center/warehouse,DATA_CENTER_WAR,576
-69,CQ2,Emergency Alerts,EMERG_ALERT,577
-70,CQ2,Real Time data access,REAL_TIME_CCESS,578
-71,CQ2,Physical Security,PHYSIC_SECUR,579
-72,CQ2,Weather Display and alerts,WEATHER_DIALERT,580
-73,CQ2,Payroll related Services,PAYROL_RELAT_SE,581
-74,CQ2,Web Based Monitoring,WEB_BASE_MONITO,582
-75,CQ2,Provides infrastructure services,PROVID_INFERVIC,583
-76,CQ2,Other [Free Text],OTHER_FREE_TEXT,584
-77,CQ3,Federal Agencies employees,FEDER_AGENC_EMP,594
-78,CQ3,Emergency responders/emergency managers,EMERG_RESPMANAG,595
-79,CQ3,"Local, State and Government personnel",LOCAL_STATONNEL,596
-80,CQ3,Federal Employees and designated contractors,FEDER_EMPLACTOR,597
-81,CQ3,Members of the general public,MEMBER_GENER_PU,598
-82,CQ3,"NASA (Missions, Services and/or employees)",NASA_MISSIOYEES,599
-83,CQ3,"Federal, Local, State Law Enforcement",FEDERAL_LONFORC,600
-84,CQ3,Internal USDA Agencies,INTERN_USDA_AGE,601
-85,CQ3,"VA Personnel, VA Contractors, Veterans, Veterans' family members",VA_PERSONNEMBER,602
-86,CQ3,NOAA employees and contractors,NOAA_EMPLOACTOR,603
-87,CQ3,Aviation workers,AVIAT_WORKER,604
-88,CQ3,Federal Credit Unions and other Federal finical personnel,FEDER_CREDONNEL,605
-89,CQ3,Internal and External Stakeholders,INTERN_EXTEHOLD,606
-90,CQ3,Potential federal employees,POTENTI_FEPLOYE,607
-91,CQ3,Public officials,PUBLIC_OFFICI,608
-92,CQ3,Border Patrol,BORDER_PATROL,609
-93,CQ3,Economic Analysts,ECONOM_ANALYST,610
-94,CQ3,Infrastructure Support Personnel,INFRASTRUCONNEL,611
-95,CQ3,SLTT Organizations,SLTT_ORGAN,612
-96,CQ3,"Federal, State, Local, Tribal, and Territorial communities",FEDERAL_STOMMUN,613
-97,CQ3,Medical and Healthcare Personnel,MEDIC_HEALONNEL,614
-98,CQ3,Visa applicants,VISA_APPLIC,615
-99,CQ3,Military and Defense Personnel,MILITARI_DONNEL,616
-100,CQ3,other Government systems,GOVERN_SYSTEM,617
-101,CQ3,other public systems,PUBLIC_SYSTEM,618
-102,CQ3,Internal agency users,INTERN_AGENC_US,619
-103,CQ3,External agency users,EXTERN_AGENC_US,620
-104,CQ3,Other [Free Text],OTHER_FREE_TEXT,621
-105,CQ3,None,NONE,622
-106,CQ3,< 5 years,N_5_YEAR,623
-107,CQ3,> 6 – 10 years,N_6_10_YEAR,624
-108,CQ3, > 10 – 15 years,N_10_15_YEAR,625
-109,CQ3, > 15 – 20 years,N_15_20_YEAR,626
-110,CQ3, > 20 – 30 years,N_20_30_YEAR,627
-111,CQ3, > 30 – 40 years,N_30_40_YEAR,628
-112,CQ3,> 40 years,N_40_YEAR,629
-113,CQ4,1. Yes,N_1_YE,639
-114,CQ4,2. No,N_2_NO,640
-115,CQ4,3. Unknown,N_3_UNKNOWN,641
-116,CQ4a,"Legacy codebase (COBOL, MUMPS)",LEGACI_CODMUMPS,651
-117,CQ4a,Lack of or poor documentation,LACK_POOR_DOCUM,652
-118,CQ4a,Legacy infrastructure,LEGACI_INFRASTR,653
-119,CQ4a,Ad-hoc infrastructure ,AD_HOC_INFRASTR,654
-120,CQ4a,Hardware or software with no vendor/manufacturer support,HARDWAR_SOPPORT,655
-121,CQ4a,Outdated or inaccurate inventory,OUTDAT_INANTORI,656
-122,CQ4a,Limited Functionality,LIMIT_FUNCTION,657
-123,CQ4a,Other [Free Text],OTHER_FREE_TEXT,658
-124,CQ4b,1. Yes,N_1_YE,668
-125,CQ4b,2. No,N_2_NO,669
-126,CQ4b,3. Unknown,N_3_UNKNOWN,670
-127,CQ4c,1. Yes,N_1_YE,680
-128,CQ4c,2. No,N_2_NO,681
-129,CQ4c,3. Unknown,N_3_UNKNOWN,682
-130,CQ5,1. Yes,N_1_YE,692
-131,CQ5,2. No,N_2_NO,693
-132,CQ5,3. Unknown,N_3_UNKNOWN,694
-133,CQ5a,DATE (MM/YYYY),DATE_MM_YYYY,704
-134,CQ6,1. Yes,N_1_YE,714
-135,CQ6,2. No,N_2_NO,715
-136,CQ6,3. Unknown,N_3_UNKNOWN,716
-137,CQ6a,1. Free text,N_1_FREE_TEXT,726
-138,CQ6b,1. Yes,N_1_YE,736
-139,CQ6b,2. No,N_2_NO,737
-140,CQ6b,3. Unknown,N_3_UNKNOWN,738
-141,CQ6c,1. Yes,N_1_YE,748
-142,CQ6c,2. No,N_2_NO,749
-143,CQ6c,3. Unknown,N_3_UNKNOWN,750
-144,CQ7,1. Cloud,N_1_CLOUD,760
-145,CQ7,2. Mainframe,N_2_MAINFRAM,761
-146,CQ7,3. GSS,N_3_GSS,762
-147,CQ7,4. Web Application,N_4_WEB_APPLIC,763
-148,CQ7,5. Application Platform,N_5_APPLIC_PLAT,764
-149,CQ7,6. ICS/SCADA,N_6_ICS_SCADA,765
-150,CQ7,7. Client/Server,N_7_CLIENT_SERV,766
-151,CQ7,8. Other [Free Text],N_8_OTHER_FREE_,767
-152,CQ7a,1. Paas,N_1_PAA,777
-153,CQ7a,2. SaaS,N_2_SAA,778
-154,CQ7a,3. IaaS,N_3_IAA,779
-155,CQ7a,4. Hybrid,N_4_HYBRID,780
-156,CQ7a,5. Other [Free Text],N_5_OTHER_FREE_,781
-157,CQ5,1. Yes,N_1_YE,791
-158,CQ5,2. No,N_2_NO,792
-159,CQ5,3. Unknown,N_3_UNKNOWN,793
-160,CQ5a,1. Free Text,N_1_FREE_TEXT,803
-161,CQ6,1. GSS,N_1_GSS,813
-162,CQ6,2. Web Application,N_2_WEB_APPLIC,814
-163,CQ6,3. Both,N_3_BOTH,815
-164,CQ6,4. Unknown,N_4_UNKNOWN,816
-165,CQ6,5. Neither,N_5_NEITHER,817
-166,CQ6a,1. Web Browser: Free Text,N_1_WEB_BR_TEXT,827
-167,CQ6a,2. Web Application Server: Free Text,N_2_WEB_AP_TEXT,828
-168,CQ6a,3. Database: Free Text,N_3_DATABA_TEXT,829
-169,CQ6a,4. Unknown,N_4_UNKNOWN,830
-170,CQ6b,HTML,HTML,840
-171,CQ6b,CSS,CSS,841
-172,CQ6b,JS,JS,842
-173,CQ6b,PHP,PHP,843
-174,CQ6b,Java,JAVA,844
-175,CQ6b,Ruby on Rails,RUBI_RAIL,845
-176,CQ6b,Smyfony Angular JS React.js,SMYFONI_ANACT_J,846
-177,CQ6b,Cake PHP,CAKE_PHP,847
-178,CQ6b,Asp.net,ASP_NET,848
-179,CQ6b,Node.js,NODE_J,849
-180,CQ6b,Meteor,METEOR,850
-181,CQ6b,Laravel,LARAVEL,851
-182,CQ6b,Ember,EMBER,852
-183,CQ6b,Django,DJANGO,853
-184,CQ6b,Express,EXPRESS,854
-185,CQ6b,Spring,SPRING,855
-186,CQ6b,Flask,FLASK,856
-187,CQ6b,Drupal,DRUPAL,857
-188,CQ6b,WordPress,WORDPRESS,858
-189,CQ6b,Bootstrap,BOOTSTRAP,859
-190,CQ6b,web2py,WEB2PI,860
-191,CQ6b,TurboGears,TURBOGEAR,861
-192,CQ6b,Sinatra,SINATRA,862
-193,CQ6b,Zend Framework,ZEND_FRAMEWORK,863
-194,CQ6b,Not Listed/Other,NOT_LISTED_OTH,864
-195,CQ6c,"Microsoft Windows, ",MICROSOFT_WINDO,874
-196,CQ6c,"Apple MacOS, ",APPL_MACOS,875
-197,CQ6c,"iOS, ",IOS,876
-198,CQ6c,"Ubuntu, ",UBUNTU,877
-199,CQ6c,"CentOS, ",CENTOS,878
-200,CQ6c,"Unix, ",UNIX,879
-201,CQ6c,"Android, ",ANDROID,880
-202,CQ6c,"Windows 10(and EOS Win10), ",WINDOW_10_WIN10,881
-203,CQ6c,"MS-DOS, Windows Vista, Linux Kernel, ",MS_DOS_WINERNEL,882
-204,CQ6c,"HyperVisor (such as VMware), etc.",HYPERVISORE_ETC,883
-205,CQ6c,Other (Free Text),OTHER_FREE_TEXT,884
-206,CQ7,1. Yes,N_1_YE,894
-207,CQ7,2. No,N_2_NO,895
-208,CQ7,3. Unknown,N_3_UNKNOWN,896
-209,CQ7a,1. Yes,N_1_YE,906
-210,CQ7a,2. No,N_2_NO,907
-211,CQ7a,3. Unknown,N_3_UNKNOWN,908
-212,CQ7b,1. Yes,N_1_YE,918
-213,CQ7b,2. No,N_2_NO,919
-214,CQ7b,3. Unknown,N_3_UNKNOWN,920
-215,CQ7c,1. Upstream,N_1_UPSTREAM,930
-216,CQ7c,2. Downstream,N_2_DOWNSTREAM,931
-217,CQ7c,3. Both,N_3_BOTH,932
-218,CQ8,1. Free text,N_1_FREE_TEXT,942
-219,CQ9,1. Free text,N_1_FREE_TEXT,952
-220,CQ10,1. Government Owned – Government Operated (GoGo),N_1_GOVERN_GOGO,962
-221,CQ10,2. Government Owned – Contractor Operated (GoCo),N_2_GOVERN_GOCO,963
-222,CQ10,"3. Contractor Owned – Contractor Operated, (CoCo)",N_3_CONTRA_COCO,964
-223,CQ10,4. Federally Funded Research and Development Center (FFRDC),N_4_FEDER_FFRDC,965
-224,CQ10,5. Other (Free Text),N_5_OTHER_FREE_,966
-225,CQ11,1. Free text,N_1_FREE_TEXT,976
-226,CQ12,1. Free text,N_1_FREE_TEXT,986
-227,CQ13,1. Yes,N_1_YE,996
-228,CQ13,2. No,N_2_NO,997
-229,CQ13,3. Unknown,N_3_UNKNOWN,998
-230,CQ14,1. Free text,N_1_FREE_TEXT,1008
-231,CQ15,1. Federal Employees,N_1_FEDER_EMPLO,1018
-232,CQ15,2. Federal employees and direct support contractors,N_2_FEDER_ACTOR,1019
-233,CQ15,3. Contractors,N_3_CONTRACTOR,1020
-234,CQ16,"1. Encryption of data at rest
-2. Encryption of data in transit
-3. Least privilege principles
-4. Application Allowlisting (whitelisting)
-5. Other (Free Text)
-6. Unknown",N_1_ENCRYPKNOWN,1030
-235,CQ17,1. Security Operations Center (SOC) as a Service such as Asset Management,N_1_SECUR_MANAG,1040
-236,CQ17,2. Awareness and Training,N_2_AWAR_TRAIN,1041
-237,CQ17,3. Detection Processes,N_3_DETECT_PROC,1042
-238,CQ17,4. Governance: Information Protection Processes and Procedures;,N_4_GOVERNDURES,1043
-239,CQ17,5. Protective Technology,N_5_PROTECNOLOG,1044
-240,CQ17,6. Risk Assessment,N_6_RISK_ASSESS,1045
-241,CQ17,7. Security Continuous Monitoring,N_7_SECUR_NITOR,1046
-242,CQ17,8. Supply Chain Risk Management,N_8_SUPPLIMANAG,1047
-243,CQ18,1. Continuous Diagnostics and Mitigation (CDM),N_1_CONTING_CDM,1057
-244,CQ18,2. Protective DNS (pDNS),N_2_PROTECT_DN_,1058
-245,CQ18,3. Vulnerability Disclosure Program (VDP),N_3_VULNERM_VDP,1059
-246,CQ18,4. Other (Free Text),N_4_OTHER_FREE_,1060
-247,CQ18,5. Unknown,N_5_UNKNOWN,1061
-248,CQ18,6. No,N_6_NO,1062
-249,CQ19,1. Yes,N_1_YE,1072
-250,CQ19,2. No,N_2_NO,1073
-251,CQ19,3. Unknown,N_3_UNKNOWN,1074
-252,CQ20,1. Yes,N_1_YE,1084
-253,CQ20,2. No,N_2_NO,1085
-254,CQ20,3. Unknown,N_3_UNKNOWN,1086
-255,CQ21,1. Yes,N_1_YE,1096
-256,CQ21,2. No,N_2_NO,1097
-257,CQ21,3. Unknown,N_3_UNKNOWN,1098
-258,CQ22,1. Free Text,N_1_FREE_TEXT,1108
-259,CQ23,1. Yes,N_1_YE,1118
-260,CQ23,2. No,N_2_NO,1119
-261,CQ23,3. Unknown,N_3_UNKNOWN,1120
-262,CQ23A,1. Free Text,N_1_FREE_TEXT,1130
-263,CQ23B,1. Resulted in unscheduled downtime/unavailability,N_1_RESULTAVAIL,1140
-264,CQ23B,2. Required outside incident response support  in the last 12 months,N_2_REQUIRMONTH,1141
-265,CQ23B1,1. Integer,N_1_INTEG,1151
-266,CQ23B2,1. Integer,N_1_INTEG,1161
-267,CQ24,1. Yes,N_1_YE,1171
-268,CQ24,2. No,N_2_NO,1172
-269,CQ24,3. Unknown,N_3_UNKNOWN,1173
-270,CQ24A,1. Free Text,N_1_FREE_TEXT,1183
-271,CQ24B,DOJ(1) - Advise and Represent the President,DOJ_1_ADVIRESID,1193
-272,CQ24B,DOJ(2) - Protect Senior Officials and the Courts,DOJ_2_PROTCOURT,1194
-273,CQ24B,DOJ(3) - Perform Critical Legal Reviews,DOJ_3_PERFEVIEW,1195
-274,CQ24B,DOJ(4) - Fight Terrorism and Espionage,DOJ_4_FIGHIONAG,1196
-275,CQ24B,DOJ(5) - Conduct Law Enforcement Activities,DOJ_5_CONDACTIV,1197
-276,CQ24B,DOJ(6) - Operate Federal Prisons,DOJ_6_OPERRISON,1198
-277,CQ24B,DHS(1) - Secure and Manage the Borders,DHS_1_SECUORDER,1199
-278,CQ24B,DHS(2) - Secure Critical Infrastructure and Cyberspace,DHS_2_SECURSPAC,1200
-279,CQ24B,DHS(3) - Protect National Leaders,DHS_3_PROTEADER,1201
-280,CQ24B,DHS(4) - Provide Domestic Situational Awareness,DHS_4_PROV_AWAR,1202
-281,CQ24B,DHS(5) - Enforce Homeland Security Laws and Regulations,DHS_5_ENFOREGUL,1203
-282,CQ24B,DHS(6) - Coordinate Continuity and Incident Response,DHS_6_COORSPONS,1204
-283,CQ24B,DHS(7) - Coordinate Disaster Recovery,DHS_7_COOROVERI,1205
-284,CQ24B,GSA(1) - Lead Government Reconstitution,GSA_1_LEADTITUT,1206
-285,CQ24B,DOD(1) - Advise on National Defense Policy,DOD_1_ADVIOLICI,1207
-286,CQ24B,DOD(2) - Defend the Security of the United States,DOD_2_DEFESTATE,1208
-287,CQ24B,"DOD(3) - Collect, Analyze, and Disseminate Intelligence",DOD_3_COLLELLIG,1209
-288,CQ24B,DOD(4) - Promote National Security,DOD_4_PROMSECUR,1210
-289,CQ24B,DOD(5) - Conduct Domestic Emergency Response,DOD_5_CONDSPONS,1211
-290,CQ24B,DOS(1) - Formulate Foreign Affairs Policy,DOS_1_FORMOLICI,1212
-291,CQ24B,DOS(2) - Maintain Foreign Diplomatic Relations,DOS_2_MAINRELAT,1213
-292,CQ24B,DOS(3) - Maintain International Situational Awareness,DOS_3_MAIN_AWAR,1214
-293,CQ24B,DOS(4) - Support U.S.Citizens Overseas,DOS_4_SUPPERSEA,1215
-294,CQ24B,CIA(1) - Produce Timely Intelligence Reports,CIA_1_PRODEPORT,1216
-295,CQ24B,CIA(2) - Collect Intelligence ,CIA_2_COLLELLIG,1217
-296,CQ24B,CIA(3) - Conduct Covert Operations,CIA_3_COND_OPER,1218
-297,CQ24B,DOI(1) - Provide Emergency Response on Federal Lands,DOI_1_PROV_LAND,1219
-298,CQ24B,DOI(2) - Provide Law Enforcement on Federal Lands,DOI_2_PROV_LAND,1220
-299,CQ24B,DOI(3) - Provide National Emergency Response,DOI_3_PROVSPONS,1221
-300,CQ24B,DOI(4) - Maintain Relations with Insular Areas and Tribes,DOI_4_MAINTRIBE,1222
-301,CQ24B,DOI(5) - Provide Water and Electric Power,DOI_5_PROVPOWER,1223
-302,CQ24B,DOE(1) - Ensure Nuclear Materials Safety,DOE_1_ENSUAFETI,1224
-303,CQ24B,DOE(2) - Respond to Nuclear Incidents,DOE_2_RESPINCID,1225
-304,CQ24B,DOE(3) - Manage Energy Infrastructure,DOE_3_MANAUCTUR,1226
-305,CQ24B,DOC(1) - Prevent Export Control Violations,DOC_1_PREVIOLAT,1227
-306,CQ24B,DOC(2) - Provide Satellite Imagery,DOC_2_PROVAGERI,1228
-307,CQ24B,DOC(3) - Provide Meteorological Forecasts,DOC_3_PROVECAST,1229
-308,CQ24B,DOC(4) - Maintain Operational Federal Communications,DOC_4_MAINOMMUN,1230
-309,CQ24B,TREAS(1) - Safeguard the Economy and the Financial System,TREAS_1_SAYSTEM,1231
-310,CQ24B,TREAS(2) - Use Financial Measures to Counter National Security Threats,TREAS_2_USHREAT,1232
-311,CQ24B,TREAS(3) - Manage Government Finances,TREAS_3_MAINANC,1233
-312,CQ24B,TREAS(4) - Promote International Financial Stability,TREAS_4_PRTABIL,1234
-313,CQ24B,USDA(1) - Ensure Food Safety,USDA_1_ENSAFETI,1235
-314,CQ24B,USDA(2) - Provide Emergency Food Supplies,USDA_2_PROUPPLI,1236
-315,CQ24B,USDA(3) - Fight Forest Fires,USDA_3_FIG_FIRE,1237
-316,CQ24B,USDA(4) - Provide Safety and Security on Public Lands,USDA_4_PRO_LAND,1238
-317,CQ24B,FRS(1) - Conduct Monetary Policy,FRS_1_CONDOLICI,1239
-318,CQ24B,FRS(2) - Maintain Financial System Stability,FRS_2_MAINTABIL,1240
-319,CQ24B,FRS(3) - Regulate Banking,FRS_3_REGUL_BAN,1241
-320,CQ24B,FRS(4) - Provide Financial Services,FRS_4_PROVERVIC,1242
-321,CQ24B,DOT(1) - Ensure Defense Transportation Infrastructure,DOT_1_ENSUUCTUR,1243
-322,CQ24B,DOT(2) - Respond to Transportation Disruptions,DOT_2_RESPSRUPT,1244
-323,CQ24B,DOT(3) - Operate the National Airspace System,DOT_3_OPERYSTEM,1245
-324,CQ24B,HHS(1) - Monitor and Respond to Health Emergencies and Risks,HHS_1_MONI_RISK,1246
-325,CQ24B,HHS(2) - Oversee Safety of Medical and Food Products,HHS_2_OVERODUCT,1247
-326,CQ24B,HHS(3) - Provide Medical Care and Services,HHS_3_PROVERVIC,1248
-327,CQ24B,NRC(1) - Maintain Awareness and Respond to U.S. Civilian Nuclear Events,NRC_1_MAINEVENT,1249
-328,CQ24B,NRC(2) - Ensure Safe U.S. Civilian Nuclear Operations,NRC_2_ENSU_OPER,1250
-329,CQ24B,FCC(1) - Maintain Operational Communications,FCC_1_MAINOMMUN,1251
-330,CQ24B,EPA(1) - Respond to Environmental and Health Threats,EPA_1_RESPHREAT,1252
-331,CQ24B,CFTC(1) - Monitor Commodity Futures Markets,CFTC_1_MONARKET,1253
-332,CQ24B,SSA(1) - Provide Social Security Services,SSA_1_PROVERVIC,1254
-333,CQ24B,SEC(1) - Regulate Securities Markets,SEC_1_REGUARKET,1255
-334,CQ24B,OPM(1) - Provide Human Capital Services,OPM_1_PROVERVIC,1256
-335,CQ24B,NASA(1) - Operate Satellites,NASA_1_OPER_SAT,1257
-336,CQ24B,VA(1) - Provide Medical Care,VA_1_PROVI_CARE,1258
-337,CQ24B,"ODNI(1) - Collect, Analyze, and Provide Intelligence",ODNI_1_COLELLIG,1259
-338,CQ24B,NARA(1) - Publish the Federal Register,NARA_1_PUBEGIST,1260
-339,CQ24B,USPS(1) - Deliver Postal Services,USPS_1_DELERVIC,1261
-340,CQ24B,NCUA(1) - Maintain Solvent Credit Unions,NCUA_1_MAIUNION,1262
-341,CQ25,1. Yes,N_1_YE,1272
-342,CQ25,2. No,N_2_NO,1273
-343,CQ25,3. Unknown,N_3_UNKNOWN,1274
-344,CQ25A,1. Integer,N_1_INTEG,1284
-345,CQ25B,1. Free Text,N_1_FREE_TEXT,1294
-346,CQ26,1. HVA does not support a PMEF or MEF. ,N_1_HVA_SUF_MEF,1304
-347,CQ26,2. No impact: Essential function is accomplished as intended.,N_2_NO_IMPENDED,1305
-348,CQ26,"3. Work around: Essential function is still fully accomplished but requires documented and trained-to work around procedures. ""Workaround” does not mean patched together actions or “hacks.”  Defined as approved, documented plans that staff already knows. ",N_3_WORK_AKNOWS,1306
-349,CQ26,4. Degraded: Essential function is partially accomplished.  There may be delays in time. There may be omissions of information. There may be parts of functions that cannot be provided.,N_4_DEGRADVIDED,1307
-350,CQ26,5. Failure: Essential function cannot be accomplished.  Highest impact to mission and function of Agency.,N_5_FAILURGENCY,1308
-351,CQ26A,1. Safety,N_1_SAFETI,1318
-352,CQ26A,2. Environmental,N_2_ENVIRONMENT,1319
-353,CQ26A,3. Financial,N_3_FINANCI,1320
-354,CQ26A,4. Public Trust,N_4_PUBLIC_TRUS,1321
-355,CQ26A,5. Other [Free Text],N_5_OTHER_FREE_,1322
-356,CQ27,1. Yes,N_1_YE,1332
-357,CQ27,2. No,N_2_NO,1333
-358,CQ27,3. Unknown,N_3_UNKNOWN,1334
-359,CQ28,1. Yes,N_1_YE,1344
-360,CQ28,2. No,N_2_NO,1345
-361,CQ28,3. Unknown,N_3_UNKNOWN,1346
-362,CQ29,1. PII,N_1_PII,1356
-363,CQ29,2. PHI,N_2_PHI,1357
-364,CQ29,3. Law Enforcement,N_3_LAW_ENFORC,1358
-365,CQ29,4. Pre-Release,N_4_PRE_RELEAS,1359
-366,CQ29,5. IP,N_5_IP,1360
-367,CQ29,6. Other [Free Text],N_6_OTHER_FREE_,1361
-368,CQ29A,<1K,N_1K,1371
-369,CQ29A,1K - 100K,N_1K_100K,1372
-370,CQ29A,100K -1M,N_100K_1M,1373
-371,CQ29A,1M - 100M,N_1M_100M,1374
-372,CQ29A,> 100M,N_100M,1375
-373,CQ29A,Unknown,UNKNOWN,1376
-374,CQ29A,N/A,N_A,1377
-375,CQ29B,<1K,N_1K,1387
-376,CQ29B,1K - 100K,N_1K_100K,1388
-377,CQ29B,100K -1M,N_100K_1M,1389
-378,CQ29B,1M - 100M,N_1M_100M,1390
-379,CQ29B,> 100M,N_100M,1391
-380,CQ29B,Unknown,UNKNOWN,1392
-381,CQ29B,N/A,N_A,1393
-382,CQ29C,<1K,N_1K,1403
-383,CQ29C,1K - 100K,N_1K_100K,1404
-384,CQ29C,100K -1M,N_100K_1M,1405
-385,CQ29C,1M - 100M,N_1M_100M,1406
-386,CQ29C,> 100M,N_100M,1407
-387,CQ29C,Unknown,UNKNOWN,1408
-388,CQ29C,N/A,N_A,1409
-389,CQ29D,<1K,N_1K,1419
-390,CQ29D,1K - 100K,N_1K_100K,1420
-391,CQ29D,100K -1M,N_100K_1M,1421
-392,CQ29D,1M - 100M,N_1M_100M,1422
-393,CQ29D,> 100M,N_100M,1423
-394,CQ29D,Unknown,UNKNOWN,1424
-395,CQ29D,N/A,N_A,1425
-396,CQ29E,<1K,N_1K,1435
-397,CQ29E,1K - 100K,N_1K_100K,1436
-398,CQ29E,100K -1M,N_100K_1M,1437
-399,CQ29E,1M - 100M,N_1M_100M,1438
-400,CQ29E,> 100M,N_100M,1439
-401,CQ29E,Unknown,UNKNOWN,1440
-402,CQ29E,N/A,N_A,1441
-403,CQ29F,<1K,N_1K,1451
-404,CQ29F,1K - 100K,N_1K_100K,1452
-405,CQ29F,100K -1M,N_100K_1M,1453
-406,CQ29F,1M - 100M,N_1M_100M,1454
-407,CQ29F,> 100M,N_100M,1455
-408,CQ29F,Unknown,UNKNOWN,1456
-409,CQ29F,N/A,N_A,1457
-410,CQ29G,<1K,N_1K,1467
-411,CQ29G,1K - 100K,N_1K_100K,1468
-412,CQ29G,100K -1M,N_100K_1M,1469
-413,CQ29G,1M - 100M,N_1M_100M,1470
-414,CQ29G,> 100M,N_100M,1471
-415,CQ29G,Unknown,UNKNOWN,1472
-416,CQ29G,N/A,N_A,1473
-417,CQ29H,<1K,N_1K,1483
-418,CQ29H,1K - 100K,N_1K_100K,1484
-419,CQ29H,100K -1M,N_100K_1M,1485
-420,CQ29H,1M - 100M,N_1M_100M,1486
-421,CQ29H,> 100M,N_100M,1487
-422,CQ29H,Unknown,UNKNOWN,1488
-423,CQ29H,N/A,N_A,1489
-424,CQ29I,<1K,N_1K,1499
-425,CQ29I,1K - 100K,N_1K_100K,1500
-426,CQ29I,100K -1M,N_100K_1M,1501
-427,CQ29I,1M - 100M,N_1M_100M,1502
-428,CQ29I,> 100M,N_100M,1503
-429,CQ29I,Unknown,UNKNOWN,1504
-430,CQ29I,N/A,N_A,1505
-431,CQ29J,<1K,N_1K,1515
-432,CQ29J,1K - 100K,N_1K_100K,1516
-433,CQ29J,100K -1M,N_100K_1M,1517
-434,CQ29J,1M - 100M,N_1M_100M,1518
-435,CQ29J,> 100M,N_100M,1519
-436,CQ29J,Unknown,UNKNOWN,1520
-437,CQ29J,N/A,N_A,1521
-438,CQ29K,<1K,N_1K,1531
-439,CQ29K,1K - 100K,N_1K_100K,1532
-440,CQ29K,100K -1M,N_100K_1M,1533
-441,CQ29K,1M - 100M,N_1M_100M,1534
-442,CQ29K,> 100M,N_100M,1535
-443,CQ29K,Unknown,UNKNOWN,1536
-444,CQ29K,N/A,N_A,1537
-445,CQ29I,1. Free Text,N_1_FREE_TEXT,1547
-446,CQ30,1-10,N_1_10,1557
-447,CQ30,11-25,N_11_25,1558
-448,CQ30,26-50,N_26_50,1559
-449,CQ30,51-200,N_51_200,1560
-450,CQ30, 201+,N_201,1561
-451,CQ31,1. Free text,N_1_FREE_TEXT,1571
-452,CQ31A,1. Free text,N_1_FREE_TEXT,1581
-453,CQ31A,1. Free text,N_1_FREE_TEXT,1582
-454,CQ31C,1. Yes,N_1_YE,1592
-455,CQ31C,2. No,N_2_NO,1593
-456,CQ31C,3. Unknown,N_3_UNKNOWN,1594
-457,CQ31D,1. Yes,N_1_YE,1604
-458,CQ31D,2. No,N_2_NO,1605
-459,CQ31D,3. Unknown,N_3_UNKNOWN,1606
-460,CQ31E,1. Yes,N_1_YE,1616
-461,CQ31E,2. No,N_2_NO,1617
-462,CQ31E,3. Unknown,N_3_UNKNOWN,1618
-463,CQ31F,1. Yes,N_1_YE,1628
-464,CQ31F,2. No,N_2_NO,1629
-465,CQ31F,3. Unknown,N_3_UNKNOWN,1630
-466,CQ31G,1. Transmit,N_1_TRANSMIT,1640
-467,CQ31G,2. Receive,N_2_RECEIV,1641
-468,CQ31G,3. Both,N_3_BOTH,1642
-469,CQ32,1. Free Text,N_1_FREE_TEXT,1652
-470,CQ32A,1. Free Text,N_1_FREE_TEXT,1662
-471,CQ32B,1. Free Text,N_1_FREE_TEXT,1672
-472,CQ32C,1. Private/Commercial,N_1_PRIVATE_COM,1682
-473,CQ32C,2. NGO,N_2_NGO,1683
-474,CQ32C,3. FFRDC,N_3_FFRDC,1684
-475,CQ32C,4. SLTT,N_4_SLTT,1685
-476,CQ32C,5. Other,N_5_OTHER,1686
-477,CQ32D,1. Yes,N_1_YE,1696
-478,CQ32D,2. No,N_2_NO,1697
-479,CQ32D,3. Unknown,N_3_UNKNOWN,1698
-480,CQ32E,1. Yes,N_1_YE,1708
-481,CQ32E,2. No,N_2_NO,1709
-482,CQ32E,3. Unknown,N_3_UNKNOWN,1710
-483,CQ32F,1. Yes,N_1_YE,1720
-484,CQ32F,2. No,N_2_NO,1721
-485,CQ32F,3. Unknown,N_3_UNKNOWN,1722
-486,CQ32G,1. Transmit,N_1_TRANSMIT,1732
-487,CQ32G,2. Receive,N_2_RECEIV,1733
-488,CQ32G,3. Both,N_3_BOTH,1734
+Row,DATATYPE,ID,Text,OTH,PKEY
+1,PICK,CQ1,What is the purpose of the HVA? Please select all that apply.,False,500
+2,PICK,CQ2,What services does the HVA system provide? Please select all that apply.,True,510
+3,PICK,CQ3,To whom does the HVA provide services to? Please select all that apply.,True,520
+4,PICK,CQ3,What is the approximate time in years since deployment of this HVA?,False,521
+5,PICK,CQ4,Is this system identified as a Legacy* system or have any legacy technology or characteristics? ,False,531
+6,PICK,CQ4a,Is this system identified as a Legacy* system or have any legacy technology or characteristics? Please select all that apply.,False,541
+7,PICK,CQ4b,Is there an approved Modernization or Technology Refresh Plan for this system?,True,551
+8,PICK,CQ4c,Has the Modernization or Technology Plan been budgeted? ,False,561
+9,PICK,CQ5,Does this HVA have a decommissioning date within the next 36 months? ,False,571
+10,DATE,CQ5a,"If so, what is the month and year of the planned decommissioning? ",False,581
+11,PICK,CQ6,Is this system’s functionality expected to be subsumed or replaced by another system?,False,591
+12,TXT,CQ6a,"If yes, please provide the name of the subsuming or replacement system?",False,601
+13,PICK,CQ6b,"If Yes, is there a transition plan for data and functions? ",False,611
+14,PICK,CQ6c,"If No, are components of the system operating beyond the original service life? ",False,621
+15,PICK,CQ7,Please indicate the HVA System technology type:,False,631
+16,PICK,CQ7a,"If System Technology Type is a Cloud, then the cloud construct is:",True,641
+17,PICK,CQ5,Does the system contain a mainframe?,True,651
+18,TXT,CQ5a,"If mainframe, list the type of mainframe computers you are using.",False,661
+19,PICK,CQ6,Is the system a GSS or Web Application?,False,671
+20,PICK,CQ6a,"If the system is a Web Application, what type is it?",False,681
+21,PICK,CQ6b,"If the system is Web Application, what Languages/technologies/platforms is your web application using?: ",False,691
+22,PICK,CQ6c,"If the system is an Application Platform, what operating systems do you use?:",False,701
+23,PICK,CQ7,"Is the system an ICS/SCADA?*
+
+** Includes Building Automation, Perimeter and Physical Security systems. ",True,711
+24,PICK,CQ7a,"If yes, is it only an ICS, SCADA?",False,721
+25,PICK,CQ7b,"If no, does the system have a direct mission interdepency on an ICS/SCADA?",False,731
+26,PICK,CQ7c,"If yes, then is the interdependency upstream, downstream or both of an ICS/SCADA system?",False,741
+27,TXT,CQ8,"If the system is a client server, please list the system's workstations, client servers, and network devices:",False,751
+28,TXT,CQ9,"If the system type is other, please describe: ",False,761
+29,PICK,CQ10,Please describe the HVA System Management Type,False,771
+30,TXT,CQ11,Primary physical location of the HVA system (city and state),True,781
+31,TXT,CQ12,Secondary (backup) physical location of the HVA system (city and state),False,791
+32,PICK,CQ13,Is the HVA system is hosted outside of your Agency?,False,801
+33,TXT,CQ14,"If yes, which Agency or contractor hosts the system?",False,811
+34,PICK,CQ15,Who is responsible for operating and maintaining the HVA system?,False,821
+35,PICK,CQ16,Does this system directly employ any of the following system level cybersecurity mitigation technologies?,False,831
+36,PICK,CQ17,Does this system operate in an environment/enterprise that has adopted any of the following enterprise level cybersecurity mitigation technologies? (Select all that apply),False,841
+37,PICK,CQ18,"Does the system utilize a shared security service? (Select all that apply) such as ), PDNS, CTI or VDP. ",False,851
+38,PICK,CQ19,Does the system use Mobile Device Management (MDM)?,False,861
+39,PICK,CQ20,"If Yes to 16.5, then are all mobile devices required to utilize MDM to access enterprise resources with respect to this HVA?",False,871
+40,PICK,CQ21,"Does the system use cloud-oriented protection, if it is a cloud system?",False,881
+41,TXT,CQ22,Please Describe Other Enterpise Cybersecurity Mitigation Technologies/Services Not Previously Listed.,False,891
+42,PICK,CQ23,Has this system had one or more major cyber incident(s) within the last year?,False,901
+43,TXT,CQ23A,"If yes, then please provide the number of major incidents within the last year.",False,911
+44,PICK,CQ23B,"If yes, then have any of the major cyber incidents/events listed previously: (please select all that apply)",False,921
+45,PICK,CQ23B1,"If Yes to CQ22b, then please indicate the number of major cyber incidents/events that resulted in unscheduled downtime/unavailability ",False,931
+46,PICK,CQ23B2,"If Yes to CQ22c,  then please indicate the number of major cyber incidents/events that required outside incident response support  in the last 12 months? ",False,941
+47,PICK,CQ24,Is this system necessary to perform one or more Primary Mission Essential Function(s) (PMEF)?,False,951
+48,TXT,CQ24A,"If yes, how many Primary Mission Essential Functions (PMEF) does this HVA support? ",False,961
+49,PICK,CQ24B,"If yes, please lease select the PMEFS for this HVA:",False,971
+50,PICK,CQ25,Is this HVA necessary to perform one or more Mission Essential Function(s) (MEF)? ,False,981
+51,PICK,CQ25A,"If Yes, how many Mission Essential Functions (MEF) does this HVA perform? ",False,991
+52,TXT,CQ25B,"If yes, describe the MEFS",False,1001
+53,PICK,CQ26,"If this HVA supports one or more PMEFS or MEFS, then If the HVA is unavailable for more than 12 hours, what is the impact to the PMEF or MEF it supports?",False,1011
+54,PICK,CQ26A,"If ""Degraded (4) or Failure (5)""  to 20.0,  Are there any non-mission impacts associated with this system's unavailability after 12 hours? (Select all that apply)",False,1021
+55,PICK,CQ27,"Could a failure, corruption, or degradation of the HVA have a direct impact on regional or national health, public safety, and welfare of the United States?",True,1031
+56,PICK,CQ28,"Does the HVA store, receive, send, use, create, or otherwise process any of the following sensitive data types? If yes, indicate the approximate volume of records for each type indicated:",False,1041
+57,PICK,CQ29,Please describe the following that is stored or processed by the system,False,1051
+58,PICK,CQ29A,PII Volume,True,1061
+59,PICK,CQ29B,PII Type,False,1071
+60,PICK,CQ29C,PHI Volume,False,1081
+61,PICK,CQ29D,PHI Type,False,1091
+62,PICK,CQ29E,Law Enforcement Volume,False,1101
+63,PICK,CQ29F,Law Enforcement Type,False,1111
+64,PICK,CQ29G,Pre-Release Volume,False,1121
+65,PICK,CQ29H,Pre-Release Type,False,1131
+66,PICK,CQ29I,IP Volume,False,1141
+67,PICK,CQ29J,IP Type,False,1151
+68,PICK,CQ29K,Other Volume,False,1161
+69,TXT,CQ29I,Other Type,False,1171
+70,PICK,CQ30,"Number of network endpoints, including servers and virtual servers, within HVA system boundary (production environment only)",False,1181
+71,TXT,CQ31,"Please list each interconnection or data exchange (receive, transmit, or both) between the HVA and other systems. Indicate if the interconnection/data exchange is internal or external to another HVA, or if it is critical for the HVA for accomplishing its function. Indicate the kind of agreement (MOU, MOA, ISA, Contract, IAA etc.) that covers this interconnection.",False,1191
+72,TXT,CQ31A,Please enter the Name of the Interconnected System,False,1201
+73,PICK,CQ31C,Does D/A for this HVA have an ISA/MOU with owning organization for the interconneted system? ,False,1211
+74,PICK,CQ31D,Is this connected system Internal to your Agency?,False,1221
+75,PICK,CQ31E,"If 'Yes' to Internal to Agency, then Is this system also an HVA?",False,1231
+76,PICK,CQ31F,Is this interconnection/data exchange mission essential to the HVA Function?,False,1241
+77,PICK,CQ31G,"Is this interconnection Transmit, Receive, or Both?",False,1251
+78,TXT,CQ32,"Please list each interconnection or data exchange (receive, transmit or both) between this HVA and other systems outside of the '.gov' or '.mil' domain (such as contractors, FFRDCs or commercial). Indicate if the interconnection/data exchange is internal or external to another HVA, or if it is critical for the HVA for accomplishing its function. Indicate the kind of agreement (MOU, MOA, ISA, Contract, IAA etc.) that covers this interconnection.",False,1261
+79,TXT,CQ32A,Name of the interconnected system(s):,False,1271
+80,TXT,CQ32B,Please enter the Name of the organization that owns the interconnected system,False,1281
+81,PICK,CQ32C,Please indicate the organization type for the interconnected system such as ,False,1291
+82,PICK,CQ32D,Does the D/A for this HVA have an ISA/MOU with the organization that owns the interconnected system? ,False,1301
+83,PICK,CQ32E,Is this interconnection/data exchange mission essential to the HVA Function?,False,1311
+84,PICK,CQ32F,Is this Interconnection or data exchange a high priority for this HVA or the connecting system?,False,1321
+85,PICK,CQ32G,"Is this interconnection Transmit, Receive or Both?",False,1331

@@ -24,6 +24,7 @@ class questionnaire_parser():
                     d['DATATYPE']=self._get_ftype(ws, i+1)
                     d['ID']=a
                     d['Text']=ws[f'B{i+1}'].value   
+                    d['OTH']=self._requires_other(ws, i)
                     d=apply_indexes(d, self.ctx)
                     lst.append(d)
                     irow=irow+1  
@@ -40,4 +41,16 @@ class questionnaire_parser():
         if re.search(r'DATE',tval,flags=re.I):
             t='DATE'
         return t     
+    def _requires_other(self, ws, row):
+        requires_other=False  
+        for i in range(50):
+            a=ws[f'A{row+i}'].value
+            if a != None:
+                if re.search(r'(CQ\d.*)', a, flags=re.I): 
+                    return requires_other 
+            dcell=ws[f'D{row+i}']
+            if dcell.value is not None: 
+                if re.search(r'.*other.+(free.+text)?',dcell.value ,flags=re.I):
+                    requires_other=True
+        return requires_other 
  

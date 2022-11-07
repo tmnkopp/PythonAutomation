@@ -1,10 +1,21 @@
-import re
+import re, sys
+from sqlalchemy import func, create_engine
+import pandas as pd
 import nltk
 from nltk.corpus import stopwords
 from nltk.stem.porter import PorterStemmer
 sw=stopwords.words('english')
-ps=PorterStemmer()
-
+ps=PorterStemmer() 
+  
+def sql_todf(query,connstr):
+    df=pd.DataFrame() 
+    engine = create_engine(connstr) 
+    conn = engine.connect() 
+    try: 
+        df = pd.read_sql(query,con=conn) 
+    finally: 
+        conn.close()
+    return df
 def apply_indexes(d, ctx):
     indexes=ctx.config['indexes'] 
     for j,e in enumerate(indexes):
