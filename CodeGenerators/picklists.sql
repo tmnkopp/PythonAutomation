@@ -1,1 +1,1 @@
-,(UsageCode='{Code}',PK_PickList={PKEY}, DisplayValue='{Text}', PK_PicklistType=500, SortOrder={i})
+,(UsageCode='{CODE}',PK_PickList={PKEY}, DisplayValue='{TEXT}', PK_PicklistType={PLT}, SortOrder={SORT})

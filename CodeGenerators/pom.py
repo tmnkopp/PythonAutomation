@@ -7,6 +7,7 @@ from lib.questionnaire_picklist_parser import questionnaire_picklist_parser
 from lib.questionnaire_parser import questionnaire_parser
 from lib.script_generator import script_generator
 from lib.indexer import df_indexer
+from lib.data_filter import data_filter
 from lib.utils import *
 def main(): 
     ctx=context() 
@@ -27,9 +28,13 @@ def main():
     if ctx.config['parser'] != '':
         parser = globals()[ctx.config['parser']](ctx)   
         df=parser.parse() 
-        indexer = df_indexer(ctx)
-        df=indexer.apply(df) 
-        df.to_csv('parsed.csv', index=False) 
+        if 'indexes' in ctx.config.keys():
+            indexer = df_indexer(ctx)
+            df=indexer.apply(df) 
+        if 'data_filters' in ctx.config.keys():
+            filter = data_filter(ctx)
+            df=filter.apply(df)             
+        df.to_csv('parsed.csv', index=False)  
         df.to_html('parsed.html') 
 
     ctx.payload=pd.read_csv('parsed.csv') 

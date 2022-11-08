@@ -15,7 +15,7 @@ class script_generator():
             if m is not None:
                 g=m.groups(1)[0]
                 if g in r.keys(): 
-                    tmp = tmp.replace('{'+g+'}',r[g])  
+                    tmp = tmp.replace('{'+g.upper()+'}',r[g])  
             self.ext = tmp[tmp.index('.'):] 
             try:
                 with open(tmp, 'r', encoding=ctx.config['encoding'], errors='replace') as f: 

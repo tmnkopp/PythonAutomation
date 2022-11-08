@@ -5,15 +5,14 @@ class df_indexer():
         self.ctx=ctx  
         self.lst=[] 
     def apply(self, df):
+        if 'indexes' not in self.ctx.config.keys(): return df
         self.lst=df.to_dict('records')
         lst=[]
         for i,rec in enumerate(self.lst):
              rec=self._get_index(rec)   
              lst.append(rec)
         return pd.DataFrame(lst)
-    def _get_index(self, d): 
-        if 'indexes' not in self.ctx.config.keys():
-            return {}
+    def _get_index(self, d):  
         indexes=self.ctx.config['indexes']     
         for j,e in enumerate(indexes):
             field=e['field'] 
@@ -27,7 +26,17 @@ class df_indexer():
                 if d[e['reset_on']] != e['reset_on_pval']:
                     e['reset_on_pval']=d[e['reset_on']]
                     e['index']=1
-            e['index']=e['index']+1  
+            if 'increment_on' in e.keys(): 
+                if 'increment_on_pval' not in e.keys(): e['increment_on_pval']=d[e['increment_on']] 
+                if d[e['increment_on']] != e['increment_on_pval']:
+                    e['increment_on_pval']=d[e['increment_on']]
+                    e['index']=e['index']+1    
+            else:
+                e['index']=e['index']+1 
+            
             self.ctx.config['indexes'][j]=e
-            d[field]=e['index']-1
+            if 'increment_on' in e.keys(): 
+                d[field]=e['index']
+            else: 
+                d[field]=e['index']-1
         return d               
