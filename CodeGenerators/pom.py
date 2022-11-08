@@ -6,6 +6,7 @@ from lib.context import context
 from lib.questionnaire_picklist_parser import questionnaire_picklist_parser
 from lib.questionnaire_parser import questionnaire_parser
 from lib.script_generator import script_generator
+from lib.indexer import df_indexer
 from lib.utils import *
 def main(): 
     ctx=context() 
@@ -25,24 +26,25 @@ def main():
     
     if ctx.config['parser'] != '':
         parser = globals()[ctx.config['parser']](ctx)   
-        df=parser.parse()
+        df=parser.parse() 
+        indexer = df_indexer(ctx)
+        df=indexer.apply(df) 
         df.to_csv('parsed.csv', index=False) 
-        df.to_html('parsed.html')
+        df.to_html('parsed.html') 
 
-    df=pd.read_csv('parsed.csv')
-    ctx.payload=df 
+    ctx.payload=pd.read_csv('parsed.csv') 
       
     range=ctx.args['range'].strip()  
     mn, mx=range_extractor(range) 
     print(tabulate(df[mn:mx], headers = 'keys', tablefmt = 'plain')) 
     
-    gen = globals()['script_generator']()   
+    gen = script_generator()   
     st=gen.generate(ctx) 
     if 'script' in ctx.args['console']:
         print(st)
 
     if ctx.args['generate_scripts']:  
-        p=f'{ctx.get_dir()}\script{gen.ext}'
+        p=f'{ctx.get_dest()}\script{gen.ext}'
         with open(p, 'w', encoding=ctx.config['encoding']) as f: f.write(st)
         print(p)
 

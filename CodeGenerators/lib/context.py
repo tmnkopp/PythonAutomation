@@ -9,4 +9,6 @@ class context():
         return self.dir.replace('~', self.root)
     def get_template(self): 
         return self.config['template'].replace('~', self.root)  
+    def get_dest(self): 
+        return self.config['dest'].replace('~', self.root)          
        

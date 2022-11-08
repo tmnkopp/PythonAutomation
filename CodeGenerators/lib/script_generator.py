@@ -5,7 +5,7 @@ import pandas as pd
 class script_generator():
     def __init__(self):  
         self.root = os.path.dirname(os.path.realpath(__file__)) 
-        self.ext='.cogen'
+        self.ext='.pom'
     def generate(self, ctx):
         df=ctx.payload
         st='' 
@@ -21,7 +21,7 @@ class script_generator():
                 with open(tmp, 'r', encoding=ctx.config['encoding'], errors='replace') as f: 
                     tmp = f.read()
                 for c in df.columns:    
-                    tmp = tmp.replace("{"+c+"}", str(r[c]))   
+                    tmp = tmp.replace("{"+c.upper()+"}", str(r[c.upper()]))   
                 st=st+tmp 
             except Exception as e:
                 print(e)

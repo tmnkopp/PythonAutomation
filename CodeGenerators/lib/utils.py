@@ -5,35 +5,8 @@ import nltk
 from nltk.corpus import stopwords
 from nltk.stem.porter import PorterStemmer
 sw=stopwords.words('english')
-ps=PorterStemmer() 
-  
-def sql_todf(query,connstr):
-    df=pd.DataFrame() 
-    engine = create_engine(connstr) 
-    conn = engine.connect() 
-    try: 
-        df = pd.read_sql(query,con=conn) 
-    finally: 
-        conn.close()
-    return df
-def apply_indexes(d, ctx):
-    indexes=ctx.config['indexes'] 
-    for j,e in enumerate(indexes):
-        field=e['field'] 
-        if 'gap_on' in e.keys():
-            if 'gap_on_pval' not in e.keys(): e['gap_on_pval']=d[e['gap_on']]  
-            if d[e['gap_on']] != e['gap_on_pval']:
-                e['gap_on_pval']=d[e['gap_on']]
-                e['index']=e['index']+9
-        if 'reset_on' in e.keys(): 
-            if 'reset_on_pval' not in e.keys(): e['reset_on_pval']=d[e['reset_on']] 
-            if d[e['reset_on']] != e['reset_on_pval']:
-                e['reset_on_pval']=d[e['reset_on']]
-                e['index']=1
-        e['index']=e['index']+1  
-        ctx.config['indexes'][j]=e
-        d[field]=e['index']-1
-    return d
+ps=PorterStemmer()  
+ 
 def generate_id(t, limit=15): 
     t = ' '.join([w for w in t.split(' ') if w not in sw])
     t = ' '.join([ps.stem(w) for w in t.split(' ')]) 
@@ -59,4 +32,14 @@ def range_extractor(s):
         mn=m.groups(0)[0]
     if m.groups(0)[1]!='':
         mx=m.groups(0)[1]   
-    return int(mn),int(mx)
+    return int(mn),int(mx) 
+def sql_todf(query,connstr):
+    df=pd.DataFrame() 
+    engine = create_engine(connstr) 
+    conn = engine.connect() 
+    try: 
+        df = pd.read_sql(query,con=conn) 
+    finally: 
+        conn.close()
+    return df    
+  

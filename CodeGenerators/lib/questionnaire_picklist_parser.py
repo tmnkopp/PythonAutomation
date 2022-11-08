@@ -21,11 +21,10 @@ class questionnaire_picklist_parser():
                     id=c.value   
             if id!='' and ws[f'D{i+1}'].value is not None:
                 d={}
-                d['Row']=irow 
+                d['ROW']=irow 
                 d['ID']=id 
-                d['Text']=ws[f'D{i+1}'].value
-                d['Code']=generate_id(d['Text']) 
-                d=apply_indexes(d, self.ctx)
+                d['TEXT']=ws[f'D{i+1}'].value
+                d['CODE']=generate_id(d['TEXT'])  
                 lst.append(d)  
                 irow=irow+1  
         df=pd.DataFrame(lst)  
