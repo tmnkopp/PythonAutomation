@@ -9,5 +9,5 @@ class csv_parser():
     def parse(self):
         if '.csv' not in self.source:
             self.source=self.ctx.root+'\\parsed.csv'
-        return pd.from_csv(self.source)
+        return pd.read_csv(self.source)
  

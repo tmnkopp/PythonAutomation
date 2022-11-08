@@ -8,6 +8,7 @@ from lib.questionnaire_parser import questionnaire_parser
 from lib.script_generator import script_generator
 from lib.indexer import df_indexer
 from lib.data_filter import data_filter
+from lib.csv_parser import csv_parser
 from lib.utils import *
 def main(): 
     ctx=context() 
@@ -34,10 +35,15 @@ def main():
         if 'data_filters' in ctx.config.keys():
             filter = data_filter(ctx)
             df=filter.apply(df)             
+        if 'loc' in ctx.config.keys():
+            for l in ctx.config['loc']:
+                f=l['field']
+                df=df.loc[df[f]==l['eq']]
         df.to_csv('parsed.csv', index=False)  
         df.to_html('parsed.html') 
-
-    ctx.payload=pd.read_csv('parsed.csv') 
+    
+    df=pd.read_csv('parsed.csv') 
+    ctx.payload=df
       
     range=ctx.args['range'].strip()  
     mn, mx=range_extractor(range) 
