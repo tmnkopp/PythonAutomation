@@ -4,6 +4,9 @@ import pandas as pd
 import nltk
 from nltk.corpus import stopwords
 from nltk.stem.porter import PorterStemmer
+from sklearn.feature_extraction.text import TfidfVectorizer
+from sklearn.metrics.pairwise import cosine_similarity
+from difflib import SequenceMatcher
 sw=stopwords.words('english')
 ps=PorterStemmer()  
  
@@ -42,4 +45,10 @@ def sql_todf(query,connstr):
     finally: 
         conn.close()
     return df    
-  
+
+def normalize(s):  
+    s = re.sub('[^A-Za-z0-9\s]',' ',s).upper().strip()
+    s = re.sub('\s{1,5}',' ',s) 
+    return s
+    
+ 

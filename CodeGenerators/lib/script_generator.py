@@ -3,14 +3,14 @@ import re, sys, argparse, json, xlrd, openpyxl, os
 from openpyxl import Workbook
 import pandas as pd 
 class script_generator():
-    def __init__(self):  
+    def __init__(self, ctx):  
+        self.ctx=ctx
         self.root = os.path.dirname(os.path.realpath(__file__)) 
         self.ext='.pom'
-    def generate(self, ctx):
-        df=ctx.payload
+    def generate(self, df): 
         st='' 
         for i,r in df.iterrows():
-            tmp = ctx.get_template()
+            tmp = self.ctx.get_template()
             m=re.search('\{(\w*)\}',tmp)
             if m is not None:
                 g=m.groups(1)[0]
@@ -18,7 +18,7 @@ class script_generator():
                     tmp = tmp.replace('{'+g.upper()+'}',r[g])  
             self.ext = tmp[tmp.index('.'):] 
             try:
-                with open(tmp, 'r', encoding=ctx.config['encoding'], errors='replace') as f: 
+                with open(tmp, 'r', encoding=self.ctx.config['encoding'], errors='replace') as f: 
                     tmp = f.read()
                 for c in df.columns:    
                     tmp = tmp.replace("{"+c.upper()+"}", str(r[c.upper()]))   

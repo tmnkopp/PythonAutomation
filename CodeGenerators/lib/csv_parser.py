@@ -8,6 +8,6 @@ class csv_parser():
         self.source = self.ctx.config['source']  
     def parse(self):
         if '.csv' not in self.source:
-            self.source=self.ctx.root+'\\parsed.csv'
+            self.source=f'{self.ctx.get_dest()}parsed.csv'
         return pd.read_csv(self.source)
  

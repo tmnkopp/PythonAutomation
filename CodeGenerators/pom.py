@@ -13,19 +13,21 @@ from lib.utils import *
 def main(): 
     ctx=context() 
     parser = argparse.ArgumentParser(description="ArgumentParser"
-        ,  formatter_class=argparse.ArgumentDefaultsHelpFormatter) 
+    , formatter_class=argparse.ArgumentDefaultsHelpFormatter) 
     parser.add_argument("-v", "--verbose", action="store_true", help="increase verbosity") 
     parser.add_argument("-c", "--console", help="increase verbosity", default='') 
     parser.add_argument("-r", "--range", help="output range", default='0:10') 
-    parser.add_argument("-g", "--generate-scripts", action="store_true", help="generate scripts" ) 
+    parser.add_argument("-g", "--generate-scripts", action="store_true", help="generate scripts" )
+    parser.add_argument("-l", "--loc", help="locate" )  
     args = vars(parser.parse_args())
     ctx.args=args 
-    with open('_config.json', 'r') as f: 
+    with open('config.json', 'r') as f: 
         ctx.config=json.loads(f.read())  
     if ctx.args['verbose']: 
         print(json.dumps(ctx.args, indent=1))
         print(ctx.args)
     
+    range=ctx.args['range'].strip()  
     if ctx.config['parser'] != '':
         parser = globals()[ctx.config['parser']](ctx)   
         df=parser.parse() 
@@ -35,22 +37,23 @@ def main():
         if 'data_filters' in ctx.config.keys():
             filter = data_filter(ctx)
             df=filter.apply(df)             
-        if 'loc' in ctx.config.keys():
-            for l in ctx.config['loc']:
-                f=l['field']
-                df=df.loc[df[f]==l['eq']]
-        df.to_csv('parsed.csv', index=False)  
-        df.to_html('parsed.html') 
+        if ctx.args['loc'] != None:  
+            f=ctx.args['loc'].split('=')[0].strip()
+            v=ctx.args['loc'].split('=')[1].strip()
+            df=df.loc[df[f]==v]
+            range='[0:1000]'
+        df.to_csv(f'{ctx.get_dest()}\parsed.csv', index=False)  
+        df.to_html(f'{ctx.get_dest()}\parsed.html') 
+        df.to_excel(f'{ctx.get_dest()}\parsed.xlsx', index=False) 
     
-    df=pd.read_csv('parsed.csv') 
+    df=pd.read_csv(f'{ctx.get_dest()}parsed.csv') 
     ctx.payload=df
-      
-    range=ctx.args['range'].strip()  
+       
     mn, mx=range_extractor(range) 
     print(tabulate(df[mn:mx], headers = 'keys', tablefmt = 'plain')) 
     
-    gen = script_generator()   
-    st=gen.generate(ctx) 
+    gen=script_generator(ctx)   
+    st=gen.generate(df) 
     if 'script' in ctx.args['console']:
         print(st)
 
