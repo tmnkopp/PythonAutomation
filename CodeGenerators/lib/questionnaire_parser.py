@@ -40,7 +40,7 @@ class questionnaire_parser():
  
         pd.DataFrame(self._rows).to_json(f'{self.ctx.get_dest()}\questionnaire_parser.json', orient='records') 
 
-        recs={} 
+        recs={}
         for d in self._rows: 
             PLT=''.join(d['PLT'])
             r=pr.recommend(d['PLT'], threshhold=.8, usecosine_sim=False) 
