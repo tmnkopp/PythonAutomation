@@ -39,15 +39,20 @@ class questionnaire_parser():
                     self._rows[len(self._rows)-1]['PLT'].append(self._ws[f'D{irow+1}'].value)
  
         pd.DataFrame(self._rows).to_json(f'{self.ctx.get_dest()}\questionnaire_parser.json', orient='records') 
-        
-                   
+
+        recs={} 
         for d in self._rows: 
+            PLT=''.join(d['PLT'])
             r=pr.recommend(d['PLT'], threshhold=.8, usecosine_sim=False) 
+            if PLT not in recs.keys():
+                recs[PLT]=0
             d['PLT']=0
             if 'int' in str(type(r['PK_PicklistType'])): 
                 d['PLT']=r['PK_PicklistType']
+                recs[PLT]=r['PK_PicklistType']
 
-                     
+        pd.DataFrame([recs]).to_json(f'{self.ctx.get_dest()}\{wb.sheetnames[2]}_picklists.json', orient='records') 
+
         df=pd.DataFrame(self._rows)  
         return df 
     def _get_ftype(self, irow): 
