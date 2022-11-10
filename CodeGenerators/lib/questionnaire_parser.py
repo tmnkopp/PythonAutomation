@@ -38,7 +38,9 @@ class questionnaire_parser():
                 if len(self._rows) > 0 and self._ws[f'D{irow+1}'].value != None:
                     self._rows[len(self._rows)-1]['PLT'].append(self._ws[f'D{irow+1}'].value)
  
-        pd.DataFrame(self._rows).to_json(f'{self.ctx.get_dest()}\questionnaire_parser.json', orient='records')            
+        pd.DataFrame(self._rows).to_json(f'{self.ctx.get_dest()}\questionnaire_parser.json', orient='records') 
+        
+                   
         for d in self._rows: 
             r=pr.recommend(d['PLT'], threshhold=.8, usecosine_sim=False) 
             d['PLT']=0
