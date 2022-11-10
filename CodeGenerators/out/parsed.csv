@@ -1,97 +1,88 @@
 ROW,DATATYPE,ID,TEXT,PLT
 1,PICK,CQ1,What is the purpose of the HVA? Please select all that apply.,356
 2,PICK,CQ2,What services does the HVA system provide? Please select all that apply.,0
-3,TXT,CQ2.1,Other,0
-4,PICK,CQ3,To whom does the HVA provide services to? Please select all that apply.,0
-5,TXT,CQ3.1,Other,355
-6,PICK,CQ3,What is the approximate time in years since deployment of this HVA?,325
-7,PICK,CQ4,Is this system identified as a Legacy* system or have any legacy technology or characteristics? ,162
-8,PICK,CQ4a,Is this system identified as a Legacy* system or have any legacy technology or characteristics? Please select all that apply.,326
-9,PICK,CQ4b,Is there an approved Modernization or Technology Refresh Plan for this system?,6
-10,TXT,CQ4b.1,Other,162
-11,PICK,CQ4c,Has the Modernization or Technology Plan been budgeted? ,162
-12,PICK,CQ5,Does this HVA have a decommissioning date within the next 36 months? ,162
-13,DATE,CQ5a,"If so, what is the month and year of the planned decommissioning? ",0
-14,PICK,CQ6,Is this system’s functionality expected to be subsumed or replaced by another system?,162
-15,TXT,CQ6a,"If yes, please provide the name of the subsuming or replacement system?",0
-16,PICK,CQ6b,"If Yes, is there a transition plan for data and functions? ",162
-17,PICK,CQ6c,"If No, are components of the system operating beyond the original service life? ",162
-18,PICK,CQ7,Please indicate the HVA System technology type:,153
-19,PICK,CQ7a,"If System Technology Type is a Cloud, then the cloud construct is:",0
-20,TXT,CQ7a.1,Other,154
-21,PICK,CQ5,Does the system contain a mainframe?,6
-22,TXT,CQ5.1,Other,162
-23,TXT,CQ5a,"If mainframe, list the type of mainframe computers you are using.",0
-24,PICK,CQ6,Is the system a GSS or Web Application?,0
-25,PICK,CQ6a,"If the system is a Web Application, what type is it?",0
-26,PICK,CQ6b,"If the system is Web Application, what Languages/technologies/platforms is your web application using?: ",327
-27,PICK,CQ6c,"If the system is an Application Platform, what operating systems do you use?:",328
-28,PICK,CQ7,"Is the system an ICS/SCADA?*
+3,PICK,CQ3,To whom does the HVA provide services to? Please select all that apply.,355
+4,PICK,CQ3,What is the approximate time in years since deployment of this HVA?,325
+5,PICK,CQ4,Is this system identified as a Legacy* system or have any legacy technology or characteristics? ,162
+6,PICK,CQ4a,Is this system identified as a Legacy* system or have any legacy technology or characteristics? Please select all that apply.,326
+7,PICK,CQ4b,Is there an approved Modernization or Technology Refresh Plan for this system?,162
+8,PICK,CQ4c,Has the Modernization or Technology Plan been budgeted? ,162
+9,PICK,CQ5,Does this HVA have a decommissioning date within the next 36 months? ,162
+10,DATE,CQ5a,"If so, what is the month and year of the planned decommissioning? ",0
+11,PICK,CQ6,Is this system’s functionality expected to be subsumed or replaced by another system?,162
+12,TXT,CQ6a,"If yes, please provide the name of the subsuming or replacement system?",0
+13,PICK,CQ6b,"If Yes, is there a transition plan for data and functions? ",162
+14,PICK,CQ6c,"If No, are components of the system operating beyond the original service life? ",162
+15,PICK,CQ7,Please indicate the HVA System technology type:,153
+16,PICK,CQ7a,"If System Technology Type is a Cloud, then the cloud construct is:",154
+17,PICK,CQ5,Does the system contain a mainframe?,162
+18,TXT,CQ5a,"If mainframe, list the type of mainframe computers you are using.",0
+19,PICK,CQ6,Is the system a GSS or Web Application?,0
+20,PICK,CQ6a,"If the system is a Web Application, what type is it?",0
+21,PICK,CQ6b,"If the system is Web Application, what Languages/technologies/platforms is your web application using?: ",327
+22,PICK,CQ6c,"If the system is an Application Platform, what operating systems do you use?:",328
+23,PICK,CQ7,"Is the system an ICS/SCADA?*
 
-** Includes Building Automation, Perimeter and Physical Security systems. ",6
-29,TXT,CQ7.1,Other,162
-30,PICK,CQ7a,"If yes, is it only an ICS, SCADA?",162
-31,PICK,CQ7b,"If no, does the system have a direct mission interdepency on an ICS/SCADA?",162
-32,PICK,CQ7c,"If yes, then is the interdependency upstream, downstream or both of an ICS/SCADA system?",161
-33,TXT,CQ8,"If the system is a client server, please list the system's workstations, client servers, and network devices:",0
-34,TXT,CQ9,"If the system type is other, please describe: ",0
-35,PICK,CQ10,Please describe the HVA System Management Type,155
-36,TXT,CQ11,Primary physical location of the HVA system (city and state),0
-37,TXT,CQ11.1,Other,0
-38,TXT,CQ12,Secondary (backup) physical location of the HVA system (city and state),0
-39,PICK,CQ13,Is the HVA system is hosted outside of your Agency?,162
-40,TXT,CQ14,"If yes, which Agency or contractor hosts the system?",0
-41,PICK,CQ15,Who is responsible for operating and maintaining the HVA system?,156
-42,PICK,CQ16,Does this system directly employ any of the following system level cybersecurity mitigation technologies?,0
-43,PICK,CQ17,Does this system operate in an environment/enterprise that has adopted any of the following enterprise level cybersecurity mitigation technologies? (Select all that apply),0
-44,PICK,CQ18,"Does the system utilize a shared security service? (Select all that apply) such as ), PDNS, CTI or VDP. ",0
-45,PICK,CQ19,Does the system use Mobile Device Management (MDM)?,162
-46,PICK,CQ20,"If Yes to 16.5, then are all mobile devices required to utilize MDM to access enterprise resources with respect to this HVA?",162
-47,PICK,CQ21,"Does the system use cloud-oriented protection, if it is a cloud system?",162
-48,TXT,CQ22,Please Describe Other Enterpise Cybersecurity Mitigation Technologies/Services Not Previously Listed.,0
-49,PICK,CQ23,Has this system had one or more major cyber incident(s) within the last year?,162
-50,TXT,CQ23A,"If yes, then please provide the number of major incidents within the last year.",0
-51,PICK,CQ23B,"If yes, then have any of the major cyber incidents/events listed previously: (please select all that apply)",0
-52,PICK,CQ23B1,"If Yes to CQ22b, then please indicate the number of major cyber incidents/events that resulted in unscheduled downtime/unavailability ",0
-53,PICK,CQ23B2,"If Yes to CQ22c,  then please indicate the number of major cyber incidents/events that required outside incident response support  in the last 12 months? ",0
-54,PICK,CQ24,Is this system necessary to perform one or more Primary Mission Essential Function(s) (PMEF)?,162
-55,TXT,CQ24A,"If yes, how many Primary Mission Essential Functions (PMEF) does this HVA support? ",0
-56,PICK,CQ24B,"If yes, please lease select the PMEFS for this HVA:",0
-57,PICK,CQ25,Is this HVA necessary to perform one or more Mission Essential Function(s) (MEF)? ,162
-58,PICK,CQ25A,"If Yes, how many Mission Essential Functions (MEF) does this HVA perform? ",0
-59,TXT,CQ25B,"If yes, describe the MEFS",0
-60,PICK,CQ26,"If this HVA supports one or more PMEFS or MEFS, then If the HVA is unavailable for more than 12 hours, what is the impact to the PMEF or MEF it supports?",0
-61,PICK,CQ26A,"If ""Degraded (4) or Failure (5)""  to 20.0,  Are there any non-mission impacts associated with this system's unavailability after 12 hours? (Select all that apply)",362
-62,PICK,CQ27,"Could a failure, corruption, or degradation of the HVA have a direct impact on regional or national health, public safety, and welfare of the United States?",6
-63,TXT,CQ27.1,Other,162
-64,PICK,CQ28,"Does the HVA store, receive, send, use, create, or otherwise process any of the following sensitive data types? If yes, indicate the approximate volume of records for each type indicated:",162
-65,PICK,CQ29,Please describe the following that is stored or processed by the system,0
-66,PICK,CQ29A,PII Volume,0
-67,TXT,CQ29A.1,Other,157
-68,PICK,CQ29B,PII Type,157
-69,PICK,CQ29C,PHI Volume,157
-70,PICK,CQ29D,PHI Type,157
-71,PICK,CQ29E,Law Enforcement Volume,157
-72,PICK,CQ29F,Law Enforcement Type,157
-73,PICK,CQ29G,Pre-Release Volume,157
-74,PICK,CQ29H,Pre-Release Type,157
-75,PICK,CQ29I,IP Volume,157
-76,PICK,CQ29J,IP Type,157
-77,PICK,CQ29K,Other Volume,157
-78,TXT,CQ29I,Other Type,0
-79,PICK,CQ30,"Number of network endpoints, including servers and virtual servers, within HVA system boundary (production environment only)",158
-80,TXT,CQ31,"Please list each interconnection or data exchange (receive, transmit, or both) between the HVA and other systems. Indicate if the interconnection/data exchange is internal or external to another HVA, or if it is critical for the HVA for accomplishing its function. Indicate the kind of agreement (MOU, MOA, ISA, Contract, IAA etc.) that covers this interconnection.",0
-81,TXT,CQ31A,Please enter the Name of the Interconnected System,0
-82,PICK,CQ31C,Does D/A for this HVA have an ISA/MOU with owning organization for the interconneted system? ,162
-83,PICK,CQ31D,Is this connected system Internal to your Agency?,162
-84,PICK,CQ31E,"If 'Yes' to Internal to Agency, then Is this system also an HVA?",162
-85,PICK,CQ31F,Is this interconnection/data exchange mission essential to the HVA Function?,162
-86,PICK,CQ31G,"Is this interconnection Transmit, Receive, or Both?",329
-87,TXT,CQ32,"Please list each interconnection or data exchange (receive, transmit or both) between this HVA and other systems outside of the '.gov' or '.mil' domain (such as contractors, FFRDCs or commercial). Indicate if the interconnection/data exchange is internal or external to another HVA, or if it is critical for the HVA for accomplishing its function. Indicate the kind of agreement (MOU, MOA, ISA, Contract, IAA etc.) that covers this interconnection.",0
-88,TXT,CQ32A,Name of the interconnected system(s):,0
-89,TXT,CQ32B,Please enter the Name of the organization that owns the interconnected system,0
-90,PICK,CQ32C,Please indicate the organization type for the interconnected system such as ,0
-91,PICK,CQ32D,Does the D/A for this HVA have an ISA/MOU with the organization that owns the interconnected system? ,162
-92,PICK,CQ32E,Is this interconnection/data exchange mission essential to the HVA Function?,162
-93,PICK,CQ32F,Is this Interconnection or data exchange a high priority for this HVA or the connecting system?,162
-94,PICK,CQ32G,"Is this interconnection Transmit, Receive or Both?",329
+** Includes Building Automation, Perimeter and Physical Security systems. ",162
+24,PICK,CQ7a,"If yes, is it only an ICS, SCADA?",162
+25,PICK,CQ7b,"If no, does the system have a direct mission interdepency on an ICS/SCADA?",162
+26,PICK,CQ7c,"If yes, then is the interdependency upstream, downstream or both of an ICS/SCADA system?",161
+27,TXT,CQ8,"If the system is a client server, please list the system's workstations, client servers, and network devices:",0
+28,TXT,CQ9,"If the system type is other, please describe: ",0
+29,PICK,CQ10,Please describe the HVA System Management Type,155
+30,TXT,CQ11,Primary physical location of the HVA system (city and state),0
+31,TXT,CQ12,Secondary (backup) physical location of the HVA system (city and state),0
+32,PICK,CQ13,Is the HVA system is hosted outside of your Agency?,162
+33,TXT,CQ14,"If yes, which Agency or contractor hosts the system?",0
+34,PICK,CQ15,Who is responsible for operating and maintaining the HVA system?,156
+35,PICK,CQ16,Does this system directly employ any of the following system level cybersecurity mitigation technologies?,0
+36,PICK,CQ17,Does this system operate in an environment/enterprise that has adopted any of the following enterprise level cybersecurity mitigation technologies? (Select all that apply),0
+37,PICK,CQ18,"Does the system utilize a shared security service? (Select all that apply) such as ), PDNS, CTI or VDP. ",0
+38,PICK,CQ19,Does the system use Mobile Device Management (MDM)?,162
+39,PICK,CQ20,"If Yes to 16.5, then are all mobile devices required to utilize MDM to access enterprise resources with respect to this HVA?",162
+40,PICK,CQ21,"Does the system use cloud-oriented protection, if it is a cloud system?",162
+41,TXT,CQ22,Please Describe Other Enterpise Cybersecurity Mitigation Technologies/Services Not Previously Listed.,0
+42,PICK,CQ23,Has this system had one or more major cyber incident(s) within the last year?,162
+43,TXT,CQ23A,"If yes, then please provide the number of major incidents within the last year.",0
+44,PICK,CQ23B,"If yes, then have any of the major cyber incidents/events listed previously: (please select all that apply)",0
+45,PICK,CQ23B1,"If Yes to CQ22b, then please indicate the number of major cyber incidents/events that resulted in unscheduled downtime/unavailability ",0
+46,PICK,CQ23B2,"If Yes to CQ22c,  then please indicate the number of major cyber incidents/events that required outside incident response support  in the last 12 months? ",0
+47,PICK,CQ24,Is this system necessary to perform one or more Primary Mission Essential Function(s) (PMEF)?,162
+48,TXT,CQ24A,"If yes, how many Primary Mission Essential Functions (PMEF) does this HVA support? ",0
+49,PICK,CQ24B,"If yes, please lease select the PMEFS for this HVA:",0
+50,PICK,CQ25,Is this HVA necessary to perform one or more Mission Essential Function(s) (MEF)? ,162
+51,PICK,CQ25A,"If Yes, how many Mission Essential Functions (MEF) does this HVA perform? ",0
+52,TXT,CQ25B,"If yes, describe the MEFS",0
+53,PICK,CQ26,"If this HVA supports one or more PMEFS or MEFS, then If the HVA is unavailable for more than 12 hours, what is the impact to the PMEF or MEF it supports?",0
+54,PICK,CQ26A,"If ""Degraded (4) or Failure (5)""  to 20.0,  Are there any non-mission impacts associated with this system's unavailability after 12 hours? (Select all that apply)",362
+55,PICK,CQ27,"Could a failure, corruption, or degradation of the HVA have a direct impact on regional or national health, public safety, and welfare of the United States?",162
+56,PICK,CQ28,"Does the HVA store, receive, send, use, create, or otherwise process any of the following sensitive data types? If yes, indicate the approximate volume of records for each type indicated:",162
+57,PICK,CQ29,Please describe the following that is stored or processed by the system,0
+58,PICK,CQ29A,PII Volume,157
+59,PICK,CQ29B,PII Type,157
+60,PICK,CQ29C,PHI Volume,157
+61,PICK,CQ29D,PHI Type,157
+62,PICK,CQ29E,Law Enforcement Volume,157
+63,PICK,CQ29F,Law Enforcement Type,157
+64,PICK,CQ29G,Pre-Release Volume,157
+65,PICK,CQ29H,Pre-Release Type,157
+66,PICK,CQ29I,IP Volume,157
+67,PICK,CQ29J,IP Type,157
+68,PICK,CQ29K,Other Volume,157
+69,TXT,CQ29I,Other Type,0
+70,PICK,CQ30,"Number of network endpoints, including servers and virtual servers, within HVA system boundary (production environment only)",158
+71,TXT,CQ31,"Please list each interconnection or data exchange (receive, transmit, or both) between the HVA and other systems. Indicate if the interconnection/data exchange is internal or external to another HVA, or if it is critical for the HVA for accomplishing its function. Indicate the kind of agreement (MOU, MOA, ISA, Contract, IAA etc.) that covers this interconnection.",0
+72,TXT,CQ31A,Please enter the Name of the Interconnected System,0
+73,PICK,CQ31C,Does D/A for this HVA have an ISA/MOU with owning organization for the interconneted system? ,162
+74,PICK,CQ31D,Is this connected system Internal to your Agency?,162
+75,PICK,CQ31E,"If 'Yes' to Internal to Agency, then Is this system also an HVA?",162
+76,PICK,CQ31F,Is this interconnection/data exchange mission essential to the HVA Function?,162
+77,PICK,CQ31G,"Is this interconnection Transmit, Receive, or Both?",329
+78,TXT,CQ32,"Please list each interconnection or data exchange (receive, transmit or both) between this HVA and other systems outside of the '.gov' or '.mil' domain (such as contractors, FFRDCs or commercial). Indicate if the interconnection/data exchange is internal or external to another HVA, or if it is critical for the HVA for accomplishing its function. Indicate the kind of agreement (MOU, MOA, ISA, Contract, IAA etc.) that covers this interconnection.",0
+79,TXT,CQ32A,Name of the interconnected system(s):,0
+80,TXT,CQ32B,Please enter the Name of the organization that owns the interconnected system,0
+81,PICK,CQ32C,Please indicate the organization type for the interconnected system such as ,0
+82,PICK,CQ32D,Does the D/A for this HVA have an ISA/MOU with the organization that owns the interconnected system? ,162
+83,PICK,CQ32E,Is this interconnection/data exchange mission essential to the HVA Function?,162
+84,PICK,CQ32F,Is this Interconnection or data exchange a high priority for this HVA or the connecting system?,162
+85,PICK,CQ32G,"Is this interconnection Transmit, Receive or Both?",329

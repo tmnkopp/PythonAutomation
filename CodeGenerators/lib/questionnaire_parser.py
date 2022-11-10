@@ -1,4 +1,4 @@
-import re, json, openpyxl 
+import re, json, openpyxl, os.path
 import pandas as pd 
 from openpyxl import Workbook  
 from lib.utils import *
@@ -10,12 +10,13 @@ class questionnaire_parser():
         self.sheet = self.ctx.config['sheet']
         self._rows = []
         self._ws = {}
+        self._wb = {}
     def parse(self):
-        pr = picklist_recommender(self.ctx.config['connstr'])
-        wb = openpyxl.load_workbook(filename = self.source)
-        if self.ctx.args['verbose']: print(wb.sheetnames)
+        
+        self._wb = openpyxl.load_workbook(filename = self.source)
+        if self.ctx.args['verbose']: print( self._wb.sheetnames)
         if self.sheet == '': self.sheet=2
-        self._ws = wb.worksheets[int(self.sheet)]   
+        self._ws =  self._wb.worksheets[int(self.sheet)]   
         for irow ,acell in enumerate(self._ws['A']):  
             if acell.value  != None:
                 if re.search(r'(CQ\d.*)', acell.value, flags=re.I): 
@@ -25,36 +26,42 @@ class questionnaire_parser():
                     d['ID']=self._ws[f'A{irow+1}'].value
                     d['TEXT']=self._ws[f'B{irow+1}'].value     
                     d['PLT']=[self._ws[f'D{irow+1}'].value]
-                    self._rows.append(d)
-                    if self._requires_other(irow) == True:
-                        o={}
-                        o['ROW']=len(self._rows)+1
-                        o['DATATYPE']='TXT'
-                        o['ID']=d['ID']+'.'+'1'
-                        o['TEXT']='Other'
-                        o['PLT']=[self._ws[f'D{irow+1}'].value] 
-                        self._rows.append(o) 
+                    self._rows.append(d) 
             else: 
                 if len(self._rows) > 0 and self._ws[f'D{irow+1}'].value != None:
                     self._rows[len(self._rows)-1]['PLT'].append(self._ws[f'D{irow+1}'].value)
  
         pd.DataFrame(self._rows).to_json(f'{self.ctx.get_dest()}\questionnaire_parser.json', orient='records') 
 
-        recs={}
-        for d in self._rows: 
-            PLT=''.join(d['PLT'])
-            r=pr.recommend(d['PLT'], threshhold=.8, usecosine_sim=False) 
-            if PLT not in recs.keys():
-                recs[PLT]=0
-            d['PLT']=0
-            if 'int' in str(type(r['PK_PicklistType'])): 
-                d['PLT']=r['PK_PicklistType']
-                recs[PLT]=r['PK_PicklistType']
-
-        pd.DataFrame([recs]).to_json(f'{self.ctx.get_dest()}\{wb.sheetnames[2]}_picklists.json', orient='records') 
+        self._apply_picklist_recommendations()
 
         df=pd.DataFrame(self._rows)  
         return df 
+
+    def _apply_picklist_recommendations(self):
+        path = f'{self.ctx.get_dest()}\{self._wb.sheetnames[int(self.sheet)]}_picklists'
+        #if os.path.isfile(path):
+        #    df=pd.read_json(path) 
+        #    for d in self._rows:
+        #        PLT=''.join(d['PLT'])  
+        #        v=df.loc[0][PLT]
+        #        d['PLT']=v
+        #    return
+        pr = picklist_recommender(self.ctx.config['connstr'])
+        recs=[]
+        for d in self._rows: 
+            PLT=''.join(d['PLT']) 
+            r=pr.recommend(d['PLT'], threshhold=.8, usecosine_sim=False)  
+            d['PLT']=0
+            if 'int' in str(type(r['PK_PicklistType'])): 
+                d['PLT']=r['PK_PicklistType'] 
+            recs.append({'ID':d['ID'],'PLT':d['PLT'],'RAW':PLT,'SQL':pr.get_script()}) 
+        
+        df=pd.DataFrame(recs)   
+        df.to_json(path+'.json', orient='records') 
+        df['SQL']=df['SQL'].apply(lambda s: s.replace('\n', '<br>'))
+        df.loc[:,['ID','PLT','SQL']].to_html(path+'.html', escape=False)
+
     def _get_ftype(self, irow): 
         t='PICK'
         tval='' 
