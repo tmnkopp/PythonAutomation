@@ -8,7 +8,7 @@ ROW,DATATYPE,ID,TEXT,PLT
 7,PICK,CQ4b,Is there an approved Modernization or Technology Refresh Plan for this system?,162
 8,PICK,CQ4c,Has the Modernization or Technology Plan been budgeted? ,162
 9,PICK,CQ5,Does this HVA have a decommissioning date within the next 36 months? ,162
-10,DATE,CQ5a,"If so, what is the month and year of the planned decommissioning? ",0
+10,PICK,CQ5a,"If so, what is the month and year of the planned decommissioning? ",0
 11,PICK,CQ6,Is this system’s functionality expected to be subsumed or replaced by another system?,162
 12,TXT,CQ6a,"If yes, please provide the name of the subsuming or replacement system?",0
 13,PICK,CQ6b,"If Yes, is there a transition plan for data and functions? ",162
@@ -18,7 +18,7 @@ ROW,DATATYPE,ID,TEXT,PLT
 17,PICK,CQ5,Does the system contain a mainframe?,162
 18,TXT,CQ5a,"If mainframe, list the type of mainframe computers you are using.",0
 19,PICK,CQ6,Is the system a GSS or Web Application?,0
-20,PICK,CQ6a,"If the system is a Web Application, what type is it?",0
+20,TXT,CQ6a,"If the system is a Web Application, what type is it?",0
 21,PICK,CQ6b,"If the system is Web Application, what Languages/technologies/platforms is your web application using?: ",327
 22,PICK,CQ6c,"If the system is an Application Platform, what operating systems do you use?:",328
 23,PICK,CQ7,"Is the system an ICS/SCADA?*
@@ -35,7 +35,7 @@ ROW,DATATYPE,ID,TEXT,PLT
 32,PICK,CQ13,Is the HVA system is hosted outside of your Agency?,162
 33,TXT,CQ14,"If yes, which Agency or contractor hosts the system?",0
 34,PICK,CQ15,Who is responsible for operating and maintaining the HVA system?,156
-35,PICK,CQ16,Does this system directly employ any of the following system level cybersecurity mitigation technologies?,0
+35,TXT,CQ16,Does this system directly employ any of the following system level cybersecurity mitigation technologies?,0
 36,PICK,CQ17,Does this system operate in an environment/enterprise that has adopted any of the following enterprise level cybersecurity mitigation technologies? (Select all that apply),0
 37,PICK,CQ18,"Does the system utilize a shared security service? (Select all that apply) such as ), PDNS, CTI or VDP. ",0
 38,PICK,CQ19,Does the system use Mobile Device Management (MDM)?,162

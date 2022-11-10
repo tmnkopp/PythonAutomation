@@ -6,7 +6,7 @@ class context():
         self.payload={}  
         self.root=os.path.dirname(os.path.realpath(__file__)).replace('\\lib','')+'\\'
     def get_dir(self): 
-        return self.dir.replace('~', self.root)
+        return self.root
     def get_template(self): 
         return self.config['template'].replace('~', self.root)  
     def get_dest(self): 

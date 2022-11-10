@@ -16,18 +16,20 @@ class picklist_recommender():
         self.connstr = connstr 
         self.recommend_result={}
         self.input_list=[]
-        self.cache=[{}]
-        self.pl = self._sqltodf("""
+        self.cache={}
+        self.df = self._sqltodf("""
         SELECT PK_Picklist, PK_PicklistType, UsageField, DisplayValue from vwPicklists
-        """, connstr)  
-    def recommend(self, input_list, threshhold=.8,usecosine_sim=False): 
+        """, connstr) 
+
+    def recommend(self, input_list, threshhold=.825, reject=.5, usecosine_sim=False): 
         self.input_list=input_list
-        df = self.pl 
+        df = self.df 
         dmx=df.loc[len(df)-1, ['PK_Picklist','PK_PicklistType']].to_dict()    
         df = df.groupby(['PK_PicklistType','UsageField'], as_index = False).agg({'DisplayValue': ' '.join, 'PK_Picklist':max})
         df['MAX_PK_Picklist']= dmx['PK_Picklist']    
         df['MAX_PK_PicklistType']= dmx['PK_PicklistType']    
         input=self.normalize(''.join(input_list))
+
         for i,r in df.iterrows(): 
             x=self.normalize(r['DisplayValue'])
             sequence_match = SequenceMatcher(None, x,input).ratio() 
@@ -46,24 +48,33 @@ class picklist_recommender():
                     df.at[i,'agg_simscore']=( df.at[i,'agg_simscore']+cosine_sim+.01 ) / 2
                     self.recommend_result=df.iloc[i].to_dict()
                     return self.recommend_result
+        
         df=df.sort_values(by='agg_simscore', ascending=False, inplace=False)   
         self.recommend_result=df.iloc[0].to_dict()
-        if self.recommend_result['agg_simscore'] < .5:
+        if self.recommend_result['agg_simscore'] < reject:
             self.recommend_result['PK_PicklistType']=0         
             self.recommend_result['UsageField']=0         
             self.recommend_result['DisplayValue']=input         
         return self.recommend_result 
 
-    def get_script(self):
-        d=self.recommend_result
-        pk=d['MAX_PK_Picklist']+10
-        pkt=d['MAX_PK_PicklistType']+2
+    def get_script(self, PLTPK=0 ): 
+        d=self.recommend_result 
+        if 'MAX_PK_Picklist' not in self.cache.keys():
+            self.cache['MAX_PK_Picklist']=d['MAX_PK_Picklist'] 
+        if 'MAX_PK_PicklistType' not in self.cache.keys():
+            self.cache['MAX_PK_PicklistType']=d['MAX_PK_PicklistType']         
+        if PLTPK==0: 
+            self.cache['MAX_PK_PicklistType']=self.cache['MAX_PK_PicklistType']+2
+            PLTPK=self.cache['MAX_PK_PicklistType']
+        l=[i for i in self.input_list if i.strip() != ''] 
         s=''
-        l=[i for i in self.input_list if i.strip() != '']
         for i, t in enumerate(l):
+            self.cache['MAX_PK_Picklist']=self.cache['MAX_PK_Picklist']+1
             t=t.replace("'","`")
-            s=s+f",(PK_PickList={pk+i}, PK_PicklistType={pkt}, SortOrder={i+1}, UsageCode='{generate_id(t)}', DisplayValue='{t}')\n"
-        return s[1:]   
+            s=s+f",({self.cache['MAX_PK_Picklist']}, {PLTPK}, {i+1}, '{generate_id(t)}', '{t}')\n"
+        s='(PK_PickList,PK_PicklistType,SortOrder,UsageCode,DisplayValue)\nVALUES\n '+s[1:]
+        self.cache['MAX_PK_Picklist']=self.cache['MAX_PK_Picklist']+10
+        return s[:]   
 
     def _sqltodf(self, query, connstr):
         df=pd.DataFrame() 
