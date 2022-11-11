@@ -7,6 +7,8 @@ class context():
         self.root=os.path.dirname(os.path.realpath(__file__)).replace('\\lib','')+'\\'
     def get_dir(self): 
         return self.root
+    def get_libdir(self): 
+        return os.path.dirname(os.path.realpath(__file__))+'\\'      
     def get_template(self): 
         return self.config['template'].replace('~', self.root)  
     def get_dest(self): 

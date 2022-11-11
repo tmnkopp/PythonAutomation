@@ -43,23 +43,15 @@ class questionnaire_parser():
         pr = picklist_recommender(self.ctx.config['connstr'])
         recs,sql=[],[]  
         for i,d in enumerate(self._rows):
-            if len(d['PLT']) < 2: 
-                d['PLT']=0
-                continue 
-            PLT,LPL=''.join(d['PLT']), d['PLT']
-       
-            r=pr.recommend(d['PLT'], usecosine_sim=False)   
-            d['PLT']=0
-            if 'int' in str(type(r['PK_PicklistType'])): d['PLT']=r['PK_PicklistType']  
-            if d['PLT']==0: sql.append({'ID':d['ID'],'PLT':d['PLT'],'SQL':pr.get_script( PLTPK=d['PLT'] )}) 
-            recs.append({'ID':d['ID'],'PLT':d['PLT'],'LST':LPL,'STR':PLT})
+            LST=d['PLT'] 
+            r=pr.recommend(d['PLT'])   
+            d['PLT']=r['PK_PicklistType']  
+            if d['PLT']==0: sql.append({'ID':d['ID'],'PLT':d['PLT'],'SQL':pr.get_script( PLTPK=d['PLT'] ).replace('\n', '<br>')}) 
+            recs.append({'ID':d['ID'],'PLT':d['PLT'],'LST':LST })
 
-        df=pd.DataFrame(recs) 
-        df.to_json(path+'.json', orient='records')     
-        df=pd.DataFrame(sql)    
-        df['SQL']=df['SQL'].apply(lambda s: s.replace('\n', '<br>'))
-        df.to_html(path+'.html', escape=False)
-
+        pd.DataFrame(recs).to_json(path+'.json', orient='records')     
+        pd.DataFrame(sql).to_html(path+'.html', escape=False)
+ 
     def _get_ftype(self, irow): 
         t='PICK'
         tval='' 
