@@ -16,7 +16,7 @@ def main():
     , formatter_class=argparse.ArgumentDefaultsHelpFormatter) 
     parser.add_argument("-v", "--verbose", action="store_true", help="increase verbosity") 
     parser.add_argument("-c", "--console", help="increase verbosity", default='') 
-    parser.add_argument("-r", "--range", help="output range", default='0:10') 
+    parser.add_argument("-r", "--range", help="output range", default='10') 
     parser.add_argument("-g", "--generate-scripts", action="store_true", help="generate scripts" )
     parser.add_argument("-l", "--loc", help="locate" )  
     args = vars(parser.parse_args())
@@ -40,27 +40,24 @@ def main():
         if ctx.args['loc'] != None:  
             f=ctx.args['loc'].split('=')[0].strip()
             v=ctx.args['loc'].split('=')[1].strip()
-            df=df.loc[df[f]==v]
-            range='[0:1000]'
+            df=df.loc[df[f]==v] 
         df.to_csv(f'{ctx.get_dest()}\parsed.csv', index=False)  
-        df.to_html(f'{ctx.get_dest()}\parsed.html') 
-        df.to_excel(f'{ctx.get_dest()}\parsed.xlsx', index=False) 
+        df.to_html(f'{ctx.get_dest()}\parsed.html')  
     
     df=pd.read_csv(f'{ctx.get_dest()}parsed.csv') 
     ctx.payload=df
-       
-    mn, mx=range_extractor(range) 
-    print(tabulate(df[mn:mx], headers = 'keys', tablefmt = 'plain')) 
+        
+    print(tabulate(df[:10].applymap(shorten), headers = 'keys', tablefmt = 'plain')) 
+    print('...')
+    print(tabulate(df[-10:].applymap(shorten), headers = 'keys', tablefmt = 'plain')) 
     
     gen=script_generator(ctx)   
-    st=gen.generate(df) 
-    if 'script' in ctx.args['console']:
-        print(st)
+    st=gen.generate(df)  
 
     if ctx.args['generate_scripts']:  
         p=f'{ctx.get_dest()}\script{gen.ext}'
         with open(p, 'w', encoding=ctx.config['encoding']) as f: f.write(st)
         print(p)
-
+ 
 if __name__ == "__main__": 
    main() 

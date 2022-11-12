@@ -51,4 +51,8 @@ def normalize(s):
     s = re.sub('\s{1,5}',' ',s) 
     return s
     
- 
+def shorten(s):
+    if type(s) == str:
+        if len(s) > 85:
+            return s[:85]+'...'
+    return s
