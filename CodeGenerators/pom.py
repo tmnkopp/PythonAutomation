@@ -16,7 +16,7 @@ def main():
     , formatter_class=argparse.ArgumentDefaultsHelpFormatter) 
     parser.add_argument("-v", "--verbose", action="store_true", help="increase verbosity") 
     parser.add_argument("-c", "--console", help="increase verbosity", default='') 
-    parser.add_argument("-r", "--range", help="output range", default='10') 
+    parser.add_argument("-r", "--range", help="output range", default='0:10') 
     parser.add_argument("-g", "--generate-scripts", action="store_true", help="generate scripts" )
     parser.add_argument("-l", "--loc", help="locate" )  
     args = vars(parser.parse_args())
@@ -46,11 +46,10 @@ def main():
     
     df=pd.read_csv(f'{ctx.get_dest()}parsed.csv') 
     ctx.payload=df
-        
-    print(tabulate(df[:10].applymap(shorten), headers = 'keys', tablefmt = 'plain')) 
-    print('...')
-    print(tabulate(df[-10:].applymap(shorten), headers = 'keys', tablefmt = 'plain')) 
-    
+
+    mn,mx=range_extractor(range) 
+    print(tabulate(df[mn:mx].applymap(shorten), headers = 'keys', tablefmt = ctx.config['tablefmt'])) 
+  
     gen=script_generator(ctx)   
     st=gen.generate(df)  
 

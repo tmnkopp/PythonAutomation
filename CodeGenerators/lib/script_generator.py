@@ -21,10 +21,11 @@ class script_generator():
                 with open(tmp, 'r', encoding=self.ctx.config['encoding'], errors='replace') as f: 
                     tmp = f.read()
                 for c in df.columns:    
-                    tmp = tmp.replace("{"+c.upper()+"}", str(r[c.upper()]))   
+                    tmp = tmp.replace("{"+c.upper()+"}", str(r[c]))   
                 st=st+tmp 
-            except Exception as e:
-                print(e)
+            except Exception as e:  
+                print(f'err {e}')
+                raise
   
         return st
  

@@ -1,88 +1,138 @@
-DATATYPE,ID,TEXT,PLT
-PICK,CQ1,What is the purpose of the HVA? Please select all that apply.,356
-PICK,CQ2,What services does the HVA system provide? Please select all that apply.,0
-PICK,CQ3,To whom does the HVA provide services to? Please select all that apply.,355
-PICK,CQ3,What is the approximate time in years since deployment of this HVA?,325
-PICK,CQ4,Is this system identified as a Legacy* system or have any legacy technology or characteristics? ,162
-PICK,CQ4a,Is this system identified as a Legacy* system or have any legacy technology or characteristics? Please select all that apply.,326
-PICK,CQ4b,Is there an approved Modernization or Technology Refresh Plan for this system?,162
-PICK,CQ4c,Has the Modernization or Technology Plan been budgeted? ,162
-PICK,CQ5,Does this HVA have a decommissioning date within the next 36 months? ,162
-PICK,CQ5a,"If so, what is the month and year of the planned decommissioning? ",0
-PICK,CQ6,Is this system’s functionality expected to be subsumed or replaced by another system?,162
-TXT,CQ6a,"If yes, please provide the name of the subsuming or replacement system?",0
-PICK,CQ6b,"If Yes, is there a transition plan for data and functions? ",162
-PICK,CQ6c,"If No, are components of the system operating beyond the original service life? ",162
-PICK,CQ7,Please indicate the HVA System technology type:,153
-PICK,CQ7a,"If System Technology Type is a Cloud, then the cloud construct is:",154
-PICK,CQ5,Does the system contain a mainframe?,162
-TXT,CQ5a,"If mainframe, list the type of mainframe computers you are using.",0
-PICK,CQ6,Is the system a GSS or Web Application?,0
-TXT,CQ6a,"If the system is a Web Application, what type is it?",0
-PICK,CQ6b,"If the system is Web Application, what Languages/technologies/platforms is your web application using?: ",327
-PICK,CQ6c,"If the system is an Application Platform, what operating systems do you use?:",328
-PICK,CQ7,"Is the system an ICS/SCADA?*
-
-** Includes Building Automation, Perimeter and Physical Security systems. ",162
-PICK,CQ7a,"If yes, is it only an ICS, SCADA?",162
-PICK,CQ7b,"If no, does the system have a direct mission interdepency on an ICS/SCADA?",162
-PICK,CQ7c,"If yes, then is the interdependency upstream, downstream or both of an ICS/SCADA system?",161
-TXT,CQ8,"If the system is a client server, please list the system's workstations, client servers, and network devices:",0
-TXT,CQ9,"If the system type is other, please describe: ",0
-PICK,CQ10,Please describe the HVA System Management Type,155
-TXT,CQ11,Primary physical location of the HVA system (city and state),0
-TXT,CQ12,Secondary (backup) physical location of the HVA system (city and state),0
-PICK,CQ13,Is the HVA system is hosted outside of your Agency?,162
-TXT,CQ14,"If yes, which Agency or contractor hosts the system?",0
-PICK,CQ15,Who is responsible for operating and maintaining the HVA system?,156
-TXT,CQ16,Does this system directly employ any of the following system level cybersecurity mitigation technologies?,0
-PICK,CQ17,Does this system operate in an environment/enterprise that has adopted any of the following enterprise level cybersecurity mitigation technologies? (Select all that apply),0
-PICK,CQ18,"Does the system utilize a shared security service? (Select all that apply) such as ), PDNS, CTI or VDP. ",0
-PICK,CQ19,Does the system use Mobile Device Management (MDM)?,162
-PICK,CQ20,"If Yes to 16.5, then are all mobile devices required to utilize MDM to access enterprise resources with respect to this HVA?",162
-PICK,CQ21,"Does the system use cloud-oriented protection, if it is a cloud system?",162
-TXT,CQ22,Please Describe Other Enterpise Cybersecurity Mitigation Technologies/Services Not Previously Listed.,0
-PICK,CQ23,Has this system had one or more major cyber incident(s) within the last year?,162
-TXT,CQ23A,"If yes, then please provide the number of major incidents within the last year.",0
-PICK,CQ23B,"If yes, then have any of the major cyber incidents/events listed previously: (please select all that apply)",0
-PICK,CQ23B1,"If Yes to CQ22b, then please indicate the number of major cyber incidents/events that resulted in unscheduled downtime/unavailability ",0
-PICK,CQ23B2,"If Yes to CQ22c,  then please indicate the number of major cyber incidents/events that required outside incident response support  in the last 12 months? ",0
-PICK,CQ24,Is this system necessary to perform one or more Primary Mission Essential Function(s) (PMEF)?,162
-TXT,CQ24A,"If yes, how many Primary Mission Essential Functions (PMEF) does this HVA support? ",0
-PICK,CQ24B,"If yes, please lease select the PMEFS for this HVA:",0
-PICK,CQ25,Is this HVA necessary to perform one or more Mission Essential Function(s) (MEF)? ,162
-PICK,CQ25A,"If Yes, how many Mission Essential Functions (MEF) does this HVA perform? ",0
-TXT,CQ25B,"If yes, describe the MEFS",0
-PICK,CQ26,"If this HVA supports one or more PMEFS or MEFS, then If the HVA is unavailable for more than 12 hours, what is the impact to the PMEF or MEF it supports?",0
-PICK,CQ26A,"If ""Degraded (4) or Failure (5)""  to 20.0,  Are there any non-mission impacts associated with this system's unavailability after 12 hours? (Select all that apply)",362
-PICK,CQ27,"Could a failure, corruption, or degradation of the HVA have a direct impact on regional or national health, public safety, and welfare of the United States?",162
-PICK,CQ28,"Does the HVA store, receive, send, use, create, or otherwise process any of the following sensitive data types? If yes, indicate the approximate volume of records for each type indicated:",162
-PICK,CQ29,Please describe the following that is stored or processed by the system,0
-PICK,CQ29A,PII Volume,157
-PICK,CQ29B,PII Type,157
-PICK,CQ29C,PHI Volume,157
-PICK,CQ29D,PHI Type,157
-PICK,CQ29E,Law Enforcement Volume,157
-PICK,CQ29F,Law Enforcement Type,157
-PICK,CQ29G,Pre-Release Volume,157
-PICK,CQ29H,Pre-Release Type,157
-PICK,CQ29I,IP Volume,157
-PICK,CQ29J,IP Type,157
-PICK,CQ29K,Other Volume,157
-TXT,CQ29I,Other Type,0
-PICK,CQ30,"Number of network endpoints, including servers and virtual servers, within HVA system boundary (production environment only)",158
-TXT,CQ31,"Please list each interconnection or data exchange (receive, transmit, or both) between the HVA and other systems. Indicate if the interconnection/data exchange is internal or external to another HVA, or if it is critical for the HVA for accomplishing its function. Indicate the kind of agreement (MOU, MOA, ISA, Contract, IAA etc.) that covers this interconnection.",0
-TXT,CQ31A,Please enter the Name of the Interconnected System,0
-PICK,CQ31C,Does D/A for this HVA have an ISA/MOU with owning organization for the interconneted system? ,162
-PICK,CQ31D,Is this connected system Internal to your Agency?,162
-PICK,CQ31E,"If 'Yes' to Internal to Agency, then Is this system also an HVA?",162
-PICK,CQ31F,Is this interconnection/data exchange mission essential to the HVA Function?,162
-PICK,CQ31G,"Is this interconnection Transmit, Receive, or Both?",329
-TXT,CQ32,"Please list each interconnection or data exchange (receive, transmit or both) between this HVA and other systems outside of the '.gov' or '.mil' domain (such as contractors, FFRDCs or commercial). Indicate if the interconnection/data exchange is internal or external to another HVA, or if it is critical for the HVA for accomplishing its function. Indicate the kind of agreement (MOU, MOA, ISA, Contract, IAA etc.) that covers this interconnection.",0
-TXT,CQ32A,Name of the interconnected system(s):,0
-TXT,CQ32B,Please enter the Name of the organization that owns the interconnected system,0
-PICK,CQ32C,Please indicate the organization type for the interconnected system such as ,0
-PICK,CQ32D,Does the D/A for this HVA have an ISA/MOU with the organization that owns the interconnected system? ,162
-PICK,CQ32E,Is this interconnection/data exchange mission essential to the HVA Function?,162
-PICK,CQ32F,Is this Interconnection or data exchange a high priority for this HVA or the connecting system?,162
-PICK,CQ32G,"Is this interconnection Transmit, Receive or Both?",329
+ID,Question,Selections,CODE,PKEY,PK_TYPE,SORT
+CQ2,What services does the HVA system provide? Please select all that apply.,Cyber Security Support,CYBER_SECUR_SUP,4000,390,1
+CQ2,What services does the HVA system provide? Please select all that apply.,Financial Information Support,FINANCI_INPPORT,4001,390,2
+CQ2,What services does the HVA system provide? Please select all that apply.,Medical/health care Support,MEDICAL_HEPPORT,4002,390,3
+CQ2,What services does the HVA system provide? Please select all that apply.,Data storage and management,DATA_STORAG_MAN,4003,390,4
+CQ2,What services does the HVA system provide? Please select all that apply.,Legal Services,LEGAL_SERVIC,4004,390,5
+CQ2,What services does the HVA system provide? Please select all that apply.,Law enforcement services,LAW_ENFORC_SERV,4005,390,6
+CQ2,What services does the HVA system provide? Please select all that apply.,Veteran support services,VETERAN_SUERVIC,4006,390,7
+CQ2,What services does the HVA system provide? Please select all that apply.,Immigration services,IMMIGR_SERVIC,4007,390,8
+CQ2,What services does the HVA system provide? Please select all that apply.,Data Access and Sharing,DATA_ACCESS_SHA,4008,390,9
+CQ2,What services does the HVA system provide? Please select all that apply.,NASA and space services,NASA_SPACE_SERV,4009,390,10
+CQ2,What services does the HVA system provide? Please select all that apply.,Access control,ACCESS_CONTROL,4010,390,11
+CQ2,What services does the HVA system provide? Please select all that apply.,Visitor management,VISITOR_MANAG,4011,390,12
+CQ2,What services does the HVA system provide? Please select all that apply.,Video surveillance,VIDEO_SURVEIL,4012,390,13
+CQ2,What services does the HVA system provide? Please select all that apply.,PII data control,PII_DATA_CONTRO,4013,390,14
+CQ2,What services does the HVA system provide? Please select all that apply.,Communication,COMMUN,4014,390,15
+CQ2,What services does the HVA system provide? Please select all that apply.,Emergency dispatch,EMERG_DISPATCH,4015,390,16
+CQ2,What services does the HVA system provide? Please select all that apply.,IT Support service,IT_SUPPORT_SERV,4016,390,17
+CQ2,What services does the HVA system provide? Please select all that apply.,Data center/warehouse,DATA_CENTER_WAR,4017,390,18
+CQ2,What services does the HVA system provide? Please select all that apply.,Emergency Alerts,EMERG_ALERT,4018,390,19
+CQ2,What services does the HVA system provide? Please select all that apply.,Real Time data access,REAL_TIME_CCESS,4019,390,20
+CQ2,What services does the HVA system provide? Please select all that apply.,Physical Security,PHYSIC_SECUR,4020,390,21
+CQ2,What services does the HVA system provide? Please select all that apply.,Weather Display and alerts,WEATHER_DIALERT,4021,390,22
+CQ2,What services does the HVA system provide? Please select all that apply.,Payroll related Services,PAYROL_RELAT_SE,4022,390,23
+CQ2,What services does the HVA system provide? Please select all that apply.,Web Based Monitoring,WEB_BASE_MONITO,4023,390,24
+CQ2,What services does the HVA system provide? Please select all that apply.,Provides infrastructure services,PROVID_INFERVIC,4024,390,25
+CQ2,What services does the HVA system provide? Please select all that apply.,Other [Free Text],OTHER_FREE_TEXT,4025,390,26
+CQ6,Is the system a GSS or Web Application?, GSS,GSS,4026,391,1
+CQ6,Is the system a GSS or Web Application?, Web Application,WEB_APPLIC,4027,391,2
+CQ6,Is the system a GSS or Web Application?, Both,BOTH,4028,391,3
+CQ6,Is the system a GSS or Web Application?, Unknown,UNKNOWN,4029,391,4
+CQ6,Is the system a GSS or Web Application?, Neither,NEITHER,4030,391,5
+CQ6a,"If the system is a Web Application, what type is it?", Web Browser: Free Text,WEB_BROWSE_TEXT,4031,392,1
+CQ6a,"If the system is a Web Application, what type is it?", Web Application Server: Free Text,WEB_APPLIC_TEXT,4032,392,2
+CQ6a,"If the system is a Web Application, what type is it?", Database: Free Text,DATABASE_FREE_T,4033,392,3
+CQ6a,"If the system is a Web Application, what type is it?", Unknown,UNKNOWN,4034,392,4
+CQ17,Does this system operate in an environment/enterprise that has adopted any of the following enterprise level cybersecurity mitigation technologies? (Select all that apply), Security Operations Center (SOC) as a Service such as Asset Management,SECUR_OPERMANAG,4035,393,1
+CQ17,Does this system operate in an environment/enterprise that has adopted any of the following enterprise level cybersecurity mitigation technologies? (Select all that apply), Awareness and Training,AWAR_TRAIN,4036,393,2
+CQ17,Does this system operate in an environment/enterprise that has adopted any of the following enterprise level cybersecurity mitigation technologies? (Select all that apply), Detection Processes,DETECT_PROCESS,4037,393,3
+CQ17,Does this system operate in an environment/enterprise that has adopted any of the following enterprise level cybersecurity mitigation technologies? (Select all that apply), Governance: Information Protection Processes and Procedures;,GOVERNANCEDURES,4038,393,4
+CQ17,Does this system operate in an environment/enterprise that has adopted any of the following enterprise level cybersecurity mitigation technologies? (Select all that apply), Protective Technology,PROTECT_TECHNOL,4039,393,5
+CQ17,Does this system operate in an environment/enterprise that has adopted any of the following enterprise level cybersecurity mitigation technologies? (Select all that apply), Risk Assessment,RISK_ASSESS,4040,393,6
+CQ17,Does this system operate in an environment/enterprise that has adopted any of the following enterprise level cybersecurity mitigation technologies? (Select all that apply), Security Continuous Monitoring,SECUR_CONTNITOR,4041,393,7
+CQ17,Does this system operate in an environment/enterprise that has adopted any of the following enterprise level cybersecurity mitigation technologies? (Select all that apply), Supply Chain Risk Management,SUPPLI_CHAMANAG,4042,393,8
+CQ18,"Does the system utilize a shared security service? (Select all that apply) such as ), PDNS, CTI or VDP. ", Continuous Diagnostics and Mitigation (CDM),CONTINU_DIG_CDM,4043,394,1
+CQ18,"Does the system utilize a shared security service? (Select all that apply) such as ), PDNS, CTI or VDP. ", Protective DNS (pDNS),PROTECT_DN_PDNS,4044,394,2
+CQ18,"Does the system utilize a shared security service? (Select all that apply) such as ), PDNS, CTI or VDP. ", Vulnerability Disclosure Program (VDP),VULNER_DISM_VDP,4045,394,3
+CQ18,"Does the system utilize a shared security service? (Select all that apply) such as ), PDNS, CTI or VDP. ", Other (Free Text),OTHER_FREE_TEXT,4046,394,4
+CQ18,"Does the system utilize a shared security service? (Select all that apply) such as ), PDNS, CTI or VDP. ", Unknown,UNKNOWN,4047,394,5
+CQ18,"Does the system utilize a shared security service? (Select all that apply) such as ), PDNS, CTI or VDP. ", No,NO,4048,394,6
+CQ23B,"If yes, then have any of the major cyber incidents/events listed previously: (please select all that apply)", Resulted in unscheduled downtime/unavailability,RESULT_UNSAVAIL,4049,395,1
+CQ23B,"If yes, then have any of the major cyber incidents/events listed previously: (please select all that apply)", Required outside incident response support  in the last 12 months,REQUIR_OUTMONTH,4050,395,2
+CQ24B,"If yes, please lease select the PMEFS for this HVA:",DOJ(1) - Advise and Represent the President,DOJ_1_ADVIRESID,4051,396,1
+CQ24B,"If yes, please lease select the PMEFS for this HVA:",DOJ(2) - Protect Senior Officials and the Courts,DOJ_2_PROTCOURT,4052,396,2
+CQ24B,"If yes, please lease select the PMEFS for this HVA:",DOJ(3) - Perform Critical Legal Reviews,DOJ_3_PERFEVIEW,4053,396,3
+CQ24B,"If yes, please lease select the PMEFS for this HVA:",DOJ(4) - Fight Terrorism and Espionage,DOJ_4_FIGHIONAG,4054,396,4
+CQ24B,"If yes, please lease select the PMEFS for this HVA:",DOJ(5) - Conduct Law Enforcement Activities,DOJ_5_CONDACTIV,4055,396,5
+CQ24B,"If yes, please lease select the PMEFS for this HVA:",DOJ(6) - Operate Federal Prisons,DOJ_6_OPERRISON,4056,396,6
+CQ24B,"If yes, please lease select the PMEFS for this HVA:",DHS(1) - Secure and Manage the Borders,DHS_1_SECUORDER,4057,396,7
+CQ24B,"If yes, please lease select the PMEFS for this HVA:",DHS(2) - Secure Critical Infrastructure and Cyberspace,DHS_2_SECURSPAC,4058,396,8
+CQ24B,"If yes, please lease select the PMEFS for this HVA:",DHS(3) - Protect National Leaders,DHS_3_PROTEADER,4059,396,9
+CQ24B,"If yes, please lease select the PMEFS for this HVA:",DHS(4) - Provide Domestic Situational Awareness,DHS_4_PROV_AWAR,4060,396,10
+CQ24B,"If yes, please lease select the PMEFS for this HVA:",DHS(5) - Enforce Homeland Security Laws and Regulations,DHS_5_ENFOREGUL,4061,396,11
+CQ24B,"If yes, please lease select the PMEFS for this HVA:",DHS(6) - Coordinate Continuity and Incident Response,DHS_6_COORSPONS,4062,396,12
+CQ24B,"If yes, please lease select the PMEFS for this HVA:",DHS(7) - Coordinate Disaster Recovery,DHS_7_COOROVERI,4063,396,13
+CQ24B,"If yes, please lease select the PMEFS for this HVA:",GSA(1) - Lead Government Reconstitution,GSA_1_LEADTITUT,4064,396,14
+CQ24B,"If yes, please lease select the PMEFS for this HVA:",DOD(1) - Advise on National Defense Policy,DOD_1_ADVIOLICI,4065,396,15
+CQ24B,"If yes, please lease select the PMEFS for this HVA:",DOD(2) - Defend the Security of the United States,DOD_2_DEFESTATE,4066,396,16
+CQ24B,"If yes, please lease select the PMEFS for this HVA:","DOD(3) - Collect, Analyze, and Disseminate Intelligence",DOD_3_COLLELLIG,4067,396,17
+CQ24B,"If yes, please lease select the PMEFS for this HVA:",DOD(4) - Promote National Security,DOD_4_PROMSECUR,4068,396,18
+CQ24B,"If yes, please lease select the PMEFS for this HVA:",DOD(5) - Conduct Domestic Emergency Response,DOD_5_CONDSPONS,4069,396,19
+CQ24B,"If yes, please lease select the PMEFS for this HVA:",DOS(1) - Formulate Foreign Affairs Policy,DOS_1_FORMOLICI,4070,396,20
+CQ24B,"If yes, please lease select the PMEFS for this HVA:",DOS(2) - Maintain Foreign Diplomatic Relations,DOS_2_MAINRELAT,4071,396,21
+CQ24B,"If yes, please lease select the PMEFS for this HVA:",DOS(3) - Maintain International Situational Awareness,DOS_3_MAIN_AWAR,4072,396,22
+CQ24B,"If yes, please lease select the PMEFS for this HVA:",DOS(4) - Support USCitizens Overseas,DOS_4_SUPPERSEA,4073,396,23
+CQ24B,"If yes, please lease select the PMEFS for this HVA:",CIA(1) - Produce Timely Intelligence Reports,CIA_1_PRODEPORT,4074,396,24
+CQ24B,"If yes, please lease select the PMEFS for this HVA:",CIA(2) - Collect Intelligence ,CIA_2_COLLELLIG,4075,396,25
+CQ24B,"If yes, please lease select the PMEFS for this HVA:",CIA(3) - Conduct Covert Operations,CIA_3_COND_OPER,4076,396,26
+CQ24B,"If yes, please lease select the PMEFS for this HVA:",DOI(1) - Provide Emergency Response on Federal Lands,DOI_1_PROV_LAND,4077,396,27
+CQ24B,"If yes, please lease select the PMEFS for this HVA:",DOI(2) - Provide Law Enforcement on Federal Lands,DOI_2_PROV_LAND,4078,396,28
+CQ24B,"If yes, please lease select the PMEFS for this HVA:",DOI(3) - Provide National Emergency Response,DOI_3_PROVSPONS,4079,396,29
+CQ24B,"If yes, please lease select the PMEFS for this HVA:",DOI(4) - Maintain Relations with Insular Areas and Tribes,DOI_4_MAINTRIBE,4080,396,30
+CQ24B,"If yes, please lease select the PMEFS for this HVA:",DOI(5) - Provide Water and Electric Power,DOI_5_PROVPOWER,4081,396,31
+CQ24B,"If yes, please lease select the PMEFS for this HVA:",DOE(1) - Ensure Nuclear Materials Safety,DOE_1_ENSUAFETI,4082,396,32
+CQ24B,"If yes, please lease select the PMEFS for this HVA:",DOE(2) - Respond to Nuclear Incidents,DOE_2_RESPINCID,4083,396,33
+CQ24B,"If yes, please lease select the PMEFS for this HVA:",DOE(3) - Manage Energy Infrastructure,DOE_3_MANAUCTUR,4084,396,34
+CQ24B,"If yes, please lease select the PMEFS for this HVA:",DOC(1) - Prevent Export Control Violations,DOC_1_PREVIOLAT,4085,396,35
+CQ24B,"If yes, please lease select the PMEFS for this HVA:",DOC(2) - Provide Satellite Imagery,DOC_2_PROVAGERI,4086,396,36
+CQ24B,"If yes, please lease select the PMEFS for this HVA:",DOC(3) - Provide Meteorological Forecasts,DOC_3_PROVECAST,4087,396,37
+CQ24B,"If yes, please lease select the PMEFS for this HVA:",DOC(4) - Maintain Operational Federal Communications,DOC_4_MAINOMMUN,4088,396,38
+CQ24B,"If yes, please lease select the PMEFS for this HVA:",TREAS(1) - Safeguard the Economy and the Financial System,TREAS_1_SAYSTEM,4089,396,39
+CQ24B,"If yes, please lease select the PMEFS for this HVA:",TREAS(2) - Use Financial Measures to Counter National Security Threats,TREAS_2_USHREAT,4090,396,40
+CQ24B,"If yes, please lease select the PMEFS for this HVA:",TREAS(3) - Manage Government Finances,TREAS_3_MAINANC,4091,396,41
+CQ24B,"If yes, please lease select the PMEFS for this HVA:",TREAS(4) - Promote International Financial Stability,TREAS_4_PRTABIL,4092,396,42
+CQ24B,"If yes, please lease select the PMEFS for this HVA:",USDA(1) - Ensure Food Safety,USDA_1_ENSAFETI,4093,396,43
+CQ24B,"If yes, please lease select the PMEFS for this HVA:",USDA(2) - Provide Emergency Food Supplies,USDA_2_PROUPPLI,4094,396,44
+CQ24B,"If yes, please lease select the PMEFS for this HVA:",USDA(3) - Fight Forest Fires,USDA_3_FIG_FIRE,4095,396,45
+CQ24B,"If yes, please lease select the PMEFS for this HVA:",USDA(4) - Provide Safety and Security on Public Lands,USDA_4_PRO_LAND,4096,396,46
+CQ24B,"If yes, please lease select the PMEFS for this HVA:",FRS(1) - Conduct Monetary Policy,FRS_1_CONDOLICI,4097,396,47
+CQ24B,"If yes, please lease select the PMEFS for this HVA:",FRS(2) - Maintain Financial System Stability,FRS_2_MAINTABIL,4098,396,48
+CQ24B,"If yes, please lease select the PMEFS for this HVA:",FRS(3) - Regulate Banking,FRS_3_REGUL_BAN,4099,396,49
+CQ24B,"If yes, please lease select the PMEFS for this HVA:",FRS(4) - Provide Financial Services,FRS_4_PROVERVIC,4100,396,50
+CQ24B,"If yes, please lease select the PMEFS for this HVA:",DOT(1) - Ensure Defense Transportation Infrastructure,DOT_1_ENSUUCTUR,4101,396,51
+CQ24B,"If yes, please lease select the PMEFS for this HVA:",DOT(2) - Respond to Transportation Disruptions,DOT_2_RESPSRUPT,4102,396,52
+CQ24B,"If yes, please lease select the PMEFS for this HVA:",DOT(3) - Operate the National Airspace System,DOT_3_OPERYSTEM,4103,396,53
+CQ24B,"If yes, please lease select the PMEFS for this HVA:",HHS(1) - Monitor and Respond to Health Emergencies and Risks,HHS_1_MONI_RISK,4104,396,54
+CQ24B,"If yes, please lease select the PMEFS for this HVA:",HHS(2) - Oversee Safety of Medical and Food Products,HHS_2_OVERODUCT,4105,396,55
+CQ24B,"If yes, please lease select the PMEFS for this HVA:",HHS(3) - Provide Medical Care and Services,HHS_3_PROVERVIC,4106,396,56
+CQ24B,"If yes, please lease select the PMEFS for this HVA:",NRC(1) - Maintain Awareness and Respond to US Civilian Nuclear Events,NRC_1_MAINEVENT,4107,396,57
+CQ24B,"If yes, please lease select the PMEFS for this HVA:",NRC(2) - Ensure Safe US Civilian Nuclear Operations,NRC_2_ENSU_OPER,4108,396,58
+CQ24B,"If yes, please lease select the PMEFS for this HVA:",FCC(1) - Maintain Operational Communications,FCC_1_MAINOMMUN,4109,396,59
+CQ24B,"If yes, please lease select the PMEFS for this HVA:",EPA(1) - Respond to Environmental and Health Threats,EPA_1_RESPHREAT,4110,396,60
+CQ24B,"If yes, please lease select the PMEFS for this HVA:",CFTC(1) - Monitor Commodity Futures Markets,CFTC_1_MONARKET,4111,396,61
+CQ24B,"If yes, please lease select the PMEFS for this HVA:",SSA(1) - Provide Social Security Services,SSA_1_PROVERVIC,4112,396,62
+CQ24B,"If yes, please lease select the PMEFS for this HVA:",SEC(1) - Regulate Securities Markets,SEC_1_REGUARKET,4113,396,63
+CQ24B,"If yes, please lease select the PMEFS for this HVA:",OPM(1) - Provide Human Capital Services,OPM_1_PROVERVIC,4114,396,64
+CQ24B,"If yes, please lease select the PMEFS for this HVA:",NASA(1) - Operate Satellites,NASA_1_OPER_SAT,4115,396,65
+CQ24B,"If yes, please lease select the PMEFS for this HVA:",VA(1) - Provide Medical Care,VA_1_PROVI_CARE,4116,396,66
+CQ24B,"If yes, please lease select the PMEFS for this HVA:","ODNI(1) - Collect, Analyze, and Provide Intelligence",ODNI_1_COLELLIG,4117,396,67
+CQ24B,"If yes, please lease select the PMEFS for this HVA:",NARA(1) - Publish the Federal Register,NARA_1_PUBEGIST,4118,396,68
+CQ24B,"If yes, please lease select the PMEFS for this HVA:",USPS(1) - Deliver Postal Services,USPS_1_DELERVIC,4119,396,69
+CQ24B,"If yes, please lease select the PMEFS for this HVA:",NCUA(1) - Maintain Solvent Credit Unions,NCUA_1_MAIUNION,4120,396,70
+CQ26,"If this HVA supports one or more PMEFS or MEFS, then If the HVA is unavailable for more than 12 hours, what is the impact to the PMEF or MEF it supports?", HVA does not support a PMEF or MEF ,HVA_SUPPORT_PME,4121,397,1
+CQ26,"If this HVA supports one or more PMEFS or MEFS, then If the HVA is unavailable for more than 12 hours, what is the impact to the PMEF or MEF it supports?", No impact: Essential function is accomplished as intended,NO_IMPACT_NTEND,4122,397,2
+CQ26,"If this HVA supports one or more PMEFS or MEFS, then If the HVA is unavailable for more than 12 hours, what is the impact to the PMEF or MEF it supports?"," Work around: Essential function is still fully accomplished but requires documented and trained-to work around procedures ""Workaround” does not mean patched together actions or “hacks”  Defined as approved, documented plans that staff already knows ",WORK_AROUN_KNOW,4123,397,3
+CQ26,"If this HVA supports one or more PMEFS or MEFS, then If the HVA is unavailable for more than 12 hours, what is the impact to the PMEF or MEF it supports?", Degraded: Essential function is partially accomplished  There may be delays in time There may be omissions of information There may be parts of functions that cannot be provided,DEGRADED_EROVID,4124,397,4
+CQ26,"If this HVA supports one or more PMEFS or MEFS, then If the HVA is unavailable for more than 12 hours, what is the impact to the PMEF or MEF it supports?", Failure: Essential function cannot be accomplished  Highest impact to mission and function of Agency,FAILURE_ESAGENC,4125,397,5
+CQ29,Please describe the following that is stored or processed by the system, PII,PII,4126,398,1
+CQ29,Please describe the following that is stored or processed by the system, PHI,PHI,4127,398,2
+CQ29,Please describe the following that is stored or processed by the system, Law Enforcement,LAW_ENFORC,4128,398,3
+CQ29,Please describe the following that is stored or processed by the system, Pre-Release,PRE_RELEAS,4129,398,4
+CQ29,Please describe the following that is stored or processed by the system, IP,IP,4130,398,5
+CQ29,Please describe the following that is stored or processed by the system, Other [Free Text],OTHER_FREE_TEXT,4131,398,6
+CQ32C,Please indicate the organization type for the interconnected system such as , Private/Commercial,PRIVATE_COMMERC,4132,399,1
+CQ32C,Please indicate the organization type for the interconnected system such as , NGO,NGO,4133,399,2
+CQ32C,Please indicate the organization type for the interconnected system such as , FFRDC,FFRDC,4134,399,3
+CQ32C,Please indicate the organization type for the interconnected system such as , SLTT,SLTT,4135,399,4
+CQ32C,Please indicate the organization type for the interconnected system such as , Other,OTHER,4136,399,5

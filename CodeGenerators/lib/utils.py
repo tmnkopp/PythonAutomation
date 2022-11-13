@@ -11,6 +11,8 @@ sw=stopwords.words('english')
 ps=PorterStemmer()  
  
 def generate_id(t, limit=15): 
+    if type(t) == list: 
+        t=str(t)
     t = ' '.join([w for w in t.split(' ') if w not in sw])
     t = ' '.join([ps.stem(w) for w in t.split(' ')]) 
     t = re.sub('[^A-Za-z0-9]', ' ', t )   
@@ -53,6 +55,6 @@ def normalize(s):
     
 def shorten(s):
     if type(s) == str:
-        if len(s) > 85:
-            return s[:85]+'...'
+        if len(s) > 25:
+            return s[:25]+'...'
     return s
