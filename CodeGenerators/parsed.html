@@ -1,0 +1,734 @@
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>ID</th>
+      <th>Question</th>
+      <th>Selections</th>
+      <th>DATATYPE</th>
+      <th>PLT</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>CQ1</td>
+      <td>What is the purpose of the HVA? Please select all that apply.</td>
+      <td>[GOV Domain Registration Systems, Access to Data systems, Agency support tool , Business Intelligence Services, Collaboration Tools (SharePoint), Collect, analyze, maintain and share data, Consulate Database (VISA), Cybersecurity Monitoring, Cybersecurity tools/solutions, Data Repository, Decision making tool, Diplomatic and Incident Response Communications, Email services and/or internet access, Emergency management System, Emergency response plans and personnel, Enterprise resource planning, Explosive Threat Profiles, Financial [Agency Level], Financial [National Level], Financial System , Fingerprint Database, General Support System (GSS) [WAN / Mainframe / Gateway], General System and Infrastructure Support, Human Resource (HR), Identity and Access Management (IDAM) / Identity, Credential, and Access Management (ICAM) / Authentication / Active Directory, Immigration (most), Imports-Exports Compliance [Port of Entry], Internet-Based / Web-Based (Front-Facing Applications), IT support services, Law enforcement services, Local Area Network (LAN), Loss of Life Potential , Manage medical related data, Office of the Inspector General (OIG), Other, Payroll , Physical Access Control Systems (PACS), Procurement systems, Radio communications, Real-time data alerts and updates, Real-time imagery, Security Clearance / Background Investigations , Security Operations Center (SOC), Supervisory Control and Data Acquisition (SCADA) – electrical systems, Support to Vulnerability  Assessments, Tactical communications, Trusted Internet Connection (TIC), Weather warning and analysis services, Web based monitoring system, Other ]</td>
+      <td>PICK</td>
+      <td>356</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>CQ2</td>
+      <td>What services does the HVA system provide? Please select all that apply.</td>
+      <td>[Cyber Security Support, Financial Information Support, Medical/health care Support, Data storage and management, Legal Services, Law enforcement services, Veteran support services, Immigration services, Data Access and Sharing, NASA and space services, Access control, Visitor management, Video surveillance, PII data control, Communication, Emergency dispatch, IT Support service, Data center/warehouse, Emergency Alerts, Real Time data access, Physical Security, Weather Display and alerts, Payroll related Services, Web Based Monitoring, Provides infrastructure services, Other [Free Text]]</td>
+      <td>PICK</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>CQ3</td>
+      <td>To whom does the HVA provide services to? Please select all that apply.</td>
+      <td>[Federal Agencies employees, Emergency responders/emergency managers, Local, State and Government personnel, Federal Employees and designated contractors, Members of the general public, NASA (Missions, Services and/or employees), Federal, Local, State Law Enforcement, Internal USDA Agencies, VA Personnel, VA Contractors, Veterans, Veterans' family members, NOAA employees and contractors, Aviation workers, Federal Credit Unions and other Federal finical personnel, Internal and External Stakeholders, Potential federal employees, Public officials, Border Patrol, Economic Analysts, Infrastructure Support Personnel, SLTT Organizations, Federal, State, Local, Tribal, and Territorial communities, Medical and Healthcare Personnel, Visa applicants, Military and Defense Personnel, other Government systems, other public systems, Internal agency users, External agency users, Other [Free Text], None]</td>
+      <td>PICK</td>
+      <td>355</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>CQ4</td>
+      <td>What is the approximate time in years since deployment of this HVA?</td>
+      <td>[&lt; 5 years, &gt; 6 – 10 years,  &gt; 10 – 15 years,  &gt; 15 – 20 years,  &gt; 20 – 30 years,  &gt; 30 – 40 years, &gt; 40 years]</td>
+      <td>PICK</td>
+      <td>325</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>CQ5</td>
+      <td>Is this system identified as a Legacy* system or have any legacy technology or characteristics?</td>
+      <td>[ Yes,  No,  Unknown]</td>
+      <td>PICK</td>
+      <td>162</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>CQ5A</td>
+      <td>Is this system identified as a Legacy* system or have any legacy technology or characteristics? Please select all that apply.</td>
+      <td>[Legacy codebase (COBOL, MUMPS), Lack of or poor documentation, Legacy infrastructure, Ad-hoc infrastructure , Hardware or software with no vendor/manufacturer support, Outdated or inaccurate inventory, Limited Functionality, Other [Free Text]]</td>
+      <td>PICK</td>
+      <td>326</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>CQ5B</td>
+      <td>Is there an approved Modernization or Technology Refresh Plan for this system?</td>
+      <td>[ Yes,  No,  Unknown]</td>
+      <td>PICK</td>
+      <td>162</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>CQ5C</td>
+      <td>Has the Modernization or Technology Plan been budgeted?</td>
+      <td>[ Yes,  No,  Unknown]</td>
+      <td>PICK</td>
+      <td>162</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>CQ6</td>
+      <td>Does this HVA have a decommissioning date within the next 36 months?</td>
+      <td>[ Yes,  No,  Unknown]</td>
+      <td>PICK</td>
+      <td>162</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>CQ6A</td>
+      <td>If so, what is the month and year of the planned decommissioning?</td>
+      <td>[DATE (MM/YYYY)]</td>
+      <td>TXT</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>10</th>
+      <td>CQ7</td>
+      <td>Is this system’s functionality expected to be subsumed or replaced by another system?</td>
+      <td>[ Yes,  No,  Unknown]</td>
+      <td>PICK</td>
+      <td>162</td>
+    </tr>
+    <tr>
+      <th>11</th>
+      <td>CQ7A</td>
+      <td>If yes, please provide the name of the subsuming or replacement system?</td>
+      <td>[ Free text]</td>
+      <td>TXT</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>12</th>
+      <td>CQ7B</td>
+      <td>If Yes, is there a transition plan for data and functions?</td>
+      <td>[ Yes,  No,  Unknown]</td>
+      <td>PICK</td>
+      <td>162</td>
+    </tr>
+    <tr>
+      <th>13</th>
+      <td>CQ7C</td>
+      <td>If No, are components of the system operating beyond the original service life?</td>
+      <td>[ Yes,  No,  Unknown]</td>
+      <td>PICK</td>
+      <td>162</td>
+    </tr>
+    <tr>
+      <th>14</th>
+      <td>CQ8</td>
+      <td>Please indicate the HVA System technology type:</td>
+      <td>[ Cloud,  Mainframe,  GSS,  Web Application,  Application Platform,  ICS/SCADA,  Client/Server,  Other [Free Text]]</td>
+      <td>PICK</td>
+      <td>153</td>
+    </tr>
+    <tr>
+      <th>15</th>
+      <td>CQ8A</td>
+      <td>If System Technology Type is a Cloud, then the cloud construct is:</td>
+      <td>[ Paas,  SaaS,  IaaS,  Hybrid,  Other [Free Text]]</td>
+      <td>PICK</td>
+      <td>154</td>
+    </tr>
+    <tr>
+      <th>16</th>
+      <td>CQ9</td>
+      <td>Does the system contain a mainframe?</td>
+      <td>[ Yes,  No,  Unknown]</td>
+      <td>PICK</td>
+      <td>162</td>
+    </tr>
+    <tr>
+      <th>17</th>
+      <td>CQ9A</td>
+      <td>If mainframe, list the type of mainframe computers you are using.</td>
+      <td>[ Free Text]</td>
+      <td>TXT</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>18</th>
+      <td>CQ10</td>
+      <td>Is the system a GSS or Web Application?</td>
+      <td>[ GSS,  Web Application,  Both,  Unknown,  Neither]</td>
+      <td>PICK</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>19</th>
+      <td>CQ10A</td>
+      <td>If the system is a Web Application, what type is it?</td>
+      <td>[ Web Browser: Free Text,  Web Application Server: Free Text,  Database: Free Text,  Unknown]</td>
+      <td>PICK</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>20</th>
+      <td>CQ10B</td>
+      <td>If the system is Web Application, what Languages/technologies/platforms is your web application using?:</td>
+      <td>[HTML, CSS, JS, PHP, Java, Ruby on Rails, Smyfony Angular JS Reactjs, Cake PHP, Aspnet, Nodejs, Meteor, Laravel, Ember, Django, Express, Spring, Flask, Drupal, WordPress, Bootstrap, web2py, TurboGears, Sinatra, Zend Framework, Not Listed/Other]</td>
+      <td>PICK</td>
+      <td>327</td>
+    </tr>
+    <tr>
+      <th>21</th>
+      <td>CQ10C</td>
+      <td>If the system is an Application Platform, what operating systems do you use?:</td>
+      <td>[Microsoft Windows, , Apple MacOS, , iOS, , Ubuntu, , CentOS, , Unix, , Android, , Windows 10(and EOS Win10), , MS-DOS, Windows Vista, Linux Kernel, , HyperVisor (such as VMware), etc, Other (Free Text)]</td>
+      <td>PICK</td>
+      <td>328</td>
+    </tr>
+    <tr>
+      <th>22</th>
+      <td>CQ11</td>
+      <td>Is the system an ICS/SCADA?*\n\n** Includes Building Automation, Perimeter and Physical Security systems.</td>
+      <td>[ Yes,  No,  Unknown]</td>
+      <td>PICK</td>
+      <td>162</td>
+    </tr>
+    <tr>
+      <th>23</th>
+      <td>CQ11A</td>
+      <td>If yes, is it only an ICS, SCADA?</td>
+      <td>[ Yes,  No,  Unknown]</td>
+      <td>PICK</td>
+      <td>162</td>
+    </tr>
+    <tr>
+      <th>24</th>
+      <td>CQ11B</td>
+      <td>If no, does the system have a direct mission interdepency on an ICS/SCADA?</td>
+      <td>[ Yes,  No,  Unknown]</td>
+      <td>PICK</td>
+      <td>162</td>
+    </tr>
+    <tr>
+      <th>25</th>
+      <td>CQ11C</td>
+      <td>If yes, then is the interdependency upstream, downstream or both of an ICS/SCADA system?</td>
+      <td>[ Upstream,  Downstream,  Both]</td>
+      <td>PICK</td>
+      <td>161</td>
+    </tr>
+    <tr>
+      <th>26</th>
+      <td>CQ12</td>
+      <td>If the system is a client server, please list the system's workstations, client servers, and network devices:</td>
+      <td>[ Free text]</td>
+      <td>TXT</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>27</th>
+      <td>CQ13</td>
+      <td>If the system type is other, please describe:</td>
+      <td>[ Free text]</td>
+      <td>TXT</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>28</th>
+      <td>CQ14</td>
+      <td>Please describe the HVA System Management Type</td>
+      <td>[ Government Owned – Government Operated (GoGo),  Government Owned – Contractor Operated (GoCo),  Contractor Owned – Contractor Operated, (CoCo),  Federally Funded Research and Development Center (FFRDC),  Other (Free Text)]</td>
+      <td>PICK</td>
+      <td>155</td>
+    </tr>
+    <tr>
+      <th>29</th>
+      <td>CQ15</td>
+      <td>Primary physical location of the HVA system (city and state)</td>
+      <td>[ Free text]</td>
+      <td>TXT</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>30</th>
+      <td>CQ16</td>
+      <td>Secondary (backup) physical location of the HVA system (city and state)</td>
+      <td>[ Free text]</td>
+      <td>TXT</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>31</th>
+      <td>CQ17</td>
+      <td>Is the HVA system is hosted outside of your Agency?</td>
+      <td>[ Yes,  No,  Unknown]</td>
+      <td>PICK</td>
+      <td>162</td>
+    </tr>
+    <tr>
+      <th>32</th>
+      <td>CQ18</td>
+      <td>If yes, which Agency or contractor hosts the system?</td>
+      <td>[ Free text]</td>
+      <td>TXT</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>33</th>
+      <td>CQ19</td>
+      <td>Who is responsible for operating and maintaining the HVA system?</td>
+      <td>[ Federal Employees,  Federal employees and direct support contractors,  Contractors]</td>
+      <td>PICK</td>
+      <td>156</td>
+    </tr>
+    <tr>
+      <th>34</th>
+      <td>CQ20</td>
+      <td>Does this system directly employ any of the following system level cybersecurity mitigation technologies?</td>
+      <td>[ Encryption of data at rest\n Encryption of data in transit\n Least privilege principles\n Application Allowlisting (whitelisting)\n Other (Free Text)\n Unknown]</td>
+      <td>TXT</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>35</th>
+      <td>CQ21</td>
+      <td>Does this system operate in an environment/enterprise that has adopted any of the following enterprise level cybersecurity mitigation technologies? (Select all that apply)</td>
+      <td>[ Security Operations Center (SOC) as a Service such as Asset Management,  Awareness and Training,  Detection Processes,  Governance: Information Protection Processes and Procedures;,  Protective Technology,  Risk Assessment,  Security Continuous Monitoring,  Supply Chain Risk Management]</td>
+      <td>PICK</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>36</th>
+      <td>CQ22</td>
+      <td>Does the system utilize a shared security service? (Select all that apply) such as ), PDNS, CTI or VDP.</td>
+      <td>[ Continuous Diagnostics and Mitigation (CDM),  Protective DNS (pDNS),  Vulnerability Disclosure Program (VDP),  Other (Free Text),  Unknown,  No]</td>
+      <td>PICK</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>37</th>
+      <td>CQ23</td>
+      <td>Does the system use Mobile Device Management (MDM)?</td>
+      <td>[ Yes,  No,  Unknown]</td>
+      <td>PICK</td>
+      <td>162</td>
+    </tr>
+    <tr>
+      <th>38</th>
+      <td>CQ23A</td>
+      <td>If Yes to CQ23, then are all mobile devices required to utilize MDM to access enterprise resources with respect to this HVA?</td>
+      <td>[ Yes,  No,  Unknown]</td>
+      <td>PICK</td>
+      <td>162</td>
+    </tr>
+    <tr>
+      <th>39</th>
+      <td>CQ24</td>
+      <td>Does the system use cloud-oriented protection, if it is a cloud system?</td>
+      <td>[ Yes,  No,  Unknown]</td>
+      <td>PICK</td>
+      <td>162</td>
+    </tr>
+    <tr>
+      <th>40</th>
+      <td>CQ25</td>
+      <td>Please Describe Other Enterpise Cybersecurity Mitigation Technologies/Services Not Previously Listed.</td>
+      <td>[ Free Text]</td>
+      <td>TXT</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>41</th>
+      <td>System Cyber Incident(s)</td>
+      <td>Please Describe Other Enterpise Cybersecurity Mitigation Technologies/Services Not Previously Listed.</td>
+      <td>[ Free Text]</td>
+      <td>TXT</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>42</th>
+      <td>CQ26</td>
+      <td>Has this system had one or more major cyber incident(s) within the last year?</td>
+      <td>[ Yes,  No,  Unknown]</td>
+      <td>PICK</td>
+      <td>162</td>
+    </tr>
+    <tr>
+      <th>43</th>
+      <td>CQ26A</td>
+      <td>If yes, then please provide the number of major incidents within the last year.</td>
+      <td>[ Free Text]</td>
+      <td>TXT</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>44</th>
+      <td>CQ26B</td>
+      <td>If yes, then have any of the major cyber incidents/events listed previously: (please select all that apply)</td>
+      <td>[ Resulted in unscheduled downtime/unavailability,  Required outside incident response support  in the last 12 months]</td>
+      <td>PICK</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>45</th>
+      <td>CQ26B1</td>
+      <td>If major cyber incidents/events resulted in unscheduled downtime/unavailability, then please indicate the number of incidents/events.</td>
+      <td>[ Integer]</td>
+      <td>INT</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>46</th>
+      <td>CQ26B2</td>
+      <td>If major cyber incidents/events required outside incident response support in the last 12 months, then please indicate the number of incidents/events.</td>
+      <td>[ Integer]</td>
+      <td>INT</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>47</th>
+      <td>NEF/MEF Support/ Down Time/ Impact Public/ Sensitive Data</td>
+      <td>If major cyber incidents/events required outside incident response support in the last 12 months, then please indicate the number of incidents/events.</td>
+      <td>[ Integer]</td>
+      <td>INT</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>48</th>
+      <td>Q27</td>
+      <td>Is this system necessary to perform one or more Primary Mission Essential Function(s) (PMEF)?</td>
+      <td>[ Yes,  No,  Unknown]</td>
+      <td>PICK</td>
+      <td>162</td>
+    </tr>
+    <tr>
+      <th>49</th>
+      <td>CQ27A</td>
+      <td>If yes, how many Primary Mission Essential Functions (PMEF) does this HVA support?</td>
+      <td>[ Free Text]</td>
+      <td>TXT</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>50</th>
+      <td>CQ27B</td>
+      <td>If yes, please lease select the PMEFS for this HVA:</td>
+      <td>[DOJ(1) - Advise and Represent the President, DOJ(2) - Protect Senior Officials and the Courts, DOJ(3) - Perform Critical Legal Reviews, DOJ(4) - Fight Terrorism and Espionage, DOJ(5) - Conduct Law Enforcement Activities, DOJ(6) - Operate Federal Prisons, DHS(1) - Secure and Manage the Borders, DHS(2) - Secure Critical Infrastructure and Cyberspace, DHS(3) - Protect National Leaders, DHS(4) - Provide Domestic Situational Awareness, DHS(5) - Enforce Homeland Security Laws and Regulations, DHS(6) - Coordinate Continuity and Incident Response, DHS(7) - Coordinate Disaster Recovery, GSA(1) - Lead Government Reconstitution, DOD(1) - Advise on National Defense Policy, DOD(2) - Defend the Security of the United States, DOD(3) - Collect, Analyze, and Disseminate Intelligence, DOD(4) - Promote National Security, DOD(5) - Conduct Domestic Emergency Response, DOS(1) - Formulate Foreign Affairs Policy, DOS(2) - Maintain Foreign Diplomatic Relations, DOS(3) - Maintain International Situational Awareness, DOS(4) - Support USCitizens Overseas, CIA(1) - Produce Timely Intelligence Reports, CIA(2) - Collect Intelligence , CIA(3) - Conduct Covert Operations, DOI(1) - Provide Emergency Response on Federal Lands, DOI(2) - Provide Law Enforcement on Federal Lands, DOI(3) - Provide National Emergency Response, DOI(4) - Maintain Relations with Insular Areas and Tribes, DOI(5) - Provide Water and Electric Power, DOE(1) - Ensure Nuclear Materials Safety, DOE(2) - Respond to Nuclear Incidents, DOE(3) - Manage Energy Infrastructure, DOC(1) - Prevent Export Control Violations, DOC(2) - Provide Satellite Imagery, DOC(3) - Provide Meteorological Forecasts, DOC(4) - Maintain Operational Federal Communications, TREAS(1) - Safeguard the Economy and the Financial System, TREAS(2) - Use Financial Measures to Counter National Security Threats, TREAS(3) - Manage Government Finances, TREAS(4) - Promote International Financial Stability, USDA(1) - Ensure Food Safety, USDA(2) - Provide Emergency Food Supplies, USDA(3) - Fight Forest Fires, USDA(4) - Provide Safety and Security on Public Lands, FRS(1) - Conduct Monetary Policy, FRS(2) - Maintain Financial System Stability, FRS(3) - Regulate Banking, FRS(4) - Provide Financial Services, DOT(1) - Ensure Defense Transportation Infrastructure, DOT(2) - Respond to Transportation Disruptions, DOT(3) - Operate the National Airspace System, HHS(1) - Monitor and Respond to Health Emergencies and Risks, HHS(2) - Oversee Safety of Medical and Food Products, HHS(3) - Provide Medical Care and Services, NRC(1) - Maintain Awareness and Respond to US Civilian Nuclear Events, NRC(2) - Ensure Safe US Civilian Nuclear Operations, FCC(1) - Maintain Operational Communications, EPA(1) - Respond to Environmental and Health Threats, CFTC(1) - Monitor Commodity Futures Markets, SSA(1) - Provide Social Security Services, SEC(1) - Regulate Securities Markets, OPM(1) - Provide Human Capital Services, NASA(1) - Operate Satellites, VA(1) - Provide Medical Care, ODNI(1) - Collect, Analyze, and Provide Intelligence, NARA(1) - Publish the Federal Register, USPS(1) - Deliver Postal Services, NCUA(1) - Maintain Solvent Credit Unions]</td>
+      <td>PICK</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>51</th>
+      <td>CQ28</td>
+      <td>Is this HVA necessary to perform one or more Mission Essential Function(s) (MEF)?</td>
+      <td>[ Yes,  No,  Unknown]</td>
+      <td>PICK</td>
+      <td>162</td>
+    </tr>
+    <tr>
+      <th>52</th>
+      <td>CQ28A</td>
+      <td>If Yes, how many Mission Essential Functions (MEF) does this HVA perform?</td>
+      <td>[ Integer]</td>
+      <td>INT</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>53</th>
+      <td>CQ28B</td>
+      <td>If yes, describe the MEFS</td>
+      <td>[ Free Text]</td>
+      <td>TXT</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>54</th>
+      <td>CQ29</td>
+      <td>If this HVA supports one or more PMEFS or MEFS, then If the HVA is unavailable for more than 12 hours, what is the impact to the PMEF or MEF it supports?</td>
+      <td>[ HVA does not support a PMEF or MEF ,  No impact: Essential function is accomplished as intended,  Work around: Essential function is still fully accomplished but requires documented and trained-to work around procedures "Workaround” does not mean patched together actions or “hacks”  Defined as approved, documented plans that staff already knows ,  Degraded: Essential function is partially accomplished  There may be delays in time There may be omissions of information There may be parts of functions that cannot be provided,  Failure: Essential function cannot be accomplished  Highest impact to mission and function of Agency]</td>
+      <td>PICK</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>55</th>
+      <td>CQ29A</td>
+      <td>If "Degraded (4) or Failure (5)"  to 20.0,  Are there any non-mission impacts associated with this system's unavailability after 12 hours? (Select all that apply)</td>
+      <td>[ Safety,  Environmental,  Financial,  Public Trust,  Other [Free Text]]</td>
+      <td>PICK</td>
+      <td>362</td>
+    </tr>
+    <tr>
+      <th>56</th>
+      <td>CQ30</td>
+      <td>Could a failure, corruption, or degradation of the HVA have a direct impact on regional or national health, public safety, and welfare of the United States?</td>
+      <td>[ Yes,  No,  Unknown]</td>
+      <td>PICK</td>
+      <td>162</td>
+    </tr>
+    <tr>
+      <th>57</th>
+      <td>CQ31</td>
+      <td>Does the HVA store, receive, send, use, create, or otherwise process any of the following sensitive data types? If yes, indicate the approximate volume of records for each type indicated:</td>
+      <td>[ Yes,  No,  Unknown]</td>
+      <td>PICK</td>
+      <td>162</td>
+    </tr>
+    <tr>
+      <th>58</th>
+      <td>CQ32</td>
+      <td>Please describe the following that is stored or processed by the system</td>
+      <td>[ PII,  PHI,  Law Enforcement,  Pre-Release,  IP,  Other [Free Text]]</td>
+      <td>PICK</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>59</th>
+      <td>CQ32A</td>
+      <td>PII Volume</td>
+      <td>[&lt;1K, 1K - 100K, 100K -1M, 1M - 100M, &gt; 100M, Unknown, Unknown]</td>
+      <td>PICK</td>
+      <td>157</td>
+    </tr>
+    <tr>
+      <th>60</th>
+      <td>CQ32B</td>
+      <td>PII Type</td>
+      <td>[&lt;1K, 1K - 100K, 100K -1M, 1M - 100M, &gt; 100M, Unknown, Unknown]</td>
+      <td>PICK</td>
+      <td>157</td>
+    </tr>
+    <tr>
+      <th>61</th>
+      <td>CQ32C</td>
+      <td>PHI Volume</td>
+      <td>[&lt;1K, 1K - 100K, 100K -1M, 1M - 100M, &gt; 100M, Unknown, Unknown]</td>
+      <td>PICK</td>
+      <td>157</td>
+    </tr>
+    <tr>
+      <th>62</th>
+      <td>CQ32D</td>
+      <td>PHI Type</td>
+      <td>[&lt;1K, 1K - 100K, 100K -1M, 1M - 100M, &gt; 100M, Unknown, Unknown]</td>
+      <td>PICK</td>
+      <td>157</td>
+    </tr>
+    <tr>
+      <th>63</th>
+      <td>CQ32E</td>
+      <td>Law Enforcement Volume</td>
+      <td>[&lt;1K, 1K - 100K, 100K -1M, 1M - 100M, &gt; 100M, Unknown, Unknown]</td>
+      <td>PICK</td>
+      <td>157</td>
+    </tr>
+    <tr>
+      <th>64</th>
+      <td>CQ32F</td>
+      <td>Law Enforcement Type</td>
+      <td>[&lt;1K, 1K - 100K, 100K -1M, 1M - 100M, &gt; 100M, Unknown, Unknown]</td>
+      <td>PICK</td>
+      <td>157</td>
+    </tr>
+    <tr>
+      <th>65</th>
+      <td>CQ32G</td>
+      <td>Pre-Release Volume</td>
+      <td>[&lt;1K, 1K - 100K, 100K -1M, 1M - 100M, &gt; 100M, Unknown, Unknown]</td>
+      <td>PICK</td>
+      <td>157</td>
+    </tr>
+    <tr>
+      <th>66</th>
+      <td>CQ32H</td>
+      <td>Pre-Release Type</td>
+      <td>[&lt;1K, 1K - 100K, 100K -1M, 1M - 100M, &gt; 100M, Unknown, Unknown]</td>
+      <td>PICK</td>
+      <td>157</td>
+    </tr>
+    <tr>
+      <th>67</th>
+      <td>CQ32I</td>
+      <td>IP Volume</td>
+      <td>[&lt;1K, 1K - 100K, 100K -1M, 1M - 100M, &gt; 100M, Unknown, Unknown]</td>
+      <td>PICK</td>
+      <td>157</td>
+    </tr>
+    <tr>
+      <th>68</th>
+      <td>CQ32J</td>
+      <td>IP Type</td>
+      <td>[&lt;1K, 1K - 100K, 100K -1M, 1M - 100M, &gt; 100M, Unknown, Unknown]</td>
+      <td>PICK</td>
+      <td>157</td>
+    </tr>
+    <tr>
+      <th>69</th>
+      <td>CQ32K</td>
+      <td>Other Volume</td>
+      <td>[&lt;1K, 1K - 100K, 100K -1M, 1M - 100M, &gt; 100M, Unknown, Unknown]</td>
+      <td>PICK</td>
+      <td>157</td>
+    </tr>
+    <tr>
+      <th>70</th>
+      <td>CQ32L</td>
+      <td>Other Type</td>
+      <td>[ Free Text]</td>
+      <td>TXT</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>71</th>
+      <td>CQ33</td>
+      <td>Number of network endpoints, including servers and virtual servers, within HVA system boundary (production environment only)</td>
+      <td>[1-10, 11-25, 26-50, 51-200,  201+]</td>
+      <td>PICK</td>
+      <td>158</td>
+    </tr>
+    <tr>
+      <th>72</th>
+      <td>Internal Interconnections</td>
+      <td>Number of network endpoints, including servers and virtual servers, within HVA system boundary (production environment only)</td>
+      <td>[ 201+]</td>
+      <td>TXT</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>73</th>
+      <td>CQ34</td>
+      <td>Please list each interconnection or data exchange (receive, transmit, or both) between the HVA and other systems. Indicate if the interconnection/data exchange is internal or external to another HVA, or if it is critical for the HVA for accomplishing its function. Indicate the kind of agreement (MOU, MOA, ISA, Contract, IAA etc.) that covers this interconnection.</td>
+      <td>[ Free text]</td>
+      <td>TXT</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>74</th>
+      <td>CQ34A</td>
+      <td>Please enter the Name of the Interconnected System</td>
+      <td>[ Free text]</td>
+      <td>TXT</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>75</th>
+      <td>CQ34B</td>
+      <td>Please Enter the name of D/A/Comp that owns the interconnected system</td>
+      <td>[ Free text]</td>
+      <td>TXT</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>76</th>
+      <td>CQ34C</td>
+      <td>Does D/A for this HVA have an ISA/MOU with owning organization for the interconneted system?</td>
+      <td>[ Yes,  No,  Unknown]</td>
+      <td>PICK</td>
+      <td>162</td>
+    </tr>
+    <tr>
+      <th>77</th>
+      <td>CQ34D</td>
+      <td>Is this connected system Internal to your Agency?</td>
+      <td>[ Yes,  No,  Unknown]</td>
+      <td>PICK</td>
+      <td>162</td>
+    </tr>
+    <tr>
+      <th>78</th>
+      <td>CQ34E</td>
+      <td>If 'Yes' to Internal to Agency, then Is this system also an HVA?</td>
+      <td>[ Yes,  No,  Unknown]</td>
+      <td>PICK</td>
+      <td>162</td>
+    </tr>
+    <tr>
+      <th>79</th>
+      <td>CQ34F</td>
+      <td>Is this interconnection/data exchange mission essential to the HVA Function?</td>
+      <td>[ Yes,  No,  Unknown]</td>
+      <td>PICK</td>
+      <td>162</td>
+    </tr>
+    <tr>
+      <th>80</th>
+      <td>CQ34G</td>
+      <td>Is this interconnection Transmit, Receive, or Both?</td>
+      <td>[ Transmit,  Receive,  Both]</td>
+      <td>PICK</td>
+      <td>329</td>
+    </tr>
+    <tr>
+      <th>81</th>
+      <td>External Interconnections</td>
+      <td>Is this interconnection Transmit, Receive, or Both?</td>
+      <td>[ Both]</td>
+      <td>TXT</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>82</th>
+      <td>CQ35</td>
+      <td>Please list each interconnection or data exchange (receive, transmit or both) between this HVA and other systems outside of the '.gov' or '.mil' domain (such as contractors, FFRDCs or commercial). Indicate if the interconnection/data exchange is internal or external to another HVA, or if it is critical for the HVA for accomplishing its function. Indicate the kind of agreement (MOU, MOA, ISA, Contract, IAA etc.) that covers this interconnection.</td>
+      <td>[ Free Text]</td>
+      <td>TXT</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>83</th>
+      <td>CQ35A</td>
+      <td>Name of the interconnected system(s):</td>
+      <td>[ Free Text]</td>
+      <td>TXT</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>84</th>
+      <td>CQ35B</td>
+      <td>Please enter the Name of the organization that owns the interconnected system</td>
+      <td>[ Free Text]</td>
+      <td>TXT</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>85</th>
+      <td>CQ35C</td>
+      <td>Please indicate the organization type for the interconnected system such as</td>
+      <td>[ Private/Commercial,  NGO,  FFRDC,  SLTT,  Other]</td>
+      <td>PICK</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>86</th>
+      <td>CQ35D</td>
+      <td>Does the D/A for this HVA have an ISA/MOU with the organization that owns the interconnected system?</td>
+      <td>[ Yes,  No,  Unknown]</td>
+      <td>PICK</td>
+      <td>162</td>
+    </tr>
+    <tr>
+      <th>87</th>
+      <td>CQ35E</td>
+      <td>Is this interconnection/data exchange mission essential to the HVA Function?</td>
+      <td>[ Yes,  No,  Unknown]</td>
+      <td>PICK</td>
+      <td>162</td>
+    </tr>
+    <tr>
+      <th>88</th>
+      <td>CQ35F</td>
+      <td>Is this Interconnection or data exchange a high priority for this HVA or the connecting system?</td>
+      <td>[ Yes,  No,  Unknown]</td>
+      <td>PICK</td>
+      <td>162</td>
+    </tr>
+    <tr>
+      <th>89</th>
+      <td>CQ35G</td>
+      <td>Is this interconnection Transmit, Receive or Both?</td>
+      <td>[ Transmit,  Receive,  Both]</td>
+      <td>PICK</td>
+      <td>329</td>
+    </tr>
+  </tbody>
+</table>
