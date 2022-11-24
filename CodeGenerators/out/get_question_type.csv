@@ -1,0 +1,11 @@
+PK_QuestionTypeId,Code,description
+1,YN,Yes / No
+2,CNT,Count
+5,YNA,Yes / No / NA
+9,TXT,Text
+17,PICK,PickList
+18,LABEL,Text Only
+23,FREQ,# / Time Span
+35,DEC,decimal
+43,MULTICHECKBOX,Multi Check Box
+62,INSTRUCTION,Instruction (Text Only)

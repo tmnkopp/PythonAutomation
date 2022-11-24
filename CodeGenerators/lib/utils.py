@@ -9,7 +9,27 @@ from sklearn.metrics.pairwise import cosine_similarity
 from difflib import SequenceMatcher
 sw=stopwords.words('english')
 ps=PorterStemmer()  
- 
+
+def get_question_type(s, ctx, default=1, usecache=False):  
+    if not usecache: 
+        df=sql_todf("""SELECT PK_QuestionTypeId, Code ,description FROM fsma_QuestionTypes
+                        WHERE Code IN ('YN','CNT','YNA','TXT','PICK','LABEL','FREQ','DEC','INSTRUCTION','MULTICHECKBOX')
+        """, ctx.config['connstr']) 
+        df.to_csv(f'{ctx.get_dest()}get_question_type.csv', index=False)
+     
+    df=pd.read_csv(f'{ctx.get_dest()}get_question_type.csv')
+    lod=df.to_dict(orient='records') 
+
+    if re.search('How Many|Number of',s,re.IGNORECASE): 
+        return lod[1]
+
+    for i in lod:
+        reg=re.sub('[^A-Z]','',i['Code'].upper()) +'|'+re.sub('[^A-Z]','',i['description'].upper())
+        nrm=re.sub('[^A-Z]','',s.upper()) 
+        if re.search(reg,nrm,re.IGNORECASE): 
+            return i  
+    return lod[1]
+
 def generate_id(t, limit=15): 
     if type(t) == list: 
         t=str(t)
@@ -39,6 +59,9 @@ def range_extractor(s):
         mx=m.groups(0)[1]   
     return int(mn),int(mx) 
 def sql_todf(query,connstr):
+    config = {}
+    with open('config.json', 'r') as f: 
+        config=json.loads(f.read())  
     df=pd.DataFrame() 
     engine = create_engine(connstr) 
     conn = engine.connect() 

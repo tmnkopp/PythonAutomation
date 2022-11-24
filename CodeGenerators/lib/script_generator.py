@@ -14,14 +14,15 @@ class script_generator():
             m=re.search('\{(\w*)\}',tmp)
             if m is not None:
                 g=m.groups(1)[0]
-                if g in r.keys(): 
+                if g in r.keys():  
                     tmp = tmp.replace('{'+g.upper()+'}',r[g])  
             self.ext = tmp[tmp.index('.'):] 
             try:
                 with open(tmp, 'r', encoding=self.ctx.config['encoding'], errors='replace') as f: 
                     tmp = f.read()
-                for c in df.columns:    
-                    tmp = tmp.replace("{"+c.upper()+"}", str(r[c]))   
+                for c in [c for c in df.columns if '{' in c]:    
+                    #tmp = tmp.replace("{"+c.upper()+"}", str(r[c])) 
+                    tmp=re.sub(c, str(r[c]), tmp, flags=re.IGNORECASE)  
                 st=st+tmp 
             except Exception as e:  
                 print(f'err {e}')
