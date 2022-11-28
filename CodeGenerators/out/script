@@ -1,6 +1,0 @@
-(36422, @FormName, @PK_QGroup+13,7,N'8.1.1',1,0,1,N' If no, does your agency set standards for a patch management process? (yes/no)', NULL)
-,(36423, @FormName, @PK_QGroup+13,8,N'8.1.2',1,0,1,N' Does the agency patching management process utilize the severity of a vulnerability (e.g., KEV, CVSS, SSVC) to prioritize patches? (yes/no)', NULL)
-,(36424, @FormName, @PK_QGroup+13,9,N'8.1.3',1,0,1,N' Does your agency use methods other than CVSS to analyze the severity of vulnerabilities? (yes/no – if yes, state which methods)', NULL)
-,(36425, @FormName, @PK_QGroup+13,10,N'8.1.3.1',9,0,1,N' If yes, state which methods (txt)', NULL)
-,(36426, @FormName, @PK_QGroup+13,11,N'8.1.4',9,0,1,N' Describe the extent to which the agency applies threat intelligence in its patching process. (txt)', NULL)
-,(36427, @FormName, @PK_QGroup+13,13,N'8.2.1',2,0,1,N' If yes, what percentage of software assets are covered by automation? (PCTSINGLE)', NULL)
