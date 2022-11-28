@@ -1,4 +1,4 @@
-import re, sys
+import re, sys,json
 from sqlalchemy import func, create_engine
 import pandas as pd
 import nltk
@@ -58,10 +58,25 @@ def range_extractor(s):
     if m.groups(0)[1]!='':
         mx=m.groups(0)[1]   
     return int(mn),int(mx) 
+def df_to_sql(dff, ctx, template_name='fsma_QuestionsInsert.sql', out_script='script'):
+    df=dff
+    df=df.astype(str)
+    df.reset_index(inplace=True)    
+    with open (ctx.get_tempalte_dir()+template_name, 'r') as f:
+        df['sql']=f.read()   
+    for i,r in df.iterrows():
+        for c in df.columns:   
+            df.loc[i,'sql']= re.sub(str(c),str(df.loc[i,c]),str(df.loc[i,'sql']))  
+    sql='\n,'.join(df['sql'])
+    with open(f'{ctx.get_dest()}{out_script}', 'w') as f:
+        f.write(sql)
+    return sql  
+
 def sql_todf(query,connstr):
     config = {}
     with open('config.json', 'r') as f: 
         config=json.loads(f.read())  
+    connstr=config['connstr']
     df=pd.DataFrame() 
     engine = create_engine(connstr) 
     conn = engine.connect() 

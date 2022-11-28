@@ -1,0 +1,1 @@
+DECLARE @ANS_{var} INT = (SELECT TOP 1  CASE @PK_QuestionGroup WHEN 0 THEN TableAns ELSE COALESCE(CONVERT(INT,MetricAns),0) END FROM @ListofQuestions2 WHERE identifier_text='{idt}')
