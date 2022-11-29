@@ -7,6 +7,7 @@ from nltk.stem.porter import PorterStemmer
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.metrics.pairwise import cosine_similarity
 from difflib import SequenceMatcher
+from lib.script_generator import script_generator 
 sw=stopwords.words('english')
 ps=PorterStemmer()  
 
