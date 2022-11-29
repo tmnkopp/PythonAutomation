@@ -97,3 +97,25 @@ def shorten(s):
         if len(s) > 25:
             return s[:25]+'...'
     return s
+
+
+def generate_code_from_db(ctx, qgroup=4018):
+    df=sql_todf("""
+    SELECT 
+idText as identifier_text 
+,CASE WHEN idText='' THEN REPLACE(ID,'-','_')  ELSE REPLACE(idText,'.','_') END AS [{idt}]
+,ID as [id]
+,Q_TypeCode CTRLCODE 
+,FK_QuestionType
+,PK_Question as [{PK_Question}]
+,sortpos
+,QTEXT as [{QuestionText}] 
+    """+ f"FROM vwQuestions WHERE PK_QuestionGroup={qgroup}", ctx.connstr) 
+    df['{idt}']=df['{idt}'].apply(lambda s: re.sub('_$','',s))
+    gen=script_generator(ctx)
+    code=gen.generate(df)
+    with open(f'{ctx.get_dest()}script.aspx', 'w') as f:
+        f.write(code)
+    return df, code    
+
+
