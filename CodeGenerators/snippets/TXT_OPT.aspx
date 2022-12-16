@@ -1,0 +1,2 @@
+<uc:CBnumeric2 ID="CBNumeric_{idt}" PK_Question="{idt}" runat="server" CSSClass="CustomControlValue"  />
+<uc:CBoptionalLinks ID="CBoptionalLinks_{idt}" LinkEditID="CBNumeric_{idt}" runat="server"  ShowAudit="True" ShowHelp="True" ShowNarrative="true" AuditRecs="20" />
