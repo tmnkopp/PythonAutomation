@@ -6,3 +6,5 @@ config.*
 __pycache__/
 chase.ipynb
 *config.json
+*.log
+CodeGenerators/pom.log
