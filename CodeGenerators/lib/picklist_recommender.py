@@ -22,15 +22,15 @@ class NpEncoder(json.JSONEncoder):
             return obj.tolist()
             return json.JSONEncoder.default(self, obj)              
 class picklist_recommender():
-    def __init__(self, connstr, use_cache=True, reset_cache=False):  
+    def __init__(self, connstr, use_cache=True, reset_cache=False, picklist_order='ASC'):  
         self.connstr = connstr 
         self.use_cache = use_cache 
         self.reset_cache = reset_cache 
         self.recommend_result={}
         self.input_list=[]
         self.cache=self.load_cache()
-        self.df = self._sqltodf("""
-        SELECT PK_Picklist, PK_PicklistType, UsageField, DisplayValue from vwPicklists
+        self.df = self._sqltodf(f"""
+        SELECT PK_Picklist, PK_PicklistType, UsageField, DisplayValue from vwPicklists ORDER BY PK_Picklist {picklist_order}
         """, connstr) 
 
     def recommend(self, input_list, threshhold=(.825, .5)): 

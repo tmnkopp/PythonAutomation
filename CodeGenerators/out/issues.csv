@@ -1,12 +1,14 @@
 Key,Summary
 CSHELP-3489,Investigate BOD 22-01 Variances
-CS-9335,AgencyAddFormInstance - prod errors update inserts answers
-CS-9334,merge 7.50 to trunk
+CS-9379,HVA Self-Assessment: Data Protection- Appendix A: Data Protection Scoring Dashboard
+CS-9378,HVA Self-Assessment: Data Protection- Appendix A: Data Protection Scoring Dashboard- Database Script
+CS-9359,HVA Self-Assessment: Network Architecture - Appendix A: Scoring Dashboard
+CS-9353,HVA Self-Assessment: Network Architecture - Appendix A: Scoring Dashboard- Database Script
+CS-9337,Create New Control on ReporterHome to Allow Multiple Forms per HVA: BOD 18-02 HVA Self-Assessment
 CS-9317,2023 FISMA CIO Q1 Data Call: Validate and Approve Page
 CS-9309,2023 FISMA CIO Q1 Data Call: Section 4- Critical Software
 CS-9295,2023 FISMA CIO Q1 Data Call: Section 3 -Database Script
 CS-9261,BOD 18-02 Annual 2023: Manage HVAs Agency Interface
-CS-9256,BOD 18-02 Annual 2023: Validate and Approve
 CS-8885,create data request/response service
 CS-8678,BOD 18-02 Annual HVA 2021: Update 'Manage HVA Interface' Audit Logs
 CS-8459,Selenium Browser Automator Refactor

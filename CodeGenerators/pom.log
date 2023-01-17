@@ -81,3 +81,17 @@ INFO:root:Started
 01/05/2023 02:44:11 PM NumExpr defaulting to 8 threads.
 01/07/2023 11:34:27 AM init
 01/09/2023 02:37:27 PM init
+01/12/2023 02:29:33 PM init
+01/13/2023 11:58:12 AM Note: NumExpr detected 12 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 8.
+01/13/2023 11:58:12 AM NumExpr defaulting to 8 threads.
+01/13/2023 01:53:14 PM init
+01/13/2023 01:54:11 PM Note: NumExpr detected 12 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 8.
+01/13/2023 01:54:11 PM NumExpr defaulting to 8 threads.
+01/13/2023 02:11:16 PM 
+
+01/13/2023 02:11:16 PM ====== WebDriver manager ======
+01/13/2023 02:11:17 PM Current google-chrome version is 108.0.5359
+01/13/2023 02:11:17 PM Get LATEST driver version for 108.0.5359
+01/13/2023 02:11:17 PM Get LATEST driver version for 108.0.5359
+01/13/2023 02:11:17 PM Trying to download new driver from https://chromedriver.storage.googleapis.com/108.0.5359.71/chromedriver_win32.zip
+01/13/2023 02:11:17 PM Driver has been saved in cache [C:\Users\Tim\.wdm\drivers\chromedriver\win32\108.0.5359.71]
