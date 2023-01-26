@@ -22,7 +22,7 @@ class NpEncoder(json.JSONEncoder):
             return obj.tolist()
             return json.JSONEncoder.default(self, obj)              
 class picklist_recommender():
-    def __init__(self, connstr, use_cache=True, reset_cache=False, picklist_order='ASC'):  
+    def __init__(self, connstr, use_cache=True, reset_cache=False, picklist_where='1=1'):  
         self.connstr = connstr 
         self.use_cache = use_cache 
         self.reset_cache = reset_cache 
@@ -30,9 +30,11 @@ class picklist_recommender():
         self.input_list=[]
         self.cache=self.load_cache()
         self.df = self._sqltodf(f"""
-        SELECT PK_Picklist, PK_PicklistType, UsageField, DisplayValue from vwPicklists ORDER BY PK_Picklist {picklist_order}
-        """, connstr) 
-
+        SELECT PK_Picklist, PK_PicklistType, UsageField, DisplayValue from vwPicklists 
+        WHERE {picklist_where}
+        ORDER BY PK_PicklistType , PK_Picklist ASC
+        """, connstr)  
+        self.db_picks=[{}]
     def recommend(self, input_list, threshhold=(.825, .5)): 
         self.input_list=input_list
         df = self.df 
@@ -40,13 +42,16 @@ class picklist_recommender():
         df = df.groupby(['PK_PicklistType','UsageField'], as_index = False).agg({'DisplayValue': ' '.join, 'PK_Picklist':max})
         df['MAX_PK_Picklist']= int(dmx['PK_Picklist'])     
         df['MAX_PK_PicklistType']= int(dmx['PK_PicklistType'])  
-
-        input=self.normalize(''.join(input_list))
+        df['DisplayValue'] = df['DisplayValue'].apply(self.normalize) 
+        #df=df.sort_values( by='PK_PicklistType', ascending=False)
+        self.db_picks=df
+        input=self.normalize(' '.join(input_list))
+        self.input=input
         if self._get_cache(input) != None and self.use_cache:
             return self._get_cache(input)
         
         for i,r in df.iterrows(): 
-            txt_test=self.normalize(r['DisplayValue']) 
+            txt_test=r['DisplayValue']
             sequence_match = SequenceMatcher(None, txt_test,input).ratio() 
             df.at[i,'simscore'] = sequence_match 
             if df.at[i,'simscore'] > threshhold[0]: 

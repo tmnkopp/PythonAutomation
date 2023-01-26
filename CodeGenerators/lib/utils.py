@@ -108,6 +108,7 @@ idText as identifier_text
 ,Q_TypeCode CTRLCODE 
 ,FK_QuestionType
 ,PK_Question as [{PK_Question}]
+,PK_PickListType as [{PK_PickListType}]
 ,sortpos
 ,QTEXT as [{QuestionText}] 
     """+ f"FROM vwQuestions WHERE PK_QuestionGroup={qgroup}", ctx.connstr) 
