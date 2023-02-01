@@ -138,3 +138,19 @@ INFO:root:Started
 01/26/2023 08:09:30 AM init
 01/30/2023 08:49:20 AM init
 01/30/2023 04:24:07 PM init
+02/01/2023 08:12:42 AM init
+02/01/2023 08:13:22 AM 
+
+02/01/2023 08:13:22 AM ====== WebDriver manager ======
+02/01/2023 08:13:22 AM Current google-chrome version is 109.0.5414
+02/01/2023 08:13:22 AM Get LATEST driver version for 109.0.5414
+02/01/2023 08:13:22 AM There is no [win32] chromedriver for browser 109.0.5414 in cache
+02/01/2023 08:13:22 AM Get LATEST driver version for 109.0.5414
+02/01/2023 08:13:22 AM Trying to download new driver from https://chromedriver.storage.googleapis.com/109.0.5414.74/chromedriver_win32.zip
+02/01/2023 08:13:23 AM Driver has been saved in cache [C:\Users\timko\.wdm\drivers\chromedriver\win32\109.0.5414.74]
+02/01/2023 08:14:23 AM 
+
+02/01/2023 08:14:23 AM ====== WebDriver manager ======
+02/01/2023 08:14:23 AM Current google-chrome version is 109.0.5414
+02/01/2023 08:14:23 AM Get LATEST driver version for 109.0.5414
+02/01/2023 08:14:23 AM Driver [C:\Users\timko\.wdm\drivers\chromedriver\win32\109.0.5414.74\chromedriver.exe] found in cache
