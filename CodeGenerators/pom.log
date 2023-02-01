@@ -154,3 +154,12 @@ INFO:root:Started
 02/01/2023 08:14:23 AM Current google-chrome version is 109.0.5414
 02/01/2023 08:14:23 AM Get LATEST driver version for 109.0.5414
 02/01/2023 08:14:23 AM Driver [C:\Users\timko\.wdm\drivers\chromedriver\win32\109.0.5414.74\chromedriver.exe] found in cache
+02/01/2023 08:14:44 AM init
+02/01/2023 08:14:54 AM 
+
+02/01/2023 08:14:54 AM ====== WebDriver manager ======
+02/01/2023 08:14:54 AM Current google-chrome version is 109.0.5414
+02/01/2023 08:14:54 AM Get LATEST driver version for 109.0.5414
+02/01/2023 08:14:55 AM Driver [C:\Users\timko\.wdm\drivers\chromedriver\win32\109.0.5414.74\chromedriver.exe] found in cache
+02/01/2023 08:15:16 AM Note: NumExpr detected 12 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 8.
+02/01/2023 08:15:16 AM NumExpr defaulting to 8 threads.
