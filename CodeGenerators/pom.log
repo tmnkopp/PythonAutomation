@@ -167,3 +167,20 @@ INFO:root:Started
 02/01/2023 08:17:05 AM Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000024DC643F970>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/b448a00051f3435acf7b336f57e868f8
 02/01/2023 08:17:07 AM Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000024DC8795A90>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/b448a00051f3435acf7b336f57e868f8
 02/02/2023 07:48:22 AM init
+02/03/2023 07:49:30 AM 
+
+02/03/2023 07:49:30 AM ====== WebDriver manager ======
+02/03/2023 07:49:30 AM Current google-chrome version is 109.0.5414
+02/03/2023 07:49:30 AM Get LATEST driver version for 109.0.5414
+02/03/2023 07:49:30 AM Get LATEST driver version for 109.0.5414
+02/03/2023 07:49:30 AM Trying to download new driver from https://chromedriver.storage.googleapis.com/109.0.5414.74/chromedriver_win32.zip
+02/03/2023 07:49:32 AM Driver has been saved in cache [C:\Users\timko\.wdm\drivers\chromedriver\win32\109.0.5414.74]
+02/03/2023 07:50:23 AM Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000024DC8745E50>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/de2cc5f7a0e45949c532ff6fe331b528
+02/03/2023 07:50:25 AM Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000024DC8745DF0>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/de2cc5f7a0e45949c532ff6fe331b528
+02/03/2023 07:50:27 AM Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000024DC87DAD00>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/de2cc5f7a0e45949c532ff6fe331b528
+02/06/2023 10:54:09 AM init
+02/06/2023 12:43:35 PM init
+02/06/2023 12:43:54 PM Note: NumExpr detected 12 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 8.
+02/06/2023 12:43:54 PM NumExpr defaulting to 8 threads.
+02/06/2023 12:51:17 PM init
+02/06/2023 12:57:45 PM init

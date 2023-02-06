@@ -134,7 +134,7 @@ def write_excel(filename,sheetname,dataframe):
 def SQL_INSERT_FROM_DF(SOURCE, TARGET='@T'):
     cols = [f'{c} INT' if SOURCE[c].dtype=='int64' else f'{c} NVARCHAR(MAX)' for c in SOURCE.columns ]
     sql_texts = []
-    print(f"DECLARE {TARGET} AS TABLE ({', '.join(cols)})")
+    print(f"--DECLARE {TARGET} AS TABLE ({', '.join(cols)})")
     for index, row in SOURCE.iterrows():       
         sql_texts.append('INSERT INTO '+TARGET+' ('+ str(', '.join(SOURCE.columns))+ ') VALUES '+ str(tuple(row.values)))     
     print(';\n'.join(sql_texts))       

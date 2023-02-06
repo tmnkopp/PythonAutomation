@@ -1,258 +1,116 @@
- INSERT INTO CVEUnremediated (PK_OrgSubmission, PK_CISA_CVE, CDMCountSubmitted, CDMDateSubmitted, SubmissionCount, UserId)
-            VALUES( (SELECT MAX(PK_OrgSubmission) FROM vwOrgSubToComponent WHERE PK_ReportingCycle=108 AND Acronym='DOI' )
-        ,'CVE-2022-44698' ,16467  ,'12-15-2022' ,16467 ,2815 ); 
- INSERT INTO CVEUnremediated (PK_OrgSubmission, PK_CISA_CVE, CDMCountSubmitted, CDMDateSubmitted, SubmissionCount, UserId)
-            VALUES( (SELECT MAX(PK_OrgSubmission) FROM vwOrgSubToComponent WHERE PK_ReportingCycle=108 AND Acronym='GSA' )
-        ,'CVE-2022-44698' ,5255  ,'12-15-2022' ,5255 ,2815 ); 
- INSERT INTO CVEUnremediated (PK_OrgSubmission, PK_CISA_CVE, CDMCountSubmitted, CDMDateSubmitted, SubmissionCount, UserId)
-            VALUES( (SELECT MAX(PK_OrgSubmission) FROM vwOrgSubToComponent WHERE PK_ReportingCycle=108 AND Acronym='NASA' )
-        ,'CVE-2022-44698' ,4388  ,'12-15-2022' ,4388 ,2815 ); 
- INSERT INTO CVEUnremediated (PK_OrgSubmission, PK_CISA_CVE, CDMCountSubmitted, CDMDateSubmitted, SubmissionCount, UserId)
-            VALUES( (SELECT MAX(PK_OrgSubmission) FROM vwOrgSubToComponent WHERE PK_ReportingCycle=108 AND Acronym='DOL' )
-        ,'CVE-2022-44698' ,3039  ,'12-15-2022' ,3039 ,2815 ); 
- INSERT INTO CVEUnremediated (PK_OrgSubmission, PK_CISA_CVE, CDMCountSubmitted, CDMDateSubmitted, SubmissionCount, UserId)
-            VALUES( (SELECT MAX(PK_OrgSubmission) FROM vwOrgSubToComponent WHERE PK_ReportingCycle=108 AND Acronym='USAGM' )
-        ,'CVE-2022-44698' ,2303  ,'12-15-2022' ,2303 ,2815 ); 
- INSERT INTO CVEUnremediated (PK_OrgSubmission, PK_CISA_CVE, CDMCountSubmitted, CDMDateSubmitted, SubmissionCount, UserId)
-            VALUES( (SELECT MAX(PK_OrgSubmission) FROM vwOrgSubToComponent WHERE PK_ReportingCycle=108 AND Acronym='FDIC' )
-        ,'CVE-2022-44698' ,2234  ,'12-15-2022' ,2234 ,2815 ); 
- INSERT INTO CVEUnremediated (PK_OrgSubmission, PK_CISA_CVE, CDMCountSubmitted, CDMDateSubmitted, SubmissionCount, UserId)
-            VALUES( (SELECT MAX(PK_OrgSubmission) FROM vwOrgSubToComponent WHERE PK_ReportingCycle=108 AND Acronym='FRB' )
-        ,'CVE-2022-44698' ,2190  ,'12-15-2022' ,2190 ,2815 ); 
- INSERT INTO CVEUnremediated (PK_OrgSubmission, PK_CISA_CVE, CDMCountSubmitted, CDMDateSubmitted, SubmissionCount, UserId)
-            VALUES( (SELECT MAX(PK_OrgSubmission) FROM vwOrgSubToComponent WHERE PK_ReportingCycle=108 AND Acronym='OPM' )
-        ,'CVE-2022-44698' ,1868  ,'12-15-2022' ,1868 ,2815 ); 
- INSERT INTO CVEUnremediated (PK_OrgSubmission, PK_CISA_CVE, CDMCountSubmitted, CDMDateSubmitted, SubmissionCount, UserId)
-            VALUES( (SELECT MAX(PK_OrgSubmission) FROM vwOrgSubToComponent WHERE PK_ReportingCycle=108 AND Acronym='NRC' )
-        ,'CVE-2022-44698' ,1474  ,'12-15-2022' ,1474 ,2815 ); 
- INSERT INTO CVEUnremediated (PK_OrgSubmission, PK_CISA_CVE, CDMCountSubmitted, CDMDateSubmitted, SubmissionCount, UserId)
-            VALUES( (SELECT MAX(PK_OrgSubmission) FROM vwOrgSubToComponent WHERE PK_ReportingCycle=108 AND Acronym='EEOC' )
-        ,'CVE-2022-44698' ,1272  ,'12-15-2022' ,1272 ,2815 ); 
- INSERT INTO CVEUnremediated (PK_OrgSubmission, PK_CISA_CVE, CDMCountSubmitted, CDMDateSubmitted, SubmissionCount, UserId)
-            VALUES( (SELECT MAX(PK_OrgSubmission) FROM vwOrgSubToComponent WHERE PK_ReportingCycle=108 AND Acronym='SBA' )
-        ,'CVE-2022-44698' ,1260  ,'12-15-2022' ,1260 ,2815 ); 
- INSERT INTO CVEUnremediated (PK_OrgSubmission, PK_CISA_CVE, CDMCountSubmitted, CDMDateSubmitted, SubmissionCount, UserId)
-            VALUES( (SELECT MAX(PK_OrgSubmission) FROM vwOrgSubToComponent WHERE PK_ReportingCycle=108 AND Acronym='USDA' )
-        ,'CVE-2022-44698' ,1191  ,'12-15-2022' ,1191 ,2815 ); 
- INSERT INTO CVEUnremediated (PK_OrgSubmission, PK_CISA_CVE, CDMCountSubmitted, CDMDateSubmitted, SubmissionCount, UserId)
-            VALUES( (SELECT MAX(PK_OrgSubmission) FROM vwOrgSubToComponent WHERE PK_ReportingCycle=108 AND Acronym='EXIMB' )
-        ,'CVE-2022-44698' ,760  ,'12-15-2022' ,760 ,2815 ); 
- INSERT INTO CVEUnremediated (PK_OrgSubmission, PK_CISA_CVE, CDMCountSubmitted, CDMDateSubmitted, SubmissionCount, UserId)
-            VALUES( (SELECT MAX(PK_OrgSubmission) FROM vwOrgSubToComponent WHERE PK_ReportingCycle=108 AND Acronym='FERC' )
-        ,'CVE-2022-44698' ,709  ,'12-15-2022' ,709 ,2815 ); 
- INSERT INTO CVEUnremediated (PK_OrgSubmission, PK_CISA_CVE, CDMCountSubmitted, CDMDateSubmitted, SubmissionCount, UserId)
-            VALUES( (SELECT MAX(PK_OrgSubmission) FROM vwOrgSubToComponent WHERE PK_ReportingCycle=108 AND Acronym='CFTC' )
-        ,'CVE-2022-44698' ,648  ,'12-15-2022' ,648 ,2815 ); 
- INSERT INTO CVEUnremediated (PK_OrgSubmission, PK_CISA_CVE, CDMCountSubmitted, CDMDateSubmitted, SubmissionCount, UserId)
-            VALUES( (SELECT MAX(PK_OrgSubmission) FROM vwOrgSubToComponent WHERE PK_ReportingCycle=108 AND Acronym='HUD' )
-        ,'CVE-2022-44698' ,578  ,'12-15-2022' ,578 ,2815 ); 
- INSERT INTO CVEUnremediated (PK_OrgSubmission, PK_CISA_CVE, CDMCountSubmitted, CDMDateSubmitted, SubmissionCount, UserId)
-            VALUES( (SELECT MAX(PK_OrgSubmission) FROM vwOrgSubToComponent WHERE PK_ReportingCycle=108 AND Acronym='CSOSA' )
-        ,'CVE-2022-44698' ,549  ,'12-15-2022' ,549 ,2815 ); 
- INSERT INTO CVEUnremediated (PK_OrgSubmission, PK_CISA_CVE, CDMCountSubmitted, CDMDateSubmitted, SubmissionCount, UserId)
-            VALUES( (SELECT MAX(PK_OrgSubmission) FROM vwOrgSubToComponent WHERE PK_ReportingCycle=108 AND Acronym='CPSC' )
-        ,'CVE-2022-44698' ,530  ,'12-15-2022' ,530 ,2815 ); 
- INSERT INTO CVEUnremediated (PK_OrgSubmission, PK_CISA_CVE, CDMCountSubmitted, CDMDateSubmitted, SubmissionCount, UserId)
-            VALUES( (SELECT MAX(PK_OrgSubmission) FROM vwOrgSubToComponent WHERE PK_ReportingCycle=108 AND Acronym='USAGM' )
-        ,'CVE-2022-4262' ,342  ,'12-15-2022' ,342 ,2815 ); 
- INSERT INTO CVEUnremediated (PK_OrgSubmission, PK_CISA_CVE, CDMCountSubmitted, CDMDateSubmitted, SubmissionCount, UserId)
-            VALUES( (SELECT MAX(PK_OrgSubmission) FROM vwOrgSubToComponent WHERE PK_ReportingCycle=108 AND Acronym='RRB' )
-        ,'CVE-2022-44698' ,296  ,'12-15-2022' ,296 ,2815 ); 
- INSERT INTO CVEUnremediated (PK_OrgSubmission, PK_CISA_CVE, CDMCountSubmitted, CDMDateSubmitted, SubmissionCount, UserId)
-            VALUES( (SELECT MAX(PK_OrgSubmission) FROM vwOrgSubToComponent WHERE PK_ReportingCycle=108 AND Acronym='DFC' )
-        ,'CVE-2022-44698' ,265  ,'12-15-2022' ,265 ,2815 ); 
- INSERT INTO CVEUnremediated (PK_OrgSubmission, PK_CISA_CVE, CDMCountSubmitted, CDMDateSubmitted, SubmissionCount, UserId)
-            VALUES( (SELECT MAX(PK_OrgSubmission) FROM vwOrgSubToComponent WHERE PK_ReportingCycle=108 AND Acronym='FRTIB' )
-        ,'CVE-2022-44698' ,229  ,'12-15-2022' ,229 ,2815 ); 
- INSERT INTO CVEUnremediated (PK_OrgSubmission, PK_CISA_CVE, CDMCountSubmitted, CDMDateSubmitted, SubmissionCount, UserId)
-            VALUES( (SELECT MAX(PK_OrgSubmission) FROM vwOrgSubToComponent WHERE PK_ReportingCycle=108 AND Acronym='NSF' )
-        ,'CVE-2022-44698' ,223  ,'12-15-2022' ,223 ,2815 ); 
- INSERT INTO CVEUnremediated (PK_OrgSubmission, PK_CISA_CVE, CDMCountSubmitted, CDMDateSubmitted, SubmissionCount, UserId)
-            VALUES( (SELECT MAX(PK_OrgSubmission) FROM vwOrgSubToComponent WHERE PK_ReportingCycle=108 AND Acronym='CNCS' )
-        ,'CVE-2022-44698' ,208  ,'12-15-2022' ,208 ,2815 ); 
- INSERT INTO CVEUnremediated (PK_OrgSubmission, PK_CISA_CVE, CDMCountSubmitted, CDMDateSubmitted, SubmissionCount, UserId)
-            VALUES( (SELECT MAX(PK_OrgSubmission) FROM vwOrgSubToComponent WHERE PK_ReportingCycle=108 AND Acronym='DOL' )
-        ,'CVE-2022-4262' ,116  ,'12-15-2022' ,116 ,2815 ); 
- INSERT INTO CVEUnremediated (PK_OrgSubmission, PK_CISA_CVE, CDMCountSubmitted, CDMDateSubmitted, SubmissionCount, UserId)
-            VALUES( (SELECT MAX(PK_OrgSubmission) FROM vwOrgSubToComponent WHERE PK_ReportingCycle=108 AND Acronym='MCC' )
-        ,'CVE-2022-44698' ,111  ,'12-15-2022' ,111 ,2815 ); 
- INSERT INTO CVEUnremediated (PK_OrgSubmission, PK_CISA_CVE, CDMCountSubmitted, CDMDateSubmitted, SubmissionCount, UserId)
-            VALUES( (SELECT MAX(PK_OrgSubmission) FROM vwOrgSubToComponent WHERE PK_ReportingCycle=108 AND Acronym='NTSB' )
-        ,'CVE-2022-44698' ,109  ,'12-15-2022' ,109 ,2815 ); 
- INSERT INTO CVEUnremediated (PK_OrgSubmission, PK_CISA_CVE, CDMCountSubmitted, CDMDateSubmitted, SubmissionCount, UserId)
-            VALUES( (SELECT MAX(PK_OrgSubmission) FROM vwOrgSubToComponent WHERE PK_ReportingCycle=108 AND Acronym='USAGM' )
-        ,'CVE-2022-42856' ,81  ,'12-15-2022' ,81 ,2815 ); 
- INSERT INTO CVEUnremediated (PK_OrgSubmission, PK_CISA_CVE, CDMCountSubmitted, CDMDateSubmitted, SubmissionCount, UserId)
-            VALUES( (SELECT MAX(PK_OrgSubmission) FROM vwOrgSubToComponent WHERE PK_ReportingCycle=108 AND Acronym='EEOC' )
-        ,'CVE-2022-4262' ,77  ,'12-15-2022' ,77 ,2815 ); 
- INSERT INTO CVEUnremediated (PK_OrgSubmission, PK_CISA_CVE, CDMCountSubmitted, CDMDateSubmitted, SubmissionCount, UserId)
-            VALUES( (SELECT MAX(PK_OrgSubmission) FROM vwOrgSubToComponent WHERE PK_ReportingCycle=108 AND Acronym='SSS' )
-        ,'CVE-2022-44698' ,77  ,'12-15-2022' ,77 ,2815 ); 
- INSERT INTO CVEUnremediated (PK_OrgSubmission, PK_CISA_CVE, CDMCountSubmitted, CDMDateSubmitted, SubmissionCount, UserId)
-            VALUES( (SELECT MAX(PK_OrgSubmission) FROM vwOrgSubToComponent WHERE PK_ReportingCycle=108 AND Acronym='ITC' )
-        ,'CVE-2022-44698' ,77  ,'12-15-2022' ,77 ,2815 ); 
- INSERT INTO CVEUnremediated (PK_OrgSubmission, PK_CISA_CVE, CDMCountSubmitted, CDMDateSubmitted, SubmissionCount, UserId)
-            VALUES( (SELECT MAX(PK_OrgSubmission) FROM vwOrgSubToComponent WHERE PK_ReportingCycle=108 AND Acronym='CFPB' )
-        ,'CVE-2022-44698' ,75  ,'12-15-2022' ,75 ,2815 ); 
- INSERT INTO CVEUnremediated (PK_OrgSubmission, PK_CISA_CVE, CDMCountSubmitted, CDMDateSubmitted, SubmissionCount, UserId)
-            VALUES( (SELECT MAX(PK_OrgSubmission) FROM vwOrgSubToComponent WHERE PK_ReportingCycle=108 AND Acronym='MSPB' )
-        ,'CVE-2022-44698' ,57  ,'12-15-2022' ,57 ,2815 ); 
- INSERT INTO CVEUnremediated (PK_OrgSubmission, PK_CISA_CVE, CDMCountSubmitted, CDMDateSubmitted, SubmissionCount, UserId)
-            VALUES( (SELECT MAX(PK_OrgSubmission) FROM vwOrgSubToComponent WHERE PK_ReportingCycle=108 AND Acronym='USTDA' )
-        ,'CVE-2022-44698' ,50  ,'12-15-2022' ,50 ,2815 ); 
- INSERT INTO CVEUnremediated (PK_OrgSubmission, PK_CISA_CVE, CDMCountSubmitted, CDMDateSubmitted, SubmissionCount, UserId)
-            VALUES( (SELECT MAX(PK_OrgSubmission) FROM vwOrgSubToComponent WHERE PK_ReportingCycle=108 AND Acronym='CFPB' )
-        ,'CVE-2022-42856' ,47  ,'12-15-2022' ,47 ,2815 ); 
- INSERT INTO CVEUnremediated (PK_OrgSubmission, PK_CISA_CVE, CDMCountSubmitted, CDMDateSubmitted, SubmissionCount, UserId)
-            VALUES( (SELECT MAX(PK_OrgSubmission) FROM vwOrgSubToComponent WHERE PK_ReportingCycle=108 AND Acronym='NLRB' )
-        ,'CVE-2022-44698' ,47  ,'12-15-2022' ,47 ,2815 ); 
- INSERT INTO CVEUnremediated (PK_OrgSubmission, PK_CISA_CVE, CDMCountSubmitted, CDMDateSubmitted, SubmissionCount, UserId)
-            VALUES( (SELECT MAX(PK_OrgSubmission) FROM vwOrgSubToComponent WHERE PK_ReportingCycle=108 AND Acronym='FMC' )
-        ,'CVE-2022-44698' ,43  ,'12-15-2022' ,43 ,2815 ); 
- INSERT INTO CVEUnremediated (PK_OrgSubmission, PK_CISA_CVE, CDMCountSubmitted, CDMDateSubmitted, SubmissionCount, UserId)
-            VALUES( (SELECT MAX(PK_OrgSubmission) FROM vwOrgSubToComponent WHERE PK_ReportingCycle=108 AND Acronym='DOI' )
-        ,'CVE-2022-42475' ,41  ,'12-15-2022' ,41 ,2815 ); 
- INSERT INTO CVEUnremediated (PK_OrgSubmission, PK_CISA_CVE, CDMCountSubmitted, CDMDateSubmitted, SubmissionCount, UserId)
-            VALUES( (SELECT MAX(PK_OrgSubmission) FROM vwOrgSubToComponent WHERE PK_ReportingCycle=108 AND Acronym='CSOSA' )
-        ,'CVE-2022-4262' ,41  ,'12-15-2022' ,41 ,2815 ); 
- INSERT INTO CVEUnremediated (PK_OrgSubmission, PK_CISA_CVE, CDMCountSubmitted, CDMDateSubmitted, SubmissionCount, UserId)
-            VALUES( (SELECT MAX(PK_OrgSubmission) FROM vwOrgSubToComponent WHERE PK_ReportingCycle=108 AND Acronym='CNCS' )
-        ,'CVE-2022-4262' ,32  ,'12-15-2022' ,32 ,2815 ); 
- INSERT INTO CVEUnremediated (PK_OrgSubmission, PK_CISA_CVE, CDMCountSubmitted, CDMDateSubmitted, SubmissionCount, UserId)
-            VALUES( (SELECT MAX(PK_OrgSubmission) FROM vwOrgSubToComponent WHERE PK_ReportingCycle=108 AND Acronym='DNFSB' )
-        ,'CVE-2022-44698' ,32  ,'12-15-2022' ,32 ,2815 ); 
- INSERT INTO CVEUnremediated (PK_OrgSubmission, PK_CISA_CVE, CDMCountSubmitted, CDMDateSubmitted, SubmissionCount, UserId)
-            VALUES( (SELECT MAX(PK_OrgSubmission) FROM vwOrgSubToComponent WHERE PK_ReportingCycle=108 AND Acronym='DOI' )
-        ,'CVE-2022-26500' ,26  ,'12-15-2022' ,26 ,2815 ); 
- INSERT INTO CVEUnremediated (PK_OrgSubmission, PK_CISA_CVE, CDMCountSubmitted, CDMDateSubmitted, SubmissionCount, UserId)
-            VALUES( (SELECT MAX(PK_OrgSubmission) FROM vwOrgSubToComponent WHERE PK_ReportingCycle=108 AND Acronym='DOI' )
-        ,'CVE-2022-26501' ,26  ,'12-15-2022' ,26 ,2815 ); 
- INSERT INTO CVEUnremediated (PK_OrgSubmission, PK_CISA_CVE, CDMCountSubmitted, CDMDateSubmitted, SubmissionCount, UserId)
-            VALUES( (SELECT MAX(PK_OrgSubmission) FROM vwOrgSubToComponent WHERE PK_ReportingCycle=108 AND Acronym='PT' )
-        ,'CVE-2022-44698' ,25  ,'12-15-2022' ,25 ,2815 ); 
- INSERT INTO CVEUnremediated (PK_OrgSubmission, PK_CISA_CVE, CDMCountSubmitted, CDMDateSubmitted, SubmissionCount, UserId)
-            VALUES( (SELECT MAX(PK_OrgSubmission) FROM vwOrgSubToComponent WHERE PK_ReportingCycle=108 AND Acronym='IAF' )
-        ,'CVE-2022-44698' ,21  ,'12-15-2022' ,21 ,2815 ); 
- INSERT INTO CVEUnremediated (PK_OrgSubmission, PK_CISA_CVE, CDMCountSubmitted, CDMDateSubmitted, SubmissionCount, UserId)
-            VALUES( (SELECT MAX(PK_OrgSubmission) FROM vwOrgSubToComponent WHERE PK_ReportingCycle=108 AND Acronym='NCUA' )
-        ,'CVE-2022-44698' ,20  ,'12-15-2022' ,20 ,2815 ); 
- INSERT INTO CVEUnremediated (PK_OrgSubmission, PK_CISA_CVE, CDMCountSubmitted, CDMDateSubmitted, SubmissionCount, UserId)
-            VALUES( (SELECT MAX(PK_OrgSubmission) FROM vwOrgSubToComponent WHERE PK_ReportingCycle=108 AND Acronym='FMCS' )
-        ,'CVE-2022-44698' ,18  ,'12-15-2022' ,18 ,2815 ); 
- INSERT INTO CVEUnremediated (PK_OrgSubmission, PK_CISA_CVE, CDMCountSubmitted, CDMDateSubmitted, SubmissionCount, UserId)
-            VALUES( (SELECT MAX(PK_OrgSubmission) FROM vwOrgSubToComponent WHERE PK_ReportingCycle=108 AND Acronym='PRC' )
-        ,'CVE-2022-44698' ,18  ,'12-15-2022' ,18 ,2815 ); 
- INSERT INTO CVEUnremediated (PK_OrgSubmission, PK_CISA_CVE, CDMCountSubmitted, CDMDateSubmitted, SubmissionCount, UserId)
-            VALUES( (SELECT MAX(PK_OrgSubmission) FROM vwOrgSubToComponent WHERE PK_ReportingCycle=108 AND Acronym='DFC' )
-        ,'CVE-2022-4262' ,16  ,'12-15-2022' ,16 ,2815 ); 
- INSERT INTO CVEUnremediated (PK_OrgSubmission, PK_CISA_CVE, CDMCountSubmitted, CDMDateSubmitted, SubmissionCount, UserId)
-            VALUES( (SELECT MAX(PK_OrgSubmission) FROM vwOrgSubToComponent WHERE PK_ReportingCycle=108 AND Acronym='USIBWC' )
-        ,'CVE-2022-4262' ,15  ,'12-15-2022' ,15 ,2815 ); 
- INSERT INTO CVEUnremediated (PK_OrgSubmission, PK_CISA_CVE, CDMCountSubmitted, CDMDateSubmitted, SubmissionCount, UserId)
-            VALUES( (SELECT MAX(PK_OrgSubmission) FROM vwOrgSubToComponent WHERE PK_ReportingCycle=108 AND Acronym='SSS' )
-        ,'CVE-2022-4262' ,13  ,'12-15-2022' ,13 ,2815 ); 
- INSERT INTO CVEUnremediated (PK_OrgSubmission, PK_CISA_CVE, CDMCountSubmitted, CDMDateSubmitted, SubmissionCount, UserId)
-            VALUES( (SELECT MAX(PK_OrgSubmission) FROM vwOrgSubToComponent WHERE PK_ReportingCycle=108 AND Acronym='ACUS' )
-        ,'CVE-2022-44698' ,13  ,'12-15-2022' ,13 ,2815 ); 
- INSERT INTO CVEUnremediated (PK_OrgSubmission, PK_CISA_CVE, CDMCountSubmitted, CDMDateSubmitted, SubmissionCount, UserId)
-            VALUES( (SELECT MAX(PK_OrgSubmission) FROM vwOrgSubToComponent WHERE PK_ReportingCycle=108 AND Acronym='DENALI' )
-        ,'CVE-2022-44698' ,13  ,'12-15-2022' ,13 ,2815 ); 
- INSERT INTO CVEUnremediated (PK_OrgSubmission, PK_CISA_CVE, CDMCountSubmitted, CDMDateSubmitted, SubmissionCount, UserId)
-            VALUES( (SELECT MAX(PK_OrgSubmission) FROM vwOrgSubToComponent WHERE PK_ReportingCycle=108 AND Acronym='USIBWC' )
-        ,'CVE-2022-44698' ,13  ,'12-15-2022' ,13 ,2815 ); 
- INSERT INTO CVEUnremediated (PK_OrgSubmission, PK_CISA_CVE, CDMCountSubmitted, CDMDateSubmitted, SubmissionCount, UserId)
-            VALUES( (SELECT MAX(PK_OrgSubmission) FROM vwOrgSubToComponent WHERE PK_ReportingCycle=108 AND Acronym='OSHRC' )
-        ,'CVE-2022-44698' ,12  ,'12-15-2022' ,12 ,2815 ); 
- INSERT INTO CVEUnremediated (PK_OrgSubmission, PK_CISA_CVE, CDMCountSubmitted, CDMDateSubmitted, SubmissionCount, UserId)
-            VALUES( (SELECT MAX(PK_OrgSubmission) FROM vwOrgSubToComponent WHERE PK_ReportingCycle=108 AND Acronym='MKUSENEP' )
-        ,'CVE-2022-44698' ,10  ,'12-15-2022' ,10 ,2815 ); 
- INSERT INTO CVEUnremediated (PK_OrgSubmission, PK_CISA_CVE, CDMCountSubmitted, CDMDateSubmitted, SubmissionCount, UserId)
-            VALUES( (SELECT MAX(PK_OrgSubmission) FROM vwOrgSubToComponent WHERE PK_ReportingCycle=108 AND Acronym='EXIMB' )
-        ,'CVE-2022-4262' ,9  ,'12-15-2022' ,9 ,2815 ); 
- INSERT INTO CVEUnremediated (PK_OrgSubmission, PK_CISA_CVE, CDMCountSubmitted, CDMDateSubmitted, SubmissionCount, UserId)
-            VALUES( (SELECT MAX(PK_OrgSubmission) FROM vwOrgSubToComponent WHERE PK_ReportingCycle=108 AND Acronym='USDA' )
-        ,'CVE-2022-42475' ,8  ,'12-15-2022' ,8 ,2815 ); 
- INSERT INTO CVEUnremediated (PK_OrgSubmission, PK_CISA_CVE, CDMCountSubmitted, CDMDateSubmitted, SubmissionCount, UserId)
-            VALUES( (SELECT MAX(PK_OrgSubmission) FROM vwOrgSubToComponent WHERE PK_ReportingCycle=108 AND Acronym='USTDA' )
-        ,'CVE-2022-4262' ,8  ,'12-15-2022' ,8 ,2815 ); 
- INSERT INTO CVEUnremediated (PK_OrgSubmission, PK_CISA_CVE, CDMCountSubmitted, CDMDateSubmitted, SubmissionCount, UserId)
-            VALUES( (SELECT MAX(PK_OrgSubmission) FROM vwOrgSubToComponent WHERE PK_ReportingCycle=108 AND Acronym='IMLS' )
-        ,'CVE-2022-44698' ,8  ,'12-15-2022' ,8 ,2815 ); 
- INSERT INTO CVEUnremediated (PK_OrgSubmission, PK_CISA_CVE, CDMCountSubmitted, CDMDateSubmitted, SubmissionCount, UserId)
-            VALUES( (SELECT MAX(PK_OrgSubmission) FROM vwOrgSubToComponent WHERE PK_ReportingCycle=108 AND Acronym='NEH' )
-        ,'CVE-2022-44698' ,8  ,'12-15-2022' ,8 ,2815 ); 
- INSERT INTO CVEUnremediated (PK_OrgSubmission, PK_CISA_CVE, CDMCountSubmitted, CDMDateSubmitted, SubmissionCount, UserId)
-            VALUES( (SELECT MAX(PK_OrgSubmission) FROM vwOrgSubToComponent WHERE PK_ReportingCycle=108 AND Acronym='USAB' )
-        ,'CVE-2022-44698' ,7  ,'12-15-2022' ,7 ,2815 ); 
- INSERT INTO CVEUnremediated (PK_OrgSubmission, PK_CISA_CVE, CDMCountSubmitted, CDMDateSubmitted, SubmissionCount, UserId)
-            VALUES( (SELECT MAX(PK_OrgSubmission) FROM vwOrgSubToComponent WHERE PK_ReportingCycle=108 AND Acronym='CIGIE' )
-        ,'CVE-2022-44698' ,6  ,'12-15-2022' ,6 ,2815 ); 
- INSERT INTO CVEUnremediated (PK_OrgSubmission, PK_CISA_CVE, CDMCountSubmitted, CDMDateSubmitted, SubmissionCount, UserId)
-            VALUES( (SELECT MAX(PK_OrgSubmission) FROM vwOrgSubToComponent WHERE PK_ReportingCycle=108 AND Acronym='FLRA' )
-        ,'CVE-2022-44698' ,6  ,'12-15-2022' ,6 ,2815 ); 
- INSERT INTO CVEUnremediated (PK_OrgSubmission, PK_CISA_CVE, CDMCountSubmitted, CDMDateSubmitted, SubmissionCount, UserId)
-            VALUES( (SELECT MAX(PK_OrgSubmission) FROM vwOrgSubToComponent WHERE PK_ReportingCycle=108 AND Acronym='EAC' )
-        ,'CVE-2022-44698' ,5  ,'12-15-2022' ,5 ,2815 ); 
- INSERT INTO CVEUnremediated (PK_OrgSubmission, PK_CISA_CVE, CDMCountSubmitted, CDMDateSubmitted, SubmissionCount, UserId)
-            VALUES( (SELECT MAX(PK_OrgSubmission) FROM vwOrgSubToComponent WHERE PK_ReportingCycle=108 AND Acronym='NEH' )
-        ,'CVE-2022-4262' ,4  ,'12-15-2022' ,4 ,2815 ); 
- INSERT INTO CVEUnremediated (PK_OrgSubmission, PK_CISA_CVE, CDMCountSubmitted, CDMDateSubmitted, SubmissionCount, UserId)
-            VALUES( (SELECT MAX(PK_OrgSubmission) FROM vwOrgSubToComponent WHERE PK_ReportingCycle=108 AND Acronym='CFA' )
-        ,'CVE-2022-44698' ,4  ,'12-15-2022' ,4 ,2815 ); 
- INSERT INTO CVEUnremediated (PK_OrgSubmission, PK_CISA_CVE, CDMCountSubmitted, CDMDateSubmitted, SubmissionCount, UserId)
-            VALUES( (SELECT MAX(PK_OrgSubmission) FROM vwOrgSubToComponent WHERE PK_ReportingCycle=108 AND Acronym='NRC' )
-        ,'CVE-2022-27518' ,3  ,'12-15-2022' ,3 ,2815 ); 
- INSERT INTO CVEUnremediated (PK_OrgSubmission, PK_CISA_CVE, CDMCountSubmitted, CDMDateSubmitted, SubmissionCount, UserId)
-            VALUES( (SELECT MAX(PK_OrgSubmission) FROM vwOrgSubToComponent WHERE PK_ReportingCycle=108 AND Acronym='NCPC' )
-        ,'CVE-2022-4262' ,3  ,'12-15-2022' ,3 ,2815 ); 
- INSERT INTO CVEUnremediated (PK_OrgSubmission, PK_CISA_CVE, CDMCountSubmitted, CDMDateSubmitted, SubmissionCount, UserId)
-            VALUES( (SELECT MAX(PK_OrgSubmission) FROM vwOrgSubToComponent WHERE PK_ReportingCycle=108 AND Acronym='GCERC' )
-        ,'CVE-2022-44698' ,3  ,'12-15-2022' ,3 ,2815 ); 
- INSERT INTO CVEUnremediated (PK_OrgSubmission, PK_CISA_CVE, CDMCountSubmitted, CDMDateSubmitted, SubmissionCount, UserId)
-            VALUES( (SELECT MAX(PK_OrgSubmission) FROM vwOrgSubToComponent WHERE PK_ReportingCycle=108 AND Acronym='FMCS' )
-        ,'CVE-2022-4262' ,2  ,'12-15-2022' ,2 ,2815 ); 
- INSERT INTO CVEUnremediated (PK_OrgSubmission, PK_CISA_CVE, CDMCountSubmitted, CDMDateSubmitted, SubmissionCount, UserId)
-            VALUES( (SELECT MAX(PK_OrgSubmission) FROM vwOrgSubToComponent WHERE PK_ReportingCycle=108 AND Acronym='ITC' )
-        ,'CVE-2022-4262' ,2  ,'12-15-2022' ,2 ,2815 ); 
- INSERT INTO CVEUnremediated (PK_OrgSubmission, PK_CISA_CVE, CDMCountSubmitted, CDMDateSubmitted, SubmissionCount, UserId)
-            VALUES( (SELECT MAX(PK_OrgSubmission) FROM vwOrgSubToComponent WHERE PK_ReportingCycle=108 AND Acronym='NASA' )
-        ,'CVE-2022-42856' ,2  ,'12-15-2022' ,2 ,2815 ); 
- INSERT INTO CVEUnremediated (PK_OrgSubmission, PK_CISA_CVE, CDMCountSubmitted, CDMDateSubmitted, SubmissionCount, UserId)
-            VALUES( (SELECT MAX(PK_OrgSubmission) FROM vwOrgSubToComponent WHERE PK_ReportingCycle=108 AND Acronym='NSF' )
-        ,'CVE-2022-42856' ,2  ,'12-15-2022' ,2 ,2815 ); 
- INSERT INTO CVEUnremediated (PK_OrgSubmission, PK_CISA_CVE, CDMCountSubmitted, CDMDateSubmitted, SubmissionCount, UserId)
-            VALUES( (SELECT MAX(PK_OrgSubmission) FROM vwOrgSubToComponent WHERE PK_ReportingCycle=108 AND Acronym='FMSHRC' )
-        ,'CVE-2022-44698' ,2  ,'12-15-2022' ,2 ,2815 ); 
- INSERT INTO CVEUnremediated (PK_OrgSubmission, PK_CISA_CVE, CDMCountSubmitted, CDMDateSubmitted, SubmissionCount, UserId)
-            VALUES( (SELECT MAX(PK_OrgSubmission) FROM vwOrgSubToComponent WHERE PK_ReportingCycle=108 AND Acronym='DOL' )
-        ,'CVE-2022-26500' ,1  ,'12-15-2022' ,1 ,2815 ); 
- INSERT INTO CVEUnremediated (PK_OrgSubmission, PK_CISA_CVE, CDMCountSubmitted, CDMDateSubmitted, SubmissionCount, UserId)
-            VALUES( (SELECT MAX(PK_OrgSubmission) FROM vwOrgSubToComponent WHERE PK_ReportingCycle=108 AND Acronym='MKUSENEP' )
-        ,'CVE-2022-26500' ,1  ,'12-15-2022' ,1 ,2815 ); 
- INSERT INTO CVEUnremediated (PK_OrgSubmission, PK_CISA_CVE, CDMCountSubmitted, CDMDateSubmitted, SubmissionCount, UserId)
-            VALUES( (SELECT MAX(PK_OrgSubmission) FROM vwOrgSubToComponent WHERE PK_ReportingCycle=108 AND Acronym='USDA' )
-        ,'CVE-2022-26500' ,1  ,'12-15-2022' ,1 ,2815 ); 
- INSERT INTO CVEUnremediated (PK_OrgSubmission, PK_CISA_CVE, CDMCountSubmitted, CDMDateSubmitted, SubmissionCount, UserId)
-            VALUES( (SELECT MAX(PK_OrgSubmission) FROM vwOrgSubToComponent WHERE PK_ReportingCycle=108 AND Acronym='DOL' )
-        ,'CVE-2022-26501' ,1  ,'12-15-2022' ,1 ,2815 ); 
- INSERT INTO CVEUnremediated (PK_OrgSubmission, PK_CISA_CVE, CDMCountSubmitted, CDMDateSubmitted, SubmissionCount, UserId)
-            VALUES( (SELECT MAX(PK_OrgSubmission) FROM vwOrgSubToComponent WHERE PK_ReportingCycle=108 AND Acronym='MKUSENEP' )
-        ,'CVE-2022-26501' ,1  ,'12-15-2022' ,1 ,2815 ); 
- INSERT INTO CVEUnremediated (PK_OrgSubmission, PK_CISA_CVE, CDMCountSubmitted, CDMDateSubmitted, SubmissionCount, UserId)
-            VALUES( (SELECT MAX(PK_OrgSubmission) FROM vwOrgSubToComponent WHERE PK_ReportingCycle=108 AND Acronym='USDA' )
-        ,'CVE-2022-26501' ,1  ,'12-15-2022' ,1 ,2815 ); 
- INSERT INTO CVEUnremediated (PK_OrgSubmission, PK_CISA_CVE, CDMCountSubmitted, CDMDateSubmitted, SubmissionCount, UserId)
-            VALUES( (SELECT MAX(PK_OrgSubmission) FROM vwOrgSubToComponent WHERE PK_ReportingCycle=108 AND Acronym='USAB' )
-        ,'CVE-2022-4262' ,1  ,'12-15-2022' ,1 ,2815 ); 
- INSERT INTO CVEUnremediated (PK_OrgSubmission, PK_CISA_CVE, CDMCountSubmitted, CDMDateSubmitted, SubmissionCount, UserId)
-            VALUES( (SELECT MAX(PK_OrgSubmission) FROM vwOrgSubToComponent WHERE PK_ReportingCycle=108 AND Acronym='FRTIB' )
-        ,'CVE-2022-42856' ,1  ,'12-15-2022' ,1 ,2815 ); 
- INSERT INTO CVEUnremediated (PK_OrgSubmission, PK_CISA_CVE, CDMCountSubmitted, CDMDateSubmitted, SubmissionCount, UserId)
-            VALUES( (SELECT MAX(PK_OrgSubmission) FROM vwOrgSubToComponent WHERE PK_ReportingCycle=108 AND Acronym='NCPC' )
-        ,'CVE-2022-42856' ,1  ,'12-15-2022' ,1 ,2815 ); 
- INSERT INTO CVEUnremediated (PK_OrgSubmission, PK_CISA_CVE, CDMCountSubmitted, CDMDateSubmitted, SubmissionCount, UserId)
-            VALUES( (SELECT MAX(PK_OrgSubmission) FROM vwOrgSubToComponent WHERE PK_ReportingCycle=108 AND Acronym='NEH' )
-        ,'CVE-2022-42856' ,1  ,'12-15-2022' ,1 ,2815 ); 
- INSERT INTO CVEUnremediated (PK_OrgSubmission, PK_CISA_CVE, CDMCountSubmitted, CDMDateSubmitted, SubmissionCount, UserId)
-            VALUES( (SELECT MAX(PK_OrgSubmission) FROM vwOrgSubToComponent WHERE PK_ReportingCycle=108 AND Acronym='BGSEEF' )
-        ,'CVE-2022-44698' ,1  ,'12-15-2022' ,1 ,2815 ); 
+INSERT INTO @T (ID, SML, ML_Score, ML_Scored, ML_Value, sortorder) VALUES ('DP3', 'SML 1', 1.0, 0, '4714', 1)
+INSERT INTO @T (ID, SML, ML_Score, ML_Scored, ML_Value, sortorder) VALUES ('DP3', 'SML 1', 0.001, 0, '4716', 2)
+INSERT INTO @T (ID, SML, ML_Score, ML_Scored, ML_Value, sortorder) VALUES ('DP3a', 'SML 1', 1.0, 0, '4714', 3)
+INSERT INTO @T (ID, SML, ML_Score, ML_Scored, ML_Value, sortorder) VALUES ('DP3a', 'SML 1', 0.001, 0, '4716', 4)
+INSERT INTO @T (ID, SML, ML_Score, ML_Scored, ML_Value, sortorder) VALUES ('DP3b', 'SML 1', 1.0, 0, '4714', 5)
+INSERT INTO @T (ID, SML, ML_Score, ML_Scored, ML_Value, sortorder) VALUES ('DP3b', 'SML 1', 0.001, 0, '4716', 6)
+INSERT INTO @T (ID, SML, ML_Score, ML_Scored, ML_Value, sortorder) VALUES ('DP3c', 'SML 1', 1.0, 0, '4714', 7)
+INSERT INTO @T (ID, SML, ML_Score, ML_Scored, ML_Value, sortorder) VALUES ('DP3c', 'SML 1', 0.001, 0, '4716', 8)
+INSERT INTO @T (ID, SML, ML_Score, ML_Scored, ML_Value, sortorder) VALUES ('DP3d', 'SML 1', 1.0, 0, '4714', 9)
+INSERT INTO @T (ID, SML, ML_Score, ML_Scored, ML_Value, sortorder) VALUES ('DP3d', 'SML 1', 0.001, 0, '4716', 10)
+INSERT INTO @T (ID, SML, ML_Score, ML_Scored, ML_Value, sortorder) VALUES ('DP3e', 'SML 1', 1.0, 0, '4714', 11)
+INSERT INTO @T (ID, SML, ML_Score, ML_Scored, ML_Value, sortorder) VALUES ('DP3e', 'SML 1', 0.001, 0, '4716', 12)
+INSERT INTO @T (ID, SML, ML_Score, ML_Scored, ML_Value, sortorder) VALUES ('DP3f', 'SML 2', 1.0, 0, '4714', 13)
+INSERT INTO @T (ID, SML, ML_Score, ML_Scored, ML_Value, sortorder) VALUES ('DP3f', 'SML 2', 0.001, 0, '4716', 14)
+INSERT INTO @T (ID, SML, ML_Score, ML_Scored, ML_Value, sortorder) VALUES ('DP4', 'SML 2', 1.0, 0, '4714', 15)
+INSERT INTO @T (ID, SML, ML_Score, ML_Scored, ML_Value, sortorder) VALUES ('DP4', 'SML 2', 0.001, 0, '4716', 16)
+INSERT INTO @T (ID, SML, ML_Score, ML_Scored, ML_Value, sortorder) VALUES ('DP5', 'SML 1', 1.0, 0, '4714', 17)
+INSERT INTO @T (ID, SML, ML_Score, ML_Scored, ML_Value, sortorder) VALUES ('DP5', 'SML 1', 0.001, 0, '4716', 18)
+INSERT INTO @T (ID, SML, ML_Score, ML_Scored, ML_Value, sortorder) VALUES ('DP6a', 'SML 2', 1.0, 0, '4714', 19)
+INSERT INTO @T (ID, SML, ML_Score, ML_Scored, ML_Value, sortorder) VALUES ('DP6a', 'SML 2', 0.001, 0, '4716', 20)
+INSERT INTO @T (ID, SML, ML_Score, ML_Scored, ML_Value, sortorder) VALUES ('DP7', 'SML 2', 1.0, 0, '4714', 21)
+INSERT INTO @T (ID, SML, ML_Score, ML_Scored, ML_Value, sortorder) VALUES ('DP7', 'SML 2', 0.001, 0, '4716', 22)
+INSERT INTO @T (ID, SML, ML_Score, ML_Scored, ML_Value, sortorder) VALUES ('DP7a', 'SML 2', 1.0, 0, '4714', 23)
+INSERT INTO @T (ID, SML, ML_Score, ML_Scored, ML_Value, sortorder) VALUES ('DP7a', 'SML 2', 0.001, 0, '4716', 24)
+INSERT INTO @T (ID, SML, ML_Score, ML_Scored, ML_Value, sortorder) VALUES ('DP7b', 'SML 3', 1.0, 0, '4714', 25)
+INSERT INTO @T (ID, SML, ML_Score, ML_Scored, ML_Value, sortorder) VALUES ('DP7b', 'SML 3', 0.001, 0, '4716', 26)
+INSERT INTO @T (ID, SML, ML_Score, ML_Scored, ML_Value, sortorder) VALUES ('DP8', 'SML 3', 1.0, 0, '4714', 27)
+INSERT INTO @T (ID, SML, ML_Score, ML_Scored, ML_Value, sortorder) VALUES ('DP8', 'SML 3', 0.001, 0, '4716', 28)
+INSERT INTO @T (ID, SML, ML_Score, ML_Scored, ML_Value, sortorder) VALUES ('DP9a', 'SML 2', 1.0, 0, '4714', 29)
+INSERT INTO @T (ID, SML, ML_Score, ML_Scored, ML_Value, sortorder) VALUES ('DP9a', 'SML 2', 0.001, 0, '4716', 30)
+INSERT INTO @T (ID, SML, ML_Score, ML_Scored, ML_Value, sortorder) VALUES ('DP9b1', 'SML 1', 1.0, 0, '4714', 31)
+INSERT INTO @T (ID, SML, ML_Score, ML_Scored, ML_Value, sortorder) VALUES ('DP9b1', 'SML 1', 0.001, 0, '4716', 32)
+INSERT INTO @T (ID, SML, ML_Score, ML_Scored, ML_Value, sortorder) VALUES ('DP9b2', 'SML 1', 1.0, 0, '4714', 33)
+INSERT INTO @T (ID, SML, ML_Score, ML_Scored, ML_Value, sortorder) VALUES ('DP9b2', 'SML 1', 0.001, 0, '4716', 34)
+INSERT INTO @T (ID, SML, ML_Score, ML_Scored, ML_Value, sortorder) VALUES ('DP9b3', 'SML 3', 1.0, 0, '4714', 35)
+INSERT INTO @T (ID, SML, ML_Score, ML_Scored, ML_Value, sortorder) VALUES ('DP9b3', 'SML 3', 0.001, 0, '4716', 36)
+INSERT INTO @T (ID, SML, ML_Score, ML_Scored, ML_Value, sortorder) VALUES ('DP9c1', 'SML 2', 0.2, 0, '4820', 37)
+INSERT INTO @T (ID, SML, ML_Score, ML_Scored, ML_Value, sortorder) VALUES ('DP9c1', 'SML 2', 0.2, 0, '4821', 38)
+INSERT INTO @T (ID, SML, ML_Score, ML_Scored, ML_Value, sortorder) VALUES ('DP9c1', 'SML 2', 0.2, 0, '4822', 39)
+INSERT INTO @T (ID, SML, ML_Score, ML_Scored, ML_Value, sortorder) VALUES ('DP9c1', 'SML 2', 0.2, 0, '4823', 40)
+INSERT INTO @T (ID, SML, ML_Score, ML_Scored, ML_Value, sortorder) VALUES ('DP9c1', 'SML 2', 0.2, 0, '4824', 41)
+INSERT INTO @T (ID, SML, ML_Score, ML_Scored, ML_Value, sortorder) VALUES ('DP9c1', 'SML 2', 0.001, 0, '4825', 42)
+INSERT INTO @T (ID, SML, ML_Score, ML_Scored, ML_Value, sortorder) VALUES ('DP9c2', 'SML 1', 1.0, 0, '4714', 43)
+INSERT INTO @T (ID, SML, ML_Score, ML_Scored, ML_Value, sortorder) VALUES ('DP9c2', 'SML 1', 0.001, 0, '4716', 44)
+INSERT INTO @T (ID, SML, ML_Score, ML_Scored, ML_Value, sortorder) VALUES ('DP10', 'SML1', 1.0, 0, '4714', 45)
+INSERT INTO @T (ID, SML, ML_Score, ML_Scored, ML_Value, sortorder) VALUES ('DP10', 'SML1', 0.001, 0, '4716', 46)
+INSERT INTO @T (ID, SML, ML_Score, ML_Scored, ML_Value, sortorder) VALUES ('DP11', 'SML 1', 1.0, 0, '4714', 47)
+INSERT INTO @T (ID, SML, ML_Score, ML_Scored, ML_Value, sortorder) VALUES ('DP11', 'SML 1', 0.001, 0, '4716', 48)
+INSERT INTO @T (ID, SML, ML_Score, ML_Scored, ML_Value, sortorder) VALUES ('DP11a', 'SML 1', 1.0, 0, '4714', 49)
+INSERT INTO @T (ID, SML, ML_Score, ML_Scored, ML_Value, sortorder) VALUES ('DP11a', 'SML 1', 0.001, 0, '4716', 50)
+INSERT INTO @T (ID, SML, ML_Score, ML_Scored, ML_Value, sortorder) VALUES ('DP11b', 'SML 2', 1.0, 0, '4714', 51)
+INSERT INTO @T (ID, SML, ML_Score, ML_Scored, ML_Value, sortorder) VALUES ('DP11b', 'SML 2', 0.001, 0, '4716', 52)
+INSERT INTO @T (ID, SML, ML_Score, ML_Scored, ML_Value, sortorder) VALUES ('DP11b1', 'SML 3', 1.0, 0, '4714', 53)
+INSERT INTO @T (ID, SML, ML_Score, ML_Scored, ML_Value, sortorder) VALUES ('DP11b1', 'SML 3', 0.001, 0, '4716', 54)
+INSERT INTO @T (ID, SML, ML_Score, ML_Scored, ML_Value, sortorder) VALUES ('DP11c', 'SML 2', 1.0, 0, '4714', 55)
+INSERT INTO @T (ID, SML, ML_Score, ML_Scored, ML_Value, sortorder) VALUES ('DP11c', 'SML 2', 0.001, 0, '4716', 56)
+INSERT INTO @T (ID, SML, ML_Score, ML_Scored, ML_Value, sortorder) VALUES ('DP11d', 'SML 1', 1.0, 0, '4714', 57)
+INSERT INTO @T (ID, SML, ML_Score, ML_Scored, ML_Value, sortorder) VALUES ('DP11d', 'SML 1', 0.001, 0, '4716', 58)
+INSERT INTO @T (ID, SML, ML_Score, ML_Scored, ML_Value, sortorder) VALUES ('DP11e', 'SML 2', 1.0, 0, '4714', 59)
+INSERT INTO @T (ID, SML, ML_Score, ML_Scored, ML_Value, sortorder) VALUES ('DP11e', 'SML 2', 0.001, 0, '4716', 60)
+INSERT INTO @T (ID, SML, ML_Score, ML_Scored, ML_Value, sortorder) VALUES ('DP11f', 'SML 1', 1.0, 0, '4714', 61)
+INSERT INTO @T (ID, SML, ML_Score, ML_Scored, ML_Value, sortorder) VALUES ('DP11f', 'SML 1', 0.001, 0, '4716', 62)
+INSERT INTO @T (ID, SML, ML_Score, ML_Scored, ML_Value, sortorder) VALUES ('DP11g', 'SML 2', 1.0, 0, '4714', 63)
+INSERT INTO @T (ID, SML, ML_Score, ML_Scored, ML_Value, sortorder) VALUES ('DP11g', 'SML 2', 0.001, 0, '4716', 64)
+INSERT INTO @T (ID, SML, ML_Score, ML_Scored, ML_Value, sortorder) VALUES ('DP11g1', 'SML 3', 1.0, 0, '4714', 65)
+INSERT INTO @T (ID, SML, ML_Score, ML_Scored, ML_Value, sortorder) VALUES ('DP11g1', 'SML 3', 0.001, 0, '4716', 66)
+INSERT INTO @T (ID, SML, ML_Score, ML_Scored, ML_Value, sortorder) VALUES ('DP12a', 'SML 3', 1.0, 0, '4834', 67)
+INSERT INTO @T (ID, SML, ML_Score, ML_Scored, ML_Value, sortorder) VALUES ('DP12a', 'SML 2', 1.0, 0, '4835', 68)
+INSERT INTO @T (ID, SML, ML_Score, ML_Scored, ML_Value, sortorder) VALUES ('DP12a', 'SML 2', 0.001, 0, '4836', 69)
+INSERT INTO @T (ID, SML, ML_Score, ML_Scored, ML_Value, sortorder) VALUES ('DP13', 'SML 3', 1.0, 0, '0', 70)
+INSERT INTO @T (ID, SML, ML_Score, ML_Scored, ML_Value, sortorder) VALUES ('DP13', 'SML 2', 1.0, 0, '0', 71)
+INSERT INTO @T (ID, SML, ML_Score, ML_Scored, ML_Value, sortorder) VALUES ('DP13', 'SML 2', 0.001, 0, '4829', 72)
+INSERT INTO @T (ID, SML, ML_Score, ML_Scored, ML_Value, sortorder) VALUES ('DP14', 'SML 1', 1.0, 0, '4714', 73)
+INSERT INTO @T (ID, SML, ML_Score, ML_Scored, ML_Value, sortorder) VALUES ('DP14', 'SML 1', 0.001, 0, '4716', 74)
+INSERT INTO @T (ID, SML, ML_Score, ML_Scored, ML_Value, sortorder) VALUES ('DP14a', 'SML 1', 1.0, 0, '4714', 75)
+INSERT INTO @T (ID, SML, ML_Score, ML_Scored, ML_Value, sortorder) VALUES ('DP14a', 'SML 1', 0.001, 0, '4716', 76)
+INSERT INTO @T (ID, SML, ML_Score, ML_Scored, ML_Value, sortorder) VALUES ('DP14a1', 'SML 2', 1.0, 0, '4714', 77)
+INSERT INTO @T (ID, SML, ML_Score, ML_Scored, ML_Value, sortorder) VALUES ('DP14a1', 'SML 2', 0.001, 0, '4716', 78)
+INSERT INTO @T (ID, SML, ML_Score, ML_Scored, ML_Value, sortorder) VALUES ('DP14b', 'SML 2', 1.0, 0, '4714', 79)
+INSERT INTO @T (ID, SML, ML_Score, ML_Scored, ML_Value, sortorder) VALUES ('DP14b', 'SML 2', 0.001, 0, '4716', 80)
+INSERT INTO @T (ID, SML, ML_Score, ML_Scored, ML_Value, sortorder) VALUES ('DP14c', 'SML 3', 1.0, 0, '4714', 81)
+INSERT INTO @T (ID, SML, ML_Score, ML_Scored, ML_Value, sortorder) VALUES ('DP14c', 'SML 3', 0.001, 0, '4716', 82)
+INSERT INTO @T (ID, SML, ML_Score, ML_Scored, ML_Value, sortorder) VALUES ('DP14d', 'SML 3', 1.0, 0, '4714', 83)
+INSERT INTO @T (ID, SML, ML_Score, ML_Scored, ML_Value, sortorder) VALUES ('DP14d', 'SML 3', 0.001, 0, '4716', 84)
+INSERT INTO @T (ID, SML, ML_Score, ML_Scored, ML_Value, sortorder) VALUES ('DP15', 'SML 1', 1.0, 0, '4714', 85)
+INSERT INTO @T (ID, SML, ML_Score, ML_Scored, ML_Value, sortorder) VALUES ('DP15', 'SML 1', 0.001, 0, '4716', 86)
+INSERT INTO @T (ID, SML, ML_Score, ML_Scored, ML_Value, sortorder) VALUES ('DP15a', 'SML 2', 1.0, 0, '4714', 87)
+INSERT INTO @T (ID, SML, ML_Score, ML_Scored, ML_Value, sortorder) VALUES ('DP15a', 'SML 2', 0.001, 0, '4716', 88)
+INSERT INTO @T (ID, SML, ML_Score, ML_Scored, ML_Value, sortorder) VALUES ('DP15b', 'SML 1', 1.0, 0, '4714', 89)
+INSERT INTO @T (ID, SML, ML_Score, ML_Scored, ML_Value, sortorder) VALUES ('DP15b', 'SML 1', 0.001, 0, '4716', 90)
+INSERT INTO @T (ID, SML, ML_Score, ML_Scored, ML_Value, sortorder) VALUES ('DP16', 'SML 1', 1.0, 0, '4714', 91)
+INSERT INTO @T (ID, SML, ML_Score, ML_Scored, ML_Value, sortorder) VALUES ('DP16', 'SML 1', 0.001, 0, '4716', 92)
+INSERT INTO @T (ID, SML, ML_Score, ML_Scored, ML_Value, sortorder) VALUES ('DP16a', 'SML 2', 1.0, 0, '4714', 93)
+INSERT INTO @T (ID, SML, ML_Score, ML_Scored, ML_Value, sortorder) VALUES ('DP16a', 'SML 2', 0.001, 0, '4716', 94)
+INSERT INTO @T (ID, SML, ML_Score, ML_Scored, ML_Value, sortorder) VALUES ('DP17', 'SML 1', 1.0, 0, '0', 95)
+INSERT INTO @T (ID, SML, ML_Score, ML_Scored, ML_Value, sortorder) VALUES ('DP17', 'SML 2', 1.0, 0, '0', 96)
+INSERT INTO @T (ID, SML, ML_Score, ML_Scored, ML_Value, sortorder) VALUES ('DP17', 'SML 3', 1.0, 0, '0', 97)
+INSERT INTO @T (ID, SML, ML_Score, ML_Scored, ML_Value, sortorder) VALUES ('DP17', 'SML 3', 0.001, 0, '4833', 98)
+INSERT INTO @T (ID, SML, ML_Score, ML_Scored, ML_Value, sortorder) VALUES ('DP17a', 'SML 3', 1.0, 0, '4714', 99)
+INSERT INTO @T (ID, SML, ML_Score, ML_Scored, ML_Value, sortorder) VALUES ('DP17a', 'SML 3', 0.001, 0, '4716', 100)
+INSERT INTO @T (ID, SML, ML_Score, ML_Scored, ML_Value, sortorder) VALUES ('DP18', 'SML 3', 1.0, 0, '4714', 101)
+INSERT INTO @T (ID, SML, ML_Score, ML_Scored, ML_Value, sortorder) VALUES ('DP18', 'SML 3', 0.001, 0, '4716', 102)
+INSERT INTO @T (ID, SML, ML_Score, ML_Scored, ML_Value, sortorder) VALUES ('DP18a', 'SML 3', 1.0, 0, '4714', 103)
+INSERT INTO @T (ID, SML, ML_Score, ML_Scored, ML_Value, sortorder) VALUES ('DP18a', 'SML 3', 0.001, 0, '4716', 104)
+INSERT INTO @T (ID, SML, ML_Score, ML_Scored, ML_Value, sortorder) VALUES ('DP18b', 'SML 3', 1.0, 0, '4714', 105)
+INSERT INTO @T (ID, SML, ML_Score, ML_Scored, ML_Value, sortorder) VALUES ('DP18b', 'SML 3', 0.001, 0, '4716', 106)
+INSERT INTO @T (ID, SML, ML_Score, ML_Scored, ML_Value, sortorder) VALUES ('DP18c', 'SML 3', 1.0, 0, '4714', 107)
+INSERT INTO @T (ID, SML, ML_Score, ML_Scored, ML_Value, sortorder) VALUES ('DP18c', 'SML 3', 0.001, 0, '4716', 108)
+INSERT INTO @T (ID, SML, ML_Score, ML_Scored, ML_Value, sortorder) VALUES ('DP19', 'SML 3', 1.0, 0, '4714', 109)
+INSERT INTO @T (ID, SML, ML_Score, ML_Scored, ML_Value, sortorder) VALUES ('DP19', 'SML 3', 0.001, 0, '4716', 110)
+INSERT INTO @T (ID, SML, ML_Score, ML_Scored, ML_Value, sortorder) VALUES ('DP20', 'SML 2', 1.0, 0, '4714', 111)
+INSERT INTO @T (ID, SML, ML_Score, ML_Scored, ML_Value, sortorder) VALUES ('DP20', 'SML 2', 0.001, 0, '4716', 112)
+INSERT INTO @T (ID, SML, ML_Score, ML_Scored, ML_Value, sortorder) VALUES ('DP20a', 'SML 2', 1.0, 0, '4714', 113)
+INSERT INTO @T (ID, SML, ML_Score, ML_Scored, ML_Value, sortorder) VALUES ('DP20a', 'SML 2', 0.001, 0, '4716', 114)
+INSERT INTO @T (ID, SML, ML_Score, ML_Scored, ML_Value, sortorder) VALUES ('DP21', 'SML 1', 1.0, 0, '4714', 115)
+INSERT INTO @T (ID, SML, ML_Score, ML_Scored, ML_Value, sortorder) VALUES ('DP21', 'SML 1', 0.001, 0, '4716', 116)
