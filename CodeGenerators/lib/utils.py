@@ -132,7 +132,7 @@ def write_excel(filename,sheetname,dataframe):
             writer.save()
             
 def SQL_INSERT_FROM_DF(SOURCE, TARGET='@T'):
-    cols = [f'{c} INT' if SOURCE[c].dtype=='int64' else f'{c} NVARCHAR(MAX)' for c in SOURCE.columns ]
+    cols = [f'{c} INT' if SOURCE[c].dtype.contains('int') else f'{c} NVARCHAR(MAX)' for c in SOURCE.columns ]
     sql_texts = []
     print(f"--DECLARE {TARGET} AS TABLE ({', '.join(cols)})")
     for index, row in SOURCE.iterrows():       
