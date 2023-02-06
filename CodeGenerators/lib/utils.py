@@ -130,12 +130,13 @@ def write_excel(filename,sheetname,dataframe):
         finally:
             dataframe.to_excel(writer, sheet_name=sheetname,index=False)
             writer.save()
-            
-def SQL_INSERT_FROM_DF(SOURCE, TARGET='@T'):
-    cols = [f'{c} INT' if SOURCE[c].dtype.contains('int') else f'{c} NVARCHAR(MAX)' for c in SOURCE.columns ]
+    
+def SQL_INSERT_FROM_DF(SOURCE, TARGET='@T', Print=False):
+    cols = [f'{c} INT' if 'INT' in str(SOURCE[c].dtype).upper() else f'{c} NVARCHAR(MAX)' for c in SOURCE.columns ]
     sql_texts = []
     print(f"--DECLARE {TARGET} AS TABLE ({', '.join(cols)})")
     for index, row in SOURCE.iterrows():       
         sql_texts.append('INSERT INTO '+TARGET+' ('+ str(', '.join(SOURCE.columns))+ ') VALUES '+ str(tuple(row.values)))     
-    print(';\n'.join(sql_texts))       
+    if Print:
+        print(';\n'.join(sql_texts))       
     return sql_texts           
