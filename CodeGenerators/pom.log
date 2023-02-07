@@ -201,3 +201,13 @@ INFO:root:Started
 02/06/2023 02:01:23 PM init
 02/06/2023 02:01:23 PM Note: NumExpr detected 12 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 8.
 02/06/2023 02:01:23 PM NumExpr defaulting to 8 threads.
+02/07/2023 07:49:25 AM init
+02/07/2023 08:34:20 AM init
+02/07/2023 08:34:20 AM Note: NumExpr detected 12 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 8.
+02/07/2023 08:34:20 AM NumExpr defaulting to 8 threads.
+02/07/2023 08:35:54 AM init
+02/07/2023 08:35:54 AM Note: NumExpr detected 12 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 8.
+02/07/2023 08:35:54 AM NumExpr defaulting to 8 threads.
+02/07/2023 08:36:26 AM init
+02/07/2023 08:36:27 AM Note: NumExpr detected 12 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 8.
+02/07/2023 08:36:27 AM NumExpr defaulting to 8 threads.

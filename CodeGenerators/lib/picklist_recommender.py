@@ -45,7 +45,11 @@ class picklist_recommender():
         df['DisplayValue'] = df['DisplayValue'].apply(self.normalize) 
         #df=df.sort_values( by='PK_PicklistType', ascending=False)
         self.db_picks=df
-        input=self.normalize(' '.join(input_list))
+        input=''
+        if type(input_list) == list: 
+            input=self.normalize(' '.join(input_list))
+        else:
+            print(input_list)    
         self.input=input
         if self._get_cache(input) != None and self.use_cache:
             return self._get_cache(input)
