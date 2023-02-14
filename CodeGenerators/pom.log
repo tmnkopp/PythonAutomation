@@ -211,3 +211,30 @@ INFO:root:Started
 02/07/2023 08:36:26 AM init
 02/07/2023 08:36:27 AM Note: NumExpr detected 12 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 8.
 02/07/2023 08:36:27 AM NumExpr defaulting to 8 threads.
+02/09/2023 03:25:50 PM init
+02/09/2023 07:13:40 PM init
+02/09/2023 07:19:56 PM init
+02/09/2023 07:26:39 PM init
+02/09/2023 07:38:48 PM init
+02/09/2023 07:48:42 PM init
+02/09/2023 07:50:39 PM init
+02/09/2023 07:53:26 PM init
+02/09/2023 07:55:18 PM init
+02/09/2023 07:57:11 PM init
+02/09/2023 07:57:48 PM init
+02/10/2023 10:14:22 AM init
+02/10/2023 10:39:16 AM Note: NumExpr detected 12 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 8.
+02/10/2023 10:39:16 AM NumExpr defaulting to 8 threads.
+02/13/2023 08:45:57 AM init
+02/13/2023 08:45:59 AM init
+02/13/2023 08:46:13 AM 
+
+02/13/2023 08:46:13 AM ====== WebDriver manager ======
+02/13/2023 08:46:13 AM Current google-chrome version is 110.0.5481
+02/13/2023 08:46:13 AM Get LATEST driver version for 110.0.5481
+02/13/2023 08:46:14 AM There is no [win32] chromedriver for browser 110.0.5481 in cache
+02/13/2023 08:46:14 AM Get LATEST driver version for 110.0.5481
+02/13/2023 08:46:14 AM Trying to download new driver from https://chromedriver.storage.googleapis.com/110.0.5481.77/chromedriver_win32.zip
+02/13/2023 08:46:15 AM Driver has been saved in cache [C:\Users\timko\.wdm\drivers\chromedriver\win32\110.0.5481.77]
+02/13/2023 09:20:41 AM init
+02/13/2023 09:57:23 AM init

@@ -1,1 +1,1 @@
-,(UsageCode='{CODE}',PK_PickList={PKEY}, DisplayValue='{QUESTION}', PK_PicklistType={PLT}, SortOrder={SORT})
+({PK_PickList},@PK_PicklistType, N'{DisplayValue}','{CodeValue}', GETDATE(),{SORT},1)

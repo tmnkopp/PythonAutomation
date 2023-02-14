@@ -1,9 +1,25 @@
 Key,Summary
+CS-9449,Post Quantum Cryptography (PQC) Data Call 2023 - Admin Approval/Reopen
+CS-9448,Post Quantum Cryptography (PQC) Data Call 2023 - User Submission/Reopen
+CS-9446,Post Quantum Cryptography (PQC) Data Call 2023 - Validate and Approve
+CS-9444,Post Quantum Cryptography (PQC) Data Call 2023 - Section 1 - Upload/Download Feature
+CS-9443,Post Quantum Cryptography (PQC) Data Call 2023 - Section 1 - Form
+CS-9442,Post Quantum Cryptography (PQC) Data Call 2023 - Section 1 - Database Script
+CS-9432,2023 FISMA CIO Q2 Data Call: Validate and Approve Page
+CS-9431,2023 FISMA CIO Q2 Data Call: Section 10 - Resilience
+CS-9426,2023 FISMA CIO Q2 Data Call: Section 5- Implementing IPv6
+CS-9425,2023 FISMA CIO Q2 Data Call: Section 4- Critical Software
+CS-9424,2023 FISMA CIO Q2 Data Call: Section 3- Logging
+CS-9423,2023 FISMA CIO Q2 Data Call: Section 2-Multifactor Authentication and Encryption
+CS-9421,2023 FISMA CIO Q2 Data Call: Section 1B - Enumerating the Environment- Assets
+CS-9413,2023 FISMA CIO Q2 Data Call: Section 4 - Database Script
+CS-9412,2023 FISMA CIO Q2 Data Call: Section 3 -Database Script
+CS-9411,2023 FISMA CIO Q2 Data Call: Section 2 - Database Script
+CS-9406,update trunk 7.51
+CS-9401,HVA Self-Assessment: Monitoring and Detection- Appendix A: Monitoring and Detection Scoring Dashboard
+CS-9395,HVA Self-Assessment: Monitoring and Detection- Appendix A: Monitoring and Detection Scoring Dashboard- Database Script
 CS-9379,HVA Self-Assessment: Data Protection- Appendix A: Data Protection Scoring Dashboard
 CS-9378,HVA Self-Assessment: Data Protection- Appendix A: Data Protection Scoring Dashboard- Database Script
-CS-9359,HVA Self-Assessment: Network Architecture - Appendix A: Scoring Dashboard
-CS-9353,HVA Self-Assessment: Network Architecture - Appendix A: Scoring Dashboard- Database Script
-CS-9337,Create New Control on ReporterHome to Allow Multiple Forms per HVA: BOD 18-02 HVA Self-Assessment
 CS-9317,2023 FISMA CIO Q1 Data Call: Validate and Approve Page
 CS-9309,2023 FISMA CIO Q1 Data Call: Section 4- Critical Software
 CS-9295,2023 FISMA CIO Q1 Data Call: Section 3 -Database Script
