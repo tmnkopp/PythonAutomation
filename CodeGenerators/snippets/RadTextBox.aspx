@@ -1,0 +1,1 @@
+<telerik:RadTextBox ID="{col}" runat="server" ></telerik:RadTextBox>

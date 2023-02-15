@@ -1,208 +1,273 @@
+<telerik:GridTemplateColumn HeaderText="Agency Name" UniqueName="AgencyName" SortExpression="AgencyName">
+<EditItemTemplate> 
+    <telerik:RadTextBox ID="AgencyName" runat="server" />
+</EditItemTemplate>
+<ItemTemplate>
+    <asp:Label ID="lblAgencyName" runat="server" Text='<%# Bind("AgencyName") %>'></asp:Label>
+</ItemTemplate>
+</telerik:GridTemplateColumn>
+<telerik:GridTemplateColumn HeaderText="System Name" UniqueName="SystemName" SortExpression="SystemName">
+<EditItemTemplate> 
+    <telerik:RadTextBox ID="SystemName" runat="server" />
+</EditItemTemplate>
+<ItemTemplate>
+    <asp:Label ID="lblSystemName" runat="server" Text='<%# Bind("SystemName") %>'></asp:Label>
+</ItemTemplate>
+</telerik:GridTemplateColumn>
+<telerik:GridTemplateColumn HeaderText="FISMA System ID" UniqueName="FISMASystemID" SortExpression="FISMASystemID">
+<EditItemTemplate> 
+    <telerik:RadTextBox ID="FISMASystemID" runat="server" />
+</EditItemTemplate>
+<ItemTemplate>
+    <asp:Label ID="lblFISMASystemID" runat="server" Text='<%# Bind("FISMASystemID") %>'></asp:Label>
+</ItemTemplate>
+</telerik:GridTemplateColumn>
+<telerik:GridTemplateColumn HeaderText="FIPS 199 System Categorization" UniqueName="FIPS199SystemCategorization" SortExpression="FIPS199SystemCategorization">
+<EditItemTemplate> 
+    <telerik:RadDropDownList ID="FIPS199SystemCategorization" runat="server" />
+</EditItemTemplate>
+<ItemTemplate>
+    <asp:Label ID="lblFIPS199SystemCategorization" runat="server" Text='<%# Bind("FIPS199SystemCategorization") %>'></asp:Label>
+</ItemTemplate>
+</telerik:GridTemplateColumn>
+<telerik:GridTemplateColumn HeaderText="High Value Asset ID" UniqueName="HighValueAssetID" SortExpression="HighValueAssetID">
+<EditItemTemplate> 
+    <telerik:RadTextBox ID="HighValueAssetID" runat="server" />
+</EditItemTemplate>
+<ItemTemplate>
+    <asp:Label ID="lblHighValueAssetID" runat="server" Text='<%# Bind("HighValueAssetID") %>'></asp:Label>
+</ItemTemplate>
+</telerik:GridTemplateColumn>
+<telerik:GridTemplateColumn HeaderText="Cryptographic Module Name" UniqueName="CryptoModuleName" SortExpression="CryptoModuleName">
+<EditItemTemplate> 
+    <telerik:RadTextBox ID="CryptoModuleName" runat="server" />
+</EditItemTemplate>
+<ItemTemplate>
+    <asp:Label ID="lblCryptoModuleName" runat="server" Text='<%# Bind("CryptoModuleName") %>'></asp:Label>
+</ItemTemplate>
+</telerik:GridTemplateColumn>
+<telerik:GridTemplateColumn HeaderText="Cryptographic Algorithm Used" UniqueName="CryptoAlgorithmUsed" SortExpression="CryptoAlgorithmUsed">
+<EditItemTemplate> 
+    <telerik:RadDropDownList ID="CryptoAlgorithmUsed" runat="server" />
+</EditItemTemplate>
+<ItemTemplate>
+    <asp:Label ID="lblCryptoAlgorithmUsed" runat="server" Text='<%# Bind("CryptoAlgorithmUsed") %>'></asp:Label>
+</ItemTemplate>
+</telerik:GridTemplateColumn>
+<telerik:GridTemplateColumn HeaderText="Service Provided By Cryptographic Module" UniqueName="ServiceProvidedByCryptoModule" SortExpression="ServiceProvidedByCryptoModule">
+<EditItemTemplate> 
+    <telerik:RadTextBox ID="ServiceProvidedByCryptoModule" runat="server" />
+</EditItemTemplate>
+<ItemTemplate>
+    <asp:Label ID="lblServiceProvidedByCryptoModule" runat="server" Text='<%# Bind("ServiceProvidedByCryptoModule") %>'></asp:Label>
+</ItemTemplate>
+</telerik:GridTemplateColumn>
+<telerik:GridTemplateColumn HeaderText="Length of associated cryptographic keys or modules" UniqueName="LengthCryptoKeysModules" SortExpression="LengthCryptoKeysModules">
+<EditItemTemplate> 
+    <telerik:RadDropDownList ID="LengthCryptoKeysModules" runat="server" />
+</EditItemTemplate>
+<ItemTemplate>
+    <asp:Label ID="lblLengthCryptoKeysModules" runat="server" Text='<%# Bind("LengthCryptoKeysModules") %>'></asp:Label>
+</ItemTemplate>
+</telerik:GridTemplateColumn>
+<telerik:GridTemplateColumn HeaderText="Software Package Type (COTS/GOTS/NDI/Other)" UniqueName="SoftwarePackageType" SortExpression="SoftwarePackageType">
+<EditItemTemplate> 
+    <telerik:RadDropDownList ID="SoftwarePackageType" runat="server" />
+</EditItemTemplate>
+<ItemTemplate>
+    <asp:Label ID="lblSoftwarePackageType" runat="server" Text='<%# Bind("SoftwarePackageType") %>'></asp:Label>
+</ItemTemplate>
+</telerik:GridTemplateColumn>
+<telerik:GridTemplateColumn HeaderText="Name of Vendor/Developer" UniqueName="NameofVendorDev" SortExpression="NameofVendorDev">
+<EditItemTemplate> 
+    <telerik:RadTextBox ID="NameofVendorDev" runat="server" />
+</EditItemTemplate>
+<ItemTemplate>
+    <asp:Label ID="lblNameofVendorDev" runat="server" Text='<%# Bind("NameofVendorDev") %>'></asp:Label>
+</ItemTemplate>
+</telerik:GridTemplateColumn>
+<telerik:GridTemplateColumn HeaderText="Software Package Name(s) (if commercial or open source); if unknown input 'N/A'" UniqueName="SoftwarePackageNames" SortExpression="SoftwarePackageNames">
+<EditItemTemplate> 
+    <telerik:RadTextBox ID="SoftwarePackageNames" runat="server" />
+</EditItemTemplate>
+<ItemTemplate>
+    <asp:Label ID="lblSoftwarePackageNames" runat="server" Text='<%# Bind("SoftwarePackageNames") %>'></asp:Label>
+</ItemTemplate>
+</telerik:GridTemplateColumn>
+<telerik:GridTemplateColumn HeaderText="Software Package Version(s) (optional)" UniqueName="SoftwarePackageVersions" SortExpression="SoftwarePackageVersions">
+<EditItemTemplate> 
+    <telerik:RadTextBox ID="SoftwarePackageVersions" runat="server" />
+</EditItemTemplate>
+<ItemTemplate>
+    <asp:Label ID="lblSoftwarePackageVersions" runat="server" Text='<%# Bind("SoftwarePackageVersions") %>'></asp:Label>
+</ItemTemplate>
+</telerik:GridTemplateColumn>
+<telerik:GridTemplateColumn HeaderText="Operating System (including Major and Minor version)" UniqueName="OperatingSystem" SortExpression="OperatingSystem">
+<EditItemTemplate> 
+    <telerik:RadTextBox ID="OperatingSystem" runat="server" />
+</EditItemTemplate>
+<ItemTemplate>
+    <asp:Label ID="lblOperatingSystem" runat="server" Text='<%# Bind("OperatingSystem") %>'></asp:Label>
+</ItemTemplate>
+</telerik:GridTemplateColumn>
+<telerik:GridTemplateColumn HeaderText="Hosting Information" UniqueName="HostingInfo" SortExpression="HostingInfo">
+<EditItemTemplate> 
+    <telerik:RadDropDownList ID="HostingInfo" runat="server" />
+</EditItemTemplate>
+<ItemTemplate>
+    <asp:Label ID="lblHostingInfo" runat="server" Text='<%# Bind("HostingInfo") %>'></asp:Label>
+</ItemTemplate>
+</telerik:GridTemplateColumn>
+<telerik:GridTemplateColumn HeaderText="Cloud Service Providers" UniqueName="CloudServiceProviders" SortExpression="CloudServiceProviders">
+<EditItemTemplate> 
+    <telerik:RadDropDownList ID="CloudServiceProviders" runat="server" />
+</EditItemTemplate>
+<ItemTemplate>
+    <asp:Label ID="lblCloudServiceProviders" runat="server" Text='<%# Bind("CloudServiceProviders") %>'></asp:Label>
+</ItemTemplate>
+</telerik:GridTemplateColumn>
+<telerik:GridTemplateColumn HeaderText="Government Cloud Providers" UniqueName="GovernmentCloudProviders" SortExpression="GovernmentCloudProviders">
+<EditItemTemplate> 
+    <telerik:RadDropDownList ID="GovernmentCloudProviders" runat="server" />
+</EditItemTemplate>
+<ItemTemplate>
+    <asp:Label ID="lblGovernmentCloudProviders" runat="server" Text='<%# Bind("GovernmentCloudProviders") %>'></asp:Label>
+</ItemTemplate>
+</telerik:GridTemplateColumn>
+<telerik:GridTemplateColumn HeaderText="Hybrid Cloud Providers" UniqueName="HybridCloudProviders" SortExpression="HybridCloudProviders">
+<EditItemTemplate> 
+    <telerik:RadDropDownList ID="HybridCloudProviders" runat="server" />
+</EditItemTemplate>
+<ItemTemplate>
+    <asp:Label ID="lblHybridCloudProviders" runat="server" Text='<%# Bind("HybridCloudProviders") %>'></asp:Label>
+</ItemTemplate>
+</telerik:GridTemplateColumn>
+<telerik:GridTemplateColumn HeaderText="Estimate of FY 2025 Budget Requirements for Federal Workforce ($K)*" UniqueName="EstFY2025BudgetReqsforFed" SortExpression="EstFY2025BudgetReqsforFed">
+<EditItemTemplate> 
+    <telerik:RadTextBox ID="EstFY2025BudgetReqsforFed" runat="server" />
+</EditItemTemplate>
+<ItemTemplate>
+    <asp:Label ID="lblEstFY2025BudgetReqsforFed" runat="server" Text='<%# Bind("EstFY2025BudgetReqsforFed") %>'></asp:Label>
+</ItemTemplate>
+</telerik:GridTemplateColumn>
+<telerik:GridTemplateColumn HeaderText="Estimate of FY 2025 Budget Requirements for Contractors ($K)*" UniqueName="EstFY2025BudgetReqsforCon" SortExpression="EstFY2025BudgetReqsforCon">
+<EditItemTemplate> 
+    <telerik:RadTextBox ID="EstFY2025BudgetReqsforCon" runat="server" />
+</EditItemTemplate>
+<ItemTemplate>
+    <asp:Label ID="lblEstFY2025BudgetReqsforCon" runat="server" Text='<%# Bind("EstFY2025BudgetReqsforCon") %>'></asp:Label>
+</ItemTemplate>
+</telerik:GridTemplateColumn>
+<telerik:GridTemplateColumn HeaderText="Estimate of FY 2025 Budget Requirements for Sytems/Investments ($K)*" UniqueName="EstFY2025BudgetReqsforSytemsInv" SortExpression="EstFY2025BudgetReqsforSytemsInv">
+<EditItemTemplate> 
+    <telerik:RadTextBox ID="EstFY2025BudgetReqsforSytemsInv" runat="server" />
+</EditItemTemplate>
+<ItemTemplate>
+    <asp:Label ID="lblEstFY2025BudgetReqsforSytemsInv" runat="server" Text='<%# Bind("EstFY2025BudgetReqsforSytemsInv") %>'></asp:Label>
+</ItemTemplate>
+</telerik:GridTemplateColumn>
+<telerik:GridTemplateColumn HeaderText="Estimate of Total Budget Requirement, which includes FY 2025 Requirement for Federal Workforce ($K)*" UniqueName="EstTotalBudgetReqFY2025ReqforFed" SortExpression="EstTotalBudgetReqFY2025ReqforFed">
+<EditItemTemplate> 
+    <telerik:RadTextBox ID="EstTotalBudgetReqFY2025ReqforFed" runat="server" />
+</EditItemTemplate>
+<ItemTemplate>
+    <asp:Label ID="lblEstTotalBudgetReqFY2025ReqforFed" runat="server" Text='<%# Bind("EstTotalBudgetReqFY2025ReqforFed") %>'></asp:Label>
+</ItemTemplate>
+</telerik:GridTemplateColumn>
+<telerik:GridTemplateColumn HeaderText="Estimate of Total Budget Requirement, which includes FY 2025 Requirement for Contractors  ($K)*" UniqueName="EstTotalBudgetReqFY2025ReqforCon" SortExpression="EstTotalBudgetReqFY2025ReqforCon">
+<EditItemTemplate> 
+    <telerik:RadTextBox ID="EstTotalBudgetReqFY2025ReqforCon" runat="server" />
+</EditItemTemplate>
+<ItemTemplate>
+    <asp:Label ID="lblEstTotalBudgetReqFY2025ReqforCon" runat="server" Text='<%# Bind("EstTotalBudgetReqFY2025ReqforCon") %>'></asp:Label>
+</ItemTemplate>
+</telerik:GridTemplateColumn>
+<telerik:GridTemplateColumn HeaderText="Estimate of Total Budget Requirement, which includes FY 2025 Requirement for Sytems/Investments ($K)*" UniqueName="EstTotalBudgetReqFY2025ReqforSytemsInv" SortExpression="EstTotalBudgetReqFY2025ReqforSytemsInv">
+<EditItemTemplate> 
+    <telerik:RadTextBox ID="EstTotalBudgetReqFY2025ReqforSytemsInv" runat="server" />
+</EditItemTemplate>
+<ItemTemplate>
+    <asp:Label ID="lblEstTotalBudgetReqFY2025ReqforSytemsInv" runat="server" Text='<%# Bind("EstTotalBudgetReqFY2025ReqforSytemsInv") %>'></asp:Label>
+</ItemTemplate>
+</telerik:GridTemplateColumn>
+<telerik:GridTemplateColumn HeaderText="Projected System Refresh Year" UniqueName="ProjectedSystemRefreshYear" SortExpression="ProjectedSystemRefreshYear">
+<EditItemTemplate> 
+    <telerik:RadTextBox ID="ProjectedSystemRefreshYear" runat="server" />
+</EditItemTemplate>
+<ItemTemplate>
+    <asp:Label ID="lblProjectedSystemRefreshYear" runat="server" Text='<%# Bind("ProjectedSystemRefreshYear") %>'></asp:Label>
+</ItemTemplate>
+</telerik:GridTemplateColumn>
+<telerik:GridTemplateColumn HeaderText="Crosscutting Costs" UniqueName="CrosscuttingCosts" SortExpression="CrosscuttingCosts">
+<EditItemTemplate> 
+    <telerik:RadTextBox ID="CrosscuttingCosts" runat="server" />
+</EditItemTemplate>
+<ItemTemplate>
+    <asp:Label ID="lblCrosscuttingCosts" runat="server" Text='<%# Bind("CrosscuttingCosts") %>'></asp:Label>
+</ItemTemplate>
+</telerik:GridTemplateColumn>
+<telerik:GridTemplateColumn HeaderText="Additional Notes" UniqueName="AdditionalNotes" SortExpression="AdditionalNotes">
+<EditItemTemplate> 
+    <telerik:RadTextBox ID="AdditionalNotes" runat="server" />
+</EditItemTemplate>
+<ItemTemplate>
+    <asp:Label ID="lblAdditionalNotes" runat="server" Text='<%# Bind("AdditionalNotes") %>'></asp:Label>
+</ItemTemplate>
+</telerik:GridTemplateColumn> 
 
-<!-- MD29  Are criteria established and for determining whether a HVA cybersecurity incident has occurred? -->
-<tr id="r-m-MD29"> 
-    <td class="LabelNoWrap" >
-        <uc:CBlabel ID="CBlabel_MD29_i"  LinkEditID="CBPicklist_MD29" runat="server" LabelType="QuestionNumber" CSSClass="CustomControlLabelNoVertAlign"   />
-    </td>
-    <td class="LabelColumn Question" >
-        <uc:CBlabel ID="CBlabel_MD29_ii" LinkEditID="CBPicklist_MD29" runat="server"  CSSClass="CustomControlLabelNoVertAlign" LabelType="Question" /> 
-    </td>
-    <td class="ControlColumn">
-        <uc:CBPickList2 ID="CBPicklist_MD29"  PK_Question="42835" PickListID="423" AllowNA="true" runat="server" CSSClass="CustomControlValue"  EditState='ReadMode' AutoPostback="true" />
-    </td>
-    <td class="ControlColumn" >
-        <uc:CBoptionalLinks ID="CBoptionalLinks_MD29" runat="server" LinkEditID="CBPicklist_MD29"  ShowAudit="True" ShowHelp="True" ShowNarrative="true" AuditRecs="20" />
-    </td>
-</tr>
+ BindDDL(e, "FIPS199SystemCategorization", "FIPS199SystemCategorization", "FIPS199SystemCategorization")
+BindDDL(e, "CryptoAlgorithmUsed", "CryptoAlgorithmUsed", "CryptoAlgorithmUsed")
+BindDDL(e, "LengthCryptoKeysModules", "LengthCryptoKeysModules", "LengthCryptoKeysModules")
+BindDDL(e, "SoftwarePackageType", "SoftwarePackageType", "SoftwarePackageType")
+BindDDL(e, "HostingInfo", "HostingInfo", "HostingInfo")
+BindDDL(e, "CloudServiceProviders", "CloudServiceProviders", "CloudServiceProviders")
+BindDDL(e, "GovernmentCloudProviders", "GovernmentCloudProviders", "GovernmentCloudProviders")
+BindDDL(e, "HybridCloudProviders", "HybridCloudProviders", "HybridCloudProviders") 
 
-<!-- MD29a  If Yes to MD29: Are these criteria followed? -->
-<tr id="r-m-MD29a"> 
-    <td class="LabelNoWrap" >
-        <uc:CBlabel ID="CBlabel_MD29a_i"  LinkEditID="CBPicklist_MD29a" runat="server" LabelType="QuestionNumber" CSSClass="CustomControlLabelNoVertAlign"   />
-    </td>
-    <td class="LabelColumn Question" >
-        <uc:CBlabel ID="CBlabel_MD29a_ii" LinkEditID="CBPicklist_MD29a" runat="server"  CSSClass="CustomControlLabelNoVertAlign" LabelType="Question" /> 
-    </td>
-    <td class="ControlColumn">
-        <uc:CBPickList2 ID="CBPicklist_MD29a"  PK_Question="42836" PickListID="423" AllowNA="true" runat="server" CSSClass="CustomControlValue"  EditState='ReadMode' AutoPostback="true" />
-    </td>
-    <td class="ControlColumn" >
-        <uc:CBoptionalLinks ID="CBoptionalLinks_MD29a" runat="server" LinkEditID="CBPicklist_MD29a"  ShowAudit="True" ShowHelp="True" ShowNarrative="true" AuditRecs="20" />
-    </td>
-</tr>
+ DirectCast(e.Item.FindControl($"AgencyName"), RadTextBox).Text = drVal("AgencyName").ToString()
+DirectCast(e.Item.FindControl($"SystemName"), RadTextBox).Text = drVal("SystemName").ToString()
+DirectCast(e.Item.FindControl($"FISMASystemID"), RadTextBox).Text = drVal("FISMASystemID").ToString()
+DirectCast(e.Item.FindControl($"HighValueAssetID"), RadTextBox).Text = drVal("HighValueAssetID").ToString()
+DirectCast(e.Item.FindControl($"CryptoModuleName"), RadTextBox).Text = drVal("CryptoModuleName").ToString()
+DirectCast(e.Item.FindControl($"ServiceProvidedByCryptoModule"), RadTextBox).Text = drVal("ServiceProvidedByCryptoModule").ToString()
+DirectCast(e.Item.FindControl($"NameofVendorDev"), RadTextBox).Text = drVal("NameofVendorDev").ToString()
+DirectCast(e.Item.FindControl($"SoftwarePackageNames"), RadTextBox).Text = drVal("SoftwarePackageNames").ToString()
+DirectCast(e.Item.FindControl($"SoftwarePackageVersions"), RadTextBox).Text = drVal("SoftwarePackageVersions").ToString()
+DirectCast(e.Item.FindControl($"OperatingSystem"), RadTextBox).Text = drVal("OperatingSystem").ToString()
+DirectCast(e.Item.FindControl($"EstFY2025BudgetReqsforFed"), RadTextBox).Text = drVal("EstFY2025BudgetReqsforFed").ToString()
+DirectCast(e.Item.FindControl($"EstFY2025BudgetReqsforCon"), RadTextBox).Text = drVal("EstFY2025BudgetReqsforCon").ToString()
+DirectCast(e.Item.FindControl($"EstFY2025BudgetReqsforSytemsInv"), RadTextBox).Text = drVal("EstFY2025BudgetReqsforSytemsInv").ToString()
+DirectCast(e.Item.FindControl($"EstTotalBudgetReqFY2025ReqforFed"), RadTextBox).Text = drVal("EstTotalBudgetReqFY2025ReqforFed").ToString()
+DirectCast(e.Item.FindControl($"EstTotalBudgetReqFY2025ReqforCon"), RadTextBox).Text = drVal("EstTotalBudgetReqFY2025ReqforCon").ToString()
+DirectCast(e.Item.FindControl($"EstTotalBudgetReqFY2025ReqforSytemsInv"), RadTextBox).Text = drVal("EstTotalBudgetReqFY2025ReqforSytemsInv").ToString()
+DirectCast(e.Item.FindControl($"ProjectedSystemRefreshYear"), RadTextBox).Text = drVal("ProjectedSystemRefreshYear").ToString()
+DirectCast(e.Item.FindControl($"CrosscuttingCosts"), RadTextBox).Text = drVal("CrosscuttingCosts").ToString()
+DirectCast(e.Item.FindControl($"AdditionalNotes"), RadTextBox).Text = drVal("AdditionalNotes").ToString() 
 
-<!-- MD30  Is there a point of contact (person or role) to whom HVA cybersecurity incidents are reported? -->
-<tr id="r-m-MD30"> 
-    <td class="LabelNoWrap" >
-        <uc:CBlabel ID="CBlabel_MD30_i"  LinkEditID="CBPicklist_MD30" runat="server" LabelType="QuestionNumber" CSSClass="CustomControlLabelNoVertAlign"   />
-    </td>
-    <td class="LabelColumn Question" >
-        <uc:CBlabel ID="CBlabel_MD30_ii" LinkEditID="CBPicklist_MD30" runat="server"  CSSClass="CustomControlLabelNoVertAlign" LabelType="Question" /> 
-    </td>
-    <td class="ControlColumn">
-        <uc:CBPickList2 ID="CBPicklist_MD30"  PK_Question="42837" PickListID="423" AllowNA="true" runat="server" CSSClass="CustomControlValue"  EditState='ReadMode' AutoPostback="true" />
-    </td>
-    <td class="ControlColumn" >
-        <uc:CBoptionalLinks ID="CBoptionalLinks_MD30" runat="server" LinkEditID="CBPicklist_MD30"  ShowAudit="True" ShowHelp="True" ShowNarrative="true" AuditRecs="20" />
-    </td>
-</tr>
-
-<!-- MD31  Does a process exist for notifying necessary HVA stakeholders when a cybersecurity incident has occurred? -->
-<tr id="r-m-MD31"> 
-    <td class="LabelNoWrap" >
-        <uc:CBlabel ID="CBlabel_MD31_i"  LinkEditID="CBPicklist_MD31" runat="server" LabelType="QuestionNumber" CSSClass="CustomControlLabelNoVertAlign"   />
-    </td>
-    <td class="LabelColumn Question" >
-        <uc:CBlabel ID="CBlabel_MD31_ii" LinkEditID="CBPicklist_MD31" runat="server"  CSSClass="CustomControlLabelNoVertAlign" LabelType="Question" /> 
-    </td>
-    <td class="ControlColumn">
-        <uc:CBPickList2 ID="CBPicklist_MD31"  PK_Question="42838" PickListID="423" AllowNA="true" runat="server" CSSClass="CustomControlValue"  EditState='ReadMode' AutoPostback="true" />
-    </td>
-    <td class="ControlColumn" >
-        <uc:CBoptionalLinks ID="CBoptionalLinks_MD31" runat="server" LinkEditID="CBPicklist_MD31"  ShowAudit="True" ShowHelp="True" ShowNarrative="true" AuditRecs="20" />
-    </td>
-</tr>
-
-<!-- MD31a  If Yes to MD31: Is this process followed? -->
-<tr id="r-m-MD31a"> 
-    <td class="LabelNoWrap" >
-        <uc:CBlabel ID="CBlabel_MD31a_i"  LinkEditID="CBPicklist_MD31a" runat="server" LabelType="QuestionNumber" CSSClass="CustomControlLabelNoVertAlign"   />
-    </td>
-    <td class="LabelColumn Question" >
-        <uc:CBlabel ID="CBlabel_MD31a_ii" LinkEditID="CBPicklist_MD31a" runat="server"  CSSClass="CustomControlLabelNoVertAlign" LabelType="Question" /> 
-    </td>
-    <td class="ControlColumn">
-        <uc:CBPickList2 ID="CBPicklist_MD31a"  PK_Question="42839" PickListID="423" AllowNA="true" runat="server" CSSClass="CustomControlValue"  EditState='ReadMode' AutoPostback="true" />
-    </td>
-    <td class="ControlColumn" >
-        <uc:CBoptionalLinks ID="CBoptionalLinks_MD31a" runat="server" LinkEditID="CBPicklist_MD31a"  ShowAudit="True" ShowHelp="True" ShowNarrative="true" AuditRecs="20" />
-    </td>
-</tr>
-
-<!-- MD32  Does a cybersecurity incident response plan exist for the HVA? -->
-<tr id="r-m-MD32"> 
-    <td class="LabelNoWrap" >
-        <uc:CBlabel ID="CBlabel_MD32_i"  LinkEditID="CBPicklist_MD32" runat="server" LabelType="QuestionNumber" CSSClass="CustomControlLabelNoVertAlign"   />
-    </td>
-    <td class="LabelColumn Question" >
-        <uc:CBlabel ID="CBlabel_MD32_ii" LinkEditID="CBPicklist_MD32" runat="server"  CSSClass="CustomControlLabelNoVertAlign" LabelType="Question" /> 
-    </td>
-    <td class="ControlColumn">
-        <uc:CBPickList2 ID="CBPicklist_MD32"  PK_Question="42840" PickListID="423" AllowNA="true" runat="server" CSSClass="CustomControlValue"  EditState='ReadMode' AutoPostback="true" />
-    </td>
-    <td class="ControlColumn" >
-        <uc:CBoptionalLinks ID="CBoptionalLinks_MD32" runat="server" LinkEditID="CBPicklist_MD32"  ShowAudit="True" ShowHelp="True" ShowNarrative="true" AuditRecs="20" />
-    </td>
-</tr>
-
-<!-- MD32a  If Yes to MD32: Were published standards or guidelines used to develop this plan? -->
-<tr id="r-m-MD32a"> 
-    <td class="LabelNoWrap" >
-        <uc:CBlabel ID="CBlabel_MD32a_i"  LinkEditID="CBPicklist_MD32a" runat="server" LabelType="QuestionNumber" CSSClass="CustomControlLabelNoVertAlign"   />
-    </td>
-    <td class="LabelColumn Question" >
-        <uc:CBlabel ID="CBlabel_MD32a_ii" LinkEditID="CBPicklist_MD32a" runat="server"  CSSClass="CustomControlLabelNoVertAlign" LabelType="Question" /> 
-    </td>
-    <td class="ControlColumn">
-        <uc:CBPickList2 ID="CBPicklist_MD32a"  PK_Question="42841" PickListID="423" AllowNA="true" runat="server" CSSClass="CustomControlValue"  EditState='ReadMode' AutoPostback="true" />
-    </td>
-    <td class="ControlColumn" >
-        <uc:CBoptionalLinks ID="CBoptionalLinks_MD32a" runat="server" LinkEditID="CBPicklist_MD32a"  ShowAudit="True" ShowHelp="True" ShowNarrative="true" AuditRecs="20" />
-    </td>
-</tr>
-
-<!-- MD32b  If Yes to MD32: Does the plan include or reference documented practices for conducting HVA cybersecurity incident response activities (e.g., a playbook or set of standard operating procedures)? -->
-<tr id="r-m-MD32b"> 
-    <td class="LabelNoWrap" >
-        <uc:CBlabel ID="CBlabel_MD32b_i"  LinkEditID="CBPicklist_MD32b" runat="server" LabelType="QuestionNumber" CSSClass="CustomControlLabelNoVertAlign"   />
-    </td>
-    <td class="LabelColumn Question" >
-        <uc:CBlabel ID="CBlabel_MD32b_ii" LinkEditID="CBPicklist_MD32b" runat="server"  CSSClass="CustomControlLabelNoVertAlign" LabelType="Question" /> 
-    </td>
-    <td class="ControlColumn">
-        <uc:CBPickList2 ID="CBPicklist_MD32b"  PK_Question="42842" PickListID="423" AllowNA="true" runat="server" CSSClass="CustomControlValue"  EditState='ReadMode' AutoPostback="true" />
-    </td>
-    <td class="ControlColumn" >
-        <uc:CBoptionalLinks ID="CBoptionalLinks_MD32b" runat="server" LinkEditID="CBPicklist_MD32b"  ShowAudit="True" ShowHelp="True" ShowNarrative="true" AuditRecs="20" />
-    </td>
-</tr>
-
-<!-- MD32c  If Yes to MD32: Is this incident response plan exercised regularly? -->
-<tr id="r-m-MD32c"> 
-    <td class="LabelNoWrap" >
-        <uc:CBlabel ID="CBlabel_MD32c_i"  LinkEditID="CBPicklist_MD32c" runat="server" LabelType="QuestionNumber" CSSClass="CustomControlLabelNoVertAlign"   />
-    </td>
-    <td class="LabelColumn Question" >
-        <uc:CBlabel ID="CBlabel_MD32c_ii" LinkEditID="CBPicklist_MD32c" runat="server"  CSSClass="CustomControlLabelNoVertAlign" LabelType="Question" /> 
-    </td>
-    <td class="ControlColumn">
-        <uc:CBPickList2 ID="CBPicklist_MD32c"  PK_Question="42843" PickListID="423" AllowNA="true" runat="server" CSSClass="CustomControlValue"  EditState='ReadMode' AutoPostback="true" />
-    </td>
-    <td class="ControlColumn" >
-        <uc:CBoptionalLinks ID="CBoptionalLinks_MD32c" runat="server" LinkEditID="CBPicklist_MD32c"  ShowAudit="True" ShowHelp="True" ShowNarrative="true" AuditRecs="20" />
-    </td>
-</tr>
-
-<!-- MD33  Is the agency able to initiate a response to HVA cybersecurity incidents 24/7/365? -->
-<tr id="r-m-MD33"> 
-    <td class="LabelNoWrap" >
-        <uc:CBlabel ID="CBlabel_MD33_i"  LinkEditID="CBPicklist_MD33" runat="server" LabelType="QuestionNumber" CSSClass="CustomControlLabelNoVertAlign"   />
-    </td>
-    <td class="LabelColumn Question" >
-        <uc:CBlabel ID="CBlabel_MD33_ii" LinkEditID="CBPicklist_MD33" runat="server"  CSSClass="CustomControlLabelNoVertAlign" LabelType="Question" /> 
-    </td>
-    <td class="ControlColumn">
-        <uc:CBPickList2 ID="CBPicklist_MD33"  PK_Question="42844" PickListID="423" AllowNA="true" runat="server" CSSClass="CustomControlValue"  EditState='ReadMode' AutoPostback="true" />
-    </td>
-    <td class="ControlColumn" >
-        <uc:CBoptionalLinks ID="CBoptionalLinks_MD33" runat="server" LinkEditID="CBPicklist_MD33"  ShowAudit="True" ShowHelp="True" ShowNarrative="true" AuditRecs="20" />
-    </td>
-</tr>
-
-<!-- MD33a  If Yes to MD33: Do cybersecurity incident response personnel have after-hours cyber and physical access to the HVA? -->
-<tr id="r-m-MD33a"> 
-    <td class="LabelNoWrap" >
-        <uc:CBlabel ID="CBlabel_MD33a_i"  LinkEditID="CBPicklist_MD33a" runat="server" LabelType="QuestionNumber" CSSClass="CustomControlLabelNoVertAlign"   />
-    </td>
-    <td class="LabelColumn Question" >
-        <uc:CBlabel ID="CBlabel_MD33a_ii" LinkEditID="CBPicklist_MD33a" runat="server"  CSSClass="CustomControlLabelNoVertAlign" LabelType="Question" /> 
-    </td>
-    <td class="ControlColumn">
-        <uc:CBPickList2 ID="CBPicklist_MD33a"  PK_Question="42845" PickListID="423" AllowNA="true" runat="server" CSSClass="CustomControlValue"  EditState='ReadMode' AutoPostback="true" />
-    </td>
-    <td class="ControlColumn" >
-        <uc:CBoptionalLinks ID="CBoptionalLinks_MD33a" runat="server" LinkEditID="CBPicklist_MD33a"  ShowAudit="True" ShowHelp="True" ShowNarrative="true" AuditRecs="20" />
-    </td>
-</tr>
-
-<!-- MD34  Is cybersecurity incident response for the HVA provided by a third party? -->
-<tr id="r-m-MD34"> 
-    <td class="LabelNoWrap" >
-        <uc:CBlabel ID="CBlabel_MD34_i"  LinkEditID="CBPicklist_MD34" runat="server" LabelType="QuestionNumber" CSSClass="CustomControlLabelNoVertAlign"   />
-    </td>
-    <td class="LabelColumn Question" >
-        <uc:CBlabel ID="CBlabel_MD34_ii" LinkEditID="CBPicklist_MD34" runat="server"  CSSClass="CustomControlLabelNoVertAlign" LabelType="Question" /> 
-    </td>
-    <td class="ControlColumn">
-        <uc:CBPickList2 ID="CBPicklist_MD34"  PK_Question="42846" PickListID="423" AllowNA="true" runat="server" CSSClass="CustomControlValue"  EditState='ReadMode' AutoPostback="true" />
-    </td>
-    <td class="ControlColumn" >
-        <uc:CBoptionalLinks ID="CBoptionalLinks_MD34" runat="server" LinkEditID="CBPicklist_MD34"  ShowAudit="True" ShowHelp="True" ShowNarrative="true" AuditRecs="20" />
-    </td>
-</tr>
-
-<!-- MD35  Are adequate resources (people, funding, and tools) provided to support HVA cybersecurity incident response? -->
-<tr id="r-m-MD35"> 
-    <td class="LabelNoWrap" >
-        <uc:CBlabel ID="CBlabel_MD35_i"  LinkEditID="CBPicklist_MD35" runat="server" LabelType="QuestionNumber" CSSClass="CustomControlLabelNoVertAlign"   />
-    </td>
-    <td class="LabelColumn Question" >
-        <uc:CBlabel ID="CBlabel_MD35_ii" LinkEditID="CBPicklist_MD35" runat="server"  CSSClass="CustomControlLabelNoVertAlign" LabelType="Question" /> 
-    </td>
-    <td class="ControlColumn">
-        <uc:CBPickList2 ID="CBPicklist_MD35"  PK_Question="42847" PickListID="423" AllowNA="true" runat="server" CSSClass="CustomControlValue"  EditState='ReadMode' AutoPostback="true" />
-    </td>
-    <td class="ControlColumn" >
-        <uc:CBoptionalLinks ID="CBoptionalLinks_MD35" runat="server" LinkEditID="CBPicklist_MD35"  ShowAudit="True" ShowHelp="True" ShowNarrative="true" AuditRecs="20" />
-    </td>
-</tr>
+ AgencyName
+,SystemName
+,FISMASystemID
+,FIPS199SystemCategorization
+,HighValueAssetID
+,CryptoModuleName
+,CryptoAlgorithmUsed
+,ServiceProvidedByCryptoModule
+,LengthCryptoKeysModules
+,SoftwarePackageType
+,NameofVendorDev
+,SoftwarePackageNames
+,SoftwarePackageVersions
+,OperatingSystem
+,HostingInfo
+,CloudServiceProviders
+,GovernmentCloudProviders
+,HybridCloudProviders
+,EstFY2025BudgetReqsforFed
+,EstFY2025BudgetReqsforCon
+,EstFY2025BudgetReqsforSytemsInv
+,EstTotalBudgetReqFY2025ReqforFed
+,EstTotalBudgetReqFY2025ReqforCon
+,EstTotalBudgetReqFY2025ReqforSytemsInv
+,ProjectedSystemRefreshYear
+,CrosscuttingCosts
+,AdditionalNotes

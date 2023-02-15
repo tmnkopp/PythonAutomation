@@ -1,0 +1,1 @@
+<telerik:RadDropDownList ID="{col}" runat="server"></telerik:RadDropDownList>
