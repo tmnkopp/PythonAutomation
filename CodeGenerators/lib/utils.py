@@ -100,18 +100,20 @@ def shorten(s):
 
 
 def generate_code_from_db(ctx, qgroup=4018):
-    df=sql_todf("""
-    SELECT 
-idText as identifier_text 
-,CASE WHEN idText='' THEN REPLACE(ID,'-','_')  ELSE REPLACE(idText,'.','_') END AS [{idt}]
-,ID as [id]
-,Q_TypeCode CTRLCODE 
-,FK_QuestionType
-,PK_Question as [{PK_Question}]
-,PK_PickListType as [{PK_PickListType}]
-,sortpos
-,QTEXT as [{QuestionText}] 
-    """+ f"FROM vwQuestions WHERE PK_QuestionGroup={qgroup}", ctx.connstr) 
+    sql="""
+        SELECT 
+        idText as identifier_text 
+        ,CASE WHEN idText='' THEN REPLACE(ID,'-','_')  ELSE REPLACE(idText,'.','_') END AS [{idt}]
+        ,ID as [id]
+        ,Q_TypeCode CTRLCODE 
+        ,FK_QuestionType
+        ,PK_Question as [{PK_Question}]
+        ,PK_PickListType as [{PK_PickListType}]
+        ,sortpos
+        ,QTEXT as [{QuestionText}] 
+    """+ f" FROM vwQuestions WHERE PK_QuestionGroup={qgroup} ; "
+    ctx.logger.info(f'generate_code_from_db: {sql}')
+    df=sql_todf(sql, ctx.connstr)  
     df['{idt}']=df['{idt}'].apply(lambda s: re.sub('_$','',s))
     gen=script_generator(ctx)
     code=gen.generate(df)
