@@ -589,3 +589,28 @@
 02/15/2023 11:42:39 AM with open: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\PICK.aspx
 02/16/2023 11:18:15 AM init
 02/16/2023 01:22:47 PM init
+02/16/2023 01:23:11 PM 
+
+02/16/2023 01:23:11 PM ====== WebDriver manager ======
+02/16/2023 01:23:11 PM Current google-chrome version is 110.0.5481
+02/16/2023 01:23:11 PM Get LATEST driver version for 110.0.5481
+02/16/2023 01:23:12 PM Get LATEST driver version for 110.0.5481
+02/16/2023 01:23:12 PM Trying to download new driver from https://chromedriver.storage.googleapis.com/110.0.5481.77/chromedriver_win32.zip
+02/16/2023 01:23:13 PM Driver has been saved in cache [C:\Users\timko\.wdm\drivers\chromedriver\win32\110.0.5481.77]
+02/16/2023 01:23:35 PM Note: NumExpr detected 12 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 8.
+02/16/2023 01:23:35 PM NumExpr defaulting to 8 threads.
+02/16/2023 01:51:39 PM 
+
+02/16/2023 01:51:39 PM ====== WebDriver manager ======
+02/16/2023 01:51:39 PM Current google-chrome version is 110.0.5481
+02/16/2023 01:51:39 PM Get LATEST driver version for 110.0.5481
+02/16/2023 01:51:39 PM Driver [C:\Users\timko\.wdm\drivers\chromedriver\win32\110.0.5481.77\chromedriver.exe] found in cache
+02/21/2023 02:28:05 PM init
+02/21/2023 02:28:18 PM 
+
+02/21/2023 02:28:18 PM ====== WebDriver manager ======
+02/21/2023 02:28:18 PM Current google-chrome version is 110.0.5481
+02/21/2023 02:28:18 PM Get LATEST driver version for 110.0.5481
+02/21/2023 02:28:18 PM Get LATEST driver version for 110.0.5481
+02/21/2023 02:28:19 PM Trying to download new driver from https://chromedriver.storage.googleapis.com/110.0.5481.77/chromedriver_win32.zip
+02/21/2023 02:28:34 PM Driver has been saved in cache [C:\Users\timko\.wdm\drivers\chromedriver\win32\110.0.5481.77]
