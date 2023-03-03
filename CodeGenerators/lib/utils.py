@@ -101,9 +101,12 @@ def shorten(s):
 
 def generate_code_from_db(ctx, qgroup=4018):
     sql="""
-        SELECT 
+        SELECT DISTINCT
         idText as identifier_text 
-        ,CASE WHEN idText='' THEN REPLACE(ID,'-','_')  ELSE REPLACE(idText,'.','_') END AS [{idt}]
+        ,CASE WHEN idText='' THEN REPLACE(ID,'-','_')  
+		ELSE 
+			REPLACE(REPLACE(REPLACE(idText,'-','_'),'.','_') ,' ','_') 
+		END AS [{idt}]
         ,ID as [id]
         ,Q_TypeCode CTRLCODE 
         ,FK_QuestionType
@@ -111,7 +114,21 @@ def generate_code_from_db(ctx, qgroup=4018):
         ,PK_PickListType as [{PK_PickListType}]
         ,sortpos
         ,QTEXT as [{QuestionText}] 
-    """+ f" FROM vwQuestions WHERE PK_QuestionGroup={qgroup} ; "
+		
+		,CASE WHEN D.FK_Question_Master IS NOT NULL THEN
+			'  data-question_master="r-m-' + 
+			(SELECT TOP 1 REPLACE(REPLACE(REPLACE(idText,'-','_'),'.','_') ,' ','_')   FROM vwQuestions WHERE PK_Question=D.FK_Question_Master)
+			+ '"  data-value_torequire="'  
+			+ CASE WHEN ISNUMERIC(D.Question_Master_CodeValue_ToMakeRequired) = 1 THEN
+				''+ (SELECT TRIM(DisplayValue) FROM vwPickLists WHERE PK_PickList=D.Question_Master_CodeValue_ToMakeRequired )
+			END 
+			+'" '
+		ELSE
+			''
+		END AS [{Dependancy}]
+   FROM vwQuestions Q
+   LEFT JOIN fsma_QuestionDependencies D ON Q.PK_Question=D.FK_Question
+    """+ f"  WHERE PK_QuestionGroup={qgroup} ; "
     ctx.logger.info(f'generate_code_from_db: {sql}')
     df=sql_todf(sql, ctx.connstr)  
     df['{idt}']=df['{idt}'].apply(lambda s: re.sub('_$','',s))

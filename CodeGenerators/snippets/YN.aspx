@@ -1,5 +1,5 @@
 <!-- {idt} {QuestionText} -->
-<tr id="r-m-{idt}">
+<tr id="r-m-{idt}" {Dependancy}>
     <td class="LabelColumn">
         <uc:CBlabel ID="CBlabel_{idt}" LinkEditID="CBYesNo2_{idt}" runat="server" CSSClass="CustomControlLabel" LabelType="QuestionNumber"  />
     </td>

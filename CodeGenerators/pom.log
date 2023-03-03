@@ -629,3 +629,817 @@
 03/01/2023 09:14:59 AM Note: NumExpr detected 12 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 8.
 03/01/2023 09:14:59 AM NumExpr defaulting to 8 threads.
 03/01/2023 10:15:16 AM init
+03/01/2023 10:18:54 AM generate_code_from_db: 
+        SELECT 
+        idText as identifier_text 
+        ,CASE WHEN idText='' THEN REPLACE(ID,'-','_')  ELSE REPLACE(idText,'.','_') END AS [{idt}]
+        ,ID as [id]
+        ,Q_TypeCode CTRLCODE 
+        ,FK_QuestionType
+        ,PK_Question as [{PK_Question}]
+        ,PK_PickListType as [{PK_PickListType}]
+        ,sortpos
+        ,QTEXT as [{QuestionText}] 
+     FROM vwQuestions WHERE PK_QuestionGroup=4200 ; 
+03/01/2023 10:18:54 AM with open: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\MULTICHECKBOX.aspx
+03/01/2023 10:18:54 AM with open: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\PICK.aspx
+03/01/2023 10:18:54 AM with open: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\PICK.aspx
+03/01/2023 10:18:54 AM with open: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\PICK.aspx
+03/01/2023 10:18:54 AM with open: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\PICK.aspx
+03/01/2023 10:18:54 AM with open: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\PICK.aspx
+03/01/2023 10:18:54 AM with open: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\PICK.aspx
+03/01/2023 10:18:54 AM with open: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\PICK.aspx
+03/01/2023 10:18:54 AM with open: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\PICK.aspx
+03/01/2023 10:18:54 AM with open: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\PICK.aspx
+03/01/2023 10:18:54 AM with open: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\PICK.aspx
+03/01/2023 10:18:54 AM with open: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\PICK.aspx
+03/01/2023 10:18:54 AM with open: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\PICK.aspx
+03/01/2023 10:18:54 AM with open: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\PICK.aspx
+03/01/2023 10:18:54 AM generate_code_from_db: 
+        SELECT 
+        idText as identifier_text 
+        ,CASE WHEN idText='' THEN REPLACE(ID,'-','_')  ELSE REPLACE(idText,'.','_') END AS [{idt}]
+        ,ID as [id]
+        ,Q_TypeCode CTRLCODE 
+        ,FK_QuestionType
+        ,PK_Question as [{PK_Question}]
+        ,PK_PickListType as [{PK_PickListType}]
+        ,sortpos
+        ,QTEXT as [{QuestionText}] 
+     FROM vwQuestions WHERE PK_QuestionGroup=4201 ; 
+03/01/2023 10:18:54 AM with open: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\MULTICHECKBOX.aspx
+03/01/2023 10:18:54 AM with open: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\PICK.aspx
+03/01/2023 10:18:54 AM with open: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\PICK.aspx
+03/01/2023 10:18:54 AM with open: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\PICK.aspx
+03/01/2023 10:18:54 AM with open: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\PICK.aspx
+03/01/2023 10:18:54 AM with open: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\PICK.aspx
+03/01/2023 10:18:54 AM with open: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\PICK.aspx
+03/01/2023 10:18:54 AM with open: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\PICK.aspx
+03/01/2023 10:18:54 AM with open: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\PICK.aspx
+03/01/2023 10:18:54 AM with open: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\PICK.aspx
+03/01/2023 10:18:54 AM with open: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\PICK.aspx
+03/01/2023 10:18:54 AM with open: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\PICK.aspx
+03/01/2023 10:18:54 AM with open: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\PICK.aspx
+03/01/2023 10:18:54 AM with open: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\PICK.aspx
+03/01/2023 10:18:54 AM with open: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\PICK.aspx
+03/01/2023 10:18:54 AM with open: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\PICK.aspx
+03/01/2023 10:18:54 AM with open: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\PICK.aspx
+03/01/2023 10:18:54 AM with open: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\PICK.aspx
+03/01/2023 10:18:54 AM with open: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\PICK.aspx
+03/01/2023 10:18:54 AM with open: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\PICK.aspx
+03/01/2023 10:18:54 AM with open: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\PICK.aspx
+03/01/2023 10:18:54 AM generate_code_from_db: 
+        SELECT 
+        idText as identifier_text 
+        ,CASE WHEN idText='' THEN REPLACE(ID,'-','_')  ELSE REPLACE(idText,'.','_') END AS [{idt}]
+        ,ID as [id]
+        ,Q_TypeCode CTRLCODE 
+        ,FK_QuestionType
+        ,PK_Question as [{PK_Question}]
+        ,PK_PickListType as [{PK_PickListType}]
+        ,sortpos
+        ,QTEXT as [{QuestionText}] 
+     FROM vwQuestions WHERE PK_QuestionGroup=4202 ; 
+03/01/2023 10:18:54 AM with open: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\MULTICHECKBOX.aspx
+03/01/2023 10:18:54 AM with open: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\PICK.aspx
+03/01/2023 10:18:54 AM with open: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\PICK.aspx
+03/01/2023 10:18:54 AM with open: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\PICK.aspx
+03/01/2023 10:18:54 AM with open: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\PICK.aspx
+03/01/2023 10:18:54 AM with open: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\PICK.aspx
+03/01/2023 10:18:54 AM with open: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\PICK.aspx
+03/01/2023 10:18:54 AM with open: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\PICK.aspx
+03/01/2023 10:18:54 AM with open: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\PICK.aspx
+03/01/2023 10:18:54 AM with open: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\PICK.aspx
+03/01/2023 10:18:54 AM with open: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\PICK.aspx
+03/01/2023 10:18:54 AM with open: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\PICK.aspx
+03/01/2023 10:18:54 AM with open: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\PICK.aspx
+03/01/2023 10:18:54 AM with open: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\PICK.aspx
+03/01/2023 10:18:54 AM with open: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\PICK.aspx
+03/01/2023 10:18:54 AM with open: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\PICK.aspx
+03/01/2023 10:18:54 AM with open: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\PICK.aspx
+03/01/2023 10:18:54 AM with open: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\PICK.aspx
+03/01/2023 10:18:54 AM with open: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\PICK.aspx
+03/01/2023 10:18:54 AM with open: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\PICK.aspx
+03/01/2023 10:18:54 AM with open: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\PICK.aspx
+03/01/2023 10:18:54 AM with open: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\PICK.aspx
+03/01/2023 10:18:54 AM with open: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\PICK.aspx
+03/01/2023 10:18:54 AM with open: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\PICK.aspx
+03/01/2023 10:18:54 AM with open: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\PICK.aspx
+03/01/2023 10:23:02 AM generate_code_from_db: 
+        SELECT 
+        idText as identifier_text 
+        ,CASE WHEN idText='' THEN REPLACE(ID,'-','_')  ELSE REPLACE(idText,'.','_') END AS [{idt}]
+        ,ID as [id]
+        ,Q_TypeCode CTRLCODE 
+        ,FK_QuestionType
+        ,PK_Question as [{PK_Question}]
+        ,PK_PickListType as [{PK_PickListType}]
+        ,sortpos
+        ,QTEXT as [{QuestionText}] 
+     FROM vwQuestions WHERE PK_QuestionGroup=4200 ; 
+03/01/2023 10:23:02 AM with open: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\MULTICHECKBOX.aspx
+03/01/2023 10:23:02 AM with open: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\PICK.aspx
+03/01/2023 10:23:02 AM with open: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\PICK.aspx
+03/01/2023 10:23:02 AM with open: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\PICK.aspx
+03/01/2023 10:23:02 AM with open: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\PICK.aspx
+03/01/2023 10:23:02 AM with open: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\PICK.aspx
+03/01/2023 10:23:02 AM with open: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\PICK.aspx
+03/01/2023 10:23:02 AM with open: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\PICK.aspx
+03/01/2023 10:23:02 AM with open: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\PICK.aspx
+03/01/2023 10:23:02 AM with open: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\PICK.aspx
+03/01/2023 10:23:02 AM with open: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\PICK.aspx
+03/01/2023 10:23:02 AM with open: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\PICK.aspx
+03/01/2023 10:23:02 AM with open: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\PICK.aspx
+03/01/2023 10:23:02 AM with open: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\PICK.aspx
+03/01/2023 10:23:02 AM generate_code_from_db: 
+        SELECT 
+        idText as identifier_text 
+        ,CASE WHEN idText='' THEN REPLACE(ID,'-','_')  ELSE REPLACE(idText,'.','_') END AS [{idt}]
+        ,ID as [id]
+        ,Q_TypeCode CTRLCODE 
+        ,FK_QuestionType
+        ,PK_Question as [{PK_Question}]
+        ,PK_PickListType as [{PK_PickListType}]
+        ,sortpos
+        ,QTEXT as [{QuestionText}] 
+     FROM vwQuestions WHERE PK_QuestionGroup=4201 ; 
+03/01/2023 10:23:02 AM with open: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\MULTICHECKBOX.aspx
+03/01/2023 10:23:02 AM with open: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\PICK.aspx
+03/01/2023 10:23:02 AM with open: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\PICK.aspx
+03/01/2023 10:23:02 AM with open: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\PICK.aspx
+03/01/2023 10:23:02 AM with open: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\PICK.aspx
+03/01/2023 10:23:02 AM with open: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\PICK.aspx
+03/01/2023 10:23:02 AM with open: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\PICK.aspx
+03/01/2023 10:23:02 AM with open: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\PICK.aspx
+03/01/2023 10:23:02 AM with open: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\PICK.aspx
+03/01/2023 10:23:02 AM with open: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\PICK.aspx
+03/01/2023 10:23:02 AM with open: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\PICK.aspx
+03/01/2023 10:23:02 AM with open: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\PICK.aspx
+03/01/2023 10:23:02 AM with open: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\PICK.aspx
+03/01/2023 10:23:02 AM with open: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\PICK.aspx
+03/01/2023 10:23:02 AM with open: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\PICK.aspx
+03/01/2023 10:23:02 AM with open: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\PICK.aspx
+03/01/2023 10:23:02 AM with open: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\PICK.aspx
+03/01/2023 10:23:02 AM with open: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\PICK.aspx
+03/01/2023 10:23:02 AM with open: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\PICK.aspx
+03/01/2023 10:23:02 AM with open: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\PICK.aspx
+03/01/2023 10:23:02 AM with open: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\PICK.aspx
+03/01/2023 10:23:02 AM generate_code_from_db: 
+        SELECT 
+        idText as identifier_text 
+        ,CASE WHEN idText='' THEN REPLACE(ID,'-','_')  ELSE REPLACE(idText,'.','_') END AS [{idt}]
+        ,ID as [id]
+        ,Q_TypeCode CTRLCODE 
+        ,FK_QuestionType
+        ,PK_Question as [{PK_Question}]
+        ,PK_PickListType as [{PK_PickListType}]
+        ,sortpos
+        ,QTEXT as [{QuestionText}] 
+     FROM vwQuestions WHERE PK_QuestionGroup=4202 ; 
+03/01/2023 10:23:02 AM with open: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\MULTICHECKBOX.aspx
+03/01/2023 10:23:02 AM with open: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\PICK.aspx
+03/01/2023 10:23:02 AM with open: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\PICK.aspx
+03/01/2023 10:23:02 AM with open: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\PICK.aspx
+03/01/2023 10:23:02 AM with open: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\PICK.aspx
+03/01/2023 10:23:02 AM with open: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\PICK.aspx
+03/01/2023 10:23:02 AM with open: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\PICK.aspx
+03/01/2023 10:23:02 AM with open: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\PICK.aspx
+03/01/2023 10:23:02 AM with open: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\PICK.aspx
+03/01/2023 10:23:02 AM with open: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\PICK.aspx
+03/01/2023 10:23:02 AM with open: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\PICK.aspx
+03/01/2023 10:23:02 AM with open: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\PICK.aspx
+03/01/2023 10:23:02 AM with open: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\PICK.aspx
+03/01/2023 10:23:02 AM with open: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\PICK.aspx
+03/01/2023 10:23:02 AM with open: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\PICK.aspx
+03/01/2023 10:23:02 AM with open: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\PICK.aspx
+03/01/2023 10:23:02 AM with open: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\PICK.aspx
+03/01/2023 10:23:02 AM with open: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\PICK.aspx
+03/01/2023 10:23:02 AM with open: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\PICK.aspx
+03/01/2023 10:23:02 AM with open: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\PICK.aspx
+03/01/2023 10:23:02 AM with open: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\PICK.aspx
+03/01/2023 10:23:02 AM with open: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\PICK.aspx
+03/01/2023 10:23:02 AM with open: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\PICK.aspx
+03/01/2023 10:23:02 AM with open: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\PICK.aspx
+03/01/2023 10:23:02 AM with open: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\PICK.aspx
+03/01/2023 10:49:26 AM init
+03/01/2023 10:49:29 AM generate_code_from_db: 
+        SELECT 
+        idText as identifier_text 
+        ,CASE WHEN idText='' THEN REPLACE(ID,'-','_')  ELSE REPLACE(idText,'.','_') END AS [{idt}]
+        ,ID as [id]
+        ,Q_TypeCode CTRLCODE 
+        ,FK_QuestionType
+        ,PK_Question as [{PK_Question}]
+        ,PK_PickListType as [{PK_PickListType}]
+        ,sortpos
+        ,QTEXT as [{QuestionText}] 
+		,CASE WHEN D.FK_Question_Master IS NOT NULL THEN
+			'  data-question_master="r-m-' + 
+			(SELECT TOP 1 REPLACE(IdText,'.','_')  FROM vwQuestions WHERE PK_Question=D.FK_Question_Master)
+			+ '"  data-value_torequire="'+ D.Question_Master_CodeValue_ToMakeRequired +'" '
+		ELSE
+			''
+		END AS [{Dependancy}]
+   FROM vwQuestions Q
+   LEFT JOIN fsma_QuestionDependencies D ON Q.PK_Question=D.FK_Question
+
+      WHERE PK_QuestionGroup=4200 ; 
+03/01/2023 10:49:29 AM with open: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\MULTICHECKBOX.aspx
+03/01/2023 10:49:29 AM with open: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\PICK.aspx
+03/01/2023 10:49:29 AM with open: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\PICK.aspx
+03/01/2023 10:49:29 AM with open: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\PICK.aspx
+03/01/2023 10:49:29 AM with open: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\PICK.aspx
+03/01/2023 10:49:29 AM with open: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\PICK.aspx
+03/01/2023 10:49:29 AM with open: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\PICK.aspx
+03/01/2023 10:49:29 AM with open: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\PICK.aspx
+03/01/2023 10:49:29 AM with open: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\PICK.aspx
+03/01/2023 10:49:29 AM with open: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\PICK.aspx
+03/01/2023 10:49:29 AM with open: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\PICK.aspx
+03/01/2023 10:49:29 AM with open: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\PICK.aspx
+03/01/2023 10:49:29 AM with open: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\PICK.aspx
+03/01/2023 10:49:29 AM with open: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\PICK.aspx
+03/01/2023 10:49:29 AM generate_code_from_db: 
+        SELECT 
+        idText as identifier_text 
+        ,CASE WHEN idText='' THEN REPLACE(ID,'-','_')  ELSE REPLACE(idText,'.','_') END AS [{idt}]
+        ,ID as [id]
+        ,Q_TypeCode CTRLCODE 
+        ,FK_QuestionType
+        ,PK_Question as [{PK_Question}]
+        ,PK_PickListType as [{PK_PickListType}]
+        ,sortpos
+        ,QTEXT as [{QuestionText}] 
+		,CASE WHEN D.FK_Question_Master IS NOT NULL THEN
+			'  data-question_master="r-m-' + 
+			(SELECT TOP 1 REPLACE(IdText,'.','_')  FROM vwQuestions WHERE PK_Question=D.FK_Question_Master)
+			+ '"  data-value_torequire="'+ D.Question_Master_CodeValue_ToMakeRequired +'" '
+		ELSE
+			''
+		END AS [{Dependancy}]
+   FROM vwQuestions Q
+   LEFT JOIN fsma_QuestionDependencies D ON Q.PK_Question=D.FK_Question
+
+      WHERE PK_QuestionGroup=4201 ; 
+03/01/2023 10:49:29 AM with open: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\MULTICHECKBOX.aspx
+03/01/2023 10:49:29 AM with open: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\PICK.aspx
+03/01/2023 10:49:29 AM with open: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\PICK.aspx
+03/01/2023 10:49:29 AM with open: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\PICK.aspx
+03/01/2023 10:49:29 AM with open: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\PICK.aspx
+03/01/2023 10:49:29 AM with open: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\PICK.aspx
+03/01/2023 10:49:29 AM with open: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\PICK.aspx
+03/01/2023 10:49:29 AM with open: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\PICK.aspx
+03/01/2023 10:49:29 AM with open: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\PICK.aspx
+03/01/2023 10:49:29 AM with open: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\PICK.aspx
+03/01/2023 10:49:29 AM with open: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\PICK.aspx
+03/01/2023 10:49:29 AM with open: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\PICK.aspx
+03/01/2023 10:49:29 AM with open: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\PICK.aspx
+03/01/2023 10:49:29 AM with open: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\PICK.aspx
+03/01/2023 10:49:29 AM with open: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\PICK.aspx
+03/01/2023 10:49:29 AM with open: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\PICK.aspx
+03/01/2023 10:49:29 AM with open: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\PICK.aspx
+03/01/2023 10:49:29 AM with open: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\PICK.aspx
+03/01/2023 10:49:29 AM with open: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\PICK.aspx
+03/01/2023 10:49:29 AM with open: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\PICK.aspx
+03/01/2023 10:49:29 AM with open: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\PICK.aspx
+03/01/2023 10:49:29 AM generate_code_from_db: 
+        SELECT 
+        idText as identifier_text 
+        ,CASE WHEN idText='' THEN REPLACE(ID,'-','_')  ELSE REPLACE(idText,'.','_') END AS [{idt}]
+        ,ID as [id]
+        ,Q_TypeCode CTRLCODE 
+        ,FK_QuestionType
+        ,PK_Question as [{PK_Question}]
+        ,PK_PickListType as [{PK_PickListType}]
+        ,sortpos
+        ,QTEXT as [{QuestionText}] 
+		,CASE WHEN D.FK_Question_Master IS NOT NULL THEN
+			'  data-question_master="r-m-' + 
+			(SELECT TOP 1 REPLACE(IdText,'.','_')  FROM vwQuestions WHERE PK_Question=D.FK_Question_Master)
+			+ '"  data-value_torequire="'+ D.Question_Master_CodeValue_ToMakeRequired +'" '
+		ELSE
+			''
+		END AS [{Dependancy}]
+   FROM vwQuestions Q
+   LEFT JOIN fsma_QuestionDependencies D ON Q.PK_Question=D.FK_Question
+
+      WHERE PK_QuestionGroup=4202 ; 
+03/01/2023 10:49:29 AM with open: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\MULTICHECKBOX.aspx
+03/01/2023 10:49:29 AM with open: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\PICK.aspx
+03/01/2023 10:49:29 AM with open: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\PICK.aspx
+03/01/2023 10:49:29 AM with open: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\PICK.aspx
+03/01/2023 10:49:29 AM with open: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\PICK.aspx
+03/01/2023 10:49:29 AM with open: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\PICK.aspx
+03/01/2023 10:49:29 AM with open: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\PICK.aspx
+03/01/2023 10:49:29 AM with open: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\PICK.aspx
+03/01/2023 10:49:29 AM with open: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\PICK.aspx
+03/01/2023 10:49:29 AM with open: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\PICK.aspx
+03/01/2023 10:49:29 AM with open: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\PICK.aspx
+03/01/2023 10:49:29 AM with open: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\PICK.aspx
+03/01/2023 10:49:29 AM with open: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\PICK.aspx
+03/01/2023 10:49:29 AM with open: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\PICK.aspx
+03/01/2023 10:49:30 AM with open: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\PICK.aspx
+03/01/2023 10:49:30 AM with open: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\PICK.aspx
+03/01/2023 10:49:30 AM with open: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\PICK.aspx
+03/01/2023 10:49:30 AM with open: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\PICK.aspx
+03/01/2023 10:49:30 AM with open: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\PICK.aspx
+03/01/2023 10:49:30 AM with open: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\PICK.aspx
+03/01/2023 10:49:30 AM with open: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\PICK.aspx
+03/01/2023 10:49:30 AM with open: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\PICK.aspx
+03/01/2023 10:49:30 AM with open: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\PICK.aspx
+03/01/2023 10:49:30 AM with open: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\PICK.aspx
+03/01/2023 10:49:30 AM with open: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\PICK.aspx
+03/01/2023 10:55:04 AM init
+03/01/2023 10:55:06 AM generate_code_from_db: 
+        SELECT 
+        idText as identifier_text 
+        ,CASE WHEN idText='' THEN REPLACE(ID,'-','_')  ELSE REPLACE(idText,'.','_') END AS [{idt}]
+        ,ID as [id]
+        ,Q_TypeCode CTRLCODE 
+        ,FK_QuestionType
+        ,PK_Question as [{PK_Question}]
+        ,PK_PickListType as [{PK_PickListType}]
+        ,sortpos
+        ,QTEXT as [{QuestionText}] 
+		,CASE WHEN D.FK_Question_Master IS NOT NULL THEN
+			'  data-question_master="r-m-' + 
+			(SELECT TOP 1 REPLACE(IdText,'.','_')  FROM vwQuestions WHERE PK_Question=D.FK_Question_Master)
+			+ '"  data-value_torequire="'
+			+ D.Question_Master_CodeValue_ToMakeRequired  
+			+ CASE WHEN ISNUMERIC(D.Question_Master_CodeValue_ToMakeRequired) = 1 THEN
+				'|'+ (SELECT DisplayValue FROM vwPickLists WHERE PK_PickList=D.Question_Master_CodeValue_ToMakeRequired )
+			END 
+			+'" '
+		ELSE
+			''
+		END AS [{Dependancy}]
+   FROM vwQuestions Q
+   LEFT JOIN fsma_QuestionDependencies D ON Q.PK_Question=D.FK_Question
+
+      WHERE PK_QuestionGroup=4200 ; 
+03/01/2023 10:55:07 AM with open: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\MULTICHECKBOX.aspx
+03/01/2023 10:55:07 AM with open: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\PICK.aspx
+03/01/2023 10:55:07 AM with open: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\PICK.aspx
+03/01/2023 10:55:07 AM with open: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\PICK.aspx
+03/01/2023 10:55:07 AM with open: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\PICK.aspx
+03/01/2023 10:55:07 AM with open: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\PICK.aspx
+03/01/2023 10:55:07 AM with open: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\PICK.aspx
+03/01/2023 10:55:07 AM with open: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\PICK.aspx
+03/01/2023 10:55:07 AM with open: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\PICK.aspx
+03/01/2023 10:55:07 AM with open: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\PICK.aspx
+03/01/2023 10:55:07 AM with open: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\PICK.aspx
+03/01/2023 10:55:07 AM with open: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\PICK.aspx
+03/01/2023 10:55:07 AM with open: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\PICK.aspx
+03/01/2023 10:55:07 AM with open: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\PICK.aspx
+03/01/2023 10:55:07 AM generate_code_from_db: 
+        SELECT 
+        idText as identifier_text 
+        ,CASE WHEN idText='' THEN REPLACE(ID,'-','_')  ELSE REPLACE(idText,'.','_') END AS [{idt}]
+        ,ID as [id]
+        ,Q_TypeCode CTRLCODE 
+        ,FK_QuestionType
+        ,PK_Question as [{PK_Question}]
+        ,PK_PickListType as [{PK_PickListType}]
+        ,sortpos
+        ,QTEXT as [{QuestionText}] 
+		,CASE WHEN D.FK_Question_Master IS NOT NULL THEN
+			'  data-question_master="r-m-' + 
+			(SELECT TOP 1 REPLACE(IdText,'.','_')  FROM vwQuestions WHERE PK_Question=D.FK_Question_Master)
+			+ '"  data-value_torequire="'
+			+ D.Question_Master_CodeValue_ToMakeRequired  
+			+ CASE WHEN ISNUMERIC(D.Question_Master_CodeValue_ToMakeRequired) = 1 THEN
+				'|'+ (SELECT DisplayValue FROM vwPickLists WHERE PK_PickList=D.Question_Master_CodeValue_ToMakeRequired )
+			END 
+			+'" '
+		ELSE
+			''
+		END AS [{Dependancy}]
+   FROM vwQuestions Q
+   LEFT JOIN fsma_QuestionDependencies D ON Q.PK_Question=D.FK_Question
+
+      WHERE PK_QuestionGroup=4201 ; 
+03/01/2023 10:55:07 AM with open: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\MULTICHECKBOX.aspx
+03/01/2023 10:55:07 AM with open: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\PICK.aspx
+03/01/2023 10:55:07 AM with open: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\PICK.aspx
+03/01/2023 10:55:07 AM with open: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\PICK.aspx
+03/01/2023 10:55:07 AM with open: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\PICK.aspx
+03/01/2023 10:55:07 AM with open: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\PICK.aspx
+03/01/2023 10:55:07 AM with open: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\PICK.aspx
+03/01/2023 10:55:07 AM with open: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\PICK.aspx
+03/01/2023 10:55:07 AM with open: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\PICK.aspx
+03/01/2023 10:55:07 AM with open: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\PICK.aspx
+03/01/2023 10:55:07 AM with open: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\PICK.aspx
+03/01/2023 10:55:07 AM with open: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\PICK.aspx
+03/01/2023 10:55:07 AM with open: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\PICK.aspx
+03/01/2023 10:55:07 AM with open: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\PICK.aspx
+03/01/2023 10:55:07 AM with open: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\PICK.aspx
+03/01/2023 10:55:07 AM with open: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\PICK.aspx
+03/01/2023 10:55:07 AM with open: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\PICK.aspx
+03/01/2023 10:55:07 AM with open: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\PICK.aspx
+03/01/2023 10:55:07 AM with open: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\PICK.aspx
+03/01/2023 10:55:07 AM with open: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\PICK.aspx
+03/01/2023 10:55:07 AM with open: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\PICK.aspx
+03/01/2023 10:55:07 AM generate_code_from_db: 
+        SELECT 
+        idText as identifier_text 
+        ,CASE WHEN idText='' THEN REPLACE(ID,'-','_')  ELSE REPLACE(idText,'.','_') END AS [{idt}]
+        ,ID as [id]
+        ,Q_TypeCode CTRLCODE 
+        ,FK_QuestionType
+        ,PK_Question as [{PK_Question}]
+        ,PK_PickListType as [{PK_PickListType}]
+        ,sortpos
+        ,QTEXT as [{QuestionText}] 
+		,CASE WHEN D.FK_Question_Master IS NOT NULL THEN
+			'  data-question_master="r-m-' + 
+			(SELECT TOP 1 REPLACE(IdText,'.','_')  FROM vwQuestions WHERE PK_Question=D.FK_Question_Master)
+			+ '"  data-value_torequire="'
+			+ D.Question_Master_CodeValue_ToMakeRequired  
+			+ CASE WHEN ISNUMERIC(D.Question_Master_CodeValue_ToMakeRequired) = 1 THEN
+				'|'+ (SELECT DisplayValue FROM vwPickLists WHERE PK_PickList=D.Question_Master_CodeValue_ToMakeRequired )
+			END 
+			+'" '
+		ELSE
+			''
+		END AS [{Dependancy}]
+   FROM vwQuestions Q
+   LEFT JOIN fsma_QuestionDependencies D ON Q.PK_Question=D.FK_Question
+
+      WHERE PK_QuestionGroup=4202 ; 
+03/01/2023 10:55:07 AM with open: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\MULTICHECKBOX.aspx
+03/01/2023 10:55:07 AM with open: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\PICK.aspx
+03/01/2023 10:55:07 AM with open: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\PICK.aspx
+03/01/2023 10:55:07 AM with open: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\PICK.aspx
+03/01/2023 10:55:07 AM with open: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\PICK.aspx
+03/01/2023 10:55:07 AM with open: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\PICK.aspx
+03/01/2023 10:55:07 AM with open: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\PICK.aspx
+03/01/2023 10:55:07 AM with open: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\PICK.aspx
+03/01/2023 10:55:07 AM with open: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\PICK.aspx
+03/01/2023 10:55:07 AM with open: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\PICK.aspx
+03/01/2023 10:55:07 AM with open: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\PICK.aspx
+03/01/2023 10:55:07 AM with open: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\PICK.aspx
+03/01/2023 10:55:07 AM with open: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\PICK.aspx
+03/01/2023 10:55:07 AM with open: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\PICK.aspx
+03/01/2023 10:55:07 AM with open: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\PICK.aspx
+03/01/2023 10:55:07 AM with open: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\PICK.aspx
+03/01/2023 10:55:07 AM with open: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\PICK.aspx
+03/01/2023 10:55:07 AM with open: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\PICK.aspx
+03/01/2023 10:55:07 AM with open: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\PICK.aspx
+03/01/2023 10:55:07 AM with open: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\PICK.aspx
+03/01/2023 10:55:07 AM with open: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\PICK.aspx
+03/01/2023 10:55:07 AM with open: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\PICK.aspx
+03/01/2023 10:55:07 AM with open: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\PICK.aspx
+03/01/2023 10:55:07 AM with open: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\PICK.aspx
+03/01/2023 10:55:07 AM with open: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\PICK.aspx
+03/01/2023 11:27:21 AM 
+
+03/01/2023 11:27:21 AM ====== WebDriver manager ======
+03/01/2023 11:27:21 AM Current google-chrome version is 110.0.5481
+03/01/2023 11:27:21 AM Get LATEST driver version for 110.0.5481
+03/01/2023 11:27:21 AM Driver [C:\Users\timko\.wdm\drivers\chromedriver\win32\110.0.5481.77\chromedriver.exe] found in cache
+03/01/2023 11:27:48 AM Note: NumExpr detected 12 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 8.
+03/01/2023 11:27:48 AM NumExpr defaulting to 8 threads.
+03/01/2023 02:28:53 PM init
+03/01/2023 02:28:56 PM Note: NumExpr detected 12 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 8.
+03/01/2023 02:28:56 PM NumExpr defaulting to 8 threads.
+03/01/2023 03:24:05 PM init
+03/01/2023 03:29:42 PM generate_code_from_db: 
+        SELECT 
+        idText as identifier_text 
+        ,CASE WHEN idText='' THEN REPLACE(ID,'-','_')  ELSE REPLACE(idText,'.','_') END AS [{idt}]
+        ,ID as [id]
+        ,Q_TypeCode CTRLCODE 
+        ,FK_QuestionType
+        ,PK_Question as [{PK_Question}]
+        ,PK_PickListType as [{PK_PickListType}]
+        ,sortpos
+        ,QTEXT as [{QuestionText}] 
+		,CASE WHEN D.FK_Question_Master IS NOT NULL THEN
+			'  data-question_master="r-m-' + 
+			(SELECT TOP 1 REPLACE(IdText,'.','_')  FROM vwQuestions WHERE PK_Question=D.FK_Question_Master)
+			+ '"  data-value_torequire="'
+			+ D.Question_Master_CodeValue_ToMakeRequired  
+			+ CASE WHEN ISNUMERIC(D.Question_Master_CodeValue_ToMakeRequired) = 1 THEN
+				'|'+ (SELECT DisplayValue FROM vwPickLists WHERE PK_PickList=D.Question_Master_CodeValue_ToMakeRequired )
+			END 
+			+'" '
+		ELSE
+			''
+		END AS [{Dependancy}]
+   FROM vwQuestions Q
+   LEFT JOIN fsma_QuestionDependencies D ON Q.PK_Question=D.FK_Question
+
+      WHERE PK_QuestionGroup=4190 ; 
+03/01/2023 03:29:42 PM with open: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\MULTICHECKBOX.aspx
+03/01/2023 03:29:42 PM with open: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\PICK.aspx
+03/01/2023 03:29:42 PM with open: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\PICK.aspx
+03/01/2023 03:29:42 PM with open: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\PICK.aspx
+03/01/2023 03:29:42 PM with open: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\PICK.aspx
+03/01/2023 03:29:42 PM with open: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\PICK.aspx
+03/01/2023 03:29:42 PM with open: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\PICK.aspx
+03/01/2023 03:29:42 PM with open: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\PICK.aspx
+03/01/2023 03:29:42 PM with open: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\PICK.aspx
+03/01/2023 03:29:42 PM with open: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\PICK.aspx
+03/01/2023 03:29:42 PM with open: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\PICK.aspx
+03/01/2023 03:29:42 PM generate_code_from_db: 
+        SELECT 
+        idText as identifier_text 
+        ,CASE WHEN idText='' THEN REPLACE(ID,'-','_')  ELSE REPLACE(idText,'.','_') END AS [{idt}]
+        ,ID as [id]
+        ,Q_TypeCode CTRLCODE 
+        ,FK_QuestionType
+        ,PK_Question as [{PK_Question}]
+        ,PK_PickListType as [{PK_PickListType}]
+        ,sortpos
+        ,QTEXT as [{QuestionText}] 
+		,CASE WHEN D.FK_Question_Master IS NOT NULL THEN
+			'  data-question_master="r-m-' + 
+			(SELECT TOP 1 REPLACE(IdText,'.','_')  FROM vwQuestions WHERE PK_Question=D.FK_Question_Master)
+			+ '"  data-value_torequire="'
+			+ D.Question_Master_CodeValue_ToMakeRequired  
+			+ CASE WHEN ISNUMERIC(D.Question_Master_CodeValue_ToMakeRequired) = 1 THEN
+				'|'+ (SELECT DisplayValue FROM vwPickLists WHERE PK_PickList=D.Question_Master_CodeValue_ToMakeRequired )
+			END 
+			+'" '
+		ELSE
+			''
+		END AS [{Dependancy}]
+   FROM vwQuestions Q
+   LEFT JOIN fsma_QuestionDependencies D ON Q.PK_Question=D.FK_Question
+
+      WHERE PK_QuestionGroup=4191 ; 
+03/01/2023 03:29:42 PM with open: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\MULTICHECKBOX.aspx
+03/01/2023 03:29:42 PM with open: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\PICK.aspx
+03/01/2023 03:29:42 PM with open: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\PICK.aspx
+03/01/2023 03:29:42 PM with open: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\PICK.aspx
+03/01/2023 03:29:42 PM with open: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\PICK.aspx
+03/01/2023 03:29:42 PM with open: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\PICK.aspx
+03/01/2023 03:29:42 PM with open: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\PICK.aspx
+03/01/2023 03:29:42 PM with open: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\PICK.aspx
+03/01/2023 03:29:42 PM with open: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\PICK.aspx
+03/01/2023 03:29:42 PM with open: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\PICK.aspx
+03/01/2023 03:29:42 PM with open: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\PICK.aspx
+03/01/2023 03:29:42 PM with open: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\PICK.aspx
+03/01/2023 03:29:42 PM with open: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\PICK.aspx
+03/01/2023 03:29:42 PM with open: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\PICK.aspx
+03/01/2023 03:29:42 PM generate_code_from_db: 
+        SELECT 
+        idText as identifier_text 
+        ,CASE WHEN idText='' THEN REPLACE(ID,'-','_')  ELSE REPLACE(idText,'.','_') END AS [{idt}]
+        ,ID as [id]
+        ,Q_TypeCode CTRLCODE 
+        ,FK_QuestionType
+        ,PK_Question as [{PK_Question}]
+        ,PK_PickListType as [{PK_PickListType}]
+        ,sortpos
+        ,QTEXT as [{QuestionText}] 
+		,CASE WHEN D.FK_Question_Master IS NOT NULL THEN
+			'  data-question_master="r-m-' + 
+			(SELECT TOP 1 REPLACE(IdText,'.','_')  FROM vwQuestions WHERE PK_Question=D.FK_Question_Master)
+			+ '"  data-value_torequire="'
+			+ D.Question_Master_CodeValue_ToMakeRequired  
+			+ CASE WHEN ISNUMERIC(D.Question_Master_CodeValue_ToMakeRequired) = 1 THEN
+				'|'+ (SELECT DisplayValue FROM vwPickLists WHERE PK_PickList=D.Question_Master_CodeValue_ToMakeRequired )
+			END 
+			+'" '
+		ELSE
+			''
+		END AS [{Dependancy}]
+   FROM vwQuestions Q
+   LEFT JOIN fsma_QuestionDependencies D ON Q.PK_Question=D.FK_Question
+
+      WHERE PK_QuestionGroup=4192 ; 
+03/01/2023 03:29:42 PM with open: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\MULTICHECKBOX.aspx
+03/01/2023 03:29:42 PM with open: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\PICK.aspx
+03/01/2023 03:29:42 PM with open: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\PICK.aspx
+03/01/2023 03:29:42 PM with open: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\PICK.aspx
+03/01/2023 03:29:42 PM with open: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\PICK.aspx
+03/01/2023 03:29:42 PM with open: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\PICK.aspx
+03/01/2023 03:29:42 PM with open: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\PICK.aspx
+03/01/2023 03:29:42 PM with open: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\PICK.aspx
+03/01/2023 03:29:42 PM with open: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\PICK.aspx
+03/01/2023 03:29:42 PM with open: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\PICK.aspx
+03/01/2023 03:29:42 PM with open: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\PICK.aspx
+03/01/2023 03:29:42 PM with open: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\PICK.aspx
+03/01/2023 03:29:42 PM with open: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\PICK.aspx
+03/01/2023 03:29:42 PM generate_code_from_db: 
+        SELECT 
+        idText as identifier_text 
+        ,CASE WHEN idText='' THEN REPLACE(ID,'-','_')  ELSE REPLACE(idText,'.','_') END AS [{idt}]
+        ,ID as [id]
+        ,Q_TypeCode CTRLCODE 
+        ,FK_QuestionType
+        ,PK_Question as [{PK_Question}]
+        ,PK_PickListType as [{PK_PickListType}]
+        ,sortpos
+        ,QTEXT as [{QuestionText}] 
+		,CASE WHEN D.FK_Question_Master IS NOT NULL THEN
+			'  data-question_master="r-m-' + 
+			(SELECT TOP 1 REPLACE(IdText,'.','_')  FROM vwQuestions WHERE PK_Question=D.FK_Question_Master)
+			+ '"  data-value_torequire="'
+			+ D.Question_Master_CodeValue_ToMakeRequired  
+			+ CASE WHEN ISNUMERIC(D.Question_Master_CodeValue_ToMakeRequired) = 1 THEN
+				'|'+ (SELECT DisplayValue FROM vwPickLists WHERE PK_PickList=D.Question_Master_CodeValue_ToMakeRequired )
+			END 
+			+'" '
+		ELSE
+			''
+		END AS [{Dependancy}]
+   FROM vwQuestions Q
+   LEFT JOIN fsma_QuestionDependencies D ON Q.PK_Question=D.FK_Question
+
+      WHERE PK_QuestionGroup=4193 ; 
+03/01/2023 03:29:43 PM with open: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\MULTICHECKBOX.aspx
+03/01/2023 03:29:43 PM with open: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\PICK.aspx
+03/01/2023 03:29:43 PM with open: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\PICK.aspx
+03/01/2023 03:29:43 PM with open: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\PICK.aspx
+03/01/2023 03:29:43 PM with open: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\PICK.aspx
+03/01/2023 03:29:43 PM with open: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\PICK.aspx
+03/01/2023 03:29:43 PM with open: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\PICK.aspx
+03/01/2023 03:29:43 PM with open: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\PICK.aspx
+03/01/2023 03:29:43 PM with open: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\PICK.aspx
+03/01/2023 03:29:43 PM with open: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\PICK.aspx
+03/01/2023 03:33:08 PM generate_code_from_db: 
+        SELECT 
+        idText as identifier_text 
+        ,CASE WHEN idText='' THEN REPLACE(ID,'-','_')  ELSE REPLACE(idText,'.','_') END AS [{idt}]
+        ,ID as [id]
+        ,Q_TypeCode CTRLCODE 
+        ,FK_QuestionType
+        ,PK_Question as [{PK_Question}]
+        ,PK_PickListType as [{PK_PickListType}]
+        ,sortpos
+        ,QTEXT as [{QuestionText}] 
+		,CASE WHEN D.FK_Question_Master IS NOT NULL THEN
+			'  data-question_master="r-m-' + 
+			(SELECT TOP 1 REPLACE(IdText,'.','_')  FROM vwQuestions WHERE PK_Question=D.FK_Question_Master)
+			+ '"  data-value_torequire="'
+			+ D.Question_Master_CodeValue_ToMakeRequired  
+			+ CASE WHEN ISNUMERIC(D.Question_Master_CodeValue_ToMakeRequired) = 1 THEN
+				'|'+ (SELECT DisplayValue FROM vwPickLists WHERE PK_PickList=D.Question_Master_CodeValue_ToMakeRequired )
+			END 
+			+'" '
+		ELSE
+			''
+		END AS [{Dependancy}]
+   FROM vwQuestions Q
+   LEFT JOIN fsma_QuestionDependencies D ON Q.PK_Question=D.FK_Question
+
+      WHERE PK_QuestionGroup=4190 ; 
+03/01/2023 03:33:08 PM with open: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\MULTICHECKBOX.aspx
+03/01/2023 03:33:08 PM with open: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\PICK.aspx
+03/01/2023 03:33:08 PM with open: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\PICK.aspx
+03/01/2023 03:33:08 PM with open: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\PICK.aspx
+03/01/2023 03:33:08 PM with open: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\PICK.aspx
+03/01/2023 03:33:08 PM with open: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\PICK.aspx
+03/01/2023 03:33:08 PM with open: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\PICK.aspx
+03/01/2023 03:33:08 PM with open: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\PICK.aspx
+03/01/2023 03:33:08 PM with open: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\PICK.aspx
+03/01/2023 03:33:08 PM with open: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\PICK.aspx
+03/01/2023 03:33:08 PM with open: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\PICK.aspx
+03/01/2023 03:33:08 PM generate_code_from_db: 
+        SELECT 
+        idText as identifier_text 
+        ,CASE WHEN idText='' THEN REPLACE(ID,'-','_')  ELSE REPLACE(idText,'.','_') END AS [{idt}]
+        ,ID as [id]
+        ,Q_TypeCode CTRLCODE 
+        ,FK_QuestionType
+        ,PK_Question as [{PK_Question}]
+        ,PK_PickListType as [{PK_PickListType}]
+        ,sortpos
+        ,QTEXT as [{QuestionText}] 
+		,CASE WHEN D.FK_Question_Master IS NOT NULL THEN
+			'  data-question_master="r-m-' + 
+			(SELECT TOP 1 REPLACE(IdText,'.','_')  FROM vwQuestions WHERE PK_Question=D.FK_Question_Master)
+			+ '"  data-value_torequire="'
+			+ D.Question_Master_CodeValue_ToMakeRequired  
+			+ CASE WHEN ISNUMERIC(D.Question_Master_CodeValue_ToMakeRequired) = 1 THEN
+				'|'+ (SELECT DisplayValue FROM vwPickLists WHERE PK_PickList=D.Question_Master_CodeValue_ToMakeRequired )
+			END 
+			+'" '
+		ELSE
+			''
+		END AS [{Dependancy}]
+   FROM vwQuestions Q
+   LEFT JOIN fsma_QuestionDependencies D ON Q.PK_Question=D.FK_Question
+
+      WHERE PK_QuestionGroup=4191 ; 
+03/01/2023 03:33:08 PM with open: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\MULTICHECKBOX.aspx
+03/01/2023 03:33:08 PM with open: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\PICK.aspx
+03/01/2023 03:33:08 PM with open: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\PICK.aspx
+03/01/2023 03:33:08 PM with open: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\PICK.aspx
+03/01/2023 03:33:08 PM with open: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\PICK.aspx
+03/01/2023 03:33:08 PM with open: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\PICK.aspx
+03/01/2023 03:33:08 PM with open: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\PICK.aspx
+03/01/2023 03:33:08 PM with open: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\PICK.aspx
+03/01/2023 03:33:08 PM with open: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\PICK.aspx
+03/01/2023 03:33:08 PM with open: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\PICK.aspx
+03/01/2023 03:33:08 PM with open: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\PICK.aspx
+03/01/2023 03:33:08 PM with open: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\PICK.aspx
+03/01/2023 03:33:08 PM with open: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\PICK.aspx
+03/01/2023 03:33:08 PM with open: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\PICK.aspx
+03/01/2023 03:33:08 PM generate_code_from_db: 
+        SELECT 
+        idText as identifier_text 
+        ,CASE WHEN idText='' THEN REPLACE(ID,'-','_')  ELSE REPLACE(idText,'.','_') END AS [{idt}]
+        ,ID as [id]
+        ,Q_TypeCode CTRLCODE 
+        ,FK_QuestionType
+        ,PK_Question as [{PK_Question}]
+        ,PK_PickListType as [{PK_PickListType}]
+        ,sortpos
+        ,QTEXT as [{QuestionText}] 
+		,CASE WHEN D.FK_Question_Master IS NOT NULL THEN
+			'  data-question_master="r-m-' + 
+			(SELECT TOP 1 REPLACE(IdText,'.','_')  FROM vwQuestions WHERE PK_Question=D.FK_Question_Master)
+			+ '"  data-value_torequire="'
+			+ D.Question_Master_CodeValue_ToMakeRequired  
+			+ CASE WHEN ISNUMERIC(D.Question_Master_CodeValue_ToMakeRequired) = 1 THEN
+				'|'+ (SELECT DisplayValue FROM vwPickLists WHERE PK_PickList=D.Question_Master_CodeValue_ToMakeRequired )
+			END 
+			+'" '
+		ELSE
+			''
+		END AS [{Dependancy}]
+   FROM vwQuestions Q
+   LEFT JOIN fsma_QuestionDependencies D ON Q.PK_Question=D.FK_Question
+
+      WHERE PK_QuestionGroup=4192 ; 
+03/01/2023 03:33:08 PM with open: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\MULTICHECKBOX.aspx
+03/01/2023 03:33:08 PM with open: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\PICK.aspx
+03/01/2023 03:33:08 PM with open: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\PICK.aspx
+03/01/2023 03:33:08 PM with open: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\PICK.aspx
+03/01/2023 03:33:08 PM with open: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\PICK.aspx
+03/01/2023 03:33:08 PM with open: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\PICK.aspx
+03/01/2023 03:33:08 PM with open: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\PICK.aspx
+03/01/2023 03:33:08 PM with open: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\PICK.aspx
+03/01/2023 03:33:08 PM with open: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\PICK.aspx
+03/01/2023 03:33:08 PM with open: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\PICK.aspx
+03/01/2023 03:33:08 PM with open: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\PICK.aspx
+03/01/2023 03:33:08 PM with open: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\PICK.aspx
+03/01/2023 03:33:08 PM with open: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\PICK.aspx
+03/01/2023 03:33:08 PM generate_code_from_db: 
+        SELECT 
+        idText as identifier_text 
+        ,CASE WHEN idText='' THEN REPLACE(ID,'-','_')  ELSE REPLACE(idText,'.','_') END AS [{idt}]
+        ,ID as [id]
+        ,Q_TypeCode CTRLCODE 
+        ,FK_QuestionType
+        ,PK_Question as [{PK_Question}]
+        ,PK_PickListType as [{PK_PickListType}]
+        ,sortpos
+        ,QTEXT as [{QuestionText}] 
+		,CASE WHEN D.FK_Question_Master IS NOT NULL THEN
+			'  data-question_master="r-m-' + 
+			(SELECT TOP 1 REPLACE(IdText,'.','_')  FROM vwQuestions WHERE PK_Question=D.FK_Question_Master)
+			+ '"  data-value_torequire="'
+			+ D.Question_Master_CodeValue_ToMakeRequired  
+			+ CASE WHEN ISNUMERIC(D.Question_Master_CodeValue_ToMakeRequired) = 1 THEN
+				'|'+ (SELECT DisplayValue FROM vwPickLists WHERE PK_PickList=D.Question_Master_CodeValue_ToMakeRequired )
+			END 
+			+'" '
+		ELSE
+			''
+		END AS [{Dependancy}]
+   FROM vwQuestions Q
+   LEFT JOIN fsma_QuestionDependencies D ON Q.PK_Question=D.FK_Question
+
+      WHERE PK_QuestionGroup=4193 ; 
+03/01/2023 03:33:08 PM with open: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\MULTICHECKBOX.aspx
+03/01/2023 03:33:08 PM with open: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\PICK.aspx
+03/01/2023 03:33:08 PM with open: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\PICK.aspx
+03/01/2023 03:33:08 PM with open: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\PICK.aspx
+03/01/2023 03:33:08 PM with open: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\PICK.aspx
+03/01/2023 03:33:08 PM with open: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\PICK.aspx
+03/01/2023 03:33:08 PM with open: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\PICK.aspx
+03/01/2023 03:33:08 PM with open: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\PICK.aspx
+03/01/2023 03:33:08 PM with open: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\PICK.aspx
+03/01/2023 03:33:08 PM with open: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\PICK.aspx
+03/03/2023 08:33:59 AM init
+03/03/2023 08:34:19 AM generate_code_from_db: 
+        SELECT DISTINCT
+        idText as identifier_text 
+        ,CASE WHEN idText='' THEN REPLACE(ID,'-','_')  
+		ELSE 
+			REPLACE(REPLACE(REPLACE(idText,'-','_'),'.','_') ,' ','_') 
+		END AS [{idt}]
+        ,ID as [id]
+        ,Q_TypeCode CTRLCODE 
+        ,FK_QuestionType
+        ,PK_Question as [{PK_Question}]
+        ,PK_PickListType as [{PK_PickListType}]
+        ,sortpos
+        ,QTEXT as [{QuestionText}] 
+		
+		,CASE WHEN D.FK_Question_Master IS NOT NULL THEN
+			'  data-question_master="r-m-' + 
+			(SELECT TOP 1 REPLACE(REPLACE(REPLACE(idText,'-','_'),'.','_') ,' ','_')   FROM vwQuestions WHERE PK_Question=D.FK_Question_Master)
+			+ '"  data-value_torequire="'  
+			+ CASE WHEN ISNUMERIC(D.Question_Master_CodeValue_ToMakeRequired) = 1 THEN
+				''+ (SELECT TRIM(DisplayValue) FROM vwPickLists WHERE PK_PickList=D.Question_Master_CodeValue_ToMakeRequired )
+			END 
+			+'" '
+		ELSE
+			''
+		END AS [{Dependancy}]
+
+      WHERE PK_QuestionGroup=3273 ; 

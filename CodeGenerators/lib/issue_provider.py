@@ -45,7 +45,7 @@ class issue_provider():
                     ,'QuestionText':e.text.replace(m.groups(1)[0],'') 
                     ,'FK_QuestionType':get_question_type(e.text, ctx)['PK_QuestionTypeId'] 
                 })  
-        df=pd.DataFrame(lod) 
+        df=pd.DataFrame(lod)  
         df['sortpos']=range(1,len(df)+1) 
         df['{PK_Question}']=range(pk,len(df)+pk) 
         return df 
