@@ -94,7 +94,9 @@ class picklist_recommender():
             return {}
         with open(dir, 'r') as f:
             return json.load(f)
+        
 
+    
     def get_script(self, PLTPK=0): 
         d=self.recommend_result 
         if 'MAX_PK_Picklist' not in self.cache.keys():
