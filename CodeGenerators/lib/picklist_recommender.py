@@ -35,19 +35,21 @@ class picklist_recommender():
         ORDER BY PK_PicklistType , PK_Picklist ASC
         """, connstr)  
         self.db_picks=[{}]
-    def recommend(self, input_list, threshhold=(.825, .5)): 
+    def recommend(self, input_list, threshhold=(.825, .5), normalizer=None): 
+        if normalizer==None:
+            normalizer=self.normalize
         self.input_list=input_list
         df = self.df 
         dmx=df.loc[len(df)-1, ['PK_Picklist','PK_PicklistType']].to_dict()    
         df = df.groupby(['PK_PicklistType','UsageField'], as_index = False).agg({'DisplayValue': ' '.join, 'PK_Picklist':max})
         df['MAX_PK_Picklist']= int(dmx['PK_Picklist'])     
         df['MAX_PK_PicklistType']= int(dmx['PK_PicklistType'])  
-        df['DisplayValue'] = df['DisplayValue'].apply(self.normalize) 
+        df['DisplayValue'] = df['DisplayValue'].apply(normalizer) 
         #df=df.sort_values( by='PK_PicklistType', ascending=False)
         self.db_picks=df
         input=''
         if type(input_list) == list: 
-            input=self.normalize(' '.join(input_list))
+            input=normalizer(' '.join(input_list))
         else:
             print(input_list)    
         self.input=input

@@ -1,27 +1,105 @@
-,@AgencyName NVARCHAR(400) = NULL
-		,@SystemName NVARCHAR(400) = NULL
-		,@FISMASystemID NVARCHAR(400) = NULL
-		,@FIPS199SystemCategorization INT = NULL
-		,@HighValueAssetID NVARCHAR(400) = NULL
-		,@CryptoModuleName NVARCHAR(400) = NULL
-		,@CryptoAlgorithmUsed INT = NULL
-		,@ServiceProvidedByCryptoModule NVARCHAR(4000) = NULL
-		,@LengthCryptoKeysModules INT = NULL
-		,@SoftwarePackageType INT = NULL
-		,@NameofVendorDev NVARCHAR(400) = NULL
-		,@SoftwarePackageNames NVARCHAR(400) = NULL
-		,@SoftwarePackageVersions NVARCHAR(400) = NULL
-		,@OperatingSystem NVARCHAR(400) = NULL
-		,@HostingInfo INT = NULL
-		,@CloudServiceProviders INT = NULL
-		,@GovernmentCloudProviders INT = NULL
-		,@HybridCloudProviders INT = NULL
-		,@EstFY2025BudgetReqsforFed NVARCHAR(40) = NULL
-		,@EstFY2025BudgetReqsforCon NVARCHAR(40) = NULL
-		,@EstFY2025BudgetReqsforSytemsInv NVARCHAR(40) = NULL
-		,@EstTotalBudgetReqFY2025ReqforFed NVARCHAR(40) = NULL
-		,@EstTotalBudgetReqFY2025ReqforCon NVARCHAR(40) = NULL
-		,@EstTotalBudgetReqFY2025ReqforSytemsInv NVARCHAR(40) = NULL
-		,@ProjectedSystemRefreshYear NVARCHAR(40) = NULL
-		,@CrosscuttingCosts NVARCHAR(4000) = NULL
-		,@AdditionalNotes NVARCHAR(4000) = NULL
+INSERT INTO @SASCORING (ID, SML, ML, ML_Score, ML_Scored, ML_Value, sortorder) VALUES ('RA2b', 'SML3', '3', '1', 0, '5460', 1)
+INSERT INTO @SASCORING (ID, SML, ML, ML_Score, ML_Scored, ML_Value, sortorder) VALUES ('RA2b', 'SML3', '3', '1', 0, '5461', 2)
+INSERT INTO @SASCORING (ID, SML, ML, ML_Score, ML_Scored, ML_Value, sortorder) VALUES ('RA2b', 'SML2', '2', '1', 0, '5462', 3)
+INSERT INTO @SASCORING (ID, SML, ML, ML_Score, ML_Scored, ML_Value, sortorder) VALUES ('RA2b', 'SML2', '2', '1', 0, '5463', 4)
+INSERT INTO @SASCORING (ID, SML, ML, ML_Score, ML_Scored, ML_Value, sortorder) VALUES ('RA2b', 'SML2', '2', '1', 0, '5464', 5)
+INSERT INTO @SASCORING (ID, SML, ML, ML_Score, ML_Scored, ML_Value, sortorder) VALUES ('RA2b', 'SML2', '2', '1', 0, '5465', 6)
+INSERT INTO @SASCORING (ID, SML, ML, ML_Score, ML_Scored, ML_Value, sortorder) VALUES ('RA2b', 'SML1', '1', '1', 0, '5466', 7)
+INSERT INTO @SASCORING (ID, SML, ML, ML_Score, ML_Scored, ML_Value, sortorder) VALUES ('RA2b', 'SML1', '1', '1', 0, '5467', 8)
+INSERT INTO @SASCORING (ID, SML, ML, ML_Score, ML_Scored, ML_Value, sortorder) VALUES ('RA2b', 'SML1', '1', '0.001', 0, '5469', 9)
+INSERT INTO @SASCORING (ID, SML, ML, ML_Score, ML_Scored, ML_Value, sortorder) VALUES ('RA2c', 'SML1', '1', '1', 0, '4714', 10)
+INSERT INTO @SASCORING (ID, SML, ML, ML_Score, ML_Scored, ML_Value, sortorder) VALUES ('RA2c', 'SML1', '1', '0.001', 0, '4716', 11)
+INSERT INTO @SASCORING (ID, SML, ML, ML_Score, ML_Scored, ML_Value, sortorder) VALUES ('RA2d', 'SML1', '1', '1', 0, '4714', 12)
+INSERT INTO @SASCORING (ID, SML, ML, ML_Score, ML_Scored, ML_Value, sortorder) VALUES ('RA2d', 'SML1', '1', '0.001', 0, '4716', 13)
+INSERT INTO @SASCORING (ID, SML, ML, ML_Score, ML_Scored, ML_Value, sortorder) VALUES ('RA2d1', 'SML2', '2', '1', 0, '5470', 14)
+INSERT INTO @SASCORING (ID, SML, ML, ML_Score, ML_Scored, ML_Value, sortorder) VALUES ('RA2d1', 'SML2', '2', '1', 0, '5471', 15)
+INSERT INTO @SASCORING (ID, SML, ML, ML_Score, ML_Scored, ML_Value, sortorder) VALUES ('RA2d1', 'SML2', '2', '1', 0, '5472', 16)
+INSERT INTO @SASCORING (ID, SML, ML, ML_Score, ML_Scored, ML_Value, sortorder) VALUES ('RA2d1', 'SML1', '1', '1', 0, '5473', 17)
+INSERT INTO @SASCORING (ID, SML, ML, ML_Score, ML_Scored, ML_Value, sortorder) VALUES ('RA2d1', 'SML1', '1', '0.001', 0, '5476', 18)
+INSERT INTO @SASCORING (ID, SML, ML, ML_Score, ML_Scored, ML_Value, sortorder) VALUES ('RA2e', 'SML1', '1', '1', 0, '4714', 19)
+INSERT INTO @SASCORING (ID, SML, ML, ML_Score, ML_Scored, ML_Value, sortorder) VALUES ('RA2e', 'SML1', '1', '0.001', 0, '4716', 20)
+INSERT INTO @SASCORING (ID, SML, ML, ML_Score, ML_Scored, ML_Value, sortorder) VALUES ('RA2f', 'SML2', '2', '1', 0, '4714', 21)
+INSERT INTO @SASCORING (ID, SML, ML, ML_Score, ML_Scored, ML_Value, sortorder) VALUES ('RA2f', 'SML2', '2', '0.001', 0, '4716', 22)
+INSERT INTO @SASCORING (ID, SML, ML, ML_Score, ML_Scored, ML_Value, sortorder) VALUES ('RA2g', 'SML2', '2', '1', 0, '4714', 23)
+INSERT INTO @SASCORING (ID, SML, ML, ML_Score, ML_Scored, ML_Value, sortorder) VALUES ('RA2g', 'SML2', '2', '0.001', 0, '4716', 24)
+INSERT INTO @SASCORING (ID, SML, ML, ML_Score, ML_Scored, ML_Value, sortorder) VALUES ('RA2h', 'SML3', '3', '1', 0, '4714', 25)
+INSERT INTO @SASCORING (ID, SML, ML, ML_Score, ML_Scored, ML_Value, sortorder) VALUES ('RA2h', 'SML3', '3', '0.001', 0, '4716', 26)
+INSERT INTO @SASCORING (ID, SML, ML, ML_Score, ML_Scored, ML_Value, sortorder) VALUES ('RA2i', 'SML1', '1', '1', 0, '4714', 27)
+INSERT INTO @SASCORING (ID, SML, ML, ML_Score, ML_Scored, ML_Value, sortorder) VALUES ('RA2i', 'SML1', '1', '0.001', 0, '4716', 28)
+INSERT INTO @SASCORING (ID, SML, ML, ML_Score, ML_Scored, ML_Value, sortorder) VALUES ('RA2j', 'SML3', '3', '1', 0, '4714', 29)
+INSERT INTO @SASCORING (ID, SML, ML, ML_Score, ML_Scored, ML_Value, sortorder) VALUES ('RA2j', 'SML3', '3', '0.001', 0, '4716', 30)
+INSERT INTO @SASCORING (ID, SML, ML, ML_Score, ML_Scored, ML_Value, sortorder) VALUES ('RA2k', 'SML2', '2', '1', 0, '4714', 31)
+INSERT INTO @SASCORING (ID, SML, ML, ML_Score, ML_Scored, ML_Value, sortorder) VALUES ('RA2k', 'SML2', '2', '0.001', 0, '4716', 32)
+INSERT INTO @SASCORING (ID, SML, ML, ML_Score, ML_Scored, ML_Value, sortorder) VALUES ('RA3a', 'SML1', '1', '1', 0, '4714', 33)
+INSERT INTO @SASCORING (ID, SML, ML, ML_Score, ML_Scored, ML_Value, sortorder) VALUES ('RA3a', 'SML1', '1', '0.001', 0, '4716', 34)
+INSERT INTO @SASCORING (ID, SML, ML, ML_Score, ML_Scored, ML_Value, sortorder) VALUES ('RA3a1', 'SML2', '2', '1', 0, '0', 35)
+INSERT INTO @SASCORING (ID, SML, ML, ML_Score, ML_Scored, ML_Value, sortorder) VALUES ('RA3a1', 'SML2', '2', '1', 0, '0', 36)
+INSERT INTO @SASCORING (ID, SML, ML, ML_Score, ML_Scored, ML_Value, sortorder) VALUES ('RA3a1', 'SML2', '2', '1', 0, '5472', 37)
+INSERT INTO @SASCORING (ID, SML, ML, ML_Score, ML_Scored, ML_Value, sortorder) VALUES ('RA3a1', 'SML1', '1', '1', 0, '5473', 38)
+INSERT INTO @SASCORING (ID, SML, ML, ML_Score, ML_Scored, ML_Value, sortorder) VALUES ('RA3a1', 'SML1', '1', '0.001', 0, '5476', 39)
+INSERT INTO @SASCORING (ID, SML, ML, ML_Score, ML_Scored, ML_Value, sortorder) VALUES ('RA3b', 'SML2', '2', '1', 0, '4714', 40)
+INSERT INTO @SASCORING (ID, SML, ML, ML_Score, ML_Scored, ML_Value, sortorder) VALUES ('RA3b', 'SML2', '2', '0.001', 0, '4716', 41)
+INSERT INTO @SASCORING (ID, SML, ML, ML_Score, ML_Scored, ML_Value, sortorder) VALUES ('RA3c', 'SML2', '2', '1', 0, '4714', 42)
+INSERT INTO @SASCORING (ID, SML, ML, ML_Score, ML_Scored, ML_Value, sortorder) VALUES ('RA3c', 'SML2', '2', '0.001', 0, '4716', 43)
+INSERT INTO @SASCORING (ID, SML, ML, ML_Score, ML_Scored, ML_Value, sortorder) VALUES ('RA3d', 'SML3', '3', '1', 0, '4714', 44)
+INSERT INTO @SASCORING (ID, SML, ML, ML_Score, ML_Scored, ML_Value, sortorder) VALUES ('RA3d', 'SML3', '3', '0.001', 0, '4716', 45)
+INSERT INTO @SASCORING (ID, SML, ML, ML_Score, ML_Scored, ML_Value, sortorder) VALUES ('RA3e', 'SML1', '1', '1', 0, '4714', 46)
+INSERT INTO @SASCORING (ID, SML, ML, ML_Score, ML_Scored, ML_Value, sortorder) VALUES ('RA3e', 'SML1', '1', '0.001', 0, '4716', 47)
+INSERT INTO @SASCORING (ID, SML, ML, ML_Score, ML_Scored, ML_Value, sortorder) VALUES ('RA3f', 'SML3', '3', '1', 0, '4714', 48)
+INSERT INTO @SASCORING (ID, SML, ML, ML_Score, ML_Scored, ML_Value, sortorder) VALUES ('RA3f', 'SML3', '3', '0.001', 0, '4716', 49)
+INSERT INTO @SASCORING (ID, SML, ML, ML_Score, ML_Scored, ML_Value, sortorder) VALUES ('RA4a', 'SML1', '1', '1', 0, '4714', 50)
+INSERT INTO @SASCORING (ID, SML, ML, ML_Score, ML_Scored, ML_Value, sortorder) VALUES ('RA4a', 'SML1', '1', '0.001', 0, '4716', 51)
+INSERT INTO @SASCORING (ID, SML, ML, ML_Score, ML_Scored, ML_Value, sortorder) VALUES ('RA4b', 'SML2', '2', '1', 0, '4714', 52)
+INSERT INTO @SASCORING (ID, SML, ML, ML_Score, ML_Scored, ML_Value, sortorder) VALUES ('RA4b', 'SML2', '2', '0.001', 0, '4716', 53)
+INSERT INTO @SASCORING (ID, SML, ML, ML_Score, ML_Scored, ML_Value, sortorder) VALUES ('RA4c', 'SML2', '2', '1', 0, '4714', 54)
+INSERT INTO @SASCORING (ID, SML, ML, ML_Score, ML_Scored, ML_Value, sortorder) VALUES ('RA4c', 'SML2', '2', '0.001', 0, '4716', 55)
+INSERT INTO @SASCORING (ID, SML, ML, ML_Score, ML_Scored, ML_Value, sortorder) VALUES ('RA4d', 'SML2', '2', '1', 0, '4714', 56)
+INSERT INTO @SASCORING (ID, SML, ML, ML_Score, ML_Scored, ML_Value, sortorder) VALUES ('RA4d', 'SML2', '2', '0.001', 0, '4716', 57)
+INSERT INTO @SASCORING (ID, SML, ML, ML_Score, ML_Scored, ML_Value, sortorder) VALUES ('RA5a', 'SML1', '1', '1', 0, '4714', 58)
+INSERT INTO @SASCORING (ID, SML, ML, ML_Score, ML_Scored, ML_Value, sortorder) VALUES ('RA5a', 'SML1', '1', '0.001', 0, '4716', 59)
+INSERT INTO @SASCORING (ID, SML, ML, ML_Score, ML_Scored, ML_Value, sortorder) VALUES ('RA5b', 'SML2', '2', '1', 0, '4714', 60)
+INSERT INTO @SASCORING (ID, SML, ML, ML_Score, ML_Scored, ML_Value, sortorder) VALUES ('RA5b', 'SML2', '2', '0.001', 0, '4716', 61)
+INSERT INTO @SASCORING (ID, SML, ML, ML_Score, ML_Scored, ML_Value, sortorder) VALUES ('RA5c', 'SML2', '2', '1', 0, '4714', 62)
+INSERT INTO @SASCORING (ID, SML, ML, ML_Score, ML_Scored, ML_Value, sortorder) VALUES ('RA5c', 'SML2', '2', '0.001', 0, '4716', 63)
+INSERT INTO @SASCORING (ID, SML, ML, ML_Score, ML_Scored, ML_Value, sortorder) VALUES ('RA5d', 'SML2', '2', '1', 0, '4714', 64)
+INSERT INTO @SASCORING (ID, SML, ML, ML_Score, ML_Scored, ML_Value, sortorder) VALUES ('RA5d', 'SML2', '2', '0.001', 0, '4716', 65)
+INSERT INTO @SASCORING (ID, SML, ML, ML_Score, ML_Scored, ML_Value, sortorder) VALUES ('RA6a', 'SML2', '2', '1', 0, '4714', 66)
+INSERT INTO @SASCORING (ID, SML, ML, ML_Score, ML_Scored, ML_Value, sortorder) VALUES ('RA6a', 'SML2', '2', '0.001', 0, '4716', 67)
+INSERT INTO @SASCORING (ID, SML, ML, ML_Score, ML_Scored, ML_Value, sortorder) VALUES ('RA7', 'SML2', '2', '1', 0, '4714', 68)
+INSERT INTO @SASCORING (ID, SML, ML, ML_Score, ML_Scored, ML_Value, sortorder) VALUES ('RA7', 'SML2', '2', '0.001', 0, '4716', 69)
+INSERT INTO @SASCORING (ID, SML, ML, ML_Score, ML_Scored, ML_Value, sortorder) VALUES ('RA8a1', 'SML1', '1', '1', 0, '4714', 70)
+INSERT INTO @SASCORING (ID, SML, ML, ML_Score, ML_Scored, ML_Value, sortorder) VALUES ('RA8a1', 'SML1', '1', '0.001', 0, '4716', 71)
+INSERT INTO @SASCORING (ID, SML, ML, ML_Score, ML_Scored, ML_Value, sortorder) VALUES ('RA8a1a', 'SML1', '1', '1', 0, '4714', 72)
+INSERT INTO @SASCORING (ID, SML, ML, ML_Score, ML_Scored, ML_Value, sortorder) VALUES ('RA8a1a', 'SML1', '1', '0.001', 0, '4716', 73)
+INSERT INTO @SASCORING (ID, SML, ML, ML_Score, ML_Scored, ML_Value, sortorder) VALUES ('RA8a1b', 'SML2', '2', '1', 0, '4714', 74)
+INSERT INTO @SASCORING (ID, SML, ML, ML_Score, ML_Scored, ML_Value, sortorder) VALUES ('RA8a1b', 'SML2', '2', '0.001', 0, '4716', 75)
+INSERT INTO @SASCORING (ID, SML, ML, ML_Score, ML_Scored, ML_Value, sortorder) VALUES ('RA8a1c', 'SML2', '2', '1', 0, '4714', 76)
+INSERT INTO @SASCORING (ID, SML, ML, ML_Score, ML_Scored, ML_Value, sortorder) VALUES ('RA8a1c', 'SML2', '2', '0.001', 0, '4716', 77)
+INSERT INTO @SASCORING (ID, SML, ML, ML_Score, ML_Scored, ML_Value, sortorder) VALUES ('RA8a1d', 'SML2', '2', '1', 0, '4714', 78)
+INSERT INTO @SASCORING (ID, SML, ML, ML_Score, ML_Scored, ML_Value, sortorder) VALUES ('RA8a1d', 'SML2', '2', '0.001', 0, '4716', 79)
+INSERT INTO @SASCORING (ID, SML, ML, ML_Score, ML_Scored, ML_Value, sortorder) VALUES ('RA8a3', 'SML2', '2', '1', 0, '4714', 80)
+INSERT INTO @SASCORING (ID, SML, ML, ML_Score, ML_Scored, ML_Value, sortorder) VALUES ('RA8a3', 'SML2', '2', '0.001', 0, '4716', 81)
+INSERT INTO @SASCORING (ID, SML, ML, ML_Score, ML_Scored, ML_Value, sortorder) VALUES ('RA8a4', 'SML1', '1', '1', 0, '4714', 82)
+INSERT INTO @SASCORING (ID, SML, ML, ML_Score, ML_Scored, ML_Value, sortorder) VALUES ('RA8a4', 'SML1', '1', '0.001', 0, '4716', 83)
+INSERT INTO @SASCORING (ID, SML, ML, ML_Score, ML_Scored, ML_Value, sortorder) VALUES ('RA8a5', 'SML3', '3', '1', 0, '4714', 84)
+INSERT INTO @SASCORING (ID, SML, ML, ML_Score, ML_Scored, ML_Value, sortorder) VALUES ('RA8a5', 'SML3', '3', '0.001', 0, '4716', 85)
+INSERT INTO @SASCORING (ID, SML, ML, ML_Score, ML_Scored, ML_Value, sortorder) VALUES ('RA8a6', 'SML2', '2', '1', 0, '4714', 86)
+INSERT INTO @SASCORING (ID, SML, ML, ML_Score, ML_Scored, ML_Value, sortorder) VALUES ('RA8a6', 'SML2', '2', '0.001', 0, '4716', 87)
+INSERT INTO @SASCORING (ID, SML, ML, ML_Score, ML_Scored, ML_Value, sortorder) VALUES ('RA8b1', 'SML1', '1', '1', 0, '4714', 88)
+INSERT INTO @SASCORING (ID, SML, ML, ML_Score, ML_Scored, ML_Value, sortorder) VALUES ('RA8b1', 'SML1', '1', '0.001', 0, '4716', 89)
+INSERT INTO @SASCORING (ID, SML, ML, ML_Score, ML_Scored, ML_Value, sortorder) VALUES ('RA8b1a', 'SML1', '1', '1', 0, '4714', 90)
+INSERT INTO @SASCORING (ID, SML, ML, ML_Score, ML_Scored, ML_Value, sortorder) VALUES ('RA8b1a', 'SML1', '1', '0.001', 0, '4716', 91)
+INSERT INTO @SASCORING (ID, SML, ML, ML_Score, ML_Scored, ML_Value, sortorder) VALUES ('RA8b1b', 'SML2', '2', '1', 0, '4714', 92)
+INSERT INTO @SASCORING (ID, SML, ML, ML_Score, ML_Scored, ML_Value, sortorder) VALUES ('RA8b1b', 'SML2', '2', '0.001', 0, '4716', 93)
+INSERT INTO @SASCORING (ID, SML, ML, ML_Score, ML_Scored, ML_Value, sortorder) VALUES ('RA8b1c', 'SML2', '2', '1', 0, '4714', 94)
+INSERT INTO @SASCORING (ID, SML, ML, ML_Score, ML_Scored, ML_Value, sortorder) VALUES ('RA8b1c', 'SML2', '2', '0.001', 0, '4716', 95)
+INSERT INTO @SASCORING (ID, SML, ML, ML_Score, ML_Scored, ML_Value, sortorder) VALUES ('RA8b1d', 'SML2', '2', '1', 0, '4714', 96)
+INSERT INTO @SASCORING (ID, SML, ML, ML_Score, ML_Scored, ML_Value, sortorder) VALUES ('RA8b1d', 'SML2', '2', '0.001', 0, '4716', 97)
+INSERT INTO @SASCORING (ID, SML, ML, ML_Score, ML_Scored, ML_Value, sortorder) VALUES ('RA8b3', 'SML2', '2', '1', 0, '4714', 98)
+INSERT INTO @SASCORING (ID, SML, ML, ML_Score, ML_Scored, ML_Value, sortorder) VALUES ('RA8b3', 'SML2', '2', '0.001', 0, '4716', 99)
+INSERT INTO @SASCORING (ID, SML, ML, ML_Score, ML_Scored, ML_Value, sortorder) VALUES ('RA8b4', 'SML1', '1', '1', 0, '4714', 100)
+INSERT INTO @SASCORING (ID, SML, ML, ML_Score, ML_Scored, ML_Value, sortorder) VALUES ('RA8b4', 'SML1', '1', '0.001', 0, '4716', 101)
+INSERT INTO @SASCORING (ID, SML, ML, ML_Score, ML_Scored, ML_Value, sortorder) VALUES ('RA8b5', 'SML1', '1', '1', 0, '4714', 102)
+INSERT INTO @SASCORING (ID, SML, ML, ML_Score, ML_Scored, ML_Value, sortorder) VALUES ('RA8b5', 'SML1', '1', '0.001', 0, '4716', 103)
+INSERT INTO @SASCORING (ID, SML, ML, ML_Score, ML_Scored, ML_Value, sortorder) VALUES ('RA8b6', 'SML2', '2', '1', 0, '4714', 104)
+INSERT INTO @SASCORING (ID, SML, ML, ML_Score, ML_Scored, ML_Value, sortorder) VALUES ('RA8b6', 'SML2', '2', '0.001', 0, '4716', 105)
