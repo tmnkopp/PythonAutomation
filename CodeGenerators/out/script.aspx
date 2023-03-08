@@ -39,7 +39,7 @@
         <asp:Label ID="Label_14_2_i" runat="server" Text="" CssClass="CustomControlLabelNoVertAlign"></asp:Label>
     </td>
     <td class="ControlColumn">
-        <uc:CbPickListMultiSelect ID="CbPickListMultiSelect_14_2" PK_Question="28723" PK_PickListType="360.0" runat="server" CSSClass="CustomControlValue" 
+        <uc:CbPickListMultiSelect ID="CbPickListMultiSelect_14_2" PK_Question="28723" PK_PickListType="360" runat="server" CSSClass="CustomControlValue" 
             EditState="EditMode" SelfLoadingOption="PicklistByPK"  />
     </td>
     <td class="ControlColumn">
@@ -103,7 +103,7 @@
         <uc:CBlabel ID="CBlabel_16_ii" LinkEditID="CBPicklist_16" runat="server"  CSSClass="CustomControlLabelNoVertAlign" LabelType="Question" /> 
     </td>
     <td class="ControlColumn">
-        <uc:CBPickList2 ID="CBPicklist_16"  PK_Question="28726" PickListID="364.0" AllowNA="true" runat="server" CSSClass="CustomControlValue"  EditState='ReadMode' AutoPostback="true" />
+        <uc:CBPickList2 ID="CBPicklist_16"  PK_Question="28726" PickListID="364" AllowNA="true" runat="server" CSSClass="CustomControlValue"  EditState='ReadMode' AutoPostback="true" />
     </td>
     <td class="ControlColumn" >
         <uc:CBoptionalLinks ID="CBoptionalLinks_16" runat="server" LinkEditID="CBPicklist_16"  ShowAudit="True" ShowHelp="True" ShowNarrative="true" AuditRecs="20" />
@@ -119,7 +119,7 @@
         <uc:CBlabel ID="CBlabel_16_1_ii" LinkEditID="CBPicklist_16_1" runat="server"  CSSClass="CustomControlLabelNoVertAlign" LabelType="Question" /> 
     </td>
     <td class="ControlColumn">
-        <uc:CBPickList2 ID="CBPicklist_16_1"  PK_Question="28727" PickListID="365.0" AllowNA="true" runat="server" CSSClass="CustomControlValue"  EditState='ReadMode' AutoPostback="true" />
+        <uc:CBPickList2 ID="CBPicklist_16_1"  PK_Question="28727" PickListID="365" AllowNA="true" runat="server" CSSClass="CustomControlValue"  EditState='ReadMode' AutoPostback="true" />
     </td>
     <td class="ControlColumn" >
         <uc:CBoptionalLinks ID="CBoptionalLinks_16_1" runat="server" LinkEditID="CBPicklist_16_1"  ShowAudit="True" ShowHelp="True" ShowNarrative="true" AuditRecs="20" />
@@ -135,7 +135,7 @@
         <uc:CBlabel ID="CBlabel_16_1_ii" LinkEditID="CBPicklist_16_1" runat="server"  CSSClass="CustomControlLabelNoVertAlign" LabelType="Question" /> 
     </td>
     <td class="ControlColumn">
-        <uc:CBPickList2 ID="CBPicklist_16_1"  PK_Question="28727" PickListID="365.0" AllowNA="true" runat="server" CSSClass="CustomControlValue"  EditState='ReadMode' AutoPostback="true" />
+        <uc:CBPickList2 ID="CBPicklist_16_1"  PK_Question="28727" PickListID="365" AllowNA="true" runat="server" CSSClass="CustomControlValue"  EditState='ReadMode' AutoPostback="true" />
     </td>
     <td class="ControlColumn" >
         <uc:CBoptionalLinks ID="CBoptionalLinks_16_1" runat="server" LinkEditID="CBPicklist_16_1"  ShowAudit="True" ShowHelp="True" ShowNarrative="true" AuditRecs="20" />
@@ -207,7 +207,7 @@
         <uc:CBlabel ID="CBlabel_18_1_1_ii" LinkEditID="CBPicklist_18_1_1" runat="server"  CSSClass="CustomControlLabelNoVertAlign" LabelType="Question" /> 
     </td>
     <td class="ControlColumn">
-        <uc:CBPickList2 ID="CBPicklist_18_1_1"  PK_Question="28732" PickListID="162.0" AllowNA="true" runat="server" CSSClass="CustomControlValue"  EditState='ReadMode' AutoPostback="true" />
+        <uc:CBPickList2 ID="CBPicklist_18_1_1"  PK_Question="28732" PickListID="162" AllowNA="true" runat="server" CSSClass="CustomControlValue"  EditState='ReadMode' AutoPostback="true" />
     </td>
     <td class="ControlColumn" >
         <uc:CBoptionalLinks ID="CBoptionalLinks_18_1_1" runat="server" LinkEditID="CBPicklist_18_1_1"  ShowAudit="True" ShowHelp="True" ShowNarrative="true" AuditRecs="20" />
@@ -249,7 +249,7 @@
         <uc:CBlabel ID="CBlabel_18_2_1_ii" LinkEditID="CBPicklist_18_2_1" runat="server"  CSSClass="CustomControlLabelNoVertAlign" LabelType="Question" /> 
     </td>
     <td class="ControlColumn">
-        <uc:CBPickList2 ID="CBPicklist_18_2_1"  PK_Question="28735" PickListID="162.0" AllowNA="true" runat="server" CSSClass="CustomControlValue"  EditState='ReadMode' AutoPostback="true" />
+        <uc:CBPickList2 ID="CBPicklist_18_2_1"  PK_Question="28735" PickListID="162" AllowNA="true" runat="server" CSSClass="CustomControlValue"  EditState='ReadMode' AutoPostback="true" />
     </td>
     <td class="ControlColumn" >
         <uc:CBoptionalLinks ID="CBoptionalLinks_18_2_1" runat="server" LinkEditID="CBPicklist_18_2_1"  ShowAudit="True" ShowHelp="True" ShowNarrative="true" AuditRecs="20" />
@@ -291,7 +291,7 @@
         <uc:CBlabel ID="CBlabel_18_3_1_ii" LinkEditID="CBPicklist_18_3_1" runat="server"  CSSClass="CustomControlLabelNoVertAlign" LabelType="Question" /> 
     </td>
     <td class="ControlColumn">
-        <uc:CBPickList2 ID="CBPicklist_18_3_1"  PK_Question="28738" PickListID="162.0" AllowNA="true" runat="server" CSSClass="CustomControlValue"  EditState='ReadMode' AutoPostback="true" />
+        <uc:CBPickList2 ID="CBPicklist_18_3_1"  PK_Question="28738" PickListID="162" AllowNA="true" runat="server" CSSClass="CustomControlValue"  EditState='ReadMode' AutoPostback="true" />
     </td>
     <td class="ControlColumn" >
         <uc:CBoptionalLinks ID="CBoptionalLinks_18_3_1" runat="server" LinkEditID="CBPicklist_18_3_1"  ShowAudit="True" ShowHelp="True" ShowNarrative="true" AuditRecs="20" />
@@ -333,7 +333,7 @@
         <uc:CBlabel ID="CBlabel_18_4_1_ii" LinkEditID="CBPicklist_18_4_1" runat="server"  CSSClass="CustomControlLabelNoVertAlign" LabelType="Question" /> 
     </td>
     <td class="ControlColumn">
-        <uc:CBPickList2 ID="CBPicklist_18_4_1"  PK_Question="28741" PickListID="162.0" AllowNA="true" runat="server" CSSClass="CustomControlValue"  EditState='ReadMode' AutoPostback="true" />
+        <uc:CBPickList2 ID="CBPicklist_18_4_1"  PK_Question="28741" PickListID="162" AllowNA="true" runat="server" CSSClass="CustomControlValue"  EditState='ReadMode' AutoPostback="true" />
     </td>
     <td class="ControlColumn" >
         <uc:CBoptionalLinks ID="CBoptionalLinks_18_4_1" runat="server" LinkEditID="CBPicklist_18_4_1"  ShowAudit="True" ShowHelp="True" ShowNarrative="true" AuditRecs="20" />
@@ -375,7 +375,7 @@
         <uc:CBlabel ID="CBlabel_18_5_1_ii" LinkEditID="CBPicklist_18_5_1" runat="server"  CSSClass="CustomControlLabelNoVertAlign" LabelType="Question" /> 
     </td>
     <td class="ControlColumn">
-        <uc:CBPickList2 ID="CBPicklist_18_5_1"  PK_Question="28744" PickListID="162.0" AllowNA="true" runat="server" CSSClass="CustomControlValue"  EditState='ReadMode' AutoPostback="true" />
+        <uc:CBPickList2 ID="CBPicklist_18_5_1"  PK_Question="28744" PickListID="162" AllowNA="true" runat="server" CSSClass="CustomControlValue"  EditState='ReadMode' AutoPostback="true" />
     </td>
     <td class="ControlColumn" >
         <uc:CBoptionalLinks ID="CBoptionalLinks_18_5_1" runat="server" LinkEditID="CBPicklist_18_5_1"  ShowAudit="True" ShowHelp="True" ShowNarrative="true" AuditRecs="20" />
@@ -417,7 +417,7 @@
         <uc:CBlabel ID="CBlabel_18_6_1_ii" LinkEditID="CBPicklist_18_6_1" runat="server"  CSSClass="CustomControlLabelNoVertAlign" LabelType="Question" /> 
     </td>
     <td class="ControlColumn">
-        <uc:CBPickList2 ID="CBPicklist_18_6_1"  PK_Question="28747" PickListID="162.0" AllowNA="true" runat="server" CSSClass="CustomControlValue"  EditState='ReadMode' AutoPostback="true" />
+        <uc:CBPickList2 ID="CBPicklist_18_6_1"  PK_Question="28747" PickListID="162" AllowNA="true" runat="server" CSSClass="CustomControlValue"  EditState='ReadMode' AutoPostback="true" />
     </td>
     <td class="ControlColumn" >
         <uc:CBoptionalLinks ID="CBoptionalLinks_18_6_1" runat="server" LinkEditID="CBPicklist_18_6_1"  ShowAudit="True" ShowHelp="True" ShowNarrative="true" AuditRecs="20" />
@@ -450,7 +450,7 @@
         <uc:CBlabel ID="CBlabel_19_ii" LinkEditID="CBPicklist_19" runat="server"  CSSClass="CustomControlLabelNoVertAlign" LabelType="Question" /> 
     </td>
     <td class="ControlColumn">
-        <uc:CBPickList2 ID="CBPicklist_19"  PK_Question="28750" PickListID="nan" AllowNA="true" runat="server" CSSClass="CustomControlValue"  EditState='ReadMode' AutoPostback="true" />
+        <uc:CBPickList2 ID="CBPicklist_19"  PK_Question="28750" PickListID="None" AllowNA="true" runat="server" CSSClass="CustomControlValue"  EditState='ReadMode' AutoPostback="true" />
     </td>
     <td class="ControlColumn" >
         <uc:CBoptionalLinks ID="CBoptionalLinks_19" runat="server" LinkEditID="CBPicklist_19"  ShowAudit="True" ShowHelp="True" ShowNarrative="true" AuditRecs="20" />

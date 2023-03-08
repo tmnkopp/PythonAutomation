@@ -111,7 +111,7 @@ def generate_code_from_db(ctx, qgroup=4018):
         ,Q_TypeCode CTRLCODE 
         ,FK_QuestionType
         ,PK_Question as [{PK_Question}]
-        ,PK_PickListType as [{PK_PickListType}]
+        ,CONVERT(NVARCHAR(9), PK_PickListType) as [{PK_PickListType}]
         ,sortpos
         ,QTEXT as [{QuestionText}] 
 		
@@ -132,6 +132,7 @@ def generate_code_from_db(ctx, qgroup=4018):
     ctx.logger.info(f'generate_code_from_db: {sql}')
     df=sql_todf(sql, ctx.connstr)  
     df['{idt}']=df['{idt}'].apply(lambda s: re.sub('_$','',s))
+    df.astype({'{PK_PickListType}': 'str'})
     gen=script_generator(ctx)
     code=gen.generate(df)
     with open(f'{ctx.get_dest()}script.aspx', 'w') as f:

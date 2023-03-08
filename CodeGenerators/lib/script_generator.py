@@ -13,9 +13,9 @@ class script_generator():
             code_template_path = self.ctx.get_template()
             m=re.search('\{(\w*)\}',code_template_path)
             if m is not None:
-                g=m.groups(1)[0]
-                if g in r.keys():  
-                    code_template_path = code_template_path.replace('{'+g.upper()+'}',r[g])   
+                col_with_path=m.groups(1)[0]
+                if col_with_path in r.keys():  
+                    code_template_path = code_template_path.replace('{'+col_with_path.upper()+'}',r[col_with_path])   
             try:
                 self.ext = code_template_path[code_template_path.index('.'):] 
             except Exception as e:  
