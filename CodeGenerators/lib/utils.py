@@ -91,7 +91,9 @@ def normalize(s):
     s = re.sub('[^A-Za-z0-9\s]',' ',s).upper().strip()
     s = re.sub('\s{1,5}',' ',s) 
     return s
-    
+def normalize_var(s):  
+    s = re.sub('[^A-Za-z0-9]','',s.strip()) 
+    return s    
 def shorten(s):
     if type(s) == str:
         if len(s) > 25:

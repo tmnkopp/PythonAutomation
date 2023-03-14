@@ -1,5 +1,9 @@
 Key,Summary
-CS-9447,Post Quantum Cryptography (PQC) Data Call 2023 - Remove PDF links
+CS-9496,PQC Section 1 - remove limit on 'Budget Estimate' questions
+CS-9495,PQC Section 1- update required/optional columns
+CS-9494,PQC Section 1 - add 1 to row number on upload validations
+CS-9493,Disable PQC - Section 1 Upload buttons when the form is 'Locked'
+CS-9484,Create BOD 20-01 VDP Maintenance Upload to populate agency forms
 CS-9261,BOD 18-02 Annual 2023: Manage HVAs Agency Interface
 CS-8885,create data request/response service
 CS-8678,BOD 18-02 Annual HVA 2021: Update 'Manage HVA Interface' Audit Logs
