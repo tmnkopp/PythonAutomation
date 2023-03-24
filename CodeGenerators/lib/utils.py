@@ -100,6 +100,20 @@ def shorten(s):
             return s[:25]+'...'
     return s
 
+def govt_encoding(s, length=10):
+    ps = PorterStemmer() 
+    s = ''.join([ps.stem(w) for w in s.split(' ') if w not in sw]) 
+    s=s.upper().strip() 
+    s=re.sub('[^A-Z0-9]','',s)
+    if len(s) > length:
+        s=re.sub('[AEIOU]','',s)
+    if len(s) > length:
+        s=re.sub('[RST]','',s)
+    if len(s) > length:
+        s=re.sub('[LN]','',s)
+    if len(s) > length:
+        s=s[:length-2]+s[2:]
+    return s[:length]
 
 def generate_code_from_db(ctx, qgroup=4018):
     sql="""

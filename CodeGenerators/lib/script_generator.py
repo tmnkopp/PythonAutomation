@@ -7,15 +7,17 @@ class script_generator():
         self.ctx=ctx
         self.root = os.path.dirname(os.path.realpath(__file__)) 
         self.ext='.pom'
-    def generate(self, df, template=''): 
+    def generate(self, df, code_template_path=None): 
         st=''  
         for i,r in df.iterrows():
-            code_template_path = self.ctx.get_template()
-            m=re.search('\{(\w*)\}',code_template_path)
-            if m is not None:
-                col_with_path=m.groups(1)[0]
-                if col_with_path in r.keys():  
-                    code_template_path = code_template_path.replace('{'+col_with_path.upper()+'}',r[col_with_path])   
+            if code_template_path==None:
+                code_template_path = self.ctx.get_template()
+                m=re.search('\{(\w*)\}',code_template_path)
+                if m is not None:
+                    col_with_path=m.groups(1)[0]
+                    if col_with_path in r.keys():  
+                        code_template_path = code_template_path.replace('{'+col_with_path.upper()+'}',r[col_with_path])   
+           
             try:
                 self.ext = code_template_path[code_template_path.index('.'):] 
             except Exception as e:  
@@ -37,7 +39,7 @@ class script_generator():
  
     def list_to_sql(self, items=[], PK_PickListType=808, PK_PickList=9999, Description='[Description]', UsageField='[UsageField]', encoding=None):
         if encoding == None:
-            encoding=lambda s: re.sub('[^A-Z0-9]','',s.upper().strip()[:15])  
+            encoding=lambda s: re.sub('[^A-Z0-9]','',s.upper().strip()[:10])  
         plt=''
         with open(f'{self.ctx.get_tempalte_dir()}plt.sql', 'r') as f:
             plt=f.read()
