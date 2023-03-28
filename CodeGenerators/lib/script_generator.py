@@ -2,6 +2,8 @@
 import re, sys, argparse, json,  os 
 from openpyxl import Workbook
 import pandas as pd 
+from sqlalchemy import func, create_engine
+from lib.config import connstr
 class script_generator():
     def __init__(self, ctx):  
         self.ctx=ctx
@@ -37,9 +39,16 @@ class script_generator():
   
         return st
  
-    def list_to_sql(self, items=[], PK_PickListType=808, PK_PickList=9999, Description='[Description]', UsageField='[UsageField]', encoding=None):
+    def list_to_sql(self, items=[], PK_PickListType=None, PK_PickList=None, Description='[Description]', UsageField=None, encoding=None):
         if encoding == None:
-            encoding=lambda s: re.sub('[^A-Z0-9]','',s.upper().strip()[:10])  
+            encoding=_encoder 
+        if UsageField == None:
+            UsageField=encoding(Description)
+        dfDefaults = _sql_todf(" SELECT MAX(PK_PicklistType) + 2 MAX_PK_PicklistType, MAX(PK_Picklist) + 10 AS MAX_PK_Picklist FROM vwPicklists ", connstr) 
+        if PK_PickListType== None:
+            PK_PickListType=dfDefaults.loc[0, 'MAX_PK_PicklistType']
+        if PK_PickList== None:
+            PK_PickList=dfDefaults.loc[0, 'MAX_PK_Picklist']
         plt=''
         with open(f'{self.ctx.get_tempalte_dir()}plt.sql', 'r') as f:
             plt=f.read()
@@ -59,3 +68,26 @@ class script_generator():
         PK_PickList=PK_PickList+i+10
         sql=plt.replace('{picklists.sql}','\n,'.join(sql_items)[:])
         return sql_items, sql
+    
+def _sql_todf(query,connstr):
+    config = {}
+    with open('config.json', 'r') as f: 
+        config=json.loads(f.read())  
+    connstr=config['connstr']
+    df=pd.DataFrame() 
+    engine = create_engine(connstr) 
+    conn = engine.connect() 
+    try: 
+        df = pd.read_sql(query,con=conn) 
+    finally: 
+        conn.close()
+    return df  
+
+def _encoder(s):
+    s = re.sub('[^A-Z0-9]','',s.upper().strip() )
+    for v in 'AEIOURSTLN': 
+        if len(s) > 10:
+            s=re.sub(v,'',s) 
+    if len(s) > 10:
+        s=s[:8]+s[2:]
+    return  s 

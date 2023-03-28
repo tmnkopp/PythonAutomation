@@ -106,7 +106,9 @@ def govt_encoding(s, length=10):
     s=s.upper().strip() 
     s=re.sub('[^A-Z0-9]','',s)
     if len(s) > length:
-        s=re.sub('[AEIOU]','',s)
+        s=re.sub('[AEI]','',s)
+    if len(s) > length:
+        s=re.sub('[OU]','',s)
     if len(s) > length:
         s=re.sub('[RST]','',s)
     if len(s) > length:
@@ -167,12 +169,25 @@ def write_excel(filename,sheetname,dataframe):
             dataframe.to_excel(writer, sheet_name=sheetname,index=False)
             writer.save()
     
-def SQL_INSERT_FROM_DF(SOURCE, TARGET='@T', Print=False):
-    cols = [f'{c} INT' if 'INT' in str(SOURCE[c].dtype).upper() else f'{c} NVARCHAR(MAX)' for c in SOURCE.columns ]
+def SQL_INSERT_FROM_DF(SOURCE, TABLE_NAME='@T', Print=False):
+    cols = [f'{c} INT NULL' if 'INT' in str(SOURCE[c].dtype).upper() else f'{c} NVARCHAR(4000) NULL' for c in SOURCE.columns ]
     sql_texts = []
-    print(f"--DECLARE {TARGET} AS TABLE ({', '.join(cols)})")
+    temp_table=f"--DECLARE {TABLE_NAME} AS TABLE ({', '.join(cols)})"
+ 
+    sql_create = """
+    -- DROP TABLE {TABLE};
+    IF NOT EXISTS (SELECT * FROM sysobjects WHERE NAME = '{TABLE}' AND TYPE = 'U')
+    BEGIN
+        CREATE TABLE [dbo].{TABLE}  (
+        [PK_{TABLE}] [INT] IDENTITY(1,1) NOT NULL
+        , {cols} 
+        );
+    END
+    """
+    sql_create=sql_create.replace('{TABLE}',TABLE_NAME).replace('{cols}' , '\n\t\t, '.join(cols) ) 
+  
     for index, row in SOURCE.iterrows():       
-        sql_texts.append('INSERT INTO '+TARGET+' ('+ str(', '.join(SOURCE.columns))+ ') VALUES '+ str(tuple(row.values)))     
+        sql_texts.append('INSERT INTO '+TABLE_NAME+' ('+ str(', '.join(SOURCE.columns))+ ') VALUES '+ str(tuple(row.values)))     
     if Print:
         print(';\n'.join(sql_texts))       
-    return sql_texts           
+    return sql_texts, sql_create, temp_table      
