@@ -11,7 +11,7 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC 
 from bs4 import BeautifulSoup  
 import pandas as pd 
-class issue_provider():
+class issue_parser():  
     def __init__(self, ctx):  
         self.ctx=ctx 
         self.root = os.path.dirname(os.path.realpath(__file__))  
@@ -30,13 +30,12 @@ class issue_provider():
         self.driver=driver
 
  
-    def parse_metrics(self, tnum, pk=None, met_parse='(\d{1,2}\.\d{1,2}\.?\d{0,2}\.?[\.\d\w]?)\s+[A-Z]', parse_to=None):
+    def parse(self, pk=None, met_parse='(\d{1,2}\.\d{1,2}\.?\d{0,2}\.?[\.\d\w]?)\s+[A-Z]' ):
         driver=self.driver
-        ctx=self.ctx
-        tnum=re.sub('[^0-9]','',tnum)
-        driver.get(f"https://dayman.cyber-balance.com/jira/si/jira.issueviews:issue-html/CS-{tnum}/CS-{tnum}.html")  
+        ctx=self.ctx 
+        driver.get(ctx.config['source'])  
         ele=driver.find_element_by_css_selector('td#descriptionArea')
-        soup=BeautifulSoup(ele.get_attribute('innerHTML')) 
+        soup=BeautifulSoup(ele.get_attribute('innerHTML'), features="lxml") 
         le = soup.select('td.confluenceTd, p') 
         lod=[]
         for i,e in enumerate(le):
@@ -46,6 +45,7 @@ class issue_provider():
                     ,'{idt}':m.groups(1)[0]        
                     ,'{QuestionText}':e.text.replace(m.groups(1)[0],'') 
                     ,'{FK_QuestionType}':get_question_type(e.text, ctx)['PK_QuestionTypeId'] 
+                    ,'CTRLCODE':get_question_type(e.text, ctx)['Code'] 
                 })  
         df=pd.DataFrame(lod)  
         df['{sortpos}']=range(1,len(df)+1) 
@@ -53,10 +53,15 @@ class issue_provider():
         if pk==None:
             dfDefaults = sql_todf(" SELECT MAX(PK_Question) + 100 PK_Question, MAX(QGROUP) + 10  PK_QuestionGroup FROM vwQuestions ", self.ctx.config['connstr']) 
             pk=dfDefaults.loc[0, 'PK_Question']
-        df['{PK_Question}']=range(pk,len(df)+pk) 
-        if parse_to==None:
-            parse_to='issues.csv'
+        df['{PK_Question}']=range(pk,len(df)+pk)  
+        parse_to=f"{self._filename(ctx.config['source'])}.csv"
         df.to_csv(ctx.get_dest()+parse_to, index=False)
         return df 
+    def _filename(self, s):
+        s=s.upper().strip()
+        i=s.rfind("/")
+        s=s[i:]
+        s=re.sub('[^0-9]','',str(s)) 
+        return s
     
  
