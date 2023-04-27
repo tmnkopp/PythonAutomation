@@ -30,7 +30,7 @@ class issue_provider():
         self.driver=driver
 
  
-    def parse_metrics(self, tnum, pk=1, met_parse='(\d{1,2}\.\d{1,2}\.?\d{0,2}\.?[\.\d\w]?)\s+[A-Z]'):
+    def parse_metrics(self, tnum, pk=None, met_parse='(\d{1,2}\.\d{1,2}\.?\d{0,2}\.?[\.\d\w]?)\s+[A-Z]'):
         driver=self.driver
         ctx=self.ctx
         driver.get(f"https://dayman.cyber-balance.com/jira/si/jira.issueviews:issue-html/CS-{tnum}/CS-{tnum}.html")  
@@ -41,11 +41,18 @@ class issue_provider():
         for i,e in enumerate(le):
             m=re.search(met_parse,str(e.text))   
             if(m):   
-                lod.append({'identifier_text':m.groups(1)[0]
-                    ,'QuestionText':e.text.replace(m.groups(1)[0],'') 
-                    ,'FK_QuestionType':get_question_type(e.text, ctx)['PK_QuestionTypeId'] 
+                lod.append({'{identifier_text}':m.groups(1)[0]
+                    ,'{idt}':m.groups(1)[0]        
+                    ,'{QuestionText}':e.text.replace(m.groups(1)[0],'') 
+                    ,'{FK_QuestionType}':get_question_type(e.text, ctx)['PK_QuestionTypeId'] 
                 })  
         df=pd.DataFrame(lod)  
-        df['sortpos']=range(1,len(df)+1) 
+        df['{sortpos}']=range(1,len(df)+1) 
+        dfDefaults = pd.DataFrame()
+        if pk==None:
+            dfDefaults = sql_todf(" SELECT MAX(PK_Question) + 100 PK_Question, MAX(QGROUP) + 10  PK_QuestionGroup FROM vwQuestions ", self.ctx.config['connstr']) 
+            pk=dfDefaults.loc[0, 'PK_Question']
         df['{PK_Question}']=range(pk,len(df)+pk) 
         return df 
+    
+ 

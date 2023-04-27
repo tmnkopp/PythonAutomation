@@ -1,1 +1,1 @@
-({PK}, @FormName, @PK_QGroup+4,{sortpos},N'{idt}',{FK_QuestionType},0,1,N'{QuestionText}', NULL)
+    , ({PK_Question}, @FormName, @PK_QGroup,{sortpos},N'{idt}',{FK_QuestionType},0,1,N'{QuestionText}', NULL)

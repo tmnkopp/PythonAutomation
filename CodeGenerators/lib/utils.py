@@ -21,7 +21,7 @@ def get_question_type(s, ctx, default=1, usecache=False):
     df=pd.read_csv(f'{ctx.get_dest()}get_question_type.csv')
     lod=df.to_dict(orient='records') 
 
-    if re.search('How Many|Number of',s,re.IGNORECASE): 
+    if re.search('How Many|Number of|Numeric',s,re.IGNORECASE): 
         return lod[1]
 
     for i in lod:
@@ -122,30 +122,18 @@ def generate_code_from_db(ctx, qgroup=4018):
         SELECT DISTINCT
         idText as identifier_text 
         ,CASE WHEN idText='' THEN REPLACE(ID,'-','_')  
-		ELSE 
+		 ELSE 
 			REPLACE(REPLACE(REPLACE(idText,'-','_'),'.','_') ,' ','_') 
-		END AS [{idt}]
-        ,ID as [id]
-        ,Q_TypeCode CTRLCODE 
-        ,FK_QuestionType
-        ,PK_Question as [{PK_Question}]
-        ,CONVERT(NVARCHAR(9), PK_PickListType) as [{PK_PickListType}]
-        ,sortpos
-        ,QTEXT as [{QuestionText}] 
-		
-		,CASE WHEN D.FK_Question_Master IS NOT NULL THEN
-			'  data-question_master="r-m-' + 
-			(SELECT TOP 1 REPLACE(REPLACE(REPLACE(idText,'-','_'),'.','_') ,' ','_')   FROM vwQuestions WHERE PK_Question=D.FK_Question_Master)
-			+ '"  data-value_torequire="'  
-			+ CASE WHEN ISNUMERIC(D.Question_Master_CodeValue_ToMakeRequired) = 1 THEN
-				''+ (SELECT TRIM(DisplayValue) FROM vwPickLists WHERE PK_PickList=D.Question_Master_CodeValue_ToMakeRequired )
-			END 
-			+'" '
-		ELSE
-			''
-		END AS [{Dependancy}]
-   FROM vwQuestions Q
-   LEFT JOIN fsma_QuestionDependencies D ON Q.PK_Question=D.FK_Question
+		 END AS [{idt}]
+        , ID as [id]
+        , Q_TypeCode CTRLCODE 
+        , FK_QuestionType
+        , PK_Question as [{PK_Question}]
+        , CONVERT(NVARCHAR(9), PK_PickListType) as [{PK_PickListType}]
+        , sortpos
+        , QTEXT as [{QuestionText}]  
+		, required_value AS [{Dependancy}]
+        FROM vwQuestionFormDependancies Q
     """+ f"  WHERE PK_QuestionGroup={qgroup} ; "
     ctx.logger.info(f'generate_code_from_db: {sql}')
     df=sql_todf(sql, ctx.connstr)  
@@ -175,7 +163,7 @@ def SQL_INSERT_FROM_DF(SOURCE, TABLE_NAME='@T', Print=False):
     temp_table=f"--DECLARE {TABLE_NAME} AS TABLE ({', '.join(cols)})"
  
     sql_create = """
-    -- DROP TABLE {TABLE};
+    DROP TABLE {TABLE};
     IF NOT EXISTS (SELECT * FROM sysobjects WHERE NAME = '{TABLE}' AND TYPE = 'U')
     BEGIN
         CREATE TABLE [dbo].{TABLE}  (
