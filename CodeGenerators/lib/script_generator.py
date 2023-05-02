@@ -14,11 +14,12 @@ class script_generator():
         for i,r in df.iterrows():
             if code_template_path==None:
                 code_template_path = self.ctx.get_template()
-                m=re.search('\{(\w*)\}',code_template_path)
+                m=re.search('(\{.+\})',code_template_path)
+                
                 if m is not None:
-                    col_with_path=m.groups(1)[0]
+                    col_with_path=m.groups(1)[0] 
                     if col_with_path in r.keys():  
-                        code_template_path = code_template_path.replace('{'+col_with_path.upper()+'}',r[col_with_path])   
+                        code_template_path = code_template_path.replace(col_with_path.upper(),r[col_with_path])   
            
             try:
                 self.ext = code_template_path[code_template_path.index('.'):] 
@@ -68,6 +69,14 @@ class script_generator():
         PK_PickList=PK_PickList+i+10
         sql=plt.replace('{picklists.sql}','\n,'.join(sql_items)[:])
         return sql_items, sql
+
+def create_variable_cols(df):  
+    df1=df.copy()
+    for c in df1.columns:
+        df1.rename(columns={c: '{'+c+'}'}, inplace=True )
+
+    m = pd.merge(df1, df, left_index=True, right_index=True)
+    return m
     
 def _sql_todf(query,connstr):
     config = {}

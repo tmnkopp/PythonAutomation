@@ -1,0 +1,7 @@
+    , (48364, @FormName, @PK_QGroup,1,N'8.1',1,0,1,N' Does your agency have a centralized[1] patch management process? (yes/no)', NULL)
+    , (48365, @FormName, @PK_QGroup,2,N'8.1.1',1,0,1,N' If no, does your agency set centralized policies and standards for a patch management process? (yes/no)', NULL)
+    , (48366, @FormName, @PK_QGroup,3,N'8.1.2',1,0,1,N' If yes, does the agencys centralized patch management process utilize the severity of a vulnerability (e.g., KEV, CVSS, SSVC) to prioritize patches? (yes/no)', NULL)
+    , (48367, @FormName, @PK_QGroup,4,N'8.2',1,0,1,N' Does your patching prioritization process leverage significant automation?[2] (yes/no)', NULL)
+    , (48368, @FormName, @PK_QGroup,5,N'8.2.1',2,0,1,N'  If yes, what percentage of software assets are covered by this automation?', NULL)
+    , (48369, @FormName, @PK_QGroup,6,N'8.3',2,0,1,N' Has the agency achieved the capabilities to, and consistently met, the actions required as of April 3, 2023, under Binding Operational Directive 23-01? **', NULL)
+    , (48370, @FormName, @PK_QGroup,7,N'8.4',2,0,1,N' Mean time to remediation of Known Exploited Vulnerabilities (KEVs) in days[3]', NULL)

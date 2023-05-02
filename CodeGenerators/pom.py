@@ -31,7 +31,9 @@ def main():
             df=parser.parse()   
             df.to_csv(f'{ctx.get_dest()}\parsed.csv', index=False)  
             df.to_html(f'{ctx.get_dest()}\parsed.html')  
-    
+            print(f'{ctx.get_dest()}parsed.csv\n')
+            print(f'{ctx.get_dest()}parsed.html\n')
+
     df=pd.read_csv(f'{ctx.get_dest()}parsed.csv') 
     ctx.payload=df
 
@@ -42,16 +44,13 @@ def main():
     st=gen.generate(df)  
 
     if ctx.args['generate_scripts']:  
-        p=f'{ctx.get_dest()}script{gen.ext}'
-        
+        p=f'{ctx.get_dest()}script{gen.ext}' 
         with open(p, 'w', encoding=ctx.config['encoding']) as f: f.write(st) 
-        sql=gen.generate(df, code_template_path=f'{ctx.get_tempalte_dir()}fsma_QuestionsInsert.sql')
-        
-        p=f'{ctx.get_dest()}script.sql' 
-        print(f'{sql}\n')
-        print(f'{p}\n')
-        print(f'{p}\n')
-        with open(p, 'w', encoding=ctx.config['encoding']) as f: f.write(sql)
+        for template in ctx.config['generate_scripts_from']:
+            code=gen.generate(df, code_template_path=f'{ctx.get_tempalte_dir()}{template}') 
+            p=f'{ctx.get_dest()}{template}'  
+            print(f'{p}\n{code}\n') 
+            with open(p, 'w', encoding=ctx.config['encoding']) as f: f.write(code)
 
 if __name__ == "__main__": 
    main() 

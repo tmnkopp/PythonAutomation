@@ -7,7 +7,7 @@
         <uc:CBlabel ID="CBlabel_8.1_i" LinkEditID="CBYesNo2_8.1" runat="server" CSSClass="CustomControlLabelNoVertAlign" LabelType="Question" />
     </td>
     <td class="ControlColumn">
-        <uc:CBYesNo ID="CBYesNo2_8.1" runat="server" PK_Question="47877" TabIndex="1" CSSClass="CustomControlValue" />
+        <uc:CBYesNo ID="CBYesNo2_8.1" runat="server" PK_Question="48364" TabIndex="1" CSSClass="CustomControlValue" />
     </td>
     <td class="ControlColumn">
         <uc:CBoptionalLinks ID="CBoptionalLinks_8.1" LinkEditID="CBYesNo2_8.1" runat="server"   ShowAudit="true" ShowHelp="True" ShowNarrative="true" />
@@ -22,13 +22,13 @@
         <uc:CBlabel ID="CBlabel_8.1.1_i" LinkEditID="CBYesNo2_8.1.1" runat="server" CSSClass="CustomControlLabelNoVertAlign" LabelType="Question" />
     </td>
     <td class="ControlColumn">
-        <uc:CBYesNo ID="CBYesNo2_8.1.1" runat="server" PK_Question="47878" TabIndex="1" CSSClass="CustomControlValue" />
+        <uc:CBYesNo ID="CBYesNo2_8.1.1" runat="server" PK_Question="48365" TabIndex="1" CSSClass="CustomControlValue" />
     </td>
     <td class="ControlColumn">
         <uc:CBoptionalLinks ID="CBoptionalLinks_8.1.1" LinkEditID="CBYesNo2_8.1.1" runat="server"   ShowAudit="true" ShowHelp="True" ShowNarrative="true" />
     </td>
 </tr>
-<!-- 8.1.2  If yes, does the agency’s centralized patch management process utilize the severity of a vulnerability (e.g., KEV, CVSS, SSVC) to prioritize patches? (yes/no) -->
+<!-- 8.1.2  If yes, does the agencys centralized patch management process utilize the severity of a vulnerability (e.g., KEV, CVSS, SSVC) to prioritize patches? (yes/no) -->
 <tr id="r-m-8.1.2" {Dependancy}>
     <td class="LabelColumn">
         <uc:CBlabel ID="CBlabel_8.1.2" LinkEditID="CBYesNo2_8.1.2" runat="server" CSSClass="CustomControlLabel" LabelType="QuestionNumber"  />
@@ -37,7 +37,7 @@
         <uc:CBlabel ID="CBlabel_8.1.2_i" LinkEditID="CBYesNo2_8.1.2" runat="server" CSSClass="CustomControlLabelNoVertAlign" LabelType="Question" />
     </td>
     <td class="ControlColumn">
-        <uc:CBYesNo ID="CBYesNo2_8.1.2" runat="server" PK_Question="47879" TabIndex="1" CSSClass="CustomControlValue" />
+        <uc:CBYesNo ID="CBYesNo2_8.1.2" runat="server" PK_Question="48366" TabIndex="1" CSSClass="CustomControlValue" />
     </td>
     <td class="ControlColumn">
         <uc:CBoptionalLinks ID="CBoptionalLinks_8.1.2" LinkEditID="CBYesNo2_8.1.2" runat="server"   ShowAudit="true" ShowHelp="True" ShowNarrative="true" />
@@ -52,13 +52,13 @@
         <uc:CBlabel ID="CBlabel_8.2_i" LinkEditID="CBYesNo2_8.2" runat="server" CSSClass="CustomControlLabelNoVertAlign" LabelType="Question" />
     </td>
     <td class="ControlColumn">
-        <uc:CBYesNo ID="CBYesNo2_8.2" runat="server" PK_Question="47880" TabIndex="1" CSSClass="CustomControlValue" />
+        <uc:CBYesNo ID="CBYesNo2_8.2" runat="server" PK_Question="48367" TabIndex="1" CSSClass="CustomControlValue" />
     </td>
     <td class="ControlColumn">
         <uc:CBoptionalLinks ID="CBoptionalLinks_8.2" LinkEditID="CBYesNo2_8.2" runat="server"   ShowAudit="true" ShowHelp="True" ShowNarrative="true" />
     </td>
 </tr>
-<!-- 8.2.1              If yes, what percentage of software assets are covered by this automation? -->
+<!-- 8.2.1   If yes, what percentage of software assets are covered by this automation? -->
 <tr id="r-m-8.2.1" {Dependancy}>
     <td class="LabelColumn">
         <uc:CBlabel ID="CBlabel_8.2.1" LinkEditID="CBYesNo2_8.2.1" runat="server" CSSClass="CustomControlLabel" LabelType="QuestionNumber"  />
@@ -67,7 +67,7 @@
         <uc:CBlabel ID="CBlabel_8.2.1_i" LinkEditID="CBYesNo2_8.2.1" runat="server" CSSClass="CustomControlLabelNoVertAlign" LabelType="Question" />
     </td>
     <td class="ControlColumn">
-        <uc:CBYesNo ID="CBYesNo2_8.2.1" runat="server" PK_Question="47881" TabIndex="1" CSSClass="CustomControlValue" />
+        <uc:CBYesNo ID="CBYesNo2_8.2.1" runat="server" PK_Question="48368" TabIndex="1" CSSClass="CustomControlValue" />
     </td>
     <td class="ControlColumn">
         <uc:CBoptionalLinks ID="CBoptionalLinks_8.2.1" LinkEditID="CBYesNo2_8.2.1" runat="server"   ShowAudit="true" ShowHelp="True" ShowNarrative="true" />
@@ -82,7 +82,7 @@
         <uc:CBlabel ID="CBlabel_8.3_i" LinkEditID="CBYesNo2_8.3" runat="server" CSSClass="CustomControlLabelNoVertAlign" LabelType="Question" />
     </td>
     <td class="ControlColumn">
-        <uc:CBYesNo ID="CBYesNo2_8.3" runat="server" PK_Question="47882" TabIndex="1" CSSClass="CustomControlValue" />
+        <uc:CBYesNo ID="CBYesNo2_8.3" runat="server" PK_Question="48369" TabIndex="1" CSSClass="CustomControlValue" />
     </td>
     <td class="ControlColumn">
         <uc:CBoptionalLinks ID="CBoptionalLinks_8.3" LinkEditID="CBYesNo2_8.3" runat="server"   ShowAudit="true" ShowHelp="True" ShowNarrative="true" />
@@ -97,7 +97,7 @@
         <uc:CBlabel ID="CBlabel_8.4_i" LinkEditID="CBYesNo2_8.4" runat="server" CSSClass="CustomControlLabelNoVertAlign" LabelType="Question" />
     </td>
     <td class="ControlColumn">
-        <uc:CBYesNo ID="CBYesNo2_8.4" runat="server" PK_Question="47883" TabIndex="1" CSSClass="CustomControlValue" />
+        <uc:CBYesNo ID="CBYesNo2_8.4" runat="server" PK_Question="48370" TabIndex="1" CSSClass="CustomControlValue" />
     </td>
     <td class="ControlColumn">
         <uc:CBoptionalLinks ID="CBoptionalLinks_8.4" LinkEditID="CBYesNo2_8.4" runat="server"   ShowAudit="true" ShowHelp="True" ShowNarrative="true" />

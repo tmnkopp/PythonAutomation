@@ -17,7 +17,7 @@ class issue_parser():
         self.root = os.path.dirname(os.path.realpath(__file__))  
         options = Options()
         options.add_argument("--start-minimized")  
-        options.add_argument("--window-size=820,680")  
+        options.add_argument("--window-size=620,280")  
         driver = webdriver.Chrome(executable_path=ChromeDriverManager(log_level=0).install() ,options=options)  
 
         driver.get(f"https://dayman.cyber-balance.com/jira/login.jsp")  
@@ -43,9 +43,9 @@ class issue_parser():
             if(m):   
                 lod.append({'{identifier_text}':m.groups(1)[0]
                     ,'{idt}':m.groups(1)[0]        
-                    ,'{QuestionText}':e.text.replace(m.groups(1)[0],'') 
+                    ,'{QuestionText}': re.sub( r'[^\x00-\x7f]',r'', e.text.replace(m.groups(1)[0],'') ) 
                     ,'{FK_QuestionType}':get_question_type(e.text, ctx)['PK_QuestionTypeId'] 
-                    ,'CTRLCODE':get_question_type(e.text, ctx)['Code'] 
+                    ,'{CTRLCODE}':get_question_type(e.text, ctx)['Code'] 
                 })  
         df=pd.DataFrame(lod)  
         df['{sortpos}']=range(1,len(df)+1) 

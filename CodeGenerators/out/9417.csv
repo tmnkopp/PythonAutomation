@@ -1,8 +1,8 @@
-{identifier_text},{idt},{QuestionText},{FK_QuestionType},CTRLCODE,{sortpos},{PK_Question}
-8.1,8.1, Does your agency have a centralized[1] patch management process? (yes/no),1,YN,1,47877
-8.1.1,8.1.1," If no, does your agency set centralized policies and standards for a patch management process? (yes/no)",1,YN,2,47878
-8.1.2,8.1.2," If yes, does the agency’s centralized patch management process utilize the severity of a vulnerability (e.g., KEV, CVSS, SSVC) to prioritize patches? (yes/no)",1,YN,3,47879
-8.2,8.2, Does your patching prioritization process leverage significant automation?[2] (yes/no),1,YN,4,47880
-8.2.1,8.2.1,"             If yes, what percentage of software assets are covered by this automation?",2,CNT,5,47881
-8.3,8.3," Has the agency achieved the capabilities to, and consistently met, the actions required as of April 3, 2023, under Binding Operational Directive 23-01? **",2,CNT,6,47882
-8.4,8.4, Mean time to remediation of Known Exploited Vulnerabilities (KEVs) in days[3],2,CNT,7,47883
+{identifier_text},{idt},{QuestionText},{FK_QuestionType},{CTRLCODE},{sortpos},{PK_Question}
+8.1,8.1, Does your agency have a centralized[1] patch management process? (yes/no),1,YN,1,48364
+8.1.1,8.1.1," If no, does your agency set centralized policies and standards for a patch management process? (yes/no)",1,YN,2,48365
+8.1.2,8.1.2," If yes, does the agencys centralized patch management process utilize the severity of a vulnerability (e.g., KEV, CVSS, SSVC) to prioritize patches? (yes/no)",1,YN,3,48366
+8.2,8.2, Does your patching prioritization process leverage significant automation?[2] (yes/no),1,YN,4,48367
+8.2.1,8.2.1,"  If yes, what percentage of software assets are covered by this automation?",2,CNT,5,48368
+8.3,8.3," Has the agency achieved the capabilities to, and consistently met, the actions required as of April 3, 2023, under Binding Operational Directive 23-01? **",2,CNT,6,48369
+8.4,8.4, Mean time to remediation of Known Exploited Vulnerabilities (KEVs) in days[3],2,CNT,7,48370
