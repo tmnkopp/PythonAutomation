@@ -121,12 +121,9 @@ def generate_code_from_db(ctx, qgroup=4018):
     sql="""
         SELECT DISTINCT
         idText as identifier_text 
-        ,CASE WHEN idText='' THEN REPLACE(ID,'-','_')  
-		 ELSE 
-			REPLACE(REPLACE(REPLACE(idText,'-','_'),'.','_') ,' ','_') 
-		 END AS [{idt}]
+        , QID [{idt}]
         , ID as [id]
-        , Q_TypeCode CTRLCODE 
+        , Q_TypeCode [{CTRLCODE}]  
         , FK_QuestionType
         , PK_Question as [{PK_Question}]
         , CONVERT(NVARCHAR(9), PK_PickListType) as [{PK_PickListType}]

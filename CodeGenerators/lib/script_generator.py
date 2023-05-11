@@ -11,16 +11,9 @@ class script_generator():
         self.ext='.pom'
     def generate(self, df, code_template_path=None): 
         st=''  
-        for i,r in df.iterrows():
-            if code_template_path==None:
-                code_template_path = self.ctx.get_template()
-                m=re.search('(\{.+\})',code_template_path)
-                
-                if m is not None:
-                    col_with_path=m.groups(1)[0] 
-                    if col_with_path in r.keys():  
-                        code_template_path = code_template_path.replace(col_with_path.upper(),r[col_with_path])   
-           
+        for i,r in df.iterrows():  
+            code_template_path = self.ctx.get_template().replace( '{CTRLCODE}' , r["{CTRLCODE}"] )  
+            
             try:
                 self.ext = code_template_path[code_template_path.index('.'):] 
             except Exception as e:  
