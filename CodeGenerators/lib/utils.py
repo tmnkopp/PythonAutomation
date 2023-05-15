@@ -129,9 +129,13 @@ def generate_code_from_db(ctx, qgroup=4018):
         , CONVERT(NVARCHAR(9), PK_PickListType) as [{PK_PickListType}]
         , sortpos
         , QTEXT as [{QuestionText}]  
-		, required_value AS [{Dependancy}]
+        , LEFT(QTEXT, 75) AS [{QT_ABBR}]
+		,   CASE WHEN required_value IS NULL THEN '' 
+			ELSE
+			'data-question_master="r-m-'+REPLACE(master_identifier_text,'.','_')+'" data-value_torequire="^'+required_value+'$"'
+			END AS [{Dependancy}]
         FROM vwQuestionFormDependancies Q
-    """+ f"  WHERE PK_QuestionGroup={qgroup} ; "
+    """+ f"  WHERE PK_QuestionGroup={qgroup} ORDER BY SortPos; "
     ctx.logger.info(f'generate_code_from_db: {sql}')
     df=sql_todf(sql, ctx.connstr)  
     df['{idt}']=df['{idt}'].apply(lambda s: re.sub('_$','',s))

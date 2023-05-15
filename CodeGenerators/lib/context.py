@@ -13,7 +13,9 @@ class context():
     def get_libdir(self): 
         return os.path.dirname(os.path.realpath(__file__))+'\\'   
     def get_tempalte_dir(self): 
-        return self.config['template_dir'].replace('~', self.root)    
+        return self.config['template_dir'].replace('~', self.root)   
+    def get_down_dir(self): 
+        return 'C:\\Users\\timko\\Downloads\\'
     def get_template(self): 
         return self.config['template'].replace('~', self.root)  
     def get_dest(self): 

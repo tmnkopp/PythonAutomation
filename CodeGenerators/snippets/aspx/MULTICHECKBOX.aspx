@@ -1,5 +1,5 @@
 
-<!-- {idt}  {QuestionText} -->
+<!-- {idt} {QT_ABBR} -->
 <tr id="r-m-{idt}" {Dependancy}>
     <td >
         <uc:CBQuestion ID="CBquestion_{idt}"   LinkEditID="CbPickListMultiSelect_{idt}" runat="server" LabelType="FullQuestion"  CSSClass="CustomControlLabelNoVertAlign"  />

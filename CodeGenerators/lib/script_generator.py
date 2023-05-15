@@ -11,8 +11,11 @@ class script_generator():
         self.ext='.pom'
     def generate(self, df, code_template_path=None): 
         st=''  
+        if code_template_path==None:
+            code_template_path=self.ctx.get_template() 
         for i,r in df.iterrows():  
-            code_template_path = self.ctx.get_template().replace( '{CTRLCODE}' , r["{CTRLCODE}"] )  
+            if '{CTRLCODE}' in code_template_path:
+                code_template_path = self.ctx.get_template().replace( '{CTRLCODE}' , r["{CTRLCODE}"] )  
             
             try:
                 self.ext = code_template_path[code_template_path.index('.'):] 
@@ -21,14 +24,16 @@ class script_generator():
                 raise
             try: 
                 self.ctx.logger.info(f'with open: {code_template_path}')
-                with open(code_template_path, 'r', encoding=self.ctx.config['encoding'], errors='replace') as f: 
-                    code_template_read = f.read() 
-                for c in [c for c in df.columns if '{' in c]:     
-                    code_template_read=re.sub(c, str(r[c]), code_template_read, flags=re.IGNORECASE)  
+                code_template_read = ''
+                if os.path.exists(code_template_path):
+                    with open(code_template_path, 'r', encoding=self.ctx.config['encoding'], errors='replace') as f: 
+                        code_template_read = f.read() 
+                    for c in [c for c in df.columns if '{' in c]:   
+                        code_template_read=code_template_read.replace(c, str(r[c])) # re.sub(c, str(r[c]), code_template_read, flags=re.IGNORECASE)  
                 st=st+code_template_read 
             except Exception as e:  
-                print(f'code_template_read {code_template_read[:25]}')
-                print(f'err {e}')
+                print(f'ERROR: code_template_read {code_template_read[:25]}')
+                print(f'ERROR:  {e}')
                 raise
   
         return st
