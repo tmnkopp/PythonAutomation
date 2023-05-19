@@ -1,34 +1,4 @@
 Key,Summary
-CSHELP-3624,Investigate BOD 18-02 Annual 2022: Section 1A Conditional Metrics- (HHS)
-CSHELP-3609,Modify PQC Required Columns on Upload/Manual Entry
-CS-9649,2023 FISMA CIO Q3 Data Call: Validate and Approve Page
-CS-9648,2023 FISMA CIO Q3 Data Call: Section 10 - Resilience
-CS-9637,2023 FISMA CIO Q3 Data Call: Section 1B - Enumerating the Environment- Assets
-CS-9635,2023 FISMA CIO Q3 Data Call: Section 10 -Database Script
-CS-9634,2023 FISMA CIO Q3 Data Call: Section 9 -Database Script
-CS-9633,2023 FISMA CIO Q3 Data Call: Section 8 -Database Script
-CS-9632,2023 FISMA CIO Q3 Data Call: Section 7 -Database Script
-CS-9631,2023 FISMA CIO Q3 Data Call: Section 6 -Database Script
-CS-9630,2023 FISMA CIO Q3 Data Call: Section 5 -Database Script
-CS-9629,2023 FISMA CIO Q3 Data Call: Section 4 - Database Script
-CS-9628,2023 FISMA CIO Q3 Data Call: Section 3 -Database Script
-CS-9627,2023 FISMA CIO Q3 Data Call: Section 2 - Database Script
-CS-9626,2023 FISMA CIO Q3 Data Call: Section 1- Database Script
-CS-9623,Create Toggle to Show/Hide Optional Metrics: FY23 FISMA Annual IG
-CS-9618,FY23 Annual IG - Admin Approval/Reopen
-CS-9617,FY23 Annual IG - User Submission/Reopen
-CS-9615,FY23 Annual IG - Validate & Approve page
-CS-9612,FY23 Annual IG Section 4- Respond - Incident Response
-CS-9604,FY23 Annual IG Section 5- Database Script - Recover - Contingency Planning
-CS-9603,FY23 Annual IG Section 4- Database Script - Respond - Incident Response
-CS-9602,FY23 Annual IG Section 3- Database Script - Detect - ISCM
-CS-9601,FY23 Annual IG Section 2D - Database Script - Protect - Security Training
-CS-9600,FY23 Annual IG Section 2C - Database Script - Protect - Data Protection and Privacy
-CS-9599,FY23 Annual IG Section 2B - Database Script - Protect - Identity and Access Management
-CS-9598,FY23 Annual IG Section 2A - Database Script - Protect - Configuration Management
-CS-9597,FY23 Annual IG Section 1B - Database Script - Identify - Supply Chain Risk Management
-CS-9596,FY23 Annual IG Section 1A- Database Script - Identify - Risk Management
-CS-9595,FY23 Annual IG Section 0 - Database Script - Overall + FY23 IG Reporting Cycle Main Script
 CS-9592,Update Scoring Dashboard/Graph Counts to be Dynamic- BOD 18-02 HVA Self-Assessment
 CS-9261,BOD 18-02 Annual 2023: Manage HVAs Agency Interface
 CS-8885,create data request/response service

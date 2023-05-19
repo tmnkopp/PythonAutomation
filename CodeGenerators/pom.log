@@ -1,3 +1,19 @@
-05/15/2023 03:51:01 PM init
-05/15/2023 04:02:02 PM Note: NumExpr detected 12 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 8.
-05/15/2023 04:02:02 PM NumExpr defaulting to 8 threads.
+05/19/2023 03:45:17 PM init
+05/19/2023 03:45:19 PM 
+
+05/19/2023 03:45:19 PM ====== WebDriver manager ======
+05/19/2023 03:45:19 PM Current google-chrome version is 113.0.5672
+05/19/2023 03:45:19 PM Get LATEST driver version for 113.0.5672
+05/19/2023 03:45:20 PM Driver [C:\Users\timko\.wdm\drivers\chromedriver\win32\113.0.5672.63\chromedriver.exe] found in cache
+05/19/2023 03:45:44 PM Note: NumExpr detected 12 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 8.
+05/19/2023 03:45:44 PM NumExpr defaulting to 8 threads.
+05/19/2023 03:45:44 PM cache_file: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\\cache\\9596.html
+05/19/2023 03:45:44 PM usecache: True
+05/19/2023 03:46:06 PM 
+
+05/19/2023 03:46:06 PM ====== WebDriver manager ======
+05/19/2023 03:46:06 PM Current google-chrome version is 113.0.5672
+05/19/2023 03:46:06 PM Get LATEST driver version for 113.0.5672
+05/19/2023 03:46:06 PM Driver [C:\Users\timko\.wdm\drivers\chromedriver\win32\113.0.5672.63\chromedriver.exe] found in cache
+05/19/2023 03:46:12 PM cache_file: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\\cache\\9597.html
+05/19/2023 03:46:12 PM usecache: False
