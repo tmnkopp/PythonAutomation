@@ -11,7 +11,16 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC 
 from bs4 import BeautifulSoup  
 import pandas as pd 
+# DEPRICIATED USE issue_provider
+# DEPRICIATED USE issue_provider 
+# DEPRICIATED USE issue_provider
+# DEPRICIATED USE issue_provider
+# DEPRICIATED USE issue_provider
 class issue_parser():  
+# DEPRICIATED USE issue_provider
+# DEPRICIATED USE issue_provider
+# DEPRICIATED USE issue_provider
+# DEPRICIATED USE issue_provider
     def __init__(self, ctx):  
         self.ctx=ctx 
         self.root = os.path.dirname(os.path.realpath(__file__))  

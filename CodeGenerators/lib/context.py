@@ -15,7 +15,7 @@ class context():
     def get_tempalte_dir(self): 
         return self.config['template_dir'].replace('~', self.root)   
     def get_down_dir(self): 
-        return 'C:\\Users\\timko\\Downloads\\'
+        return self.config['downloads_dir']
     def get_cache_dir(self): 
         return self.config['cache_dir'].replace('~', self.root) 
     def get_template(self): 

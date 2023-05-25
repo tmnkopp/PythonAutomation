@@ -23,7 +23,8 @@ def get_question_type(s, ctx, default=1, usecache=False):
 
     if re.search('How Many|Number of|Numeric',s,re.IGNORECASE): 
         return lod[1]
-
+    if re.search('maturity level',s,re.IGNORECASE): 
+        return lod[4]
     for i in lod:
         reg=re.sub('[^A-Z]','',i['Code'].upper()) +'|'+re.sub('[^A-Z]','',i['description'].upper())
         nrm=re.sub('[^A-Z]','',s.upper()) 
