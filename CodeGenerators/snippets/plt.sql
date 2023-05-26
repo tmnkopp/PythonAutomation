@@ -1,4 +1,4 @@
---{UsageField} 
+--{Description} 
 SET @PK_PickListType={PK_PickListType}
 DELETE PickLists WHERE PK_PickListType=@PK_PickListType
 DELETE PickListTypes WHERE PK_PickListType=@PK_PickListType

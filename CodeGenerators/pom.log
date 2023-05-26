@@ -1417,3 +1417,364 @@
 05/25/2023 09:48:27 PM Current google-chrome version is 113.0.5672
 05/25/2023 09:48:27 PM Get LATEST driver version for 113.0.5672
 05/25/2023 09:48:27 PM Driver [C:\Users\timko\.wdm\drivers\chromedriver\win32\113.0.5672.63\chromedriver.exe] found in cache
+05/26/2023 09:26:47 AM generate_code_from_db: 
+        SELECT DISTINCT
+        idText as identifier_text 
+        , QID [{idt}]
+        , ID as [id]
+        , Q_TypeCode [{CTRLCODE}]  
+        , FK_QuestionType
+        , PK_Question as [{PK_Question}]
+        , CONVERT(NVARCHAR(9), PK_PickListType) as [{PK_PickListType}]
+        , sortpos
+        , QTEXT as [{QuestionText}]  
+        , LEFT(QTEXT, 75) AS [{QT_ABBR}]
+		,   CASE WHEN required_value IS NULL THEN '' 
+			ELSE
+			'data-question_master="r-m-'+REPLACE(master_identifier_text,'.','_')+'" data-value_torequire="^'+required_value+'$"'
+			END AS [{Dependancy}]
+        FROM vwQuestionFormDependancies Q
+      WHERE PK_QuestionGroup=4453 ORDER BY SortPos; 
+05/26/2023 09:26:47 AM code_template_path: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\aspx\{CTRLCODE}.aspx
+05/26/2023 09:26:47 AM path.exists: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\aspx\PICK.aspx True
+05/26/2023 09:26:47 AM path.exists: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\aspx\PICK.aspx True
+05/26/2023 09:26:47 AM path.exists: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\aspx\PICK.aspx True
+05/26/2023 09:26:47 AM path.exists: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\aspx\PICK.aspx True
+05/26/2023 09:26:47 AM path.exists: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\aspx\PICK.aspx True
+05/26/2023 09:26:47 AM path.exists: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\aspx\PICK.aspx True
+05/26/2023 09:26:47 AM path.exists: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\aspx\PICK.aspx True
+05/26/2023 09:26:58 AM generate_code_from_db: 
+        SELECT DISTINCT
+        idText as identifier_text 
+        , QID [{idt}]
+        , ID as [id]
+        , Q_TypeCode [{CTRLCODE}]  
+        , FK_QuestionType
+        , PK_Question as [{PK_Question}]
+        , CONVERT(NVARCHAR(9), PK_PickListType) as [{PK_PickListType}]
+        , sortpos
+        , QTEXT as [{QuestionText}]  
+        , LEFT(QTEXT, 75) AS [{QT_ABBR}]
+		,   CASE WHEN required_value IS NULL THEN '' 
+			ELSE
+			'data-question_master="r-m-'+REPLACE(master_identifier_text,'.','_')+'" data-value_torequire="^'+required_value+'$"'
+			END AS [{Dependancy}]
+        FROM vwQuestionFormDependancies Q
+      WHERE PK_QuestionGroup=4453 ORDER BY SortPos; 
+05/26/2023 09:26:58 AM code_template_path: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\aspx\{CTRLCODE}.aspx
+05/26/2023 09:26:58 AM path.exists: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\aspx\PICK.aspx True
+05/26/2023 09:26:58 AM path.exists: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\aspx\PICK.aspx True
+05/26/2023 09:26:58 AM path.exists: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\aspx\PICK.aspx True
+05/26/2023 09:26:58 AM path.exists: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\aspx\PICK.aspx True
+05/26/2023 09:26:58 AM path.exists: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\aspx\PICK.aspx True
+05/26/2023 09:26:58 AM path.exists: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\aspx\PICK.aspx True
+05/26/2023 09:26:58 AM path.exists: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\aspx\PICK.aspx True
+05/26/2023 09:27:10 AM generate_code_from_db: 
+        SELECT DISTINCT
+        idText as identifier_text 
+        , QID [{idt}]
+        , ID as [id]
+        , Q_TypeCode [{CTRLCODE}]  
+        , FK_QuestionType
+        , PK_Question as [{PK_Question}]
+        , CONVERT(NVARCHAR(9), PK_PickListType) as [{PK_PickListType}]
+        , sortpos
+        , QTEXT as [{QuestionText}]  
+        , LEFT(QTEXT, 75) AS [{QT_ABBR}]
+		,   CASE WHEN required_value IS NULL THEN '' 
+			ELSE
+			'data-question_master="r-m-'+REPLACE(master_identifier_text,'.','_')+'" data-value_torequire="^'+required_value+'$"'
+			END AS [{Dependancy}]
+        FROM vwQuestionFormDependancies Q
+      WHERE PK_QuestionGroup=4453 ORDER BY SortPos; 
+05/26/2023 09:27:10 AM code_template_path: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\aspx\{CTRLCODE}.aspx
+05/26/2023 09:27:10 AM path.exists: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\aspx\PICK.aspx True
+05/26/2023 09:27:10 AM path.exists: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\aspx\PICK.aspx True
+05/26/2023 09:27:10 AM path.exists: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\aspx\PICK.aspx True
+05/26/2023 09:27:10 AM path.exists: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\aspx\PICK.aspx True
+05/26/2023 09:27:10 AM path.exists: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\aspx\PICK.aspx True
+05/26/2023 09:27:10 AM path.exists: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\aspx\PICK.aspx True
+05/26/2023 09:27:10 AM path.exists: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\aspx\PICK.aspx True
+05/26/2023 09:29:11 AM cache_file: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\\cache\\9605.html
+05/26/2023 09:29:11 AM usecache: False
+05/26/2023 09:29:11 AM 
+
+05/26/2023 09:29:11 AM ====== WebDriver manager ======
+05/26/2023 09:29:11 AM Current google-chrome version is 113.0.5672
+05/26/2023 09:29:11 AM Get LATEST driver version for 113.0.5672
+05/26/2023 09:29:11 AM Get LATEST driver version for 113.0.5672
+05/26/2023 09:29:12 AM Trying to download new driver from https://chromedriver.storage.googleapis.com/113.0.5672.63/chromedriver_win32.zip
+05/26/2023 09:29:13 AM Driver has been saved in cache [C:\Users\timko\.wdm\drivers\chromedriver\win32\113.0.5672.63]
+05/26/2023 10:11:33 AM cache_file: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\\cache\\9596.html
+05/26/2023 10:11:33 AM usecache: True
+05/26/2023 10:11:34 AM cache_file: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\\cache\\9597.html
+05/26/2023 10:11:34 AM usecache: True
+05/26/2023 10:11:34 AM cache_file: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\\cache\\9598.html
+05/26/2023 10:11:34 AM usecache: True
+05/26/2023 10:11:34 AM cache_file: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\\cache\\9599.html
+05/26/2023 10:11:34 AM usecache: True
+05/26/2023 10:11:34 AM cache_file: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\\cache\\9600.html
+05/26/2023 10:11:34 AM usecache: True
+05/26/2023 10:11:34 AM cache_file: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\\cache\\9601.html
+05/26/2023 10:11:34 AM usecache: True
+05/26/2023 10:11:34 AM cache_file: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\\cache\\9602.html
+05/26/2023 10:11:34 AM usecache: True
+05/26/2023 10:11:35 AM cache_file: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\\cache\\9603.html
+05/26/2023 10:11:35 AM usecache: True
+05/26/2023 10:11:35 AM cache_file: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\\cache\\9604.html
+05/26/2023 10:11:35 AM usecache: True
+05/26/2023 10:14:49 AM cache_file: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\\cache\\9596.html
+05/26/2023 10:14:49 AM usecache: True
+05/26/2023 10:14:49 AM cache_file: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\\cache\\9597.html
+05/26/2023 10:14:49 AM usecache: True
+05/26/2023 10:14:49 AM cache_file: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\\cache\\9598.html
+05/26/2023 10:14:49 AM usecache: True
+05/26/2023 10:14:49 AM cache_file: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\\cache\\9599.html
+05/26/2023 10:14:49 AM usecache: True
+05/26/2023 10:14:49 AM cache_file: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\\cache\\9600.html
+05/26/2023 10:14:49 AM usecache: True
+05/26/2023 10:14:50 AM cache_file: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\\cache\\9601.html
+05/26/2023 10:14:50 AM usecache: True
+05/26/2023 10:14:50 AM cache_file: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\\cache\\9602.html
+05/26/2023 10:14:50 AM usecache: True
+05/26/2023 10:14:50 AM cache_file: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\\cache\\9603.html
+05/26/2023 10:14:50 AM usecache: True
+05/26/2023 10:14:50 AM cache_file: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\\cache\\9604.html
+05/26/2023 10:14:50 AM usecache: True
+05/26/2023 10:15:11 AM code_template_path: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\aspx\ig.sql
+05/26/2023 10:15:11 AM path.exists: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\aspx\ig.sql True
+05/26/2023 10:15:11 AM path.exists: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\aspx\ig.sql True
+05/26/2023 10:15:11 AM path.exists: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\aspx\ig.sql True
+05/26/2023 10:15:11 AM path.exists: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\aspx\ig.sql True
+05/26/2023 10:15:11 AM path.exists: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\aspx\ig.sql True
+05/26/2023 10:15:11 AM path.exists: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\aspx\ig.sql True
+05/26/2023 10:15:11 AM path.exists: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\aspx\ig.sql True
+05/26/2023 10:15:11 AM path.exists: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\aspx\ig.sql True
+05/26/2023 10:15:11 AM path.exists: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\aspx\ig.sql True
+05/26/2023 10:15:11 AM path.exists: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\aspx\ig.sql True
+05/26/2023 10:15:11 AM path.exists: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\aspx\ig.sql True
+05/26/2023 10:15:11 AM path.exists: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\aspx\ig.sql True
+05/26/2023 10:15:11 AM path.exists: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\aspx\ig.sql True
+05/26/2023 10:15:11 AM path.exists: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\aspx\ig.sql True
+05/26/2023 10:15:11 AM path.exists: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\aspx\ig.sql True
+05/26/2023 10:15:11 AM path.exists: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\aspx\ig.sql True
+05/26/2023 10:15:11 AM path.exists: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\aspx\ig.sql True
+05/26/2023 10:15:11 AM path.exists: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\aspx\ig.sql True
+05/26/2023 10:15:11 AM path.exists: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\aspx\ig.sql True
+05/26/2023 10:15:11 AM path.exists: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\aspx\ig.sql True
+05/26/2023 10:15:11 AM path.exists: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\aspx\ig.sql True
+05/26/2023 10:15:11 AM path.exists: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\aspx\ig.sql True
+05/26/2023 10:15:11 AM path.exists: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\aspx\ig.sql True
+05/26/2023 10:15:11 AM path.exists: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\aspx\ig.sql True
+05/26/2023 10:15:11 AM path.exists: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\aspx\ig.sql True
+05/26/2023 10:15:11 AM path.exists: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\aspx\ig.sql True
+05/26/2023 10:15:11 AM path.exists: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\aspx\ig.sql True
+05/26/2023 10:15:11 AM path.exists: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\aspx\ig.sql True
+05/26/2023 10:15:11 AM path.exists: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\aspx\ig.sql True
+05/26/2023 10:15:11 AM path.exists: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\aspx\ig.sql True
+05/26/2023 10:15:11 AM path.exists: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\aspx\ig.sql True
+05/26/2023 10:15:11 AM path.exists: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\aspx\ig.sql True
+05/26/2023 10:15:11 AM path.exists: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\aspx\ig.sql True
+05/26/2023 10:15:11 AM path.exists: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\aspx\ig.sql True
+05/26/2023 10:15:11 AM path.exists: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\aspx\ig.sql True
+05/26/2023 10:15:11 AM path.exists: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\aspx\ig.sql True
+05/26/2023 10:15:11 AM path.exists: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\aspx\ig.sql True
+05/26/2023 10:15:11 AM path.exists: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\aspx\ig.sql True
+05/26/2023 10:15:11 AM path.exists: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\aspx\ig.sql True
+05/26/2023 10:15:11 AM path.exists: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\aspx\ig.sql True
+05/26/2023 10:15:11 AM path.exists: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\aspx\ig.sql True
+05/26/2023 10:15:11 AM path.exists: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\aspx\ig.sql True
+05/26/2023 10:15:11 AM path.exists: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\aspx\ig.sql True
+05/26/2023 10:15:11 AM path.exists: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\aspx\ig.sql True
+05/26/2023 10:15:11 AM path.exists: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\aspx\ig.sql True
+05/26/2023 10:15:11 AM path.exists: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\aspx\ig.sql True
+05/26/2023 10:15:11 AM path.exists: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\aspx\ig.sql True
+05/26/2023 10:15:11 AM path.exists: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\aspx\ig.sql True
+05/26/2023 10:15:11 AM path.exists: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\aspx\ig.sql True
+05/26/2023 10:15:11 AM path.exists: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\aspx\ig.sql True
+05/26/2023 10:15:11 AM path.exists: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\aspx\ig.sql True
+05/26/2023 10:15:11 AM path.exists: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\aspx\ig.sql True
+05/26/2023 10:15:11 AM path.exists: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\aspx\ig.sql True
+05/26/2023 10:15:11 AM path.exists: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\aspx\ig.sql True
+05/26/2023 10:15:11 AM path.exists: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\aspx\ig.sql True
+05/26/2023 10:15:11 AM path.exists: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\aspx\ig.sql True
+05/26/2023 10:15:11 AM path.exists: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\aspx\ig.sql True
+05/26/2023 10:15:11 AM path.exists: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\aspx\ig.sql True
+05/26/2023 10:15:11 AM path.exists: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\aspx\ig.sql True
+05/26/2023 10:15:11 AM path.exists: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\aspx\ig.sql True
+05/26/2023 10:15:11 AM path.exists: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\aspx\ig.sql True
+05/26/2023 10:15:11 AM path.exists: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\aspx\ig.sql True
+05/26/2023 10:15:11 AM path.exists: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\aspx\ig.sql True
+05/26/2023 10:15:11 AM path.exists: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\aspx\ig.sql True
+05/26/2023 10:15:11 AM path.exists: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\aspx\ig.sql True
+05/26/2023 10:15:11 AM path.exists: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\aspx\ig.sql True
+05/26/2023 10:15:11 AM path.exists: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\aspx\ig.sql True
+05/26/2023 10:15:11 AM path.exists: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\aspx\ig.sql True
+05/26/2023 10:15:11 AM path.exists: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\aspx\ig.sql True
+05/26/2023 10:15:11 AM path.exists: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\aspx\ig.sql True
+05/26/2023 10:15:11 AM path.exists: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\aspx\ig.sql True
+05/26/2023 10:15:11 AM path.exists: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\aspx\ig.sql True
+05/26/2023 10:15:11 AM path.exists: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\aspx\ig.sql True
+05/26/2023 10:15:11 AM path.exists: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\aspx\ig.sql True
+05/26/2023 10:15:11 AM path.exists: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\aspx\ig.sql True
+05/26/2023 10:15:11 AM path.exists: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\aspx\ig.sql True
+05/26/2023 10:15:11 AM path.exists: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\aspx\ig.sql True
+05/26/2023 10:24:15 AM cache_file: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\\cache\\9596.html
+05/26/2023 10:24:15 AM usecache: True
+05/26/2023 10:24:16 AM cache_file: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\\cache\\9597.html
+05/26/2023 10:24:16 AM usecache: True
+05/26/2023 10:24:16 AM cache_file: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\\cache\\9598.html
+05/26/2023 10:24:16 AM usecache: True
+05/26/2023 10:24:16 AM cache_file: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\\cache\\9599.html
+05/26/2023 10:24:16 AM usecache: True
+05/26/2023 10:24:16 AM cache_file: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\\cache\\9600.html
+05/26/2023 10:24:16 AM usecache: True
+05/26/2023 10:24:16 AM cache_file: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\\cache\\9601.html
+05/26/2023 10:24:16 AM usecache: True
+05/26/2023 10:24:16 AM cache_file: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\\cache\\9602.html
+05/26/2023 10:24:16 AM usecache: True
+05/26/2023 10:24:16 AM cache_file: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\\cache\\9603.html
+05/26/2023 10:24:16 AM usecache: True
+05/26/2023 10:24:17 AM cache_file: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\\cache\\9604.html
+05/26/2023 10:24:17 AM usecache: True
+05/26/2023 10:25:08 AM cache_file: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\\cache\\9596.html
+05/26/2023 10:25:08 AM usecache: True
+05/26/2023 10:25:08 AM cache_file: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\\cache\\9597.html
+05/26/2023 10:25:08 AM usecache: True
+05/26/2023 10:25:08 AM cache_file: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\\cache\\9598.html
+05/26/2023 10:25:08 AM usecache: True
+05/26/2023 10:25:08 AM cache_file: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\\cache\\9599.html
+05/26/2023 10:25:08 AM usecache: True
+05/26/2023 10:25:09 AM cache_file: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\\cache\\9600.html
+05/26/2023 10:25:09 AM usecache: True
+05/26/2023 10:25:09 AM cache_file: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\\cache\\9601.html
+05/26/2023 10:25:09 AM usecache: True
+05/26/2023 10:25:09 AM cache_file: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\\cache\\9602.html
+05/26/2023 10:25:09 AM usecache: True
+05/26/2023 10:25:09 AM cache_file: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\\cache\\9603.html
+05/26/2023 10:25:09 AM usecache: True
+05/26/2023 10:25:09 AM cache_file: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\\cache\\9604.html
+05/26/2023 10:25:09 AM usecache: True
+05/26/2023 10:27:28 AM cache_file: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\\cache\\9596.html
+05/26/2023 10:27:28 AM usecache: True
+05/26/2023 10:27:29 AM cache_file: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\\cache\\9597.html
+05/26/2023 10:27:29 AM usecache: True
+05/26/2023 10:27:29 AM cache_file: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\\cache\\9598.html
+05/26/2023 10:27:29 AM usecache: True
+05/26/2023 10:27:29 AM cache_file: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\\cache\\9599.html
+05/26/2023 10:27:29 AM usecache: True
+05/26/2023 10:27:29 AM cache_file: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\\cache\\9600.html
+05/26/2023 10:27:29 AM usecache: True
+05/26/2023 10:27:29 AM cache_file: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\\cache\\9601.html
+05/26/2023 10:27:29 AM usecache: True
+05/26/2023 10:27:29 AM cache_file: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\\cache\\9602.html
+05/26/2023 10:27:29 AM usecache: True
+05/26/2023 10:27:29 AM cache_file: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\\cache\\9603.html
+05/26/2023 10:27:29 AM usecache: True
+05/26/2023 10:27:30 AM cache_file: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\\cache\\9604.html
+05/26/2023 10:27:30 AM usecache: True
+05/26/2023 10:29:26 AM cache_file: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\\cache\\9596.html
+05/26/2023 10:29:26 AM usecache: True
+05/26/2023 10:29:27 AM cache_file: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\\cache\\9597.html
+05/26/2023 10:29:27 AM usecache: True
+05/26/2023 10:29:27 AM cache_file: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\\cache\\9598.html
+05/26/2023 10:29:27 AM usecache: True
+05/26/2023 10:29:27 AM cache_file: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\\cache\\9599.html
+05/26/2023 10:29:27 AM usecache: True
+05/26/2023 10:29:27 AM cache_file: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\\cache\\9600.html
+05/26/2023 10:29:27 AM usecache: True
+05/26/2023 10:29:27 AM cache_file: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\\cache\\9601.html
+05/26/2023 10:29:27 AM usecache: True
+05/26/2023 10:29:27 AM cache_file: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\\cache\\9602.html
+05/26/2023 10:29:27 AM usecache: True
+05/26/2023 10:29:27 AM cache_file: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\\cache\\9603.html
+05/26/2023 10:29:27 AM usecache: True
+05/26/2023 10:29:27 AM cache_file: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\\cache\\9604.html
+05/26/2023 10:29:27 AM usecache: True
+05/26/2023 10:29:38 AM code_template_path: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\aspx\ig.sql
+05/26/2023 10:29:38 AM path.exists: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\aspx\ig.sql True
+05/26/2023 10:29:38 AM path.exists: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\aspx\ig.sql True
+05/26/2023 10:29:38 AM path.exists: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\aspx\ig.sql True
+05/26/2023 10:29:38 AM path.exists: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\aspx\ig.sql True
+05/26/2023 10:29:38 AM path.exists: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\aspx\ig.sql True
+05/26/2023 10:29:38 AM path.exists: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\aspx\ig.sql True
+05/26/2023 10:29:38 AM path.exists: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\aspx\ig.sql True
+05/26/2023 10:29:38 AM path.exists: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\aspx\ig.sql True
+05/26/2023 10:29:38 AM path.exists: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\aspx\ig.sql True
+05/26/2023 10:29:38 AM path.exists: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\aspx\ig.sql True
+05/26/2023 10:29:38 AM path.exists: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\aspx\ig.sql True
+05/26/2023 10:29:38 AM path.exists: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\aspx\ig.sql True
+05/26/2023 10:29:38 AM path.exists: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\aspx\ig.sql True
+05/26/2023 10:29:38 AM path.exists: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\aspx\ig.sql True
+05/26/2023 10:29:38 AM path.exists: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\aspx\ig.sql True
+05/26/2023 10:29:38 AM path.exists: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\aspx\ig.sql True
+05/26/2023 10:29:38 AM path.exists: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\aspx\ig.sql True
+05/26/2023 10:29:38 AM path.exists: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\aspx\ig.sql True
+05/26/2023 10:29:38 AM path.exists: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\aspx\ig.sql True
+05/26/2023 10:29:38 AM path.exists: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\aspx\ig.sql True
+05/26/2023 10:29:38 AM path.exists: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\aspx\ig.sql True
+05/26/2023 10:29:38 AM path.exists: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\aspx\ig.sql True
+05/26/2023 10:29:38 AM path.exists: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\aspx\ig.sql True
+05/26/2023 10:29:38 AM path.exists: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\aspx\ig.sql True
+05/26/2023 10:29:38 AM path.exists: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\aspx\ig.sql True
+05/26/2023 10:29:38 AM path.exists: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\aspx\ig.sql True
+05/26/2023 10:29:38 AM path.exists: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\aspx\ig.sql True
+05/26/2023 10:29:38 AM path.exists: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\aspx\ig.sql True
+05/26/2023 10:29:38 AM path.exists: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\aspx\ig.sql True
+05/26/2023 10:29:38 AM path.exists: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\aspx\ig.sql True
+05/26/2023 10:29:38 AM path.exists: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\aspx\ig.sql True
+05/26/2023 10:29:38 AM path.exists: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\aspx\ig.sql True
+05/26/2023 10:29:38 AM path.exists: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\aspx\ig.sql True
+05/26/2023 10:29:38 AM path.exists: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\aspx\ig.sql True
+05/26/2023 10:29:38 AM path.exists: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\aspx\ig.sql True
+05/26/2023 10:29:38 AM path.exists: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\aspx\ig.sql True
+05/26/2023 10:29:38 AM path.exists: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\aspx\ig.sql True
+05/26/2023 10:29:38 AM path.exists: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\aspx\ig.sql True
+05/26/2023 10:29:38 AM path.exists: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\aspx\ig.sql True
+05/26/2023 10:29:38 AM path.exists: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\aspx\ig.sql True
+05/26/2023 10:29:38 AM path.exists: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\aspx\ig.sql True
+05/26/2023 10:29:38 AM path.exists: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\aspx\ig.sql True
+05/26/2023 10:29:38 AM path.exists: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\aspx\ig.sql True
+05/26/2023 10:29:38 AM path.exists: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\aspx\ig.sql True
+05/26/2023 10:29:38 AM path.exists: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\aspx\ig.sql True
+05/26/2023 10:29:38 AM path.exists: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\aspx\ig.sql True
+05/26/2023 10:29:38 AM path.exists: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\aspx\ig.sql True
+05/26/2023 10:29:38 AM path.exists: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\aspx\ig.sql True
+05/26/2023 10:29:38 AM path.exists: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\aspx\ig.sql True
+05/26/2023 10:29:38 AM path.exists: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\aspx\ig.sql True
+05/26/2023 10:29:38 AM path.exists: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\aspx\ig.sql True
+05/26/2023 10:29:38 AM path.exists: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\aspx\ig.sql True
+05/26/2023 10:29:38 AM path.exists: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\aspx\ig.sql True
+05/26/2023 10:29:38 AM path.exists: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\aspx\ig.sql True
+05/26/2023 10:29:38 AM path.exists: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\aspx\ig.sql True
+05/26/2023 10:29:38 AM path.exists: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\aspx\ig.sql True
+05/26/2023 10:29:38 AM path.exists: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\aspx\ig.sql True
+05/26/2023 10:29:38 AM path.exists: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\aspx\ig.sql True
+05/26/2023 10:29:38 AM path.exists: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\aspx\ig.sql True
+05/26/2023 10:29:38 AM path.exists: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\aspx\ig.sql True
+05/26/2023 10:29:38 AM path.exists: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\aspx\ig.sql True
+05/26/2023 10:29:38 AM path.exists: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\aspx\ig.sql True
+05/26/2023 10:29:38 AM path.exists: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\aspx\ig.sql True
+05/26/2023 10:29:38 AM path.exists: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\aspx\ig.sql True
+05/26/2023 10:29:38 AM path.exists: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\aspx\ig.sql True
+05/26/2023 10:29:38 AM path.exists: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\aspx\ig.sql True
+05/26/2023 10:29:38 AM path.exists: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\aspx\ig.sql True
+05/26/2023 10:29:38 AM path.exists: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\aspx\ig.sql True
+05/26/2023 10:29:38 AM path.exists: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\aspx\ig.sql True
+05/26/2023 10:29:38 AM path.exists: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\aspx\ig.sql True
+05/26/2023 10:29:38 AM path.exists: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\aspx\ig.sql True
+05/26/2023 10:29:38 AM path.exists: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\aspx\ig.sql True
+05/26/2023 10:29:38 AM path.exists: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\aspx\ig.sql True
+05/26/2023 10:29:38 AM path.exists: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\aspx\ig.sql True
+05/26/2023 10:29:38 AM path.exists: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\aspx\ig.sql True
+05/26/2023 10:29:38 AM path.exists: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\aspx\ig.sql True
+05/26/2023 10:29:38 AM path.exists: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\aspx\ig.sql True
+05/26/2023 10:38:37 AM init
+05/26/2023 10:40:11 AM init
+05/26/2023 10:40:12 AM init
+05/26/2023 10:40:13 AM init
+05/26/2023 10:40:39 AM init
+05/26/2023 10:43:09 AM init
+05/26/2023 10:43:20 AM init
+05/26/2023 10:44:01 AM init
+05/26/2023 10:50:39 AM init

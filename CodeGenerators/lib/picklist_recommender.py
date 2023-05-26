@@ -8,6 +8,7 @@ from nltk.corpus import stopwords
 from nltk.stem.porter import PorterStemmer
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.metrics.pairwise import cosine_similarity
+from lib.script_generator import script_generator 
 from difflib import SequenceMatcher
 from lib.utils import generate_id
 #sw=stopwords.words('english')
@@ -22,8 +23,9 @@ class NpEncoder(json.JSONEncoder):
             return obj.tolist()
             return json.JSONEncoder.default(self, obj)              
 class picklist_recommender():
-    def __init__(self, connstr, use_cache=True, reset_cache=False, picklist_where='1=1'):  
-        self.connstr = connstr 
+    def __init__(self, ctx, use_cache=True, reset_cache=False, picklist_where='1=1'):  
+        self.ctx=ctx
+        self.connstr = ctx.config['connstr']
         self.use_cache = use_cache 
         self.reset_cache = reset_cache 
         self.recommend_result={}
@@ -33,9 +35,9 @@ class picklist_recommender():
         SELECT PK_Picklist, PK_PicklistType, UsageField, DisplayValue from vwPicklists 
         WHERE {picklist_where}
         ORDER BY PK_PicklistType , PK_Picklist ASC
-        """, connstr)  
+        """, self.connstr )  
         self.db_picks=[{}]
-    def recommend(self, input_list, threshhold=(.825, .5), normalizer=None): 
+    def recommend(self, input_list, threshhold=(.825, .5), normalizer=None, generate_sql=False): 
         if normalizer==None:
             normalizer=self.normalize
         self.input_list=input_list
@@ -63,6 +65,11 @@ class picklist_recommender():
             if df.at[i,'simscore'] > threshhold[0]: 
                 self.recommend_result=df.iloc[i].to_dict()
                 self._append_cache(input, self.recommend_result)
+                if generate_sql:
+                    gen=script_generator(self.ctx) 
+                    _, sql =gen.list_to_sql(input_list, Description='[Description]', UsageField=None ) 
+                    self.recommend_result['sql']=sql 
+                    print(sql)
                 return self.recommend_result
   
         df=df.sort_values(by='simscore', ascending=False, inplace=False)   
@@ -71,8 +78,13 @@ class picklist_recommender():
             self.recommend_result['PK_PicklistType']=int(0)         
             self.recommend_result['UsageField']=int(0)             
             self.recommend_result['DisplayValue']=input  
-               
+ 
         self._append_cache(input, self.recommend_result)    
+        if generate_sql:
+            gen=script_generator(self.ctx) 
+            _, sql =gen.list_to_sql(input_list, Description='[Description]', UsageField=None ) 
+            self.recommend_result['sql']=sql 
+            print(sql)
         return self.recommend_result 
     
     def _append_cache(self, k, d):
@@ -83,7 +95,7 @@ class picklist_recommender():
         k=self._ckey(k)
         if k in self.cache.keys():
             return self.cache[k]    
-
+ 
     def to_cache(self, fname='cache.json'):
         with open(os.path.dirname(os.path.realpath(__file__))+'\\'+fname, 'w') as f:
             json.dump(self.cache, f, cls=NpEncoder)
@@ -94,28 +106,7 @@ class picklist_recommender():
             return {}
         with open(dir, 'r') as f:
             return json.load(f)
-        
-
-    
-    def get_script(self, PLTPK=0): 
-        d=self.recommend_result 
-        if 'MAX_PK_Picklist' not in self.cache.keys():
-            self.cache['MAX_PK_Picklist']=d['MAX_PK_Picklist'] 
-        if 'MAX_PK_PicklistType' not in self.cache.keys():
-            self.cache['MAX_PK_PicklistType']=d['MAX_PK_PicklistType']         
-        if PLTPK==0: 
-            self.cache['MAX_PK_PicklistType']=self.cache['MAX_PK_PicklistType']+2
-            PLTPK=self.cache['MAX_PK_PicklistType']
-        l=[i for i in self.input_list if i.strip() != ''] 
-        s=''
-        for i, t in enumerate(l):
-            self.cache['MAX_PK_Picklist']=self.cache['MAX_PK_Picklist']+1
-            t=t.replace("'","`")
-            s=s+f",({self.cache['MAX_PK_Picklist']}, {PLTPK}, {i+1}, '{generate_id(t)}', '{t}')\n"
-        s='(PK_PickList,PK_PicklistType,SortOrder,UsageCode,DisplayValue)\nVALUES\n '+s[1:]
-        self.cache['MAX_PK_Picklist']=self.cache['MAX_PK_Picklist']+10
-        return s[:]   
-
+         
     def _sqltodf(self, query, connstr):
         df=pd.DataFrame() 
         engine = create_engine(connstr) 
