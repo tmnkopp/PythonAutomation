@@ -13,18 +13,19 @@ class script_generator():
         st=''  
         if code_template_path==None:
             code_template_path=self.ctx.get_template() 
+        self.ctx.logger.info(f'code_template_path: {code_template_path}')
         for i,r in df.iterrows():  
             if '{CTRLCODE}' in code_template_path:
-                code_template_path = self.ctx.get_template().replace( '{CTRLCODE}' , r["{CTRLCODE}"] )  
-            
+                code_template_path = code_template_path.replace( '{CTRLCODE}' , r["{CTRLCODE}"] )  
+
             try:
                 self.ext = code_template_path[code_template_path.index('.'):] 
             except Exception as e:  
                 print(f'self.ext {code_template_path}') 
                 raise
-            try: 
-                self.ctx.logger.info(f'with open: {code_template_path}')
+            try:  
                 code_template_read = ''
+                self.ctx.logger.info(f'path.exists: {code_template_path} {os.path.exists(code_template_path)}')
                 if os.path.exists(code_template_path):
                     with open(code_template_path, 'r', encoding=self.ctx.config['encoding'], errors='replace') as f: 
                         code_template_read = f.read() 

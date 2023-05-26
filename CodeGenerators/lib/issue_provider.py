@@ -95,8 +95,7 @@ class issue_provider():
         if parse_to==None:
             parse_to='issues.csv'
         df.to_csv(self.ctx.get_dest()+parse_to, index=False)
-        if not self.driver == None:
-            self.driver.quit()
+ 
         return df 
     
  
