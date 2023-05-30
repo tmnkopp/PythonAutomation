@@ -11,7 +11,7 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC 
 from bs4 import BeautifulSoup  
 import pandas as pd 
-class issue_provider():
+class issue_parser():
     def __init__(self, ctx):  
         self.ctx=ctx 
         self.root = os.path.dirname(os.path.realpath(__file__))  
@@ -37,10 +37,10 @@ class issue_provider():
     def _parse_element(self, e): 
         return str(e)
     
-    def parse_metrics(self
+    def parse(self
                       , tnum
                       , pk=None
-                      , met_parse='(\d{1,2}\.\d{1,2}\.?\d{0,2}\.?[\.\d\w]?)\s+[A-Z]'
+                      , parse_regex='^\s{0,5}(\d[\d\.a-z]+)\s[A-Z][\s|a-z]?' # (\d{1,2}\.\d{1,2}\.?\d{0,2}\.?[\.\d\w]?)\s+[A-Z]
                       , parse_to=None
                       , usecache=False
                       , metric_parsers={}):
@@ -73,7 +73,8 @@ class issue_provider():
         le = soup.select('td.confluenceTd, p') 
         lod=[]
         for i,e in enumerate(le):
-            m=re.search(met_parse,str(e.text))   
+            m=re.search(parse_regex,str(e.text))   
+            self.ctx.logger.info(f'text: {str(e.text)}')
             if(m):   
                 qt=get_question_type(e.text, self.ctx)
                 d={
@@ -92,10 +93,7 @@ class issue_provider():
             dfDefaults = sql_todf(" SELECT MAX(PK_Question) + 100 PK_Question, MAX(QGROUP) + 10  PK_QuestionGroup FROM vwQuestions ", self.ctx.config['connstr']) 
             pk=dfDefaults.loc[0, 'PK_Question']
         df['{PK_Question}']=range(pk,len(df)+pk) 
-        if parse_to==None:
-            parse_to='issues.csv'
-        df.to_csv(self.ctx.get_dest()+parse_to, index=False)
- 
+      
         return df 
     
  

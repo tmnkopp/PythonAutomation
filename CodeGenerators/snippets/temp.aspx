@@ -1,1 +1,0 @@
-<CB:DataField  DBColumnName="{col}" ImportColumnName="{icn}"  runat="server"/> 
