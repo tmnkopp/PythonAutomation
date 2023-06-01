@@ -1,6 +1,5 @@
-import re, json, openpyxl 
-import pandas as pd 
-from openpyxl import Workbook 
+import re, json 
+import pandas as pd  
 from lib.utils import *
 from lib.picklist_recommender import picklist_recommender   
 from lib.questionnaire_parser import questionnaire_parser   

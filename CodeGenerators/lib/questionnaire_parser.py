@@ -16,9 +16,9 @@ class questionnaire_parser():
         df['PLT']=df['Selections'].apply(lambda x: pr.recommend(x)['PK_PicklistType'] ) 
         pr.to_cache()
 
-        qt=sql_todf("SELECT PK_QuestionTypeId AS PK_QTID, code AS [{CTRLCODE}] FROM fsma_QuestionTypes", self.ctx.config['connstr'])
+        qt=sql_todf("SELECT PK_QuestionTypeId AS PK_QTID, code AS [{QT_CODE}] FROM fsma_QuestionTypes", self.ctx.config['connstr'])
         
-        df=pd.merge(df, qt, how='left', left_on='{CTRLCODE}', right_on='{CTRLCODE}') 
+        df=pd.merge(df, qt, how='left', left_on='{QT_CODE}', right_on='{QT_CODE}') 
         df['index']=range(1, len(df) + 1)
         return df
  

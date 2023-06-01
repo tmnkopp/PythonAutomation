@@ -1,13 +1,10 @@
-<!-- {idt} {QuestionText} -->
+<!-- {idt} {QT_ABBR}  -->
 <tr id="r-m-{idt}" {Dependancy}>
-    <td class="LabelColumn QuestionNumber">
-        <uc:CBlabel ID="CBlabel_{idt}" CSSClass="CustomControlLabelNoVertAlign" runat="server" LinkEditID="CBNumeric_{idt}" LabelType="QuestionNumber" />
-    </td>
-    <td class="LabelColumn Question" >
-        <uc:CBlabel ID="CBlabel_{idt}_i" CSSClass="CustomControlLabelNoVertAlign" runat="server" LinkEditID="CBNumeric_{idt}" LabelType="Question" />
+    <td >
+        <uc:CBQuestion ID="CBquestion_{idt}"   LinkEditID="CBNumeric_{idt}" runat="server" LabelType="FullQuestion"  CSSClass="CustomControlLabelNoVertAlign"  />
     </td>
     <td class="ControlColumn">
-        <uc:CBnumeric2 ID="CBNumeric_{idt}" runat="server" CSSClass="CustomControlValue" PK_Question="{PK_Question}" />
+        <uc:CBnumeric2 ID="CBNumeric_{idt}" QuestionNumber="{idt}" runat="server" CSSClass="CustomControlValue"  />
     </td>
     <td class="ControlColumn">
         <uc:CBoptionalLinks ID="CBoptionalLinks_{idt}" runat="server" LinkEditID="CBNumeric_{idt}" ShowAudit="true" ShowHelp="true" ShowNarrative="true" AuditRecs="20" />

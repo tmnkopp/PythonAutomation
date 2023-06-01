@@ -15,8 +15,10 @@ class script_generator():
             code_template_path=self.ctx.get_template() 
         self.ctx.logger.info(f'code_template_path: {code_template_path}')
         for i,r in df.iterrows():  
-            if '{CTRLCODE}' in code_template_path:
-                code_template_path = code_template_path.replace( '{CTRLCODE}' , r["{CTRLCODE}"] )  
+            snippet_col = re.search('(\{.+\})',code_template_path)
+            if snippet_col:
+                snippet_col=snippet_col.groups(1)[0]
+                code_template_path = code_template_path.replace( snippet_col , r[snippet_col] )  
 
             try:
                 self.ext = code_template_path[code_template_path.index('.'):] 

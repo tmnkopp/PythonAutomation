@@ -10,35 +10,7 @@ from difflib import SequenceMatcher
 from lib.script_generator import script_generator 
 sw=stopwords.words('english')
 ps=PorterStemmer()  
-
-def get_question_type(s, ctx, default=1, usecache=False):  
-    if not usecache: 
-        df=sql_todf("""SELECT PK_QuestionTypeId, Code ,description FROM fsma_QuestionTypes
-                        WHERE Code IN ('YN','CNT','YNA','TXT','PICK','LABEL','FREQ','DEC','INSTRUCTION','MULTICHECKBOX')
-        """, ctx.config['connstr']) 
-        df.to_csv(f'{ctx.get_dest()}get_question_type.csv', index=False)
-     
-    df=pd.read_csv(f'{ctx.get_dest()}get_question_type.csv')
-    lod=df.to_dict(orient='records') 
-
-    if re.search('does your|does the',s,re.IGNORECASE): 
-        return lod[0]
-    if re.search('How Many|Number of|Numeric',s,re.IGNORECASE): 
-        return lod[1]
-    if re.search('if other',s,re.IGNORECASE): 
-        return lod[3]
-    if re.search('maturity level',s,re.IGNORECASE): 
-        return lod[4]
-    if re.search('select all that apply',s,re.IGNORECASE): 
-        return lod[9]
-    
-    for i in lod:
-        reg=re.sub('[^A-Z]','',i['Code'].upper()) +'|'+re.sub('[^A-Z]','',i['description'].upper())
-        nrm=re.sub('[^A-Z]','',s.upper()) 
-        if re.search(reg,nrm,re.IGNORECASE): 
-            return i  
-    return lod[1]
-
+ 
 def generate_id(t, limit=15): 
     if type(t) == list: 
         t=str(t)
@@ -124,37 +96,7 @@ def govt_encoding(s, length=10):
     if len(s) > length:
         s=s[:length-2]+s[2:]
     return s[:length]
-
-def generate_code_from_db(ctx, qgroup=None):
-
-    if qgroup == None:
-        qgroup = input()  
-    sql="""
-        SELECT DISTINCT
-          QID [{idt}]
-        , ID as [id]
-        , Q_TypeCode [{CTRLCODE}]  
-        , FK_QuestionType [{FK_QuestionType}]  
-        , PK_Question as [{PK_Question}]
-        , CONVERT(NVARCHAR(9), PK_PickListType) as [{PK_PickListType}]
-        , sortpos [{sortpos}]
-        , QTEXT as [{QuestionText}]  
-        , LEFT(QTEXT, 75) AS [{QT_ABBR}]
-		,   CASE WHEN required_value IS NULL THEN '' 
-			ELSE
-			'data-question_master="r-m-'+REPLACE(master_identifier_text,'.','_')+'" data-value_torequire="^'+required_value+'$"'
-			END AS [{Dependancy}]
-        FROM vwQuestionFormDependancies Q
-    """+ f"  WHERE PK_QuestionGroup={qgroup} ORDER BY SortPos; " 
-    ctx.logger.info(f'{sql}')
-    df=sql_todf(sql, ctx.connstr)  
-    df['{idt}']=df['{idt}'].apply(lambda s: re.sub('_$','',s))
-    df.astype({'{PK_PickListType}': 'str'})
-    gen=script_generator(ctx)
-    code=gen.generate(df) 
-    return df, code    
-
-
+ 
 def write_excel(filename,sheetname,dataframe):
     with pd.ExcelWriter(filename, engine='openpyxl', mode='a') as writer: 
         workBook = writer.book
