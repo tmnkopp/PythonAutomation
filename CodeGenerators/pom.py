@@ -45,9 +45,9 @@ def main():
 
     range=ctx.args['range'].strip() 
     mn,mx=range_extractor(range) 
-    print(f'\n\n') 
+    print(f'\n') 
     print(tabulate(df[mn:mx].applymap(shorten), headers = 'keys', tablefmt = ctx.config['tablefmt'])) 
-    print(f'\n\n') 
+    print(f'\n') 
  
     if ctx.args['generate_scripts']: 
         gen=script_generator(ctx)   

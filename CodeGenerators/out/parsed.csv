@@ -1,5 +1,5 @@
-{idt},id,{QT_CODE},{FK_QuestionType},{PK_Question},{PK_PickListType},{sortpos},{QuestionText},{QT_ABBR},{PK_QuestionGroup},{Dependancy}
-15,2-1-15,YN,1,48200, NULL,1,"<b>Has this system had one or more major incident(s) within the last year?</b>
+{idt},{QT_CODE},{FK_QuestionType},{PK_Question},{PK_PickListType},{sortpos},{QuestionText},{QT_ABBR},{PK_QuestionGroup},{Dependancy}
+15,YN,1,48200, NULL,1,"<b>Has this system had one or more major incident(s) within the last year?</b>
 A Major Cyber Incident as defined and directed according to OMB M-21-02:
 <br /><br />
 A major incident is EITHER:<br />
@@ -9,7 +9,7 @@ Institute of Standards and Technology (NIST) Special Publication (SP) 800-61, Co
 OR<br />
 II. A breach that involves personally identifiable information (PII) that, if exfiltrated, modified, deleted, or otherwise compromised, is likely to result in demonstrable harm to the national 
 security interests, foreign relations, or the economy of the United States, or to the public confidence, civil liberties, or public health and safety of the American people.",<b>Has this system had one or more major incident(s) within the last year?<,3362,
-15_1,2-2-15.1,CNT,2,48201, NULL,2,"If Yes, then provide the number of major incidents within the last year.","If Yes, then provide the number of major incidents within the last year.",3362,"data-question_master=""r-m-15"" data-value_torequire=""^Yes$"""
-15_2,2-3-15.2,YN,1,48202, NULL,3,"If Yes, then were any of the major cyber incidents/events listed previously  a) resulted in unscheduled downtime/unavailability or b) required outside incident response support in the last 12 months?","If Yes, then were any of the major cyber incidents/events listed previously",3362,"data-question_master=""r-m-15"" data-value_torequire=""^Yes$"""
-15_3,2-4-15.3,CNT,2,48203, NULL,4,"If Yes, then provide the Number of major cyber incidents/events that resulted in unscheduled downtime/unavailability.","If Yes, then provide the Number of major cyber incidents/events that result",3362,"data-question_master=""r-m-15"" data-value_torequire=""^Yes$"""
-15_4,2-5-15.4,CNT,2,48204, NULL,5,"If Yes, then provide the Number of major cyber incidents/events that required outside incident response support in the last 12 months.","If Yes, then provide the Number of major cyber incidents/events that requir",3362,"data-question_master=""r-m-15"" data-value_torequire=""^Yes$"""
+15_1,CNT,2,48201, NULL,2,"If Yes, then provide the number of major incidents within the last year.","If Yes, then provide the number of major incidents within the last year.",3362,"data-question_master=""r-m-15"" data-value_torequire=""^Yes$"""
+15_2,YN,1,48202, NULL,3,"If Yes, then were any of the major cyber incidents/events listed previously  a) resulted in unscheduled downtime/unavailability or b) required outside incident response support in the last 12 months?","If Yes, then were any of the major cyber incidents/events listed previously",3362,"data-question_master=""r-m-15"" data-value_torequire=""^Yes$"""
+15_3,CNT,2,48203, NULL,4,"If Yes, then provide the Number of major cyber incidents/events that resulted in unscheduled downtime/unavailability.","If Yes, then provide the Number of major cyber incidents/events that result",3362,"data-question_master=""r-m-15"" data-value_torequire=""^Yes$"""
+15_4,CNT,2,48204, NULL,5,"If Yes, then provide the Number of major cyber incidents/events that required outside incident response support in the last 12 months.","If Yes, then provide the Number of major cyber incidents/events that requir",3362,"data-question_master=""r-m-15"" data-value_torequire=""^Yes$"""

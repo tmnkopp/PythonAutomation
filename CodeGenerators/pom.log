@@ -787,3 +787,299 @@ Developers, please enter what files were changed and what was fixed in this sect
                 END AS [{Dependancy}]
             FROM vwQuestionFormDependancies Q
           WHERE PK_QuestionGroup IN (3362) ORDER BY SortPos; 
+06/01/2023 12:55:37 PM code_template_path: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\aspx\ig.sql
+06/01/2023 12:55:44 PM init
+06/01/2023 12:55:48 PM code_template_path: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\aspx\ig.sql
+06/01/2023 12:56:22 PM usecache: True cache_file: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\\cache\\9600.html
+06/01/2023 12:56:22 PM text: ISSUE:
+The database script for the FY22 Annual IG Section 2C needs to be created
+06/01/2023 12:56:22 PM text: WHERE:
+FY22 Annual IF Section 2C- Protect- Data Protection and Privacy
+06/01/2023 12:56:22 PM text: DETAILS:
+SECTION 2C Security and Privacy Training (Protect)
+06/01/2023 12:56:22 PM text: Bolded  metrics are 'Core Metrics'
+06/01/2023 12:56:22 PM text: Italicized metrics are 'Required Supplemental'
+06/01/2023 12:56:22 PM text: 35. To what extent has the organization developed a privacy program for the protection of personally identifiable information (PII) that is collected, used, maintained, shared, and disposed of by information systems (NIST SP 800-37 (Rev. 2): Section 2.3 and Task P-1; NIST SP 800-53 (Rev. 5): CA-2, RA-3, RA-8, SA8(33), PM-5(1), PM-20, PM-27, PT-5, PT-6, and SI-12(1); NIST SP 800-122; NIST CSF: ID.GV-3; NIST Privacy Framework; OMB M-19-03; OMB M-20-04; OMB A-130: Appendix I; FY 2022 SAOP FISMA Metrics: Sections 1, 4, and 5(b))?
+06/01/2023 12:56:22 PM PK_QuestionType: 17
+06/01/2023 12:56:22 PM text: 36. To what extent has the organization implemented the following security controls to protect its PII and other agency sensitive data, as appropriate, throughout the data lifecycle. (NIST SP 800-37 (Rev. 2); NIST SP 800-53 (Rev. 5): SC-8, SC-28, MP-3, MP-6, and SI-12(3); NIST SP 800-207; NIST CSF: PR.DS-1, PR.DS-2, PR.PT-2, and PR.IP-6; NIST Security Measures for EO-Critical Software Use: SM 2.3 and SM 2.4; OMB M-22-09; DHS BOD 18-02; FY 2023 CIO FISMA Metrics: 2.1, 2.1.1 and 2.2; CIS Top 18 Security Controls: Control 3)?
+06/01/2023 12:56:22 PM PK_QuestionType: 17
+06/01/2023 12:56:22 PM text: 37. To what extent has the organization implemented security controls (e.g., EDR) to prevent data exfiltration and enhance network defenses? (NIST SP 800-53 (Rev. 5): SI-3, SI-7(8), SI4(4)(18), SC-7(10), and SC-18; NIST CSF: PR.DS-5; NIST Security Measures for EO-Critical Software Use: SM 4.3; OMB M-21-07; OMB M-22-01; CIS Top 18 Security Controls: Controls 9 and 10; DHS BOD 18-01; DHS ED 19-01)?
+06/01/2023 12:56:22 PM PK_QuestionType: 17
+06/01/2023 12:56:22 PM text: 38. To what extent has the organization developed and implemented a Data Breach Response Plan, as appropriate, to respond to privacy events? (NIST SP 800-53 (Rev. 5): IR-8 and IR-8(1); NIST SP 800-122; OMB M-17-12; OMB M-23-03; FY 2022 SAOP FISMA Metrics: Section 12)?
+06/01/2023 12:56:22 PM PK_QuestionType: 17
+06/01/2023 12:56:22 PM text: 39. To what extent does the organization ensure that privacy awareness training is provided to all individuals, including role-based privacy training? (Note: Privacy awareness training topics should include, as appropriate: responsibilities under the Privacy Act of 1974 and EGovernment Act of 2002, consequences for failing to carry out responsibilities, identifying privacy risks, mitigating privacy risks, and reporting privacy incidents, data collections and use requirements) (NIST SP 800-53 (Rev. 5): AT-1, AT-2, AT-3, and PL-4; FY 2022 SAOP FISMA Metrics: Section 9, 10, and 11)
+06/01/2023 12:56:22 PM PK_QuestionType: 17
+06/01/2023 12:56:22 PM text: 40.1 Please provide the assessed maturity level for the agency's Protect - Data Protection and Privacy program.
+06/01/2023 12:56:22 PM PK_QuestionType: 17
+06/01/2023 12:56:22 PM text: 40.2 Provide any additional information on the effectiveness (positive or negative) of the organization’s data protection and privacy program that was not noted in the questions above. Taking into consideration the maturity level generated from the questions above and based on all testing performed, is the data protection and privacy program effective?
+06/01/2023 12:56:22 PM PK_QuestionType: 9
+06/01/2023 12:56:22 PM text: REQUIREMENT SOURCE:
+OMB DHS/FNR
+06/01/2023 12:56:22 PM text: DEVELOPER'S NOTES:
+Developers, please enter what files were changed and what was fixed in this section
+06/01/2023 12:56:22 PM usecache: True cache_file: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\\cache\\9601.html
+06/01/2023 12:56:22 PM text: ISSUE:
+The database script for the FY22 Annual IG Section 2D needs to be created
+06/01/2023 12:56:22 PM text: WHERE:
+FY22 Annual IG: Section 2D- Protect- Security Training
+06/01/2023 12:56:22 PM text: DETAILS:
+06/01/2023 12:56:22 PM text: Section 2D- Protect- Security Training
+06/01/2023 12:56:22 PM text: Bolded metrics are 'Core Metrics'
+06/01/2023 12:56:22 PM text: Italicized metrics are 'Required Supplemental'
+06/01/2023 12:56:22 PM text: 41. To what degree have the roles and responsibilities of security awareness and training program stakeholders been defined, communicated across the agency, and appropriately resourced? (Note: this includes the roles and responsibilities for the effective establishment and maintenance of an organization wide security awareness and training program as well as the awareness and training related roles and responsibilities of system users and those with significant security responsibilities (NIST SP 800-50; NIST SP 800-53 (Rev. 5): AT-1; Green Book: Principles 3, 4, and 5).
+06/01/2023 12:56:22 PM PK_QuestionType: 17
+06/01/2023 12:56:22 PM text:  
+06/01/2023 12:56:22 PM text: 42. To what extent does the organization utilize an assessment of the skills, knowledge, and abilities of its workforce to provide tailored awareness and specialized security training within the functional areas of: identify, protect, detect, respond, and recover (NIST SP 800-50: Section 3.2; NIST SP 800-53 (Rev. 5): AT-2, AT-3, and PM-13; NIST SP 800-181; Federal Cybersecurity Workforce Assessment Act of 2015; National Cybersecurity Workforce Framework; CIS Top 18 Security Controls: Control 14; FY 2023 CIO FISMA Metrics: 6.1; EO 13870)?
+06/01/2023 12:56:22 PM PK_QuestionType: 17
+06/01/2023 12:56:22 PM text:  
+06/01/2023 12:56:22 PM text: 43. To what extent does the organization utilize a security awareness and training strategy/plan that leverages its organizational skills assessment and is adapted to its culture? (Note: the strategy/plan should include the following components: the structure of the awareness and training program, priorities, funding, the goals of the program, target audiences, types of courses/material for each audience, use of technologies (such as email advisories, intranet updates/wiki pages/social media, web based training, phishing simulation tools), frequency of training, and deployment methods (NIST SP 800-50: Section 3; NIST SP 800-53 (Rev. 5): AT-1; NIST CSF: PR.AT-1; OMB M-16-15).
+06/01/2023 12:56:22 PM PK_QuestionType: 17
+06/01/2023 12:56:22 PM text: 44. To what degree does the organization ensure that security awareness training is provided to all system users and is tailored based on its organizational requirements, culture, and types of information systems? (Note: awareness training topics should include, as appropriate: consideration of organizational policies, roles and responsibilities, secure e-mail, browsing, and remote access practices, mobile device security, secure use of social media, phishing, malware, physical security, and security incident reporting (NIST SP 800-50: 6.2; NIST SP 800-53 (Rev. 5): AT-1 and AT-2; NIST CSF: PR.AT-2; CIS Top 18 Security Controls: Control 14). 
+06/01/2023 12:56:22 PM PK_QuestionType: 17
+06/01/2023 12:56:22 PM text: 45. To what extent does the organization ensure that specialized security training is provided to individuals with significant security responsibilities (as defined in the organization's security policies and procedures and in accordance with 5 Code of Federal Regulation 930.301) (NIST SP 800-53 (Rev. 5): AT-3 and AT-4; EO 13870; 5 Code of Federal Regulation 930.301)?
+06/01/2023 12:56:22 PM PK_QuestionType: 17
+06/01/2023 12:56:22 PM text: 46.1 Please provide the assessed maturity level for the agency's Protect - Security Training program.
+06/01/2023 12:56:22 PM PK_QuestionType: 17
+06/01/2023 12:56:22 PM text: 46.2 Please provide the assessed maturity level for the agency's Protect Function.
+06/01/2023 12:56:22 PM PK_QuestionType: 17
+06/01/2023 12:56:22 PM text: 46.3 Provide any additional information on the effectiveness (positive or negative) of the organization’s security training program that was not noted in the questions above. Taking into consideration the maturity level generated from the questions above and based on all testing performed, is the security training program effective?
+06/01/2023 12:56:22 PM PK_QuestionType: 9
+06/01/2023 12:56:22 PM text: REQUIREMENT SOURCE:
+OMB DHS/FNR
+06/01/2023 12:56:22 PM text: DEVELOPER'S NOTES:
+Developers, please enter what files were changed and what was fixed in this section
+06/01/2023 12:56:22 PM usecache: True cache_file: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\\cache\\9602.html
+06/01/2023 12:56:22 PM text: ISSUE:
+The database script for the FY22 Annual IG Section 3 needs to be created
+06/01/2023 12:56:22 PM text: WHERE:
+FY22 Annual IG Section 3- Detect- ISCM
+06/01/2023 12:56:22 PM text: DETAILS:
+Section 3- Detect- ISCM
+06/01/2023 12:56:22 PM text: Bolded metrics are 'Core Metrics'
+06/01/2023 12:56:22 PM text: Italicized metrics are 'Required Supplemental'
+06/01/2023 12:56:22 PM text: 47. To what extent does the organization use information security continuous monitoring (ISCM) policies and an ISCM strategy that addresses ISCM requirements and activities at each organizational tier (NIST SP 800-37 (Rev. 2): Task P-7; NIST SP 800-53 (Rev. 5): CA-7, PM-6, PM-14, and PM-31; NIST SP 800-137: Sections 3.1 and 3.6; NIST Security Measures for EO-Critical Software Use: SM 4.2; CIS Top 18 Security Controls: Control 13)?
+06/01/2023 12:56:22 PM PK_QuestionType: 17
+06/01/2023 12:56:22 PM text: 48. To what extent have ISCM stakeholders and their roles, responsibilities, levels of authority, and dependencies been defined, communicated, and implemented across the organization (NIST SP 800-37 (Rev. 2): Tasks P-7 and S-5; NIST SP 800-53 (Rev. 5): CA-1; NIST SP 800-137; NIST CSF: DE.DP-1; Green Book: Principles 3, 4, and 5)?
+06/01/2023 12:56:22 PM PK_QuestionType: 17
+06/01/2023 12:56:22 PM text:  
+06/01/2023 12:56:22 PM text: 49. How mature are the organization's processes for performing ongoing information system assessments, granting system authorizations, including developing and maintaining system security plans, and monitoring system security controls (NIST SP 800-18 (Rev. 1); NIST SP 800-37 (Rev. 2): Task S-5; NIST SP 800-53 (Rev. 5): CA-2, CA-5, CA-6, CA-7, PL-2, and PM-10; NIST SP 800-137: Section 2.2; NIST IR 8011; NIST IR 8397; OMB A-130; OMB M-14-03; OMB M-19-03; OMB M-22-09; FY 2023 CIO FISMA Metrics: 7.1)?
+06/01/2023 12:56:22 PM PK_QuestionType: 17
+06/01/2023 12:56:22 PM text: 50. How mature is the organization's process for collecting and analyzing ISCM performance measures and reporting findings (NIST SP 800-137)?
+06/01/2023 12:56:22 PM PK_QuestionType: 17
+06/01/2023 12:56:22 PM text: 51.1 Please provide the assessed maturity level for the agency's Detect - ISCM function.
+06/01/2023 12:56:22 PM PK_QuestionType: 17
+06/01/2023 12:56:22 PM text: 51.2 Provide any additional information on the effectiveness (positive or negative) of the organization’s ISCM program that was not noted in the questions above. Taking into consideration the maturity level generated from the questions above and based on all testing performed, is the ISCM program effective?
+06/01/2023 12:56:22 PM PK_QuestionType: 9
+06/01/2023 12:56:22 PM text: REQUIREMENT SOURCE:
+OMB DHS/FNR
+06/01/2023 12:56:22 PM text: DEVELOPER'S NOTES:
+Developers, please enter what files were changed and what was fixed in this section
+06/01/2023 12:56:22 PM usecache: True cache_file: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\\cache\\9603.html
+06/01/2023 12:56:22 PM text: ISSUE:
+The database script for the FY22 Annual IG Section 4 needs to be created
+06/01/2023 12:56:22 PM text: WHERE:
+FY22 Annual IG: Section 4- Respond- Incident Response
+06/01/2023 12:56:22 PM text: DETAILS:
+06/01/2023 12:56:22 PM text: Section 4- Respond- Incident Response
+06/01/2023 12:56:22 PM text: Bolded metrics are  'Core Metrics'
+06/01/2023 12:56:22 PM text: Italicized metrics 'Required Supplemental'
+06/01/2023 12:56:22 PM text: 52. To what extent does the organization use an incident response plan to provide a formal, focused, and coordinated approach to responding to incidents (NIST SP 800-53 (Rev. 5): IR-8; NIST SP 800-61 (Rev. 2): Section 2.3.2; NIST CSF: RS.RP1; Presidential Policy Directive (PPD) 8 – National Preparedness; FY 2023 CIO FISMA Metrics: 10.1.1; FY 2022 CIO FISMA Metrics: 10.6)?
+06/01/2023 12:56:22 PM PK_QuestionType: 17
+06/01/2023 12:56:22 PM text: 53. To what extent have incident response team structures/models, stakeholders, and their roles, responsibilities, levels of authority, and dependencies been defined, communicated, and implemented across the organization (NIST SP 800-53 (Rev. 5) IR-7; NIST SP 800-61 (Rev. 2); NIST SP 800-83; NIST CSF: RS.CO1; OMB M-20-04; US-CERT Federal Incident Notification Guidelines; Green Book: Principles 3, 4, and 5)?
+06/01/2023 12:56:22 PM PK_QuestionType: 17
+06/01/2023 12:56:22 PM text:  
+06/01/2023 12:56:22 PM text: 54.  How mature are the organization's processes for incident detection and analysis (NIST SP 800-53 (Rev. 5): IR-4, IR-5, and IR-6; NIST SP 800-61 (Rev. 2); NIST CSF: DE.AE1 -5, PR.DS-6, RS.AN-1, RS.AN-4, and PR.DS-8; OMB M-20-04; OMB M-21-31; OMB M-22-01; OMB M-23-03; CISA Cybersecurity Incident Response Playbooks; CIS Top 18 Security Controls: Control 17; US-CERT Federal Incident Notification Guidelines; FY 2023 CIO FISMA Metrics: 3.1, 10.4, 10.5, and 10.6)?{}
+06/01/2023 12:56:22 PM text:  
+06/01/2023 12:56:22 PM text: 55. How mature are the organization's processes for incident handling (NIST SP 800-53 (Rev. 5): IR-4; NIST SP 800-61 (Rev. 2); NIST IR 8374; NIST CSF: RS.MI1 and RS.MI-2; OMB M-21-31; OMB M-23-03; CISA Cybersecurity Incident Response Playbooks; FY 2023 CIO FISMA Metrics: 10.4, 10.5, and 10.6)?
+06/01/2023 12:56:22 PM PK_QuestionType: 17
+06/01/2023 12:56:22 PM text: 56. To what extent does the organization ensure that incident response information is shared with individuals with significant security responsibilities and reported to external stakeholders in a timely manner (FISMA; NIST SP 800-53 (Rev. 5): IR-6; NIST CSF: RS.CO2 through RS.CO-5; OMB M-20-04; US-CERT Federal Incident Notification Guidelines; PPD-41; DHS Cyber Incident Reporting Unified Message)?
+06/01/2023 12:56:22 PM PK_QuestionType: 17
+06/01/2023 12:56:22 PM text: 57. To what extent does the organization collaborate with stakeholders to ensure on-site, technical assistance/surge capabilities can be leveraged for quickly responding to incidents, including through contracts/agreements, as appropriate, for incident response support (NIST SP 800-53 (Rev. 5): IR-4; NIST SP 800-86; OMB M-20-04; PPD-41; NCPS Cloud Interface Reference Architecture)?
+06/01/2023 12:56:22 PM PK_QuestionType: 17
+06/01/2023 12:56:22 PM text:  
+06/01/2023 12:56:22 PM text: 58. To what extent does the organization use the following technology to support its incident response program (NIST SP 800-44; NIST SP 800-61 (Rev. 2); NIST SP 800-137; OMB M-22-01; OMB M-22-09)?
+06/01/2023 12:56:22 PM PK_QuestionType: 17
+06/01/2023 12:56:22 PM text: •Web application protections, such as web application firewalls
+06/01/2023 12:56:22 PM text: •Event and incident management, such as intrusion detection and prevention tools, and incident tracking and reporting tools
+06/01/2023 12:56:22 PM text: •Aggregation and analysis, such as security information and event management (SIEM) products
+06/01/2023 12:56:22 PM text: •Malware detection, such as antivirus and antispam software technologies
+06/01/2023 12:56:22 PM text: •Information management, such as data loss prevention
+06/01/2023 12:56:22 PM text: •File integrity and endpoint and server security tools
+06/01/2023 12:56:22 PM text: 59.1 Please provide the assessed maturity level for the agency's Respond - Incident Response function.
+06/01/2023 12:56:22 PM PK_QuestionType: 17
+06/01/2023 12:56:22 PM text: 59.2 Provide any additional information on the effectiveness (positive or negative) of the organization’s incident response program that was not noted in the questions above. Taking into consideration the maturity level generated from the questions above and based on all testing performed, is the incident response program effective?
+06/01/2023 12:56:22 PM PK_QuestionType: 9
+06/01/2023 12:56:22 PM text: REQUIREMENT SOURCE:
+OMB DHS/FNR
+06/01/2023 12:56:22 PM text: DEVELOPER'S NOTE:
+Developers, please enter what files were changed and what was fixed in this section
+06/01/2023 12:56:22 PM usecache: True cache_file: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\\cache\\9604.html
+06/01/2023 12:56:22 PM text: ISSUE:
+The database script for the FY22 Annual IG Section 5 needs to be created
+06/01/2023 12:56:22 PM text: WHERE:
+FY22 Annual IG Section 5: Recover- Contingency Planning
+06/01/2023 12:56:22 PM text: DETAILS:
+06/01/2023 12:56:22 PM text: Section 5: Recover- Contingency Planning
+06/01/2023 12:56:22 PM text: Bolded metrics are 'Core Metrics'
+06/01/2023 12:56:22 PM text: Italicized metrics are 'Required Supplemental'
+06/01/2023 12:56:22 PM text:  
+06/01/2023 12:56:22 PM text: 60. To what extent have roles and responsibilities of stakeholders involved in information systems contingency planning been defined, communicated, and implemented across the organization, including appropriate delegations of authority (NIST SP 800-34; NIST SP 800-53 (Rev. 5): CP-1, CP-2, and CP-3; NIST SP 800-84; FCD-1: Annex B)?
+06/01/2023 12:56:22 PM PK_QuestionType: 17
+06/01/2023 12:56:22 PM text: 61.  To what extent does the organization ensure that the results of business impact analyses (BIA) are used to guide contingency planning efforts (NIST SP 800-34 (Rev. 1): Section 3.2; NIST SP 800-53 (Rev. 5): CP-2 and RA-9; NIST IR 8179; NIST IR 8286; NIST IR 8286D; NIST CSF: ID.RA4; FIPS 199; FCD-1; FCD-2; OMB M-19-03)?
+06/01/2023 12:56:22 PM text:  
+06/01/2023 12:56:22 PM text: 62. To what extent does the organization ensure that information system contingency plans are developed, maintained, and integrated with other continuity plans (NIST SP 800-34; NIST SP 800-53 (Rev. 5) CP-2; NIST CSF: PR.IP-9; FY 2023 CIO FISMA Metrics: 10.1.2, 10.2, and 10.3 • OMB M-19-03)?
+06/01/2023 12:56:22 PM PK_QuestionType: 17
+06/01/2023 12:56:22 PM text:  
+06/01/2023 12:56:22 PM text: 63. To what extent does the organization perform tests/exercises of its information system contingency planning processes (NIST SP 800-34; NIST SP 800-53 (Rev. 5): CP-3 and CP-4; NIST CSF: ID.SC-5 and PR.IP-10; CIS Top 18 Security Controls: Control 11)?
+06/01/2023 12:56:22 PM PK_QuestionType: 17
+06/01/2023 12:56:22 PM text:  
+06/01/2023 12:56:22 PM text: 64. To what extent does the organization perform information system backup and storage, including use of alternate storage and processing sites, as appropriate (NIST SP 800-34: Sections 3.4.1 through 3.4.3; NIST SP 800-53 (Rev. 5): CP-6, CP-7, CP-8, CP-9, and CP10; NIST SP 800-209; NIST CSF: PR.IP-4; FCD-1; FY 2023 CIO FISMA Metrics: 10.3.1 and 10.3.2 • NIST Security Measures for EOCritical Software Use: SM 2.5)?
+06/01/2023 12:56:22 PM PK_QuestionType: 17
+06/01/2023 12:56:22 PM text:  
+06/01/2023 12:56:22 PM text: 65.  To what level does the organization ensure that information on the planning and performance of recovery activities is communicated to internal stakeholders and executive management teams and used to make risk-based decisions (NIST SP 800-53 (Rev. 5): CP-2 and IR-4; NIST CSF: RC.CO3)?
+06/01/2023 12:56:22 PM text:  
+06/01/2023 12:56:22 PM text: 66.1 Please provide the assessed maturity level for the agency's Recover - Contingency Planning function.
+06/01/2023 12:56:22 PM PK_QuestionType: 17
+06/01/2023 12:56:22 PM text: 66.2 Provide any additional information on the effectiveness (positive or negative) of the organization’s contingency planning program that was not noted in the questions above. Taking into consideration the maturity level generated from the questions above and based on all testing performed, is the contingency program effective?
+06/01/2023 12:56:22 PM PK_QuestionType: 9
+06/01/2023 12:56:22 PM text: REQUIREMENT SOURCE:
+OMB DHS/FNR
+06/01/2023 12:56:22 PM text: DEVELOPER'S NOTES:
+Developers, please enter what files were changed and what was fixed in this section
+06/01/2023 01:27:58 PM code_template_path: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\aspx\ig.sql
+06/01/2023 01:27:58 PM path.exists: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\aspx\ig.sql True
+06/01/2023 01:27:58 PM path.exists: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\aspx\ig.sql True
+06/01/2023 01:27:58 PM path.exists: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\aspx\ig.sql True
+06/01/2023 01:27:58 PM path.exists: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\aspx\ig.sql True
+06/01/2023 01:27:58 PM path.exists: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\aspx\ig.sql True
+06/01/2023 01:27:58 PM path.exists: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\aspx\ig.sql True
+06/01/2023 01:27:58 PM path.exists: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\aspx\ig.sql True
+06/01/2023 01:27:58 PM path.exists: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\aspx\ig.sql True
+06/01/2023 01:27:58 PM path.exists: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\aspx\ig.sql True
+06/01/2023 01:27:58 PM path.exists: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\aspx\ig.sql True
+06/01/2023 01:27:58 PM path.exists: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\aspx\ig.sql True
+06/01/2023 01:27:58 PM path.exists: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\aspx\ig.sql True
+06/01/2023 01:27:58 PM path.exists: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\aspx\ig.sql True
+06/01/2023 01:27:58 PM path.exists: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\aspx\ig.sql True
+06/01/2023 01:27:58 PM path.exists: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\aspx\ig.sql True
+06/01/2023 01:27:58 PM path.exists: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\aspx\ig.sql True
+06/01/2023 01:27:58 PM path.exists: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\aspx\ig.sql True
+06/01/2023 01:27:58 PM path.exists: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\aspx\ig.sql True
+06/01/2023 01:27:58 PM path.exists: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\aspx\ig.sql True
+06/01/2023 01:27:58 PM path.exists: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\aspx\ig.sql True
+06/01/2023 01:27:58 PM path.exists: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\aspx\ig.sql True
+06/01/2023 01:27:58 PM path.exists: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\aspx\ig.sql True
+06/01/2023 01:27:58 PM path.exists: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\aspx\ig.sql True
+06/01/2023 01:27:58 PM path.exists: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\aspx\ig.sql True
+06/01/2023 01:27:58 PM path.exists: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\aspx\ig.sql True
+06/01/2023 01:27:58 PM path.exists: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\aspx\ig.sql True
+06/01/2023 01:27:58 PM path.exists: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\aspx\ig.sql True
+06/01/2023 01:27:58 PM path.exists: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\aspx\ig.sql True
+06/01/2023 01:27:58 PM path.exists: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\aspx\ig.sql True
+06/01/2023 01:27:58 PM path.exists: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\aspx\ig.sql True
+06/01/2023 01:27:58 PM path.exists: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\aspx\ig.sql True
+06/01/2023 01:27:58 PM path.exists: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\aspx\ig.sql True
+06/01/2023 01:27:58 PM path.exists: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\aspx\ig.sql True
+06/01/2023 01:27:58 PM path.exists: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\aspx\ig.sql True
+06/01/2023 01:27:58 PM path.exists: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\aspx\ig.sql True
+06/01/2023 01:35:03 PM init
+06/01/2023 01:43:43 PM 
+            SELECT DISTINCT
+            QID [{idt}]
+            , ID as [id]
+            , Q_TypeCode [{CTRLCODE}]  
+            , FK_QuestionType [{FK_QuestionType}]  
+            , PK_Question as [{PK_Question}]
+            , CONVERT(NVARCHAR(9), PK_PickListType) as [{PK_PickListType}]
+            , sortpos [{sortpos}]
+            , QTEXT as [{QuestionText}]  
+            , LEFT(QTEXT, 75) AS [{QT_ABBR}]
+            , PK_QuestionGroup
+            ,   CASE WHEN required_value IS NULL THEN '' 
+                ELSE
+                'data-question_master="r-m-'+REPLACE(master_identifier_text,'.','_')+'" data-value_torequire="^'+required_value+'$"'
+                END AS [{Dependancy}]
+            FROM vwQuestionFormDependancies Q
+          WHERE PK_QuestionGroup IN (3360) ORDER BY SortPos; 
+06/01/2023 01:44:31 PM 
+            SELECT DISTINCT
+            QID [{idt}]
+            , ID as [id]
+            , Q_TypeCode [{CTRLCODE}]  
+            , FK_QuestionType [{FK_QuestionType}]  
+            , PK_Question as [{PK_Question}]
+            , CONVERT(NVARCHAR(9), PK_PickListType) as [{PK_PickListType}]
+            , sortpos [{sortpos}]
+            , QTEXT as [{QuestionText}]  
+            , LEFT(QTEXT, 75) AS [{QT_ABBR}]
+            , PK_QuestionGroup
+            ,   CASE WHEN required_value IS NULL THEN '' 
+                ELSE
+                'data-question_master="r-m-'+REPLACE(master_identifier_text,'.','_')+'" data-value_torequire="^'+required_value+'$"'
+                END AS [{Dependancy}]
+            FROM vwQuestionFormDependancies Q
+          WHERE PK_QuestionGroup IN (3360) ORDER BY SortPos; 
+06/01/2023 01:44:31 PM code_template_path: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\fsma_QuestionsInsert.sql
+06/01/2023 01:44:31 PM path.exists: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\fsma_QuestionsInsert.sql True
+06/01/2023 01:44:31 PM path.exists: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\fsma_QuestionsInsert.sql True
+06/01/2023 01:44:31 PM path.exists: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\fsma_QuestionsInsert.sql True
+06/01/2023 01:44:31 PM path.exists: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\fsma_QuestionsInsert.sql True
+06/01/2023 01:44:31 PM path.exists: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\fsma_QuestionsInsert.sql True
+06/01/2023 01:44:31 PM path.exists: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\fsma_QuestionsInsert.sql True
+06/01/2023 01:44:31 PM path.exists: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\fsma_QuestionsInsert.sql True
+06/01/2023 01:44:31 PM path.exists: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\fsma_QuestionsInsert.sql True
+06/01/2023 01:44:31 PM path.exists: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\fsma_QuestionsInsert.sql True
+06/01/2023 01:44:31 PM path.exists: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\fsma_QuestionsInsert.sql True
+06/01/2023 01:44:31 PM path.exists: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\fsma_QuestionsInsert.sql True
+06/01/2023 01:44:31 PM path.exists: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\fsma_QuestionsInsert.sql True
+06/01/2023 01:44:31 PM path.exists: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\fsma_QuestionsInsert.sql True
+06/01/2023 01:44:31 PM path.exists: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\fsma_QuestionsInsert.sql True
+06/01/2023 01:44:31 PM path.exists: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\fsma_QuestionsInsert.sql True
+06/01/2023 01:44:31 PM path.exists: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\fsma_QuestionsInsert.sql True
+06/01/2023 01:44:31 PM path.exists: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\fsma_QuestionsInsert.sql True
+06/01/2023 01:44:31 PM path.exists: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\fsma_QuestionsInsert.sql True
+06/01/2023 01:44:31 PM path.exists: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\fsma_QuestionsInsert.sql True
+06/01/2023 01:44:31 PM path.exists: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\fsma_QuestionsInsert.sql True
+06/01/2023 01:44:31 PM path.exists: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\fsma_QuestionsInsert.sql True
+06/01/2023 01:44:31 PM path.exists: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\fsma_QuestionsInsert.sql True
+06/01/2023 01:44:31 PM path.exists: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\fsma_QuestionsInsert.sql True
+06/01/2023 01:44:31 PM path.exists: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\fsma_QuestionsInsert.sql True
+06/01/2023 01:44:31 PM path.exists: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\fsma_QuestionsInsert.sql True
+06/01/2023 03:18:18 PM init
+06/01/2023 03:58:26 PM init
+06/01/2023 04:15:12 PM init
+06/01/2023 04:15:14 PM 
+            SELECT DISTINCT
+            QID [{idt}] 
+            , Q_TypeCode [{QT_CODE}]  
+            , FK_QuestionType [{FK_QuestionType}]  
+            , PK_Question as [{PK_Question}]
+            , CONVERT(NVARCHAR(9), PK_PickListType) as [{PK_PickListType}]
+            , sortpos [{sortpos}]
+            , QTEXT as [{QuestionText}]  
+            , LEFT(QTEXT, 75) AS [{QT_ABBR}]
+            , PK_QuestionGroup [{PK_QuestionGroup}]
+            ,   CASE WHEN required_value IS NULL THEN '' 
+                ELSE
+                'data-question_master="r-m-'+REPLACE(master_identifier_text,'.','_')+'" data-value_torequire="^'+required_value+'$"'
+                END AS [{Dependancy}]
+            FROM vwQuestionFormDependancies Q
+          WHERE PK_QuestionGroup IN (3306) ORDER BY SortPos; 
+06/01/2023 04:15:41 PM init
+06/01/2023 04:15:46 PM 
+            SELECT DISTINCT
+            QID [{idt}] 
+            , Q_TypeCode [{QT_CODE}]  
+            , FK_QuestionType [{FK_QuestionType}]  
+            , PK_Question as [{PK_Question}]
+            , CONVERT(NVARCHAR(9), PK_PickListType) as [{PK_PickListType}]
+            , sortpos [{sortpos}]
+            , QTEXT as [{QuestionText}]  
+            , LEFT(QTEXT, 75) AS [{QT_ABBR}]
+            , PK_QuestionGroup [{PK_QuestionGroup}]
+            ,   CASE WHEN required_value IS NULL THEN '' 
+                ELSE
+                'data-question_master="r-m-'+REPLACE(master_identifier_text,'.','_')+'" data-value_torequire="^'+required_value+'$"'
+                END AS [{Dependancy}]
+            FROM vwQuestionFormDependancies Q
+          WHERE PK_QuestionGroup IN (3362) ORDER BY SortPos; 
