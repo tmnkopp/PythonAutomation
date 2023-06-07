@@ -4,7 +4,7 @@ class context():
         self.config={}
         self.args={}
         self.payload={} 
-        logging.basicConfig(filename='pom.log', level=logging.INFO, format='%(asctime)s %(message)s', datefmt='%m/%d/%Y %I:%M:%S %p') 
+        logging.basicConfig(filename='pom.log', level=logging.DEBUG, format='%(asctime)s %(message)s', datefmt='%m/%d/%Y %I:%M:%S %p') 
         self.logger=logging.getLogger('pom')   
         self.logger.info('init')
         self.root=os.path.dirname(os.path.realpath(__file__)).replace('\\lib','')+'\\' 

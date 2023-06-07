@@ -32,7 +32,7 @@ class db_parser():
                 END AS [{Dependancy}]
             FROM vwQuestionFormDependancies Q
         """+ f"  WHERE PK_QuestionGroup IN ({question_group}) ORDER BY SortPos; " 
-        self.ctx.logger.info(f'{sql}')
+        self.ctx.logger.debug(f'{sql}')
         df=sql_todf(sql, self.ctx.connstr)  
         df['{idt}']=df['{idt}'].apply(lambda s: re.sub('_$','',s))
         df.astype({'{PK_PickListType}': 'str'}) 

@@ -57,4 +57,14 @@ class issue_provider():
         if usecache: 
             with open(cache_file, 'r', encoding='UTF-8', errors='ignore') as f: 
                 issueHTML=f.read()
+         
+        issueHTML=self._normalizer(issueHTML)
         return issueHTML
+    
+    def _normalizer(self, s): 
+        s=re.sub( r'&nbsp;',r' ', s) 
+        s=re.sub( r'\s{2,}',r' ', s)
+        s=re.sub( r'\n{2,}|\r{2,}',r'\n', s)  
+        s=re.sub( r'\t',r' ', s) 
+        s=re.sub( r'[^\x00-\x7f]',r'', s)
+        return s
