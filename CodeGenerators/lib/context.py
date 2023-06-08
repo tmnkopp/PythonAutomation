@@ -1,4 +1,4 @@
-import os, logging
+import os, logging, json  
 class context():
     def __init__(self):  
         self.config={}
@@ -23,5 +23,10 @@ class context():
     def get_dest(self): 
         return self.config['dest'].replace('~', self.root)       
     def connstr(self): 
-        return self.config['connstr']        
+        return self.config['connstr']   
+    def getCBPass(self):
+        appsettings=''
+        with open('c:\\bom\\appsettings.json', 'r' , encoding='utf-8-sig') as f: 
+            appsettings=json.loads(f.read())   
+        return appsettings['contexts'][6]['conntask']['TaskSteps'][2]['Args'][1]      
        

@@ -112,3 +112,40 @@
 06/06/2023 03:36:55 PM ^\s*(\d[\d\.a-z]+)\s{1,9}[A-Z][\s|a-z]?:DEVELOPER'S NOTES:
 06/06/2023 03:36:55 PM ^\s*(\d[\d\.a-z]+)\s{1,9}[A-Z][\s|a-z]?:Developers, please enter what files were changed and what was fixed in this section
 06/07/2023 08:51:58 AM init
+06/07/2023 06:53:06 PM init
+06/07/2023 06:53:26 PM Note: NumExpr detected 12 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 8.
+06/07/2023 06:53:26 PM NumExpr defaulting to 8 threads.
+06/08/2023 08:27:35 AM init
+06/08/2023 08:28:52 AM init
+06/08/2023 10:11:30 AM init
+06/08/2023 10:12:37 AM usecache: False cache_file: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\\cache\\8787.html
+06/08/2023 10:12:37 AM 
+
+06/08/2023 10:12:37 AM ====== WebDriver manager ======
+06/08/2023 10:12:37 AM Current google-chrome version is 114.0.5735
+06/08/2023 10:12:37 AM Get LATEST driver version for 114.0.5735
+06/08/2023 10:12:37 AM Starting new HTTPS connection (1): chromedriver.storage.googleapis.com:443
+06/08/2023 10:12:37 AM https://chromedriver.storage.googleapis.com:443 "GET /LATEST_RELEASE_114.0.5735 HTTP/1.1" 200 13
+06/08/2023 10:12:37 AM Get LATEST driver version for 114.0.5735
+06/08/2023 10:12:37 AM Starting new HTTPS connection (1): chromedriver.storage.googleapis.com:443
+06/08/2023 10:12:37 AM https://chromedriver.storage.googleapis.com:443 "GET /LATEST_RELEASE_114.0.5735 HTTP/1.1" 200 13
+06/08/2023 10:12:37 AM Trying to download new driver from https://chromedriver.storage.googleapis.com/114.0.5735.90/chromedriver_win32.zip
+06/08/2023 10:12:37 AM Starting new HTTPS connection (1): chromedriver.storage.googleapis.com:443
+06/08/2023 10:12:38 AM https://chromedriver.storage.googleapis.com:443 "GET /114.0.5735.90/chromedriver_win32.zip HTTP/1.1" 200 6603303
+06/08/2023 10:12:38 AM Driver has been saved in cache [C:\Users\timko\.wdm\drivers\chromedriver\win32\114.0.5735.90]
+06/08/2023 10:12:40 AM POST http://127.0.0.1:64504/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"browserName": "chrome", "platformName": "any", "goog:chromeOptions": {"extensions": [], "args": ["--start-minimized", "--window-size=1020,1080"]}}}, "desiredCapabilities": {"browserName": "chrome", "version": "", "platform": "ANY", "goog:chromeOptions": {"extensions": [], "args": ["--start-minimized", "--window-size=1020,1080"]}}}
+06/08/2023 10:12:40 AM Starting new HTTP connection (1): 127.0.0.1:64504
+06/08/2023 10:12:42 AM http://127.0.0.1:64504 "POST /session HTTP/1.1" 200 861
+06/08/2023 10:12:42 AM Finished Request
+06/08/2023 10:12:42 AM POST http://127.0.0.1:64504/session/eaa27b53a1de2503ade9fbf810c55518/url {"url": "https://dayman.cyber-balance.com/jira/login.jsp"}
+06/08/2023 10:12:44 AM http://127.0.0.1:64504 "POST /session/eaa27b53a1de2503ade9fbf810c55518/url HTTP/1.1" 200 14
+06/08/2023 10:12:44 AM Finished Request
+06/08/2023 10:12:44 AM POST http://127.0.0.1:64504/session/eaa27b53a1de2503ade9fbf810c55518/element {"using": "xpath", "value": "//input[contains(@id, \"user\")]"}
+06/08/2023 10:12:44 AM http://127.0.0.1:64504 "POST /session/eaa27b53a1de2503ade9fbf810c55518/element HTTP/1.1" 200 94
+06/08/2023 10:12:44 AM Finished Request
+06/08/2023 10:12:44 AM POST http://127.0.0.1:64504/session/eaa27b53a1de2503ade9fbf810c55518/element/127A267C103BC19D007960DF819FA0FD_element_6/value {"text": "tim.kopp", "value": ["t", "i", "m", ".", "k", "o", "p", "p"], "id": "127A267C103BC19D007960DF819FA0FD_element_6"}
+06/08/2023 10:12:44 AM http://127.0.0.1:64504 "POST /session/eaa27b53a1de2503ade9fbf810c55518/element/127A267C103BC19D007960DF819FA0FD_element_6/value HTTP/1.1" 200 14
+06/08/2023 10:12:44 AM Finished Request
+06/08/2023 10:12:44 AM POST http://127.0.0.1:64504/session/eaa27b53a1de2503ade9fbf810c55518/element {"using": "xpath", "value": "//input[contains(@id, \"pass\")]"}
+06/08/2023 10:12:44 AM http://127.0.0.1:64504 "POST /session/eaa27b53a1de2503ade9fbf810c55518/element HTTP/1.1" 200 94
+06/08/2023 10:12:44 AM Finished Request
