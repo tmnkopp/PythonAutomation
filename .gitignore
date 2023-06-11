@@ -10,3 +10,6 @@ chase.ipynb
 CodeGenerators/pom.log
 script.*
 out/
+*.csv
+*.html
+*.sql
