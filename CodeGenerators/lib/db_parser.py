@@ -25,6 +25,7 @@ class db_parser():
             , sortpos [{sortpos}]
             , QTEXT as [{QuestionText}]  
             , LEFT(QTEXT, 75) AS [{QT_ABBR}]
+            , help_text AS [{help_text}]
             , PK_QuestionGroup [{PK_QuestionGroup}]
             ,   CASE WHEN required_value IS NULL THEN '' 
                 ELSE
