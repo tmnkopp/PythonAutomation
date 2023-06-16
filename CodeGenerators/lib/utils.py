@@ -107,7 +107,29 @@ def write_excel(filename,sheetname,dataframe):
         finally:
             dataframe.to_excel(writer, sheet_name=sheetname,index=False)
             writer.save()
-    
+def alphanum_sort( l ):  
+    convert = lambda text: int(text) if text.isdigit() else text 
+    alphanum_key = lambda key: [ convert(c) for c in re.split('([0-9]+)', key) ] 
+    return sorted(l, key = alphanum_key)
+
+def sort_df_alphanum(df, col):
+    dff=df.copy()
+    dff.set_index(col, inplace=True)   
+    l=alphanum_sort( dff.index )    
+    dff=dff.reindex(l).reset_index()     
+    return dff
+
+def get_avail_pk(start, sql="SELECT DISTINCT PK_Question FROM vwQuestions WHERE PK_Question > 30000"):
+    config = {}
+    with open('config.json', 'r') as f: 
+        config=json.loads(f.read())    
+    keys=set(range(start, start+1000)) 
+    lst=sql_todf(sql, config['connstr']).to_dict(orient='records')          
+    used_keys=set(d['PK_Question'] for d in lst) 
+    keys=list(keys-used_keys)
+    for k in keys:
+        yield k
+
 def SQL_INSERT_FROM_DF(SOURCE, TABLE_NAME='@T', Print=False):
     cols = [f'{c} INT NULL' if 'INT' in str(SOURCE[c].dtype).upper() else f'{c} NVARCHAR(4000) NULL' for c in SOURCE.columns ]
     sql_texts = []

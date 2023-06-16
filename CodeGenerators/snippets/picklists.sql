@@ -1,1 +1,1 @@
-({PK_PickList},@PK_PicklistType, N'{DisplayValue}','{CodeValue}', GETDATE(),{SORT},1)
+({PK_PickList},@pktype, N'{DisplayValue}','{CodeValue}', GETDATE(),{SORT},1)

@@ -4,11 +4,16 @@ from openpyxl import Workbook
 import pandas as pd 
 from sqlalchemy import func, create_engine
 from lib.config import connstr
+from nltk.stem import PorterStemmer
+from nltk.corpus import stopwords 
+ps=PorterStemmer()  
+sw=stopwords.words('english')
 class script_generator():
     def __init__(self, ctx):  
         self.ctx=ctx
         self.root = os.path.dirname(os.path.realpath(__file__)) 
         self.ext='.pom'
+        self.key_cache = {}
     def generate(self, df, code_template_path=None): 
         st=''  
         if code_template_path==None:
@@ -40,7 +45,7 @@ class script_generator():
                 raise
   
         return st
- 
+    
     def list_to_sql(self, items=[], PK_PickListType=None, PK_PickList=None, Description='[Description]', UsageField=None, encoding=None):
         if encoding == None:
             encoding=_encoder 
@@ -60,6 +65,10 @@ class script_generator():
         pl=''
         with open(f'{self.ctx.get_tempalte_dir()}picklists.sql', 'r') as f:
             pl=f.read()
+
+        if 'PK_PickList' in self.key_cache.keys():
+            PK_PickList=self.key_cache['PK_PickList'] + 10
+
         sql_items=[] 
         for i, item in enumerate(list(items)): 
             s=pl.replace('{PK_PickList}',str(PK_PickList+i))
@@ -67,10 +76,15 @@ class script_generator():
             s=s.replace('{DisplayValue}',str(item)) 
             s=s.replace('{SORT}',str(i+1)) 
             sql_items.append(s)
-        PK_PickList=PK_PickList+i+10
+        
+        self.key_cache['PK_PickList']=PK_PickList+i 
+      
         sql=plt.replace('{picklists.sql}','\n,'.join(sql_items)[:])
         return sql_items, sql
 
+    def reset_key_cache(self):
+        self.key_cache={}
+ 
 def create_variable_cols(df):  
     df1=df.copy()
     for c in df1.columns:
@@ -94,10 +108,12 @@ def _sql_todf(query,connstr):
     return df  
 
 def _encoder(s):
-    s = re.sub('[^A-Z0-9]','',s.upper().strip() )
-    for v in 'AEIOURSTLN': 
-        if len(s) > 10:
-            s=re.sub(v,'',s) 
-    if len(s) > 10:
-        s=s[:8]+s[2:]
-    return  s 
+    s = ''.join([ps.stem(w) for w in s.split(' ') if w.lower() not in sw]) 
+    s=s.upper().strip() 
+    s=re.sub('[^A-Z0-9]','',s)
+    for c in 'IOU':
+        if len(s) > length:
+            s=re.sub(c,'',s) 
+    if len(s) > length: 
+        s=s[:7]+s[len(s)-3:]
+    return s[:length]

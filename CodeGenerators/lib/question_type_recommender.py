@@ -21,7 +21,7 @@ class question_type_recommender():
         self.verbose = verbose
         self.codes=codes
         self.use_cache=use_cache 
-        self.vectorizer = CountVectorizer(ngram_range=(1,2), min_df=0.003, stop_words=['in'], analyzer='word',token_pattern=u'\w+|\?')
+        self.vectorizer = CountVectorizer(ngram_range=(1,3), min_df=0.001, stop_words=['in'], analyzer='word',token_pattern=u'\w+|\?')
         self.questions = pd.DataFrame()
 
         self.question_types = pd.DataFrame()
@@ -70,6 +70,8 @@ class question_type_recommender():
         self._load_model(use_cache=False)
 
     def recommend(self, input ): 
+        if 'select all that apply' in input.lower():
+            return {'PK_QuestionType': 43,'Code': 'MULTICHECKBOX'} 
         self.input=self._normalizer(input) 
         X = self.vectorizer.transform([self.input])  
         prediction=self.model.predict(X.toarray())

@@ -17,7 +17,7 @@ class db_parser():
 
         sql="""
             SELECT DISTINCT
-            QID [{idt}] 
+            ISNULL(QID, '') [{idt}] 
             , Q_TypeCode [{QT_CODE}]  
             , FK_QuestionType [{FK_QuestionType}]  
             , PK_Question as [{PK_Question}]

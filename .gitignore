@@ -11,6 +11,5 @@ CodeGenerators/pom.log
 script.*
 out/
 *.csv
-*.html
-*.sql
+*.html 
 *.json

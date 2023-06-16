@@ -1,6 +1,6 @@
 
 <!-- {idt} {QT_ABBR} --> 
-<tr id="r-m-{idt}" {Dependancy}> 
+<tr id="r-m-{idt}"> 
     <td >
         <uc:CBQuestion ID="CBquestion_{idt}"   LinkEditID="CBPicklist_{idt}" runat="server" LabelType="FullQuestion"  CSSClass="CustomControlLabelNoVertAlign"  />
     </td>
