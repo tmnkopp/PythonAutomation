@@ -13,3 +13,4 @@ out/
 *.csv
 *.html 
 *.json
+DHWReader.*
