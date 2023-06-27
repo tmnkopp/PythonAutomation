@@ -16473,3 +16473,350 @@
 06/15/2023 08:00:38 PM top of axes not in the figure, so title not moved
 06/15/2023 08:01:35 PM Note: NumExpr detected 12 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 8.
 06/15/2023 08:01:35 PM NumExpr defaulting to 8 threads.
+06/16/2023 09:26:32 AM init
+06/16/2023 12:54:48 PM init
+06/16/2023 12:57:04 PM init
+06/16/2023 12:58:49 PM init
+06/16/2023 01:03:27 PM init
+06/16/2023 01:05:41 PM init
+06/16/2023 01:11:59 PM init
+06/16/2023 01:32:41 PM init
+06/16/2023 01:36:06 PM init
+06/16/2023 01:37:52 PM init
+06/16/2023 01:38:07 PM init
+06/16/2023 01:38:57 PM init
+06/16/2023 01:39:14 PM init
+06/16/2023 01:42:31 PM init
+06/16/2023 01:43:55 PM init
+06/16/2023 01:58:46 PM init
+06/16/2023 02:42:01 PM init
+06/16/2023 02:47:01 PM init
+06/16/2023 02:49:27 PM init
+06/16/2023 02:49:51 PM init
+06/16/2023 02:52:00 PM init
+06/16/2023 02:58:08 PM init
+06/16/2023 03:01:21 PM init
+06/16/2023 03:10:34 PM init
+06/16/2023 03:17:36 PM init
+06/16/2023 03:19:32 PM init
+06/16/2023 03:20:45 PM init
+06/16/2023 03:21:33 PM init
+06/16/2023 03:22:40 PM init
+06/16/2023 03:25:27 PM init
+06/16/2023 03:55:04 PM init
+06/16/2023 03:55:57 PM init
+06/16/2023 03:59:56 PM init
+06/16/2023 04:04:11 PM init
+06/16/2023 04:04:35 PM init
+06/16/2023 04:10:23 PM init
+06/16/2023 04:18:20 PM init
+06/16/2023 04:20:27 PM init
+06/16/2023 04:21:16 PM init
+06/16/2023 04:22:19 PM init
+06/16/2023 04:23:02 PM init
+06/16/2023 04:24:13 PM init
+06/16/2023 04:24:51 PM init
+06/16/2023 04:26:40 PM init
+06/16/2023 04:28:32 PM init
+06/16/2023 04:29:28 PM init
+06/16/2023 04:30:25 PM init
+06/16/2023 04:31:33 PM init
+06/16/2023 04:32:51 PM init
+06/16/2023 04:33:35 PM init
+06/16/2023 04:34:41 PM init
+06/16/2023 04:36:42 PM init
+06/16/2023 04:39:56 PM init
+06/16/2023 04:41:28 PM init
+06/16/2023 04:50:48 PM init
+06/16/2023 04:51:16 PM init
+06/16/2023 04:51:46 PM init
+06/16/2023 04:52:36 PM init
+06/16/2023 04:54:44 PM init
+06/16/2023 04:56:26 PM init
+06/16/2023 04:56:59 PM init
+06/16/2023 04:57:08 PM init
+06/16/2023 05:13:20 PM init
+06/20/2023 10:43:19 AM init
+06/20/2023 10:44:26 AM Note: NumExpr detected 12 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 8.
+06/20/2023 10:44:26 AM NumExpr defaulting to 8 threads.
+06/20/2023 10:44:26 AM 
+            SELECT DISTINCT
+            ISNULL(QID, '') [{idt}] 
+            , Q_TypeCode [{QT_CODE}]  
+            , FK_QuestionType [{FK_QuestionType}]  
+            , PK_Question as [{PK_Question}]
+            , CONVERT(NVARCHAR(9), PK_PickListType) as [{PK_PickListType}]
+            , sortpos [{sortpos}]
+            , QTEXT as [{QuestionText}]  
+            , LEFT(QTEXT, 75) AS [{QT_ABBR}]
+            , help_text AS [{help_text}]
+            , PK_QuestionGroup [{PK_QuestionGroup}]
+            ,   CASE WHEN required_value IS NULL THEN '' 
+                ELSE
+                'data-question_master="r-m-'+REPLACE(master_identifier_text,'.','_')+'" data-value_torequire="^'+required_value+'$"'
+                END AS [{Dependancy}]
+            FROM vwQuestionFormDependancies Q
+          WHERE PK_QuestionGroup IN (4028,4029,4030,4031,4032,4033,4034,4035,4036,4037,4038,4039,4040,4041,4042,4043,4044,4045,4046,4047,4048,4049,4050,4051,4052,4053,4054,4055,4056,4057,4058,4059,4060,4061,4062,4063,4064,4065,4066,4067,4068,4069,4070,4071,4072,4073,4074,4075,4076,4077,4078,4079,4080,4081,4082,4083,4084,4085,4086,4087,4088,4089,4090,4091,4092,4093,4094,4095,4096,4097,4098,4099,4100,4101,4102,4103,4104,4105,4106,4107,4108,4109,4110,4111,4112,4113,4114,4115,4116,4117,4118,4119,4120,4121,4122,4123,4124,4125,4126,4127,4128,4129,4130,4131,4132,4133,4134,4135,4136,4137,4138,4139,4140,4141,4142,4143,4144,4145,4146,4147,4148,4149,4150,4151,4152,4153,4154,4155,4156,4157,4158,4159,4160,4161,4162,4163,4164,4165,4166,4167,4168,4169,4170,4171,4172,4173,4174,4175,4176,4177,4178,4179,4180,4181,4182,4183,4184,4185,4186,4187,4188,4189,4190,4191,4192,4193,4194,4195,4196,4197,4198,4199,4200,4201,4202,4203,4204,4205,4206,4207,4208,4209,4210,4211,4212,4213,4214,4215,4216,4217,4218,4219,4220,4221,4222,4223,4224,4225,4226,4227,4228,4229,4230,4231,4232,4233,4234,4235,4236,4237,4238,4239,4240,4241,4242,4243,4244,4245,4246,4247,4248,4249,4250,4251,4252,4253,4254,4255,4256,4257,4258) ORDER BY SortPos; 
+06/20/2023 10:44:26 AM code_template_path: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\archive\{QT_CODE}.aspx
+06/20/2023 10:44:26 AM path.exists: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\archive\PICK.aspx True
+06/20/2023 10:44:26 AM path.exists: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\archive\PICK.aspx True
+06/20/2023 10:46:25 AM 
+            SELECT DISTINCT
+            ISNULL(QID, '') [{idt}] 
+            , Q_TypeCode [{QT_CODE}]  
+            , FK_QuestionType [{FK_QuestionType}]  
+            , PK_Question as [{PK_Question}]
+            , CONVERT(NVARCHAR(9), PK_PickListType) as [{PK_PickListType}]
+            , sortpos [{sortpos}]
+            , QTEXT as [{QuestionText}]  
+            , LEFT(QTEXT, 75) AS [{QT_ABBR}]
+            , help_text AS [{help_text}]
+            , PK_QuestionGroup [{PK_QuestionGroup}]
+            ,   CASE WHEN required_value IS NULL THEN '' 
+                ELSE
+                'data-question_master="r-m-'+REPLACE(master_identifier_text,'.','_')+'" data-value_torequire="^'+required_value+'$"'
+                END AS [{Dependancy}]
+            FROM vwQuestionFormDependancies Q
+          WHERE PK_QuestionGroup IN (4028,4029,4030,4031,4032,4033,4034,4035,4036,4037,4038,4039,4040,4041,4042,4043,4044,4045,4046,4047,4048,4049,4050,4051,4052,4053,4054,4055,4056,4057,4058,4059,4060,4061,4062,4063,4064,4065,4066,4067,4068,4069,4070,4071,4072,4073,4074,4075,4076,4077,4078,4079,4080,4081,4082,4083,4084,4085,4086,4087,4088,4089,4090,4091,4092,4093,4094,4095,4096,4097,4098,4099,4100,4101,4102,4103,4104,4105,4106,4107,4108,4109,4110,4111,4112,4113,4114,4115,4116,4117,4118,4119,4120,4121,4122,4123,4124,4125,4126,4127,4128,4129,4130,4131,4132,4133,4134,4135,4136,4137,4138,4139,4140,4141,4142,4143,4144,4145,4146,4147,4148,4149,4150,4151,4152,4153,4154,4155,4156,4157,4158,4159,4160,4161,4162,4163,4164,4165,4166,4167,4168,4169,4170,4171,4172,4173,4174,4175,4176,4177,4178,4179,4180,4181,4182,4183,4184,4185,4186,4187,4188,4189,4190,4191,4192,4193,4194,4195,4196,4197,4198,4199,4200,4201,4202,4203,4204,4205,4206,4207,4208,4209,4210,4211,4212,4213,4214,4215,4216,4217,4218,4219,4220,4221,4222,4223,4224,4225,4226,4227,4228,4229,4230,4231,4232,4233,4234,4235,4236,4237,4238,4239,4240,4241,4242,4243,4244,4245,4246,4247,4248,4249,4250,4251,4252,4253,4254,4255,4256,4257,4258) ORDER BY SortPos; 
+06/20/2023 10:46:25 AM code_template_path: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\archive\{QT_CODE}.aspx
+06/20/2023 10:46:25 AM path.exists: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\archive\PICK.aspx True
+06/20/2023 10:46:25 AM path.exists: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\archive\PICK.aspx True
+06/20/2023 10:46:25 AM path.exists: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\archive\PICK.aspx True
+06/20/2023 10:46:25 AM path.exists: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\archive\PICK.aspx True
+06/20/2023 10:46:25 AM path.exists: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\archive\PICK.aspx True
+06/20/2023 10:46:25 AM path.exists: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\archive\PICK.aspx True
+06/20/2023 10:46:25 AM path.exists: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\archive\PICK.aspx True
+06/20/2023 10:46:25 AM path.exists: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\archive\PICK.aspx True
+06/20/2023 10:46:25 AM path.exists: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\archive\PICK.aspx True
+06/20/2023 10:46:25 AM path.exists: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\archive\PICK.aspx True
+06/20/2023 10:46:25 AM path.exists: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\archive\PICK.aspx True
+06/20/2023 10:46:25 AM path.exists: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\archive\PICK.aspx True
+06/20/2023 10:46:25 AM path.exists: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\archive\PICK.aspx True
+06/20/2023 10:46:25 AM path.exists: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\archive\PICK.aspx True
+06/20/2023 10:46:25 AM path.exists: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\archive\PICK.aspx True
+06/20/2023 10:46:25 AM path.exists: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\archive\PICK.aspx True
+06/20/2023 10:46:25 AM path.exists: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\archive\PICK.aspx True
+06/20/2023 10:46:25 AM path.exists: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\archive\PICK.aspx True
+06/20/2023 10:46:25 AM path.exists: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\archive\PICK.aspx True
+06/20/2023 10:46:25 AM path.exists: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\archive\PICK.aspx True
+06/20/2023 10:46:25 AM path.exists: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\archive\PICK.aspx True
+06/20/2023 10:50:40 AM 
+            SELECT DISTINCT
+            ISNULL(QID, '') [{idt}] 
+            , Q_TypeCode [{QT_CODE}]  
+            , FK_QuestionType [{FK_QuestionType}]  
+            , PK_Question as [{PK_Question}]
+            , CONVERT(NVARCHAR(9), PK_PickListType) as [{PK_PickListType}]
+            , sortpos [{sortpos}]
+            , QTEXT as [{QuestionText}]  
+            , LEFT(QTEXT, 75) AS [{QT_ABBR}]
+            , help_text AS [{help_text}]
+            , PK_QuestionGroup [{PK_QuestionGroup}]
+            ,   CASE WHEN required_value IS NULL THEN '' 
+                ELSE
+                'data-question_master="r-m-'+REPLACE(master_identifier_text,'.','_')+'" data-value_torequire="^'+required_value+'$"'
+                END AS [{Dependancy}]
+            FROM vwQuestionFormDependancies Q
+          WHERE PK_QuestionGroup IN (4028,4029,4030,4031,4032,4033,4034,4035,4036,4037,4038,4039,4040,4041,4042,4043,4044,4045,4046,4047,4048,4049,4050,4051,4052,4053,4054,4055,4056,4057,4058,4059,4060,4061,4062,4063,4064,4065,4066,4067,4068,4069,4070,4071,4072,4073,4074,4075,4076,4077,4078,4079,4080,4081,4082,4083,4084,4085,4086,4087,4088,4089,4090,4091,4092,4093,4094,4095,4096,4097,4098,4099,4100,4101,4102,4103,4104,4105,4106,4107,4108,4109,4110,4111,4112,4113,4114,4115,4116,4117,4118,4119,4120,4121,4122,4123,4124,4125,4126,4127,4128,4129,4130,4131,4132,4133,4134,4135,4136,4137,4138,4139,4140,4141,4142,4143,4144,4145,4146,4147,4148,4149,4150,4151,4152,4153,4154,4155,4156,4157,4158,4159,4160,4161,4162,4163,4164,4165,4166,4167,4168,4169,4170,4171,4172,4173,4174,4175,4176,4177,4178,4179,4180,4181,4182,4183,4184,4185,4186,4187,4188,4189,4190,4191,4192,4193,4194,4195,4196,4197,4198,4199,4200,4201,4202,4203,4204,4205,4206,4207,4208,4209,4210,4211,4212,4213,4214,4215,4216,4217,4218,4219,4220,4221,4222,4223,4224,4225,4226,4227,4228,4229,4230,4231,4232,4233,4234,4235,4236,4237,4238,4239,4240,4241,4242,4243,4244,4245,4246,4247,4248,4249,4250,4251,4252,4253,4254,4255,4256,4257,4258) ORDER BY SortPos; 
+06/20/2023 10:50:40 AM code_template_path: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\archive\{QT_CODE}.aspx
+06/20/2023 10:50:40 AM path.exists: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\archive\PICK.aspx True
+06/20/2023 10:50:40 AM path.exists: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\archive\PICK.aspx True
+06/20/2023 10:50:40 AM path.exists: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\archive\PICK.aspx True
+06/20/2023 10:50:40 AM path.exists: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\archive\PICK.aspx True
+06/20/2023 10:50:40 AM path.exists: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\archive\PICK.aspx True
+06/20/2023 10:50:40 AM path.exists: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\archive\PICK.aspx True
+06/20/2023 10:50:40 AM path.exists: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\archive\PICK.aspx True
+06/20/2023 10:50:40 AM path.exists: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\archive\PICK.aspx True
+06/20/2023 10:50:40 AM path.exists: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\archive\PICK.aspx True
+06/20/2023 10:50:40 AM path.exists: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\archive\PICK.aspx True
+06/20/2023 10:50:40 AM path.exists: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\archive\PICK.aspx True
+06/20/2023 10:50:40 AM path.exists: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\archive\PICK.aspx True
+06/20/2023 10:50:40 AM path.exists: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\archive\PICK.aspx True
+06/20/2023 10:50:40 AM path.exists: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\archive\PICK.aspx True
+06/20/2023 10:50:40 AM path.exists: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\archive\PICK.aspx True
+06/20/2023 10:50:40 AM path.exists: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\archive\PICK.aspx True
+06/20/2023 10:50:40 AM path.exists: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\archive\PICK.aspx True
+06/20/2023 10:50:40 AM path.exists: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\archive\PICK.aspx True
+06/20/2023 10:50:40 AM path.exists: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\archive\PICK.aspx True
+06/20/2023 10:50:40 AM path.exists: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\archive\PICK.aspx True
+06/20/2023 10:50:40 AM path.exists: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\archive\PICK.aspx True
+06/20/2023 10:58:52 AM 
+            SELECT DISTINCT
+            ISNULL(QID, '') [{idt}] 
+            , Q_TypeCode [{QT_CODE}]  
+            , FK_QuestionType [{FK_QuestionType}]  
+            , PK_Question as [{PK_Question}]
+            , CONVERT(NVARCHAR(9), PK_PickListType) as [{PK_PickListType}]
+            , sortpos [{sortpos}]
+            , QTEXT as [{QuestionText}]  
+            , LEFT(QTEXT, 75) AS [{QT_ABBR}]
+            , help_text AS [{help_text}]
+            , PK_QuestionGroup [{PK_QuestionGroup}]
+            ,   CASE WHEN required_value IS NULL THEN '' 
+                ELSE
+                'data-question_master="r-m-'+REPLACE(master_identifier_text,'.','_')+'" data-value_torequire="^'+required_value+'$"'
+                END AS [{Dependancy}]
+            FROM vwQuestionFormDependancies Q
+          WHERE PK_QuestionGroup IN (4028,4029,4030,4031,4032,4033,4034,4035,4036,4037,4038,4039,4040,4041,4042,4043,4044,4045,4046,4047,4048,4049,4050,4051,4052,4053,4054,4055,4056,4057,4058,4059,4060,4061,4062,4063,4064,4065,4066,4067,4068,4069,4070,4071,4072,4073,4074,4075,4076,4077,4078,4079,4080,4081,4082,4083,4084,4085,4086,4087,4088,4089,4090,4091,4092,4093,4094,4095,4096,4097,4098,4099,4100,4101,4102,4103,4104,4105,4106,4107,4108,4109,4110,4111,4112,4113,4114,4115,4116,4117,4118,4119,4120,4121,4122,4123,4124,4125,4126,4127,4128,4129,4130,4131,4132,4133,4134,4135,4136,4137,4138,4139,4140,4141,4142,4143,4144,4145,4146,4147,4148,4149,4150,4151,4152,4153,4154,4155,4156,4157,4158,4159,4160,4161,4162,4163,4164,4165,4166,4167,4168,4169,4170,4171,4172,4173,4174,4175,4176,4177,4178,4179,4180,4181,4182,4183,4184,4185,4186,4187,4188,4189,4190,4191,4192,4193,4194,4195,4196,4197,4198,4199,4200,4201,4202,4203,4204,4205,4206,4207,4208,4209,4210,4211,4212,4213,4214,4215,4216,4217,4218,4219,4220,4221,4222,4223,4224,4225,4226,4227,4228,4229,4230,4231,4232,4233,4234,4235,4236,4237,4238,4239,4240,4241,4242,4243,4244,4245,4246,4247,4248,4249,4250,4251,4252,4253,4254,4255,4256,4257,4258) ORDER BY SortPos; 
+06/20/2023 10:58:52 AM code_template_path: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\archive\{QT_CODE}.aspx
+06/20/2023 10:58:52 AM path.exists: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\archive\PICK.aspx True
+06/20/2023 10:58:52 AM path.exists: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\archive\PICK.aspx True
+06/20/2023 10:58:52 AM path.exists: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\archive\PICK.aspx True
+06/20/2023 10:59:38 AM 
+            SELECT DISTINCT
+            ISNULL(QID, '') [{idt}] 
+            , Q_TypeCode [{QT_CODE}]  
+            , FK_QuestionType [{FK_QuestionType}]  
+            , PK_Question as [{PK_Question}]
+            , CONVERT(NVARCHAR(9), PK_PickListType) as [{PK_PickListType}]
+            , sortpos [{sortpos}]
+            , QTEXT as [{QuestionText}]  
+            , LEFT(QTEXT, 75) AS [{QT_ABBR}]
+            , help_text AS [{help_text}]
+            , PK_QuestionGroup [{PK_QuestionGroup}]
+            ,   CASE WHEN required_value IS NULL THEN '' 
+                ELSE
+                'data-question_master="r-m-'+REPLACE(master_identifier_text,'.','_')+'" data-value_torequire="^'+required_value+'$"'
+                END AS [{Dependancy}]
+            FROM vwQuestionFormDependancies Q
+          WHERE PK_QuestionGroup IN (4028,4029,4030,4031,4032,4033,4034,4035,4036,4037,4038,4039,4040,4041,4042,4043,4044,4045,4046,4047,4048,4049,4050,4051,4052,4053,4054,4055,4056,4057,4058,4059,4060,4061,4062,4063,4064,4065,4066,4067,4068,4069,4070,4071,4072,4073,4074,4075,4076,4077,4078,4079,4080,4081,4082,4083,4084,4085,4086,4087,4088,4089,4090,4091,4092,4093,4094,4095,4096,4097,4098,4099,4100,4101,4102,4103,4104,4105,4106,4107,4108,4109,4110,4111,4112,4113,4114,4115,4116,4117,4118,4119,4120,4121,4122,4123,4124,4125,4126,4127,4128,4129,4130,4131,4132,4133,4134,4135,4136,4137,4138,4139,4140,4141,4142,4143,4144,4145,4146,4147,4148,4149,4150,4151,4152,4153,4154,4155,4156,4157,4158,4159,4160,4161,4162,4163,4164,4165,4166,4167,4168,4169,4170,4171,4172,4173,4174,4175,4176,4177,4178,4179,4180,4181,4182,4183,4184,4185,4186,4187,4188,4189,4190,4191,4192,4193,4194,4195,4196,4197,4198,4199,4200,4201,4202,4203,4204,4205,4206,4207,4208,4209,4210,4211,4212,4213,4214,4215,4216,4217,4218,4219,4220,4221,4222,4223,4224,4225,4226,4227,4228,4229,4230,4231,4232,4233,4234,4235,4236,4237,4238,4239,4240,4241,4242,4243,4244,4245,4246,4247,4248,4249,4250,4251,4252,4253,4254,4255,4256,4257,4258) ORDER BY SortPos; 
+06/20/2023 10:59:39 AM code_template_path: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\archive\{QT_CODE}.aspx
+06/20/2023 10:59:39 AM path.exists: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\archive\PICK.aspx True
+06/20/2023 10:59:39 AM path.exists: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\archive\PICK.aspx True
+06/20/2023 10:59:39 AM path.exists: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\archive\PICK.aspx True
+06/20/2023 10:59:54 AM 
+            SELECT DISTINCT
+            ISNULL(QID, '') [{idt}] 
+            , Q_TypeCode [{QT_CODE}]  
+            , FK_QuestionType [{FK_QuestionType}]  
+            , PK_Question as [{PK_Question}]
+            , CONVERT(NVARCHAR(9), PK_PickListType) as [{PK_PickListType}]
+            , sortpos [{sortpos}]
+            , QTEXT as [{QuestionText}]  
+            , LEFT(QTEXT, 75) AS [{QT_ABBR}]
+            , help_text AS [{help_text}]
+            , PK_QuestionGroup [{PK_QuestionGroup}]
+            ,   CASE WHEN required_value IS NULL THEN '' 
+                ELSE
+                'data-question_master="r-m-'+REPLACE(master_identifier_text,'.','_')+'" data-value_torequire="^'+required_value+'$"'
+                END AS [{Dependancy}]
+            FROM vwQuestionFormDependancies Q
+          WHERE PK_QuestionGroup IN (4028,4029,4030,4031,4032,4033,4034,4035,4036,4037,4038,4039,4040,4041,4042,4043,4044,4045,4046,4047,4048,4049,4050,4051,4052,4053,4054,4055,4056,4057,4058,4059,4060,4061,4062,4063,4064,4065,4066,4067,4068,4069,4070,4071,4072,4073,4074,4075,4076,4077,4078,4079,4080,4081,4082,4083,4084,4085,4086,4087,4088,4089,4090,4091,4092,4093,4094,4095,4096,4097,4098,4099,4100,4101,4102,4103,4104,4105,4106,4107,4108,4109,4110,4111,4112,4113,4114,4115,4116,4117,4118,4119,4120,4121,4122,4123,4124,4125,4126,4127,4128,4129,4130,4131,4132,4133,4134,4135,4136,4137,4138,4139,4140,4141,4142,4143,4144,4145,4146,4147,4148,4149,4150,4151,4152,4153,4154,4155,4156,4157,4158,4159,4160,4161,4162,4163,4164,4165,4166,4167,4168,4169,4170,4171,4172,4173,4174,4175,4176,4177,4178,4179,4180,4181,4182,4183,4184,4185,4186,4187,4188,4189,4190,4191,4192,4193,4194,4195,4196,4197,4198,4199,4200,4201,4202,4203,4204,4205,4206,4207,4208,4209,4210,4211,4212,4213,4214,4215,4216,4217,4218,4219,4220,4221,4222,4223,4224,4225,4226,4227,4228,4229,4230,4231,4232,4233,4234,4235,4236,4237,4238,4239,4240,4241,4242,4243,4244,4245,4246,4247,4248,4249,4250,4251,4252,4253,4254,4255,4256,4257,4258) ORDER BY SortPos; 
+06/20/2023 10:59:54 AM code_template_path: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\archive\{QT_CODE}.aspx
+06/20/2023 10:59:54 AM path.exists: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\archive\PICK.aspx True
+06/20/2023 10:59:54 AM path.exists: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\archive\PICK.aspx True
+06/20/2023 10:59:59 AM 
+            SELECT DISTINCT
+            ISNULL(QID, '') [{idt}] 
+            , Q_TypeCode [{QT_CODE}]  
+            , FK_QuestionType [{FK_QuestionType}]  
+            , PK_Question as [{PK_Question}]
+            , CONVERT(NVARCHAR(9), PK_PickListType) as [{PK_PickListType}]
+            , sortpos [{sortpos}]
+            , QTEXT as [{QuestionText}]  
+            , LEFT(QTEXT, 75) AS [{QT_ABBR}]
+            , help_text AS [{help_text}]
+            , PK_QuestionGroup [{PK_QuestionGroup}]
+            ,   CASE WHEN required_value IS NULL THEN '' 
+                ELSE
+                'data-question_master="r-m-'+REPLACE(master_identifier_text,'.','_')+'" data-value_torequire="^'+required_value+'$"'
+                END AS [{Dependancy}]
+            FROM vwQuestionFormDependancies Q
+          WHERE PK_QuestionGroup IN (4028,4029,4030,4031,4032,4033,4034,4035,4036,4037,4038,4039,4040,4041,4042,4043,4044,4045,4046,4047,4048,4049,4050,4051,4052,4053,4054,4055,4056,4057,4058,4059,4060,4061,4062,4063,4064,4065,4066,4067,4068,4069,4070,4071,4072,4073,4074,4075,4076,4077,4078,4079,4080,4081,4082,4083,4084,4085,4086,4087,4088,4089,4090,4091,4092,4093,4094,4095,4096,4097,4098,4099,4100,4101,4102,4103,4104,4105,4106,4107,4108,4109,4110,4111,4112,4113,4114,4115,4116,4117,4118,4119,4120,4121,4122,4123,4124,4125,4126,4127,4128,4129,4130,4131,4132,4133,4134,4135,4136,4137,4138,4139,4140,4141,4142,4143,4144,4145,4146,4147,4148,4149,4150,4151,4152,4153,4154,4155,4156,4157,4158,4159,4160,4161,4162,4163,4164,4165,4166,4167,4168,4169,4170,4171,4172,4173,4174,4175,4176,4177,4178,4179,4180,4181,4182,4183,4184,4185,4186,4187,4188,4189,4190,4191,4192,4193,4194,4195,4196,4197,4198,4199,4200,4201,4202,4203,4204,4205,4206,4207,4208,4209,4210,4211,4212,4213,4214,4215,4216,4217,4218,4219,4220,4221,4222,4223,4224,4225,4226,4227,4228,4229,4230,4231,4232,4233,4234,4235,4236,4237,4238,4239,4240,4241,4242,4243,4244,4245,4246,4247,4248,4249,4250,4251,4252,4253,4254,4255,4256,4257,4258) ORDER BY SortPos; 
+06/20/2023 10:59:59 AM code_template_path: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\archive\{QT_CODE}.aspx
+06/20/2023 10:59:59 AM path.exists: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\archive\PICK.aspx True
+06/20/2023 10:59:59 AM path.exists: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\archive\PICK.aspx True
+06/20/2023 11:01:29 AM 
+            SELECT DISTINCT
+            ISNULL(QID, '') [{idt}] 
+            , Q_TypeCode [{QT_CODE}]  
+            , FK_QuestionType [{FK_QuestionType}]  
+            , PK_Question as [{PK_Question}]
+            , CONVERT(NVARCHAR(9), PK_PickListType) as [{PK_PickListType}]
+            , sortpos [{sortpos}]
+            , QTEXT as [{QuestionText}]  
+            , LEFT(QTEXT, 75) AS [{QT_ABBR}]
+            , help_text AS [{help_text}]
+            , PK_QuestionGroup [{PK_QuestionGroup}]
+            ,   CASE WHEN required_value IS NULL THEN '' 
+                ELSE
+                'data-question_master="r-m-'+REPLACE(master_identifier_text,'.','_')+'" data-value_torequire="^'+required_value+'$"'
+                END AS [{Dependancy}]
+            FROM vwQuestionFormDependancies Q
+          WHERE PK_QuestionGroup IN (4028,4029,4030,4031,4032,4033,4034,4035,4036,4037,4038,4039,4040,4041,4042,4043,4044,4045,4046,4047,4048,4049,4050,4051,4052,4053,4054,4055,4056,4057,4058,4059,4060,4061,4062,4063,4064,4065,4066,4067,4068,4069,4070,4071,4072,4073,4074,4075,4076,4077,4078,4079,4080,4081,4082,4083,4084,4085,4086,4087,4088,4089,4090,4091,4092,4093,4094,4095,4096,4097,4098,4099,4100,4101,4102,4103,4104,4105,4106,4107,4108,4109,4110,4111,4112,4113,4114,4115,4116,4117,4118,4119,4120,4121,4122,4123,4124,4125,4126,4127,4128,4129,4130,4131,4132,4133,4134,4135,4136,4137,4138,4139,4140,4141,4142,4143,4144,4145,4146,4147,4148,4149,4150,4151,4152,4153,4154,4155,4156,4157,4158,4159,4160,4161,4162,4163,4164,4165,4166,4167,4168,4169,4170,4171,4172,4173,4174,4175,4176,4177,4178,4179,4180,4181,4182,4183,4184,4185,4186,4187,4188,4189,4190,4191,4192,4193,4194,4195,4196,4197,4198,4199,4200,4201,4202,4203,4204,4205,4206,4207,4208,4209,4210,4211,4212,4213,4214,4215,4216,4217,4218,4219,4220,4221,4222,4223,4224,4225,4226,4227,4228,4229,4230,4231,4232,4233,4234,4235,4236,4237,4238,4239,4240,4241,4242,4243,4244,4245,4246,4247,4248,4249,4250,4251,4252,4253,4254,4255,4256,4257,4258) ORDER BY SortPos; 
+06/20/2023 11:01:29 AM code_template_path: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\archive\{QT_CODE}.aspx
+06/20/2023 12:14:27 PM init
+06/20/2023 12:15:31 PM init
+06/20/2023 12:15:33 PM init
+06/20/2023 12:15:47 PM init
+06/20/2023 12:53:59 PM init
+06/20/2023 12:58:38 PM init
+06/21/2023 06:05:49 PM init
+06/21/2023 06:05:54 PM init
+06/21/2023 06:05:56 PM init
+06/21/2023 06:06:27 PM init
+06/22/2023 01:20:47 PM init
+06/22/2023 01:22:06 PM init
+06/22/2023 01:26:56 PM init
+06/22/2023 01:42:45 PM init
+06/22/2023 01:48:42 PM init
+06/22/2023 01:49:46 PM init
+06/22/2023 01:53:53 PM init
+06/22/2023 01:54:30 PM init
+06/22/2023 01:55:13 PM init
+06/22/2023 01:57:21 PM init
+06/22/2023 01:58:23 PM init
+06/22/2023 01:59:31 PM init
+06/22/2023 01:59:41 PM init
+06/22/2023 02:00:06 PM init
+06/22/2023 02:01:35 PM init
+06/22/2023 02:02:21 PM init
+06/22/2023 02:03:41 PM init
+06/22/2023 02:05:33 PM init
+06/22/2023 02:07:35 PM init
+06/22/2023 02:10:27 PM init
+06/22/2023 02:11:12 PM init
+06/22/2023 02:12:24 PM init
+06/22/2023 02:12:56 PM init
+06/22/2023 02:13:44 PM init
+06/22/2023 02:15:30 PM init
+06/22/2023 02:15:56 PM init
+06/22/2023 02:17:08 PM init
+06/22/2023 02:19:27 PM init
+06/22/2023 02:20:03 PM init
+06/22/2023 02:20:49 PM init
+06/22/2023 02:23:39 PM init
+06/22/2023 02:24:16 PM init
+06/22/2023 02:26:31 PM init
+06/22/2023 02:28:37 PM init
+06/22/2023 02:29:07 PM init
+06/22/2023 02:29:50 PM init
+06/22/2023 02:32:01 PM init
+06/22/2023 02:32:32 PM init
+06/22/2023 02:32:45 PM init
+06/22/2023 02:33:01 PM init
+06/22/2023 02:33:42 PM init
+06/22/2023 02:35:36 PM init
+06/22/2023 02:36:24 PM init
+06/22/2023 02:36:53 PM init
+06/22/2023 02:37:23 PM init
+06/22/2023 02:38:41 PM init
+06/22/2023 02:39:48 PM init
+06/22/2023 02:40:41 PM init
+06/22/2023 02:43:00 PM init
+06/22/2023 02:47:23 PM init
+06/22/2023 02:47:31 PM init
+06/22/2023 02:47:58 PM init
+06/22/2023 02:50:44 PM init
+06/22/2023 02:51:32 PM init
+06/22/2023 02:52:53 PM init
+06/22/2023 02:55:02 PM init
+06/22/2023 02:56:17 PM init
+06/22/2023 02:56:50 PM init
+06/22/2023 02:59:10 PM init
+06/22/2023 03:01:28 PM init
+06/22/2023 03:02:43 PM init
+06/22/2023 03:05:20 PM init
+06/22/2023 03:05:48 PM init
+06/22/2023 04:26:56 PM init
+06/26/2023 10:09:01 PM init
