@@ -29,7 +29,7 @@ class issue_parser():
         for ptag in ptags:
             lines = re.split('\n', ptag.text) 
             for line in lines:  
-                yield {'ptag':ptag , 'line_text':line }
+                yield {'tag':ptag , 'line_text':line }
 
     def parse(self
         , issue_number=None
@@ -64,14 +64,13 @@ class issue_parser():
         for group, issue_number in enumerate(num_range):
 
             print(f'processing: {issue_number}')  
-            issueHTML=self.issue_provider.provide(issue_number) 
-            
+            issueHTML=self.issue_provider.provide(issue_number)  
             for e in line_generator(issueHTML):
                 
                 line_text = e['line_text']
                 metric=re.search(parse_regex,line_text)   
                 
-                self.ctx.logger.info(f'{parse_regex}:{ line_text}')
+                self.ctx.logger.info(f'{parse_regex}:{line_text} :metric {metric}')
                 if(metric): 
 
                     idt=str( metric.groups(1)[0]  )
