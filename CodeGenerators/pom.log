@@ -2798,3 +2798,296 @@ Validations :metric None
 08/29/2023 10:42:31 AM path.exists: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\archive\PICK.aspx True
 08/29/2023 10:42:31 AM path.exists: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\archive\PICK.aspx True
 08/29/2023 10:42:31 AM path.exists: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\archive\PICK.aspx True
+08/29/2023 07:57:18 PM init
+08/29/2023 07:57:24 PM 
+            SELECT DISTINCT
+            ISNULL(QID, '') [{idt}] 
+            , Q_TypeCode [{QT_CODE}]  
+            , FK_QuestionType [{FK_QuestionType}]  
+            , PK_Question as [{PK_Question}]
+            , CONVERT(NVARCHAR(9), PK_PickListType) as [{PK_PickListType}]
+            , sortpos [{sortpos}]
+            , QTEXT as [{QuestionText}]  
+            , LEFT(QTEXT, 75) AS [{QT_ABBR}]
+            , help_text AS [{help_text}]
+            , PK_QuestionGroup [{PK_QuestionGroup}]
+            ,   CASE WHEN required_value IS NULL THEN '' 
+                ELSE
+                'data-question_master="r-m-'+REPLACE(master_identifier_text,'.','_')+'" data-value_torequire="^'+required_value+'$"'
+                END AS [{Dependancy}]
+            FROM vwQuestionFormDependancies Q
+          WHERE PK_QuestionGroup IN (4406) ORDER BY SortPos; 
+08/29/2023 07:57:40 PM code_template_path: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\aspx\ig.sql
+08/29/2023 07:57:40 PM path.exists: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\aspx\ig.sql True
+08/29/2023 07:57:41 PM path.exists: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\aspx\ig.sql True
+08/29/2023 07:57:41 PM path.exists: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\aspx\ig.sql True
+08/29/2023 07:57:41 PM path.exists: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\aspx\ig.sql True
+08/29/2023 07:57:41 PM path.exists: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\aspx\ig.sql True
+08/29/2023 07:57:41 PM path.exists: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\aspx\ig.sql True
+08/29/2023 07:57:41 PM path.exists: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\aspx\ig.sql True
+08/29/2023 07:57:41 PM path.exists: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\aspx\ig.sql True
+08/29/2023 07:57:41 PM path.exists: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\aspx\ig.sql True
+08/29/2023 07:57:41 PM path.exists: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\aspx\ig.sql True
+08/29/2023 07:57:41 PM path.exists: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\aspx\ig.sql True
+08/29/2023 07:57:41 PM path.exists: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\aspx\ig.sql True
+08/29/2023 07:57:41 PM path.exists: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\aspx\ig.sql True
+08/29/2023 07:57:41 PM path.exists: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\aspx\ig.sql True
+08/29/2023 07:57:41 PM path.exists: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\aspx\ig.sql True
+08/29/2023 07:57:41 PM path.exists: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\aspx\ig.sql True
+08/29/2023 07:57:41 PM path.exists: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\aspx\ig.sql True
+08/29/2023 07:57:41 PM path.exists: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\aspx\ig.sql True
+08/29/2023 07:57:41 PM path.exists: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\aspx\ig.sql True
+08/29/2023 07:57:41 PM path.exists: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\aspx\ig.sql True
+08/29/2023 07:57:41 PM path.exists: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\aspx\ig.sql True
+08/29/2023 07:57:41 PM path.exists: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\aspx\ig.sql True
+08/29/2023 07:57:41 PM path.exists: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\aspx\ig.sql True
+08/29/2023 07:57:41 PM path.exists: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\aspx\ig.sql True
+08/29/2023 07:57:41 PM path.exists: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\aspx\ig.sql True
+08/29/2023 07:57:41 PM path.exists: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\aspx\ig.sql True
+08/29/2023 07:57:41 PM path.exists: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\aspx\ig.sql True
+08/29/2023 07:57:41 PM path.exists: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\aspx\ig.sql True
+08/29/2023 07:57:41 PM path.exists: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\aspx\ig.sql True
+08/29/2023 07:57:41 PM path.exists: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\aspx\ig.sql True
+08/29/2023 07:57:41 PM path.exists: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\aspx\ig.sql True
+08/29/2023 07:57:41 PM path.exists: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\snippets\aspx\ig.sql True
+08/29/2023 08:07:17 PM usecache: True cache_file: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\\cache\\9600.html
+08/29/2023 08:07:17 PM ^\s*(\d[\d\.a-z]+)\s{1,9}[A-Z][\s|a-z]?:ISSUE: :metric None
+08/29/2023 08:07:17 PM ^\s*(\d[\d\.a-z]+)\s{1,9}[A-Z][\s|a-z]?:The database script for the FY22 Annual IG Section 2C needs to be created :metric None
+08/29/2023 08:07:17 PM ^\s*(\d[\d\.a-z]+)\s{1,9}[A-Z][\s|a-z]?:WHERE: :metric None
+08/29/2023 08:07:17 PM ^\s*(\d[\d\.a-z]+)\s{1,9}[A-Z][\s|a-z]?:FY22 Annual IF Section 2C- Protect- Data Protection and Privacy :metric None
+08/29/2023 08:07:17 PM ^\s*(\d[\d\.a-z]+)\s{1,9}[A-Z][\s|a-z]?:DETAILS: :metric None
+08/29/2023 08:07:17 PM ^\s*(\d[\d\.a-z]+)\s{1,9}[A-Z][\s|a-z]?:SECTION 2C Security and Privacy Training (Protect) :metric None
+08/29/2023 08:07:17 PM ^\s*(\d[\d\.a-z]+)\s{1,9}[A-Z][\s|a-z]?:Bolded metrics are 'Core Metrics' :metric None
+08/29/2023 08:07:17 PM ^\s*(\d[\d\.a-z]+)\s{1,9}[A-Z][\s|a-z]?:Italicized metrics are 'Required Supplemental' :metric None
+08/29/2023 08:07:17 PM ^\s*(\d[\d\.a-z]+)\s{1,9}[A-Z][\s|a-z]?:35. To what extent has the organization developed a privacy program for the protection of personally identifiable information (PII) that is collected, used, maintained, shared, and disposed of by information systems (NIST SP 800-37 (Rev. 2): Section 2.3 and Task P-1; NIST SP 800-53 (Rev. 5): CA-2, RA-3, RA-8, SA8(33), PM-5(1), PM-20, PM-27, PT-5, PT-6, and SI-12(1); NIST SP 800-122; NIST CSF: ID.GV-3; NIST Privacy Framework; OMB M-19-03; OMB M-20-04; OMB A-130: Appendix I; FY 2022 SAOP FISMA Metrics: Sections 1, 4, and 5(b))? :metric <re.Match object; span=(0, 6), match='35. To'>
+08/29/2023 08:07:17 PM PK_QuestionType: 17
+08/29/2023 08:07:17 PM Note: NumExpr detected 12 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 8.
+08/29/2023 08:07:17 PM NumExpr defaulting to 8 threads.
+08/29/2023 08:07:17 PM ^\s*(\d[\d\.a-z]+)\s{1,9}[A-Z][\s|a-z]?:36. To what extent has the organization implemented the following security controls to protect its PII and other agency sensitive data, as appropriate, throughout the data lifecycle. (NIST SP 800-37 (Rev. 2); NIST SP 800-53 (Rev. 5): SC-8, SC-28, MP-3, MP-6, and SI-12(3); NIST SP 800-207; NIST CSF: PR.DS-1, PR.DS-2, PR.PT-2, and PR.IP-6; NIST Security Measures for EO-Critical Software Use: SM 2.3 and SM 2.4; OMB M-22-09; DHS BOD 18-02; FY 2023 CIO FISMA Metrics: 2.1, 2.1.1 and 2.2; CIS Top 18 Security Controls: Control 3)? :metric <re.Match object; span=(0, 6), match='36. To'>
+08/29/2023 08:07:17 PM PK_QuestionType: 17
+08/29/2023 08:07:17 PM ^\s*(\d[\d\.a-z]+)\s{1,9}[A-Z][\s|a-z]?:37. To what extent has the organization implemented security controls (e.g., EDR) to prevent data exfiltration and enhance network defenses? (NIST SP 800-53 (Rev. 5): SI-3, SI-7(8), SI4(4)(18), SC-7(10), and SC-18; NIST CSF: PR.DS-5; NIST Security Measures for EO-Critical Software Use: SM 4.3; OMB M-21-07; OMB M-22-01; CIS Top 18 Security Controls: Controls 9 and 10; DHS BOD 18-01; DHS ED 19-01)? :metric <re.Match object; span=(0, 6), match='37. To'>
+08/29/2023 08:07:17 PM PK_QuestionType: 17
+08/29/2023 08:07:17 PM ^\s*(\d[\d\.a-z]+)\s{1,9}[A-Z][\s|a-z]?:38. To what extent has the organization developed and implemented a Data Breach Response Plan, as appropriate, to respond to privacy events? (NIST SP 800-53 (Rev. 5): IR-8 and IR-8(1); NIST SP 800-122; OMB M-17-12; OMB M-23-03; FY 2022 SAOP FISMA Metrics: Section 12)? :metric <re.Match object; span=(0, 6), match='38. To'>
+08/29/2023 08:07:17 PM PK_QuestionType: 17
+08/29/2023 08:07:17 PM ^\s*(\d[\d\.a-z]+)\s{1,9}[A-Z][\s|a-z]?:39. To what extent does the organization ensure that privacy awareness training is provided to all individuals, including role-based privacy training? (Note: Privacy awareness training topics should include, as appropriate: responsibilities under the Privacy Act of 1974 and EGovernment Act of 2002, consequences for failing to carry out responsibilities, identifying privacy risks, mitigating privacy risks, and reporting privacy incidents, data collections and use requirements) (NIST SP 800-53 (Rev. 5): AT-1, AT-2, AT-3, and PL-4; FY 2022 SAOP FISMA Metrics: Section 9, 10, and 11) :metric <re.Match object; span=(0, 6), match='39. To'>
+08/29/2023 08:07:17 PM PK_QuestionType: 17
+08/29/2023 08:07:17 PM ^\s*(\d[\d\.a-z]+)\s{1,9}[A-Z][\s|a-z]?:40.1 Please provide the assessed maturity level for the agency's Protect - Data Protection and Privacy program. :metric <re.Match object; span=(0, 7), match='40.1 Pl'>
+08/29/2023 08:07:17 PM PK_QuestionType: 17
+08/29/2023 08:07:17 PM ^\s*(\d[\d\.a-z]+)\s{1,9}[A-Z][\s|a-z]?:40.2 Provide any additional information on the effectiveness (positive or negative) of the organizations data protection and privacy program that was not noted in the questions above. Taking into consideration the maturity level generated from the questions above and based on all testing performed, is the data protection and privacy program effective? :metric <re.Match object; span=(0, 7), match='40.2 Pr'>
+08/29/2023 08:07:17 PM PK_QuestionType: 9
+08/29/2023 08:07:17 PM ^\s*(\d[\d\.a-z]+)\s{1,9}[A-Z][\s|a-z]?:REQUIREMENT SOURCE: :metric None
+08/29/2023 08:07:17 PM ^\s*(\d[\d\.a-z]+)\s{1,9}[A-Z][\s|a-z]?:OMB DHS/FNR :metric None
+08/29/2023 08:07:17 PM ^\s*(\d[\d\.a-z]+)\s{1,9}[A-Z][\s|a-z]?:DEVELOPER'S NOTES: :metric None
+08/29/2023 08:07:17 PM ^\s*(\d[\d\.a-z]+)\s{1,9}[A-Z][\s|a-z]?:Developers, please enter what files were changed and what was fixed in this section :metric None
+08/29/2023 08:07:17 PM usecache: True cache_file: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\\cache\\9601.html
+08/29/2023 08:07:17 PM ^\s*(\d[\d\.a-z]+)\s{1,9}[A-Z][\s|a-z]?:ISSUE: :metric None
+08/29/2023 08:07:17 PM ^\s*(\d[\d\.a-z]+)\s{1,9}[A-Z][\s|a-z]?:The database script for the FY22 Annual IG Section 2D needs to be created :metric None
+08/29/2023 08:07:17 PM ^\s*(\d[\d\.a-z]+)\s{1,9}[A-Z][\s|a-z]?:WHERE: :metric None
+08/29/2023 08:07:17 PM ^\s*(\d[\d\.a-z]+)\s{1,9}[A-Z][\s|a-z]?:FY22 Annual IG: Section 2D- Protect- Security Training :metric None
+08/29/2023 08:07:17 PM ^\s*(\d[\d\.a-z]+)\s{1,9}[A-Z][\s|a-z]?:DETAILS: :metric None
+08/29/2023 08:07:17 PM ^\s*(\d[\d\.a-z]+)\s{1,9}[A-Z][\s|a-z]?:Section 2D- Protect- Security Training :metric None
+08/29/2023 08:07:17 PM ^\s*(\d[\d\.a-z]+)\s{1,9}[A-Z][\s|a-z]?:Bolded metrics are 'Core Metrics' :metric None
+08/29/2023 08:07:17 PM ^\s*(\d[\d\.a-z]+)\s{1,9}[A-Z][\s|a-z]?:Italicized metrics are 'Required Supplemental' :metric None
+08/29/2023 08:07:17 PM ^\s*(\d[\d\.a-z]+)\s{1,9}[A-Z][\s|a-z]?:41. To what degree have the roles and responsibilities of security awareness and training program stakeholders been defined, communicated across the agency, and appropriately resourced? (Note: this includes the roles and responsibilities for the effective establishment and maintenance of an organization wide security awareness and training program as well as the awareness and training related roles and responsibilities of system users and those with significant security responsibilities (NIST SP 800-50; NIST SP 800-53 (Rev. 5): AT-1; Green Book: Principles 3, 4, and 5). :metric <re.Match object; span=(0, 6), match='41. To'>
+08/29/2023 08:07:17 PM PK_QuestionType: 17
+08/29/2023 08:07:17 PM ^\s*(\d[\d\.a-z]+)\s{1,9}[A-Z][\s|a-z]?:  :metric None
+08/29/2023 08:07:17 PM ^\s*(\d[\d\.a-z]+)\s{1,9}[A-Z][\s|a-z]?:42. To what extent does the organization utilize an assessment of the skills, knowledge, and abilities of its workforce to provide tailored awareness and specialized security training within the functional areas of: identify, protect, detect, respond, and recover (NIST SP 800-50: Section 3.2; NIST SP 800-53 (Rev. 5): AT-2, AT-3, and PM-13; NIST SP 800-181; Federal Cybersecurity Workforce Assessment Act of 2015; National Cybersecurity Workforce Framework; CIS Top 18 Security Controls: Control 14; FY 2023 CIO FISMA Metrics: 6.1; EO 13870)? :metric <re.Match object; span=(0, 6), match='42. To'>
+08/29/2023 08:07:17 PM PK_QuestionType: 17
+08/29/2023 08:07:17 PM ^\s*(\d[\d\.a-z]+)\s{1,9}[A-Z][\s|a-z]?:  :metric None
+08/29/2023 08:07:17 PM ^\s*(\d[\d\.a-z]+)\s{1,9}[A-Z][\s|a-z]?:43. To what extent does the organization utilize a security awareness and training strategy/plan that leverages its organizational skills assessment and is adapted to its culture? (Note: the strategy/plan should include the following components: the structure of the awareness and training program, priorities, funding, the goals of the program, target audiences, types of courses/material for each audience, use of technologies (such as email advisories, intranet updates/wiki pages/social media, web based training, phishing simulation tools), frequency of training, and deployment methods (NIST SP 800-50: Section 3; NIST SP 800-53 (Rev. 5): AT-1; NIST CSF: PR.AT-1; OMB M-16-15). :metric <re.Match object; span=(0, 6), match='43. To'>
+08/29/2023 08:07:17 PM PK_QuestionType: 17
+08/29/2023 08:07:17 PM ^\s*(\d[\d\.a-z]+)\s{1,9}[A-Z][\s|a-z]?:44. To what degree does the organization ensure that security awareness training is provided to all system users and is tailored based on its organizational requirements, culture, and types of information systems? (Note: awareness training topics should include, as appropriate: consideration of organizational policies, roles and responsibilities, secure e-mail, browsing, and remote access practices, mobile device security, secure use of social media, phishing, malware, physical security, and security incident reporting (NIST SP 800-50: 6.2; NIST SP 800-53 (Rev. 5): AT-1 and AT-2; NIST CSF: PR.AT-2; CIS Top 18 Security Controls: Control 14).  :metric <re.Match object; span=(0, 6), match='44. To'>
+08/29/2023 08:07:17 PM PK_QuestionType: 17
+08/29/2023 08:07:17 PM ^\s*(\d[\d\.a-z]+)\s{1,9}[A-Z][\s|a-z]?:45. To what extent does the organization ensure that specialized security training is provided to individuals with significant security responsibilities (as defined in the organization's security policies and procedures and in accordance with 5 Code of Federal Regulation 930.301) (NIST SP 800-53 (Rev. 5): AT-3 and AT-4; EO 13870; 5 Code of Federal Regulation 930.301)? :metric <re.Match object; span=(0, 6), match='45. To'>
+08/29/2023 08:07:17 PM PK_QuestionType: 17
+08/29/2023 08:07:17 PM ^\s*(\d[\d\.a-z]+)\s{1,9}[A-Z][\s|a-z]?:46.1 Please provide the assessed maturity level for the agency's Protect - Security Training program. :metric <re.Match object; span=(0, 7), match='46.1 Pl'>
+08/29/2023 08:07:17 PM PK_QuestionType: 17
+08/29/2023 08:07:17 PM ^\s*(\d[\d\.a-z]+)\s{1,9}[A-Z][\s|a-z]?:46.2 Please provide the assessed maturity level for the agency's Protect Function. :metric <re.Match object; span=(0, 7), match='46.2 Pl'>
+08/29/2023 08:07:17 PM PK_QuestionType: 17
+08/29/2023 08:07:17 PM ^\s*(\d[\d\.a-z]+)\s{1,9}[A-Z][\s|a-z]?:46.3 Provide any additional information on the effectiveness (positive or negative) of the organizations security training program that was not noted in the questions above. Taking into consideration the maturity level generated from the questions above and based on all testing performed, is the security training program effective? :metric <re.Match object; span=(0, 7), match='46.3 Pr'>
+08/29/2023 08:07:17 PM PK_QuestionType: 9
+08/29/2023 08:07:17 PM ^\s*(\d[\d\.a-z]+)\s{1,9}[A-Z][\s|a-z]?:REQUIREMENT SOURCE: :metric None
+08/29/2023 08:07:17 PM ^\s*(\d[\d\.a-z]+)\s{1,9}[A-Z][\s|a-z]?:OMB DHS/FNR :metric None
+08/29/2023 08:07:17 PM ^\s*(\d[\d\.a-z]+)\s{1,9}[A-Z][\s|a-z]?:DEVELOPER'S NOTES: :metric None
+08/29/2023 08:07:17 PM ^\s*(\d[\d\.a-z]+)\s{1,9}[A-Z][\s|a-z]?:Developers, please enter what files were changed and what was fixed in this section :metric None
+08/29/2023 08:07:17 PM usecache: True cache_file: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\\cache\\9602.html
+08/29/2023 08:07:17 PM ^\s*(\d[\d\.a-z]+)\s{1,9}[A-Z][\s|a-z]?:ISSUE: :metric None
+08/29/2023 08:07:17 PM ^\s*(\d[\d\.a-z]+)\s{1,9}[A-Z][\s|a-z]?:The database script for the FY22 Annual IG Section 3 needs to be created :metric None
+08/29/2023 08:07:17 PM ^\s*(\d[\d\.a-z]+)\s{1,9}[A-Z][\s|a-z]?:WHERE: :metric None
+08/29/2023 08:07:17 PM ^\s*(\d[\d\.a-z]+)\s{1,9}[A-Z][\s|a-z]?:FY22 Annual IG Section 3- Detect- ISCM :metric None
+08/29/2023 08:07:17 PM ^\s*(\d[\d\.a-z]+)\s{1,9}[A-Z][\s|a-z]?:DETAILS: :metric None
+08/29/2023 08:07:17 PM ^\s*(\d[\d\.a-z]+)\s{1,9}[A-Z][\s|a-z]?:Section 3- Detect- ISCM :metric None
+08/29/2023 08:07:17 PM ^\s*(\d[\d\.a-z]+)\s{1,9}[A-Z][\s|a-z]?:Bolded metrics are 'Core Metrics' :metric None
+08/29/2023 08:07:17 PM ^\s*(\d[\d\.a-z]+)\s{1,9}[A-Z][\s|a-z]?:Italicized metrics are 'Required Supplemental' :metric None
+08/29/2023 08:07:17 PM ^\s*(\d[\d\.a-z]+)\s{1,9}[A-Z][\s|a-z]?:47. To what extent does the organization use information security continuous monitoring (ISCM) policies and an ISCM strategy that addresses ISCM requirements and activities at each organizational tier (NIST SP 800-37 (Rev. 2): Task P-7; NIST SP 800-53 (Rev. 5): CA-7, PM-6, PM-14, and PM-31; NIST SP 800-137: Sections 3.1 and 3.6; NIST Security Measures for EO-Critical Software Use: SM 4.2; CIS Top 18 Security Controls: Control 13)? :metric <re.Match object; span=(0, 6), match='47. To'>
+08/29/2023 08:07:17 PM PK_QuestionType: 17
+08/29/2023 08:07:17 PM ^\s*(\d[\d\.a-z]+)\s{1,9}[A-Z][\s|a-z]?:48. To what extent have ISCM stakeholders and their roles, responsibilities, levels of authority, and dependencies been defined, communicated, and implemented across the organization (NIST SP 800-37 (Rev. 2): Tasks P-7 and S-5; NIST SP 800-53 (Rev. 5): CA-1; NIST SP 800-137; NIST CSF: DE.DP-1; Green Book: Principles 3, 4, and 5)? :metric <re.Match object; span=(0, 6), match='48. To'>
+08/29/2023 08:07:17 PM PK_QuestionType: 17
+08/29/2023 08:07:17 PM ^\s*(\d[\d\.a-z]+)\s{1,9}[A-Z][\s|a-z]?:  :metric None
+08/29/2023 08:07:17 PM ^\s*(\d[\d\.a-z]+)\s{1,9}[A-Z][\s|a-z]?:49. How mature are the organization's processes for performing ongoing information system assessments, granting system authorizations, including developing and maintaining system security plans, and monitoring system security controls (NIST SP 800-18 (Rev. 1); NIST SP 800-37 (Rev. 2): Task S-5; NIST SP 800-53 (Rev. 5): CA-2, CA-5, CA-6, CA-7, PL-2, and PM-10; NIST SP 800-137: Section 2.2; NIST IR 8011; NIST IR 8397; OMB A-130; OMB M-14-03; OMB M-19-03; OMB M-22-09; FY 2023 CIO FISMA Metrics: 7.1)? :metric <re.Match object; span=(0, 6), match='49. Ho'>
+08/29/2023 08:07:17 PM PK_QuestionType: 17
+08/29/2023 08:07:17 PM ^\s*(\d[\d\.a-z]+)\s{1,9}[A-Z][\s|a-z]?:50. How mature is the organization's process for collecting and analyzing ISCM performance measures and reporting findings (NIST SP 800-137)? :metric <re.Match object; span=(0, 6), match='50. Ho'>
+08/29/2023 08:07:17 PM PK_QuestionType: 17
+08/29/2023 08:07:17 PM ^\s*(\d[\d\.a-z]+)\s{1,9}[A-Z][\s|a-z]?:51.1 Please provide the assessed maturity level for the agency's Detect - ISCM function. :metric <re.Match object; span=(0, 7), match='51.1 Pl'>
+08/29/2023 08:07:17 PM PK_QuestionType: 17
+08/29/2023 08:07:17 PM ^\s*(\d[\d\.a-z]+)\s{1,9}[A-Z][\s|a-z]?:51.2 Provide any additional information on the effectiveness (positive or negative) of the organizations ISCM program that was not noted in the questions above. Taking into consideration the maturity level generated from the questions above and based on all testing performed, is the ISCM program effective? :metric <re.Match object; span=(0, 7), match='51.2 Pr'>
+08/29/2023 08:07:17 PM PK_QuestionType: 9
+08/29/2023 08:07:17 PM ^\s*(\d[\d\.a-z]+)\s{1,9}[A-Z][\s|a-z]?:REQUIREMENT SOURCE: :metric None
+08/29/2023 08:07:17 PM ^\s*(\d[\d\.a-z]+)\s{1,9}[A-Z][\s|a-z]?:OMB DHS/FNR :metric None
+08/29/2023 08:07:17 PM ^\s*(\d[\d\.a-z]+)\s{1,9}[A-Z][\s|a-z]?:DEVELOPER'S NOTES: :metric None
+08/29/2023 08:07:17 PM ^\s*(\d[\d\.a-z]+)\s{1,9}[A-Z][\s|a-z]?:Developers, please enter what files were changed and what was fixed in this section :metric None
+08/29/2023 08:07:17 PM usecache: True cache_file: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\\cache\\9603.html
+08/29/2023 08:07:17 PM ^\s*(\d[\d\.a-z]+)\s{1,9}[A-Z][\s|a-z]?:ISSUE: :metric None
+08/29/2023 08:07:17 PM ^\s*(\d[\d\.a-z]+)\s{1,9}[A-Z][\s|a-z]?:The database script for the FY22 Annual IG Section 4 needs to be created :metric None
+08/29/2023 08:07:17 PM ^\s*(\d[\d\.a-z]+)\s{1,9}[A-Z][\s|a-z]?:WHERE: :metric None
+08/29/2023 08:07:17 PM ^\s*(\d[\d\.a-z]+)\s{1,9}[A-Z][\s|a-z]?:FY22 Annual IG: Section 4- Respond- Incident Response :metric None
+08/29/2023 08:07:17 PM ^\s*(\d[\d\.a-z]+)\s{1,9}[A-Z][\s|a-z]?:DETAILS: :metric None
+08/29/2023 08:07:17 PM ^\s*(\d[\d\.a-z]+)\s{1,9}[A-Z][\s|a-z]?:Section 4- Respond- Incident Response :metric None
+08/29/2023 08:07:17 PM ^\s*(\d[\d\.a-z]+)\s{1,9}[A-Z][\s|a-z]?:Bolded metrics are 'Core Metrics' :metric None
+08/29/2023 08:07:17 PM ^\s*(\d[\d\.a-z]+)\s{1,9}[A-Z][\s|a-z]?:Italicized metrics 'Required Supplemental' :metric None
+08/29/2023 08:07:17 PM ^\s*(\d[\d\.a-z]+)\s{1,9}[A-Z][\s|a-z]?:52. To what extent does the organization use an incident response plan to provide a formal, focused, and coordinated approach to responding to incidents (NIST SP 800-53 (Rev. 5): IR-8; NIST SP 800-61 (Rev. 2): Section 2.3.2; NIST CSF: RS.RP1; Presidential Policy Directive (PPD) 8  National Preparedness; FY 2023 CIO FISMA Metrics: 10.1.1; FY 2022 CIO FISMA Metrics: 10.6)? :metric <re.Match object; span=(0, 6), match='52. To'>
+08/29/2023 08:07:17 PM PK_QuestionType: 17
+08/29/2023 08:07:17 PM ^\s*(\d[\d\.a-z]+)\s{1,9}[A-Z][\s|a-z]?:53. To what extent have incident response team structures/models, stakeholders, and their roles, responsibilities, levels of authority, and dependencies been defined, communicated, and implemented across the organization (NIST SP 800-53 (Rev. 5) IR-7; NIST SP 800-61 (Rev. 2); NIST SP 800-83; NIST CSF: RS.CO1; OMB M-20-04; US-CERT Federal Incident Notification Guidelines; Green Book: Principles 3, 4, and 5)? :metric <re.Match object; span=(0, 6), match='53. To'>
+08/29/2023 08:07:17 PM PK_QuestionType: 17
+08/29/2023 08:07:17 PM ^\s*(\d[\d\.a-z]+)\s{1,9}[A-Z][\s|a-z]?:  :metric None
+08/29/2023 08:07:17 PM ^\s*(\d[\d\.a-z]+)\s{1,9}[A-Z][\s|a-z]?:54. How mature are the organization's processes for incident detection and analysis (NIST SP 800-53 (Rev. 5): IR-4, IR-5, and IR-6; NIST SP 800-61 (Rev. 2); NIST CSF: DE.AE1 -5, PR.DS-6, RS.AN-1, RS.AN-4, and PR.DS-8; OMB M-20-04; OMB M-21-31; OMB M-22-01; OMB M-23-03; CISA Cybersecurity Incident Response Playbooks; CIS Top 18 Security Controls: Control 17; US-CERT Federal Incident Notification Guidelines; FY 2023 CIO FISMA Metrics: 3.1, 10.4, 10.5, and 10.6)?{} :metric <re.Match object; span=(0, 6), match='54. Ho'>
+08/29/2023 08:07:17 PM PK_QuestionType: 17
+08/29/2023 08:07:17 PM ^\s*(\d[\d\.a-z]+)\s{1,9}[A-Z][\s|a-z]?:  :metric None
+08/29/2023 08:07:17 PM ^\s*(\d[\d\.a-z]+)\s{1,9}[A-Z][\s|a-z]?:55. How mature are the organization's processes for incident handling (NIST SP 800-53 (Rev. 5): IR-4; NIST SP 800-61 (Rev. 2); NIST IR 8374; NIST CSF: RS.MI1 and RS.MI-2; OMB M-21-31; OMB M-23-03; CISA Cybersecurity Incident Response Playbooks; FY 2023 CIO FISMA Metrics: 10.4, 10.5, and 10.6)? :metric <re.Match object; span=(0, 6), match='55. Ho'>
+08/29/2023 08:07:17 PM PK_QuestionType: 17
+08/29/2023 08:07:17 PM ^\s*(\d[\d\.a-z]+)\s{1,9}[A-Z][\s|a-z]?:56. To what extent does the organization ensure that incident response information is shared with individuals with significant security responsibilities and reported to external stakeholders in a timely manner (FISMA; NIST SP 800-53 (Rev. 5): IR-6; NIST CSF: RS.CO2 through RS.CO-5; OMB M-20-04; US-CERT Federal Incident Notification Guidelines; PPD-41; DHS Cyber Incident Reporting Unified Message)? :metric <re.Match object; span=(0, 6), match='56. To'>
+08/29/2023 08:07:17 PM PK_QuestionType: 17
+08/29/2023 08:07:17 PM ^\s*(\d[\d\.a-z]+)\s{1,9}[A-Z][\s|a-z]?:57. To what extent does the organization collaborate with stakeholders to ensure on-site, technical assistance/surge capabilities can be leveraged for quickly responding to incidents, including through contracts/agreements, as appropriate, for incident response support (NIST SP 800-53 (Rev. 5): IR-4; NIST SP 800-86; OMB M-20-04; PPD-41; NCPS Cloud Interface Reference Architecture)? :metric <re.Match object; span=(0, 6), match='57. To'>
+08/29/2023 08:07:17 PM PK_QuestionType: 17
+08/29/2023 08:07:17 PM ^\s*(\d[\d\.a-z]+)\s{1,9}[A-Z][\s|a-z]?:  :metric None
+08/29/2023 08:07:17 PM ^\s*(\d[\d\.a-z]+)\s{1,9}[A-Z][\s|a-z]?:58. To what extent does the organization use the following technology to support its incident response program (NIST SP 800-44; NIST SP 800-61 (Rev. 2); NIST SP 800-137; OMB M-22-01; OMB M-22-09)? :metric <re.Match object; span=(0, 6), match='58. To'>
+08/29/2023 08:07:17 PM PK_QuestionType: 17
+08/29/2023 08:07:17 PM ^\s*(\d[\d\.a-z]+)\s{1,9}[A-Z][\s|a-z]?:Web application protections, such as web application firewalls :metric None
+08/29/2023 08:07:17 PM ^\s*(\d[\d\.a-z]+)\s{1,9}[A-Z][\s|a-z]?:Event and incident management, such as intrusion detection and prevention tools, and incident tracking and reporting tools :metric None
+08/29/2023 08:07:17 PM ^\s*(\d[\d\.a-z]+)\s{1,9}[A-Z][\s|a-z]?:Aggregation and analysis, such as security information and event management (SIEM) products :metric None
+08/29/2023 08:07:17 PM ^\s*(\d[\d\.a-z]+)\s{1,9}[A-Z][\s|a-z]?:Malware detection, such as antivirus and antispam software technologies :metric None
+08/29/2023 08:07:17 PM ^\s*(\d[\d\.a-z]+)\s{1,9}[A-Z][\s|a-z]?:Information management, such as data loss prevention :metric None
+08/29/2023 08:07:17 PM ^\s*(\d[\d\.a-z]+)\s{1,9}[A-Z][\s|a-z]?:File integrity and endpoint and server security tools :metric None
+08/29/2023 08:07:17 PM ^\s*(\d[\d\.a-z]+)\s{1,9}[A-Z][\s|a-z]?:59.1 Please provide the assessed maturity level for the agency's Respond - Incident Response function. :metric <re.Match object; span=(0, 7), match='59.1 Pl'>
+08/29/2023 08:07:17 PM PK_QuestionType: 17
+08/29/2023 08:07:17 PM ^\s*(\d[\d\.a-z]+)\s{1,9}[A-Z][\s|a-z]?:59.2 Provide any additional information on the effectiveness (positive or negative) of the organizations incident response program that was not noted in the questions above. Taking into consideration the maturity level generated from the questions above and based on all testing performed, is the incident response program effective? :metric <re.Match object; span=(0, 7), match='59.2 Pr'>
+08/29/2023 08:07:17 PM PK_QuestionType: 9
+08/29/2023 08:07:17 PM ^\s*(\d[\d\.a-z]+)\s{1,9}[A-Z][\s|a-z]?:REQUIREMENT SOURCE: :metric None
+08/29/2023 08:07:17 PM ^\s*(\d[\d\.a-z]+)\s{1,9}[A-Z][\s|a-z]?:OMB DHS/FNR :metric None
+08/29/2023 08:07:17 PM ^\s*(\d[\d\.a-z]+)\s{1,9}[A-Z][\s|a-z]?:DEVELOPER'S NOTE: :metric None
+08/29/2023 08:07:17 PM ^\s*(\d[\d\.a-z]+)\s{1,9}[A-Z][\s|a-z]?:Developers, please enter what files were changed and what was fixed in this section :metric None
+08/29/2023 08:07:17 PM usecache: True cache_file: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\\cache\\9604.html
+08/29/2023 08:07:17 PM ^\s*(\d[\d\.a-z]+)\s{1,9}[A-Z][\s|a-z]?:ISSUE: :metric None
+08/29/2023 08:07:17 PM ^\s*(\d[\d\.a-z]+)\s{1,9}[A-Z][\s|a-z]?:The database script for the FY22 Annual IG Section 5 needs to be created :metric None
+08/29/2023 08:07:17 PM ^\s*(\d[\d\.a-z]+)\s{1,9}[A-Z][\s|a-z]?:WHERE: :metric None
+08/29/2023 08:07:17 PM ^\s*(\d[\d\.a-z]+)\s{1,9}[A-Z][\s|a-z]?:FY22 Annual IG Section 5: Recover- Contingency Planning :metric None
+08/29/2023 08:07:17 PM ^\s*(\d[\d\.a-z]+)\s{1,9}[A-Z][\s|a-z]?:DETAILS: :metric None
+08/29/2023 08:07:17 PM ^\s*(\d[\d\.a-z]+)\s{1,9}[A-Z][\s|a-z]?:Section 5: Recover- Contingency Planning :metric None
+08/29/2023 08:07:17 PM ^\s*(\d[\d\.a-z]+)\s{1,9}[A-Z][\s|a-z]?:Bolded metrics are 'Core Metrics' :metric None
+08/29/2023 08:07:17 PM ^\s*(\d[\d\.a-z]+)\s{1,9}[A-Z][\s|a-z]?:Italicized metrics are 'Required Supplemental' :metric None
+08/29/2023 08:07:17 PM ^\s*(\d[\d\.a-z]+)\s{1,9}[A-Z][\s|a-z]?:  :metric None
+08/29/2023 08:07:17 PM ^\s*(\d[\d\.a-z]+)\s{1,9}[A-Z][\s|a-z]?:60. To what extent have roles and responsibilities of stakeholders involved in information systems contingency planning been defined, communicated, and implemented across the organization, including appropriate delegations of authority (NIST SP 800-34; NIST SP 800-53 (Rev. 5): CP-1, CP-2, and CP-3; NIST SP 800-84; FCD-1: Annex B)? :metric <re.Match object; span=(0, 6), match='60. To'>
+08/29/2023 08:07:17 PM PK_QuestionType: 17
+08/29/2023 08:07:17 PM ^\s*(\d[\d\.a-z]+)\s{1,9}[A-Z][\s|a-z]?:61. To what extent does the organization ensure that the results of business impact analyses (BIA) are used to guide contingency planning efforts (NIST SP 800-34 (Rev. 1): Section 3.2; NIST SP 800-53 (Rev. 5): CP-2 and RA-9; NIST IR 8179; NIST IR 8286; NIST IR 8286D; NIST CSF: ID.RA4; FIPS 199; FCD-1; FCD-2; OMB M-19-03)? :metric <re.Match object; span=(0, 6), match='61. To'>
+08/29/2023 08:07:17 PM PK_QuestionType: 17
+08/29/2023 08:07:17 PM ^\s*(\d[\d\.a-z]+)\s{1,9}[A-Z][\s|a-z]?:  :metric None
+08/29/2023 08:07:17 PM ^\s*(\d[\d\.a-z]+)\s{1,9}[A-Z][\s|a-z]?:62. To what extent does the organization ensure that information system contingency plans are developed, maintained, and integrated with other continuity plans (NIST SP 800-34; NIST SP 800-53 (Rev. 5) CP-2; NIST CSF: PR.IP-9; FY 2023 CIO FISMA Metrics: 10.1.2, 10.2, and 10.3  OMB M-19-03)? :metric <re.Match object; span=(0, 6), match='62. To'>
+08/29/2023 08:07:17 PM PK_QuestionType: 17
+08/29/2023 08:07:17 PM ^\s*(\d[\d\.a-z]+)\s{1,9}[A-Z][\s|a-z]?:  :metric None
+08/29/2023 08:07:17 PM ^\s*(\d[\d\.a-z]+)\s{1,9}[A-Z][\s|a-z]?:63. To what extent does the organization perform tests/exercises of its information system contingency planning processes (NIST SP 800-34; NIST SP 800-53 (Rev. 5): CP-3 and CP-4; NIST CSF: ID.SC-5 and PR.IP-10; CIS Top 18 Security Controls: Control 11)? :metric <re.Match object; span=(0, 6), match='63. To'>
+08/29/2023 08:07:17 PM PK_QuestionType: 17
+08/29/2023 08:07:17 PM ^\s*(\d[\d\.a-z]+)\s{1,9}[A-Z][\s|a-z]?:  :metric None
+08/29/2023 08:07:17 PM ^\s*(\d[\d\.a-z]+)\s{1,9}[A-Z][\s|a-z]?:64. To what extent does the organization perform information system backup and storage, including use of alternate storage and processing sites, as appropriate (NIST SP 800-34: Sections 3.4.1 through 3.4.3; NIST SP 800-53 (Rev. 5): CP-6, CP-7, CP-8, CP-9, and CP10; NIST SP 800-209; NIST CSF: PR.IP-4; FCD-1; FY 2023 CIO FISMA Metrics: 10.3.1 and 10.3.2  NIST Security Measures for EOCritical Software Use: SM 2.5)? :metric <re.Match object; span=(0, 6), match='64. To'>
+08/29/2023 08:07:17 PM PK_QuestionType: 17
+08/29/2023 08:07:17 PM ^\s*(\d[\d\.a-z]+)\s{1,9}[A-Z][\s|a-z]?:  :metric None
+08/29/2023 08:07:17 PM ^\s*(\d[\d\.a-z]+)\s{1,9}[A-Z][\s|a-z]?:65. To what level does the organization ensure that information on the planning and performance of recovery activities is communicated to internal stakeholders and executive management teams and used to make risk-based decisions (NIST SP 800-53 (Rev. 5): CP-2 and IR-4; NIST CSF: RC.CO3)? :metric <re.Match object; span=(0, 6), match='65. To'>
+08/29/2023 08:07:17 PM PK_QuestionType: 17
+08/29/2023 08:07:17 PM ^\s*(\d[\d\.a-z]+)\s{1,9}[A-Z][\s|a-z]?:  :metric None
+08/29/2023 08:07:17 PM ^\s*(\d[\d\.a-z]+)\s{1,9}[A-Z][\s|a-z]?:66.1 Please provide the assessed maturity level for the agency's Recover - Contingency Planning function. :metric <re.Match object; span=(0, 7), match='66.1 Pl'>
+08/29/2023 08:07:17 PM PK_QuestionType: 17
+08/29/2023 08:07:17 PM ^\s*(\d[\d\.a-z]+)\s{1,9}[A-Z][\s|a-z]?:66.2 Provide any additional information on the effectiveness (positive or negative) of the organizations contingency planning program that was not noted in the questions above. Taking into consideration the maturity level generated from the questions above and based on all testing performed, is the contingency program effective? :metric <re.Match object; span=(0, 7), match='66.2 Pr'>
+08/29/2023 08:07:17 PM PK_QuestionType: 9
+08/29/2023 08:07:17 PM ^\s*(\d[\d\.a-z]+)\s{1,9}[A-Z][\s|a-z]?:REQUIREMENT SOURCE: :metric None
+08/29/2023 08:07:17 PM ^\s*(\d[\d\.a-z]+)\s{1,9}[A-Z][\s|a-z]?:OMB DHS/FNR :metric None
+08/29/2023 08:07:17 PM ^\s*(\d[\d\.a-z]+)\s{1,9}[A-Z][\s|a-z]?:DEVELOPER'S NOTES: :metric None
+08/29/2023 08:07:17 PM ^\s*(\d[\d\.a-z]+)\s{1,9}[A-Z][\s|a-z]?:Developers, please enter what files were changed and what was fixed in this section :metric None
+09/01/2023 01:44:51 PM usecache: False cache_file: C:\Users\timko\source\repos\PythonBoiler\CodeGenerators\\cache\\9784.html
+09/01/2023 01:44:52 PM POST http://127.0.0.1:59251/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"browserName": "chrome", "platformName": "any", "goog:chromeOptions": {"extensions": [], "args": ["--start-minimized", "--window-size=1220,980"]}}}, "desiredCapabilities": {"browserName": "chrome", "version": "", "platform": "ANY", "goog:chromeOptions": {"extensions": [], "args": ["--start-minimized", "--window-size=1220,980"]}}}
+09/01/2023 01:44:52 PM Starting new HTTP connection (1): 127.0.0.1:59251
+09/01/2023 01:44:53 PM http://127.0.0.1:59251 "POST /session HTTP/1.1" 200 861
+09/01/2023 01:44:53 PM Finished Request
+09/01/2023 01:44:53 PM POST http://127.0.0.1:59251/session/200eada25aebdb66565389f4d3abbdd8/url {"url": "https://dayman.cyber-balance.com/jira/login.jsp"}
+09/01/2023 01:44:54 PM http://127.0.0.1:59251 "POST /session/200eada25aebdb66565389f4d3abbdd8/url HTTP/1.1" 200 14
+09/01/2023 01:44:54 PM Finished Request
+09/01/2023 01:44:54 PM POST http://127.0.0.1:59251/session/200eada25aebdb66565389f4d3abbdd8/element {"using": "xpath", "value": "//input[contains(@id, \"user\")]"}
+09/01/2023 01:44:54 PM http://127.0.0.1:59251 "POST /session/200eada25aebdb66565389f4d3abbdd8/element HTTP/1.1" 200 94
+09/01/2023 01:44:54 PM Finished Request
+09/01/2023 01:44:54 PM POST http://127.0.0.1:59251/session/200eada25aebdb66565389f4d3abbdd8/element/87053D5697D4F50A02C48CB4D1A6DEA0_element_6/value {"text": "tim.kopp", "value": ["t", "i", "m", ".", "k", "o", "p", "p"], "id": "87053D5697D4F50A02C48CB4D1A6DEA0_element_6"}
+09/01/2023 01:44:54 PM http://127.0.0.1:59251 "POST /session/200eada25aebdb66565389f4d3abbdd8/element/87053D5697D4F50A02C48CB4D1A6DEA0_element_6/value HTTP/1.1" 200 14
+09/01/2023 01:44:54 PM Finished Request
+09/01/2023 01:44:54 PM POST http://127.0.0.1:59251/session/200eada25aebdb66565389f4d3abbdd8/element {"using": "xpath", "value": "//input[contains(@id, \"pass\")]"}
+09/01/2023 01:44:54 PM http://127.0.0.1:59251 "POST /session/200eada25aebdb66565389f4d3abbdd8/element HTTP/1.1" 200 94
+09/01/2023 01:44:54 PM Finished Request
+09/01/2023 01:44:54 PM POST http://127.0.0.1:59251/session/200eada25aebdb66565389f4d3abbdd8/element/87053D5697D4F50A02C48CB4D1A6DEA0_element_5/value {"text": "MUhhZ7ZMuBU1", "value": ["M", "U", "h", "h", "Z", "7", "Z", "M", "u", "B", "U", "1"], "id": "87053D5697D4F50A02C48CB4D1A6DEA0_element_5"}
+09/01/2023 01:44:54 PM http://127.0.0.1:59251 "POST /session/200eada25aebdb66565389f4d3abbdd8/element/87053D5697D4F50A02C48CB4D1A6DEA0_element_5/value HTTP/1.1" 200 14
+09/01/2023 01:44:54 PM Finished Request
+09/01/2023 01:44:54 PM POST http://127.0.0.1:59251/session/200eada25aebdb66565389f4d3abbdd8/element {"using": "xpath", "value": "//input[contains(@id, \"submit\")]"}
+09/01/2023 01:44:54 PM http://127.0.0.1:59251 "POST /session/200eada25aebdb66565389f4d3abbdd8/element HTTP/1.1" 200 94
+09/01/2023 01:44:54 PM Finished Request
+09/01/2023 01:44:54 PM POST http://127.0.0.1:59251/session/200eada25aebdb66565389f4d3abbdd8/element/87053D5697D4F50A02C48CB4D1A6DEA0_element_9/click {"id": "87053D5697D4F50A02C48CB4D1A6DEA0_element_9"}
+09/01/2023 01:44:56 PM http://127.0.0.1:59251 "POST /session/200eada25aebdb66565389f4d3abbdd8/element/87053D5697D4F50A02C48CB4D1A6DEA0_element_9/click HTTP/1.1" 200 14
+09/01/2023 01:44:56 PM Finished Request
+09/01/2023 01:44:56 PM GET http://127.0.0.1:59251/session/200eada25aebdb66565389f4d3abbdd8/source {}
+09/01/2023 01:44:56 PM http://127.0.0.1:59251 "GET /session/200eada25aebdb66565389f4d3abbdd8/source HTTP/1.1" 200 161409
+09/01/2023 01:44:56 PM Finished Request
+09/01/2023 01:44:56 PM POST http://127.0.0.1:59251/session/200eada25aebdb66565389f4d3abbdd8/url {"url": "https://dayman.cyber-balance.com/jira/si/jira.issueviews:issue-html/CS-9784/CS-9784.html"}
+09/01/2023 01:44:56 PM http://127.0.0.1:59251 "POST /session/200eada25aebdb66565389f4d3abbdd8/url HTTP/1.1" 200 14
+09/01/2023 01:44:56 PM Finished Request
+09/01/2023 01:44:56 PM POST http://127.0.0.1:59251/session/200eada25aebdb66565389f4d3abbdd8/element {"using": "css selector", "value": "td#descriptionArea"}
+09/01/2023 01:44:56 PM http://127.0.0.1:59251 "POST /session/200eada25aebdb66565389f4d3abbdd8/element HTTP/1.1" 200 95
+09/01/2023 01:44:56 PM Finished Request
+09/01/2023 01:44:56 PM POST http://127.0.0.1:59251/session/200eada25aebdb66565389f4d3abbdd8/execute/sync {"script": "return (function(){return function(){var d=this;function f(a){return\"string\"==typeof a};function h(a,b){this.code=a;this.a=l[a]||m;this.message=b||\"\";a=this.a.replace(/((?:^|\\s+)[a-z])/g,function(a){return a.toUpperCase().replace(/^[\\s\\xa0]+/g,\"\")});b=a.length-5;if(0>b||a.indexOf(\"Error\",b)!=b)a+=\"Error\";this.name=a;a=Error(this.message);a.name=this.name;this.stack=a.stack||\"\"}\n(function(){var a=Error;function b(){}b.prototype=a.prototype;h.b=a.prototype;h.prototype=new b;h.prototype.constructor=h;h.a=function(b,c,g){for(var e=Array(arguments.length-2),k=2;k<arguments.length;k++)e[k-2]=arguments[k];return a.prototype[c].apply(b,e)}})();var m=\"unknown error\",l={15:\"element not selectable\",11:\"element not visible\"};l[31]=m;l[30]=m;l[24]=\"invalid cookie domain\";l[29]=\"invalid element coordinates\";l[12]=\"invalid element state\";l[32]=\"invalid selector\";l[51]=\"invalid selector\";\nl[52]=\"invalid selector\";l[17]=\"javascript error\";l[405]=\"unsupported operation\";l[34]=\"move target out of bounds\";l[27]=\"no such alert\";l[7]=\"no such element\";l[8]=\"no such frame\";l[23]=\"no such window\";l[28]=\"script timeout\";l[33]=\"session not created\";l[10]=\"stale element reference\";l[21]=\"timeout\";l[25]=\"unable to set cookie\";l[26]=\"unexpected alert open\";l[13]=m;l[9]=\"unknown command\";h.prototype.toString=function(){return this.name+\": \"+this.message};var n;a:{var p=d.navigator;if(p){var q=p.userAgent;if(q){n=q;break a}}n=\"\"}function r(a){return-1!=n.indexOf(a)};function t(a,b){for(var e=a.length,c=f(a)?a.split(\"\"):a,g=0;g<e;g++)g in c&&b.call(void 0,c[g],g,a)};function v(){return r(\"iPhone\")&&!r(\"iPod\")&&!r(\"iPad\")};function w(){return(r(\"Chrome\")||r(\"CriOS\"))&&!r(\"Edge\")};var x=r(\"Opera\"),y=r(\"Trident\")||r(\"MSIE\"),z=r(\"Edge\"),A=r(\"Gecko\")&&!(-1!=n.toLowerCase().indexOf(\"webkit\")&&!r(\"Edge\"))&&!(r(\"Trident\")||r(\"MSIE\"))&&!r(\"Edge\"),aa=-1!=n.toLowerCase().indexOf(\"webkit\")&&!r(\"Edge\");function B(){var a=d.document;return a?a.documentMode:void 0}var C;\na:{var D=\"\",E=function(){var a=n;if(A)return/rv\\:([^\\);]+)(\\)|;)/.exec(a);if(z)return/Edge\\/([\\d\\.]+)/.exec(a);if(y)return/\\b(?:MSIE|rv)[: ]([^\\);]+)(\\)|;)/.exec(a);if(aa)return/WebKit\\/(\\S+)/.exec(a);if(x)return/(?:Version)[ \\/]?(\\S+)/.exec(a)}();E&&(D=E?E[1]:\"\");if(y){var F=B();if(null!=F&&F>parseFloat(D)){C=String(F);break a}}C=D}var G;var H=d.document;G=H&&y?B()||(\"CSS1Compat\"==H.compatMode?parseInt(C,10):5):void 0;var ba=r(\"Firefox\"),ca=v()||r(\"iPod\"),da=r(\"iPad\"),I=r(\"Android\")&&!(w()||r(\"Firefox\")||r(\"Opera\")||r(\"Silk\")),ea=w(),J=r(\"Safari\")&&!(w()||r(\"Coast\")||r(\"Opera\")||r(\"Edge\")||r(\"Silk\")||r(\"Android\"))&&!(v()||r(\"iPad\")||r(\"iPod\"));function K(a){return(a=a.exec(n))?a[1]:\"\"}(function(){if(ba)return K(/Firefox\\/([0-9.]+)/);if(y||z||x)return C;if(ea)return v()||r(\"iPad\")||r(\"iPod\")?K(/CriOS\\/([0-9.]+)/):K(/Chrome\\/([0-9.]+)/);if(J&&!(v()||r(\"iPad\")||r(\"iPod\")))return K(/Version\\/([0-9.]+)/);if(ca||da){var a=/Version\\/(\\S+).*Mobile\\/(\\S+)/.exec(n);if(a)return a[1]+\".\"+a[2]}else if(I)return(a=K(/Android\\s+([0-9.]+)/))?a:K(/Version\\/([0-9.]+)/);return\"\"})();var L,M=function(){if(!A)return!1;var a=d.Components;if(!a)return!1;try{if(!a.classes)return!1}catch(g){return!1}var b=a.classes,a=a.interfaces,e=b[\"@mozilla.org/xpcom/version-comparator;1\"].getService(a.nsIVersionComparator),c=b[\"@mozilla.org/xre/app-info;1\"].getService(a.nsIXULAppInfo).version;L=function(a){e.compare(c,\"\"+a)};return!0}(),N=y&&!(8<=Number(G)),fa=y&&!(9<=Number(G));I&&M&&L(2.3);I&&M&&L(4);J&&M&&L(6);var ga={SCRIPT:1,STYLE:1,HEAD:1,IFRAME:1,OBJECT:1},O={IMG:\" \",BR:\"\\n\"};function P(a,b,e){if(!(a.nodeName in ga))if(3==a.nodeType)e?b.push(String(a.nodeValue).replace(/(\\r\\n|\\r|\\n)/g,\"\")):b.push(a.nodeValue);else if(a.nodeName in O)b.push(O[a.nodeName]);else for(a=a.firstChild;a;)P(a,b,e),a=a.nextSibling};function Q(a,b){b=b.toLowerCase();return\"style\"==b?ha(a.style.cssText):N&&\"value\"==b&&R(a,\"INPUT\")?a.value:fa&&!0===a[b]?String(a.getAttribute(b)):(a=a.getAttributeNode(b))&&a.specified?a.value:null}var ia=/[;]+(?=(?:(?:[^\"]*\"){2})*[^\"]*$)(?=(?:(?:[^']*'){2})*[^']*$)(?=(?:[^()]*\\([^()]*\\))*[^()]*$)/;\nfunction ha(a){var b=[];t(a.split(ia),function(a){var c=a.indexOf(\":\");0<c&&(a=[a.slice(0,c),a.slice(c+1)],2==a.length&&b.push(a[0].toLowerCase(),\":\",a[1],\";\"))});b=b.join(\"\");return b=\";\"==b.charAt(b.length-1)?b:b+\";\"}function S(a,b){N&&\"value\"==b&&R(a,\"OPTION\")&&null===Q(a,\"value\")?(b=[],P(a,b,!1),a=b.join(\"\")):a=a[b];return a}function R(a,b){b&&\"string\"!==typeof b&&(b=b.toString());return!!a&&1==a.nodeType&&(!b||a.tagName.toUpperCase()==b)}\nfunction T(a){return R(a,\"OPTION\")?!0:R(a,\"INPUT\")?(a=a.type.toLowerCase(),\"checkbox\"==a||\"radio\"==a):!1};var ja={\"class\":\"className\",readonly:\"readOnly\"},U=\"allowfullscreen allowpaymentrequest allowusermedia async autofocus autoplay checked compact complete controls declare default defaultchecked defaultselected defer disabled ended formnovalidate hidden indeterminate iscontenteditable ismap itemscope loop multiple muted nohref nomodule noresize noshade novalidate nowrap open paused playsinline pubdate readonly required reversed scoped seamless seeking selected truespeed typemustmatch willvalidate\".split(\" \");function V(a,b){var e=null,c=b.toLowerCase();if(\"style\"==c)return(e=a.style)&&!f(e)&&(e=e.cssText),e;if((\"selected\"==c||\"checked\"==c)&&T(a)){if(!T(a))throw new h(15,\"Element is not selectable\");b=\"selected\";e=a.type&&a.type.toLowerCase();if(\"checkbox\"==e||\"radio\"==e)b=\"checked\";return S(a,b)?\"true\":null}var g=R(a,\"A\");if(R(a,\"IMG\")&&\"src\"==c||g&&\"href\"==c)return(e=Q(a,c))&&(e=S(a,c)),e;if(\"spellcheck\"==c){e=Q(a,c);if(null!==e){if(\"false\"==e.toLowerCase())return\"false\";if(\"true\"==e.toLowerCase())return\"true\"}return S(a,\nc)+\"\"}g=ja[b]||b;a:if(f(U))c=f(c)&&1==c.length?U.indexOf(c,0):-1;else{for(var u=0;u<U.length;u++)if(u in U&&U[u]===c){c=u;break a}c=-1}if(0<=c)return(e=null!==Q(a,b)||S(a,g))?\"true\":null;try{var k=S(a,g)}catch(ka){}(c=null==k)||(c=typeof k,c=\"object\"==c&&null!=k||\"function\"==c);c?e=Q(a,b):e=k;return null!=e?e.toString():null}var W=[\"_\"],X=d;W[0]in X||!X.execScript||X.execScript(\"var \"+W[0]);\nfor(var Y;W.length&&(Y=W.shift());){var Z;if(Z=!W.length)Z=void 0!==V;Z?X[Y]=V:X[Y]&&X[Y]!==Object.prototype[Y]?X=X[Y]:X=X[Y]={}};; return this._.apply(null,arguments);}.apply({navigator:typeof window!='undefined'?window.navigator:null,document:typeof window!='undefined'?window.document:null}, arguments);}\n).apply(null, arguments);", "args": [{"ELEMENT": "DE77BF3CBA77ABE9ACD3D690CDD2DC04_element_55", "element-6066-11e4-a52e-4f735466cecf": "DE77BF3CBA77ABE9ACD3D690CDD2DC04_element_55"}, "innerHTML"]}
+09/01/2023 01:44:56 PM http://127.0.0.1:59251 "POST /session/200eada25aebdb66565389f4d3abbdd8/execute/sync HTTP/1.1" 200 6667
+09/01/2023 01:44:56 PM Finished Request
+09/01/2023 01:44:56 PM ^\s*(\d[\d\.a-z]+)\s{1,9}[A-Z][\s|a-z]?:ISSUE :metric None
+09/01/2023 01:44:56 PM ^\s*(\d[\d\.a-z]+)\s{1,9}[A-Z][\s|a-z]?:The database script for Section 2 of the SAOP data call needs to be created :metric None
+09/01/2023 01:44:56 PM ^\s*(\d[\d\.a-z]+)\s{1,9}[A-Z][\s|a-z]?:  :metric None
+09/01/2023 01:44:56 PM ^\s*(\d[\d\.a-z]+)\s{1,9}[A-Z][\s|a-z]?:{}{}WHERE: :metric None
+09/01/2023 01:44:56 PM ^\s*(\d[\d\.a-z]+)\s{1,9}[A-Z][\s|a-z]?:FY23 Annual SAOP Data Call :metric None
+09/01/2023 01:44:56 PM ^\s*(\d[\d\.a-z]+)\s{1,9}[A-Z][\s|a-z]?:  :metric None
+09/01/2023 01:44:56 PM ^\s*(\d[\d\.a-z]+)\s{1,9}[A-Z][\s|a-z]?:DETAILS: :metric None
+09/01/2023 01:44:56 PM ^\s*(\d[\d\.a-z]+)\s{1,9}[A-Z][\s|a-z]?:Section 2: Information Systems :metric None
+09/01/2023 01:44:56 PM ^\s*(\d[\d\.a-z]+)\s{1,9}[A-Z][\s|a-z]?:2a. Does the agency maintain an inventory of the agencys information systems[7] that create, collect, use, process, store, maintain, disseminate, disclose, or dispose of personally identifiable information (PII)?[8] :metric <re.Match object; span=(0, 6), match='2a. Do'>
+09/01/2023 01:44:56 PM PK_QuestionType: 1
+09/01/2023 01:44:56 PM ^\s*(\d[\d\.a-z]+)\s{1,9}[A-Z][\s|a-z]?:  :metric None
+09/01/2023 01:44:56 PM ^\s*(\d[\d\.a-z]+)\s{1,9}[A-Z][\s|a-z]?:2b. Number of information systems reported in response to question 1.1 of the FY 2022 Chief Information Officer FISMA Metrics that are used to create, collect, use, process, store, maintain, disseminate, disclose, or dispose of PII. :metric <re.Match object; span=(0, 6), match='2b. Nu'>
+09/01/2023 01:44:56 PM PK_QuestionType: 2
+09/01/2023 01:44:56 PM ^\s*(\d[\d\.a-z]+)\s{1,9}[A-Z][\s|a-z]?:2c. Number of information systems reported in question 2b that the agency authorized or reauthorized to operate during the reporting period.[9] :metric <re.Match object; span=(0, 6), match='2c. Nu'>
+09/01/2023 01:44:56 PM PK_QuestionType: 2
+09/01/2023 01:44:56 PM ^\s*(\d[\d\.a-z]+)\s{1,9}[A-Z][\s|a-z]?:  :metric None
+09/01/2023 01:44:56 PM ^\s*(\d[\d\.a-z]+)\s{1,9}[A-Z][\s|a-z]?:2d. Number of information systems reported in question 2c where the SAOP reviewed and approved the categorization of the information system in accordance with OMB guidance, as well as NIST FIPS Publication 199 and NIST Special Publication 800-60.[10] :metric <re.Match object; span=(0, 6), match='2d. Nu'>
+09/01/2023 01:44:56 PM PK_QuestionType: 2
+09/01/2023 01:44:56 PM ^\s*(\d[\d\.a-z]+)\s{1,9}[A-Z][\s|a-z]?:  :metric None
+09/01/2023 01:44:56 PM ^\s*(\d[\d\.a-z]+)\s{1,9}[A-Z][\s|a-z]?:2e. Number of information systems reported in question 2c where the SAOP reviewed and approved a system privacy plan for the information system prior to the information systems authorization or reauthorization.[11] :metric <re.Match object; span=(0, 6), match='2e. Nu'>
+09/01/2023 01:44:56 PM PK_QuestionType: 2
+09/01/2023 01:44:56 PM ^\s*(\d[\d\.a-z]+)\s{1,9}[A-Z][\s|a-z]?:2f. Number of information systems reported in question 2c where the SAOP conducted and documented the results of privacy control assessments to verify the continued effectiveness of all privacy controls selected and implemented for the information system prior to the information systems authorization or reauthorization.[12] :metric <re.Match object; span=(0, 6), match='2f. Nu'>
+09/01/2023 01:44:56 PM PK_QuestionType: 1
+09/01/2023 01:44:56 PM ^\s*(\d[\d\.a-z]+)\s{1,9}[A-Z][\s|a-z]?:  :metric None
+09/01/2023 01:44:56 PM ^\s*(\d[\d\.a-z]+)\s{1,9}[A-Z][\s|a-z]?:2g. Number of information systems reported in question 2c where the SAOP reviewed the information systems authorization package to ensure compliance with applicable privacy requirements and manage privacy risks, prior to the authorizing official making a risk determination and acceptance decision.[13] :metric <re.Match object; span=(0, 6), match='2g. Nu'>
+09/01/2023 01:44:56 PM PK_QuestionType: 2
+09/01/2023 01:44:56 PM ^\s*(\d[\d\.a-z]+)\s{1,9}[A-Z][\s|a-z]?:  :metric None
+09/01/2023 01:44:56 PM ^\s*(\d[\d\.a-z]+)\s{1,9}[A-Z][\s|a-z]?:[7] The term information system means a discrete set of information resources organized for the collection, processing, maintenance, use, sharing, dissemination, or disposition of information. 44 U.S.C.  3502(8). The term information resources means information and related resources, such as personnel, equipment, funds, and information technology. Id.  3502(6). The term Federal information system means an information system used or operated by an agency or by a contractor of an agency or by another organization on behalf of an agency. OMB Circular A-130,  10(a)(23). :metric None
+09/01/2023 01:44:56 PM ^\s*(\d[\d\.a-z]+)\s{1,9}[A-Z][\s|a-z]?:[8] See id.  5(a)(1)(a)(ii), 5(f)(1)(e). The term personally identifiable information means information that can be used to distinguish or trace an individuals identity, either alone or when combined with other information that is linked or linkable to a specific individual. OMB Circular A-130,  10(a)(57). :metric None
+09/01/2023 01:44:56 PM ^\s*(\d[\d\.a-z]+)\s{1,9}[A-Z][\s|a-z]?:[9] Authorization to operate is the official management decision given by a senior Federal official or officials to :metric None
+09/01/2023 01:44:56 PM ^\s*(\d[\d\.a-z]+)\s{1,9}[A-Z][\s|a-z]?:authorize operation of an information system and to explicitly accept the risk to agency operations (including mission, functions, image, or reputation), agency assets, individuals, other organizations, and the Nation based on the implementation of an agreed-upon set of security and privacy controls. OMB Circular A-130, app. I  4(d). :metric None
+09/01/2023 01:44:56 PM ^\s*(\d[\d\.a-z]+)\s{1,9}[A-Z][\s|a-z]?:[10] See id. app. I  4(a)(2), 4(e)(7). :metric None
+09/01/2023 01:44:56 PM ^\s*(\d[\d\.a-z]+)\s{1,9}[A-Z][\s|a-z]?:[11] Agencies shall develop and maintain a privacy plan that details the privacy controls selected for an information system that are in place or planned for meeting applicable privacy requirements and managing privacy risks, details how the controls have been implemented, and describes the methodologies and metrics that will be used to assess the controls. See OMB Circular A-130, app. I  4(c)(9), (e)(8). :metric None
+09/01/2023 01:44:56 PM ^\s*(\d[\d\.a-z]+)\s{1,9}[A-Z][\s|a-z]?:[12] See id. app. I  4(e)(3). :metric None
+09/01/2023 01:44:56 PM ^\s*(\d[\d\.a-z]+)\s{1,9}[A-Z][\s|a-z]?:[13] See OMB Circular A-130, app. I  4(e)(9). :metric None
+09/01/2023 01:44:56 PM ^\s*(\d[\d\.a-z]+)\s{1,9}[A-Z][\s|a-z]?:  :metric None
+09/01/2023 01:44:56 PM ^\s*(\d[\d\.a-z]+)\s{1,9}[A-Z][\s|a-z]?:DEVELOPER'S NOTES: :metric None
+09/01/2023 01:44:56 PM ^\s*(\d[\d\.a-z]+)\s{1,9}[A-Z][\s|a-z]?:Developers, please enter what files were changed and what was fixed in this section :metric None
+09/01/2023 01:49:17 PM init
+09/01/2023 01:49:55 PM PK_QuestionType: 2
+09/01/2023 01:49:55 PM Note: NumExpr detected 12 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 8.
+09/01/2023 01:49:55 PM NumExpr defaulting to 8 threads.
