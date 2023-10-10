@@ -26,7 +26,7 @@ class issue_provider():
             options.add_argument("--start-minimized")  
             options.add_argument("--window-size=1220,980")  
             # driver = webdriver.Chrome(executable_path=ChromeDriverManager(log_level=0).install() ,options=options)  
-            driver = webdriver.Chrome(executable_path=r"C:\bom\drivers\115\chromedriver.exe" ,options=options)   
+            driver = webdriver.Chrome(executable_path=r"C:\bom\drivers\117\chromedriver.exe" ,options=options)   
             driver.get(f"https://dayman.cyber-balance.com/jira/login.jsp")  
             driver.find_element(By.XPATH, '//input[contains(@id, "user")]').send_keys(self.ctx.config['user'])
             driver.find_element(By.XPATH, '//input[contains(@id, "pass")]').send_keys(self.ctx.config['pass']) 
@@ -54,12 +54,12 @@ class issue_provider():
 
                 issueHTML=re.sub('\n\n','\n',issueHTML)
                 f.write(issueHTML)
-
+            self.driver.close()
         if usecache: 
             with open(cache_file, 'r', encoding='UTF-8', errors='ignore') as f: 
                 issueHTML=f.read()
          
-        issueHTML=self._normalizer(issueHTML)
+        issueHTML=self._normalizer(issueHTML) 
         return issueHTML
     
     def _normalizer(self, s): 

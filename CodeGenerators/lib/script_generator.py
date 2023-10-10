@@ -19,12 +19,13 @@ class script_generator():
         if code_template_path==None:
             code_template_path=self.ctx.get_template() 
         self.ctx.logger.info(f'code_template_path: {code_template_path}')
+        code_path=code_template_path
         for i,r in df.iterrows():  
             snippet_col = re.search('(\{.+\})',code_template_path)
             if snippet_col:
                 snippet_col=snippet_col.groups(1)[0]
-                code_template_path = code_template_path.replace( snippet_col , r[snippet_col] )  
-
+                code_path = code_template_path.replace( snippet_col , r[snippet_col] )  
+                self.ctx.logger.info(f'snippet_col: {snippet_col}')
             try:
                 self.ext = code_template_path[code_template_path.index('.'):] 
             except Exception as e:  
@@ -32,9 +33,9 @@ class script_generator():
                 raise
             try:  
                 code_template_read = ''
-                self.ctx.logger.info(f'path.exists: {code_template_path} {os.path.exists(code_template_path)}')
-                if os.path.exists(code_template_path):
-                    with open(code_template_path, 'r', encoding=self.ctx.config['encoding'], errors='replace') as f: 
+                self.ctx.logger.info(f'path.exists: {code_path} {os.path.exists(code_path)}')
+                if os.path.exists(code_path):
+                    with open(code_path, 'r', encoding=self.ctx.config['encoding'], errors='replace') as f: 
                         code_template_read = f.read() 
                     for c in [c for c in df.columns if '{' in c]:   
                         code_template_read=code_template_read.replace(c, str(r[c])) # re.sub(c, str(r[c]), code_template_read, flags=re.IGNORECASE)  
@@ -108,6 +109,7 @@ def _sql_todf(query,connstr):
     return df  
 
 def _encoder(s):
+    length = 12
     s = ''.join([ps.stem(w) for w in s.split(' ') if w.lower() not in sw]) 
     s=s.upper().strip() 
     s=re.sub('[^A-Z0-9]','',s)
