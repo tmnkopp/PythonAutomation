@@ -2,7 +2,7 @@
 
 import pandas as pd
 import numpy as np
-import re, json, os 
+import re, json, os, time 
 from lib.utils import *  
 from webdriver_manager.chrome import ChromeDriverManager
 from selenium.webdriver.chrome.options import Options
@@ -26,11 +26,12 @@ class issue_provider():
             options.add_argument("--start-minimized")  
             options.add_argument("--window-size=1220,980")  
             # driver = webdriver.Chrome(executable_path=ChromeDriverManager(log_level=0).install() ,options=options)  
-            driver = webdriver.Chrome(executable_path=r"C:\bom\drivers\117\chromedriver.exe" ,options=options)   
+            driver = webdriver.Chrome(executable_path=r"C:\bom\drivers\119\chromedriver.exe" ,options=options)   
             driver.get(f"https://dayman.cyber-balance.com/jira/login.jsp")  
             driver.find_element(By.XPATH, '//input[contains(@id, "user")]').send_keys(self.ctx.config['user'])
             driver.find_element(By.XPATH, '//input[contains(@id, "pass")]').send_keys(self.ctx.config['pass']) 
-            driver.find_element(By.XPATH, '//input[contains(@id, "submit")]').click() 
+            driver.find_element(By.XPATH, '//*[contains(@id, "submit")]').click() 
+            time.sleep(1) 
             df = pd.read_html(driver.page_source)[0].loc[:, ['Key','Summary']] 
             df.to_csv(self.ctx.get_dest()+'issues.csv', index=False)
             self.issues = df
@@ -47,14 +48,13 @@ class issue_provider():
         if not usecache: 
             self._init_jira() 
             self.driver.get(f"https://dayman.cyber-balance.com/jira/si/jira.issueviews:issue-html/CS-{issue_number}/CS-{issue_number}.html")  
+            time.sleep(.8) 
             ele=self.driver.find_element_by_css_selector('td#descriptionArea')
             
             issueHTML=ele.get_attribute('innerHTML')
-            with open(cache_file, 'w', encoding='UTF-8', errors='ignore') as f: 
-
+            with open(cache_file, 'w', encoding='UTF-8', errors='ignore') as f:  
                 issueHTML=re.sub('\n\n','\n',issueHTML)
                 f.write(issueHTML)
-            self.driver.close()
         if usecache: 
             with open(cache_file, 'r', encoding='UTF-8', errors='ignore') as f: 
                 issueHTML=f.read()
