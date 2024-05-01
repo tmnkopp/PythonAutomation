@@ -63,6 +63,8 @@ def sql_todf(query,connstr):
     conn = engine.connect() 
     try: 
         df = pd.read_sql(query,con=conn) 
+    except Exception as e:
+        print(e)
     finally: 
         conn.close()
     return df    
@@ -131,7 +133,8 @@ def get_avail_pk(start, sql="SELECT DISTINCT PK_Question FROM vwQuestions WHERE 
         yield k
 
 def SQL_INSERT_FROM_DF(SOURCE, TABLE_NAME='@T', Print=False):
-    cols = [f'{c} INT NULL' if 'INT' in str(SOURCE[c].dtype).upper() else f'{c} NVARCHAR(4000) NULL' for c in SOURCE.columns ]
+    columns =  SOURCE.columns
+    cols = [f'[{c}] INT NULL' if 'INT' in str(SOURCE[c].dtype).upper() else f'[{c}] NVARCHAR(4000) NULL' for c in columns ]
     sql_texts = []
     temp_table=f"--DECLARE {TABLE_NAME} AS TABLE ({', '.join(cols)})"
  
@@ -146,9 +149,9 @@ def SQL_INSERT_FROM_DF(SOURCE, TABLE_NAME='@T', Print=False):
     END
     """
     sql_create=sql_create.replace('{TABLE}',TABLE_NAME).replace('{cols}' , '\n\t\t, '.join(cols) ) 
-  
+    
     for index, row in SOURCE.iterrows():       
-        sql_texts.append('INSERT INTO '+TABLE_NAME+' ('+ str(', '.join(SOURCE.columns))+ ') VALUES '+ str(tuple(row.values)))     
+        sql_texts.append('INSERT INTO '+TABLE_NAME+' ('+ str(', '.join(columns))+ ') VALUES '+ str(tuple(row.values)))     
     if Print:
         print(';\n'.join(sql_texts))       
     return sql_texts, sql_create, temp_table      

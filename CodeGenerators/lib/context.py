@@ -29,4 +29,15 @@ class context():
         with open('c:\\bom\\appsettings.json', 'r' , encoding='utf-8-sig') as f: 
             appsettings=json.loads(f.read())   
         return appsettings['contexts'][6]['conntask']['TaskSteps'][2]['Args'][1]      
+    
+    def get_download_path(self): 
+        if os.name == 'nt':
+            import winreg
+            sub_key = r'SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\Shell Folders'
+            downloads_guid = '{374DE290-123F-4565-9164-39C4925E467B}'
+            with winreg.OpenKey(winreg.HKEY_CURRENT_USER, sub_key) as key:
+                location = winreg.QueryValueEx(key, downloads_guid)[0]
+            return location
+        else:
+            return os.path.join(os.path.expanduser('~'), 'downloads')
        

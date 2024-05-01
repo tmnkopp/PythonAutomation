@@ -18,6 +18,7 @@ class db_parser():
         sql="""
             SELECT DISTINCT
             ISNULL(QID, '') [{idt}] 
+            , IdText [{IdText}] 
             , Q_TypeCode [{QT_CODE}]  
             , FK_QuestionType [{FK_QuestionType}]  
             , PK_Question as [{PK_Question}]
@@ -26,12 +27,8 @@ class db_parser():
             , QTEXT as [{QuestionText}]  
             , LEFT(QTEXT, 75) AS [{QT_ABBR}]
             , help_text AS [{help_text}]
-            , PK_QuestionGroup [{PK_QuestionGroup}]
-            ,   CASE WHEN required_value IS NULL THEN '' 
-                ELSE
-                'data-question_master="r-m-'+REPLACE(master_identifier_text,'.','_')+'" data-value_torequire="^'+required_value+'$"'
-                END AS [{Dependancy}]
-            FROM vwQuestionFormDependancies Q
+            , PK_QuestionGroup [{PK_QuestionGroup}] 
+            FROM vwQuestions Q
         """+ f"  WHERE PK_QuestionGroup IN ({question_group}) ORDER BY SortPos; " 
         self.ctx.logger.debug(f'{sql}')
         df=sql_todf(sql, self.ctx.connstr)  
