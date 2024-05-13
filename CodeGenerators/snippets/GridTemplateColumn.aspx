@@ -1,4 +1,4 @@
-<telerik:GridTemplateColumn UniqueName="{COLUMN_NAME}"  Visible="true" HeaderText="{COLUMN_NAME}" SortExpression="{COLUMN_NAME}" > 
+<telerik:GridTemplateColumn UniqueName="{COLUMN_NAME}" HeaderText="{COLUMN_NAME}"> 
     <EditItemTemplate>
         <%-- --%> 
     </EditItemTemplate>

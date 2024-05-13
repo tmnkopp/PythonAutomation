@@ -1168,3 +1168,27 @@
 05/08/2024 08:27:49 AM dbparse inserts: [('PK_Question', '64763'), ('FormName', ' @FormName'), ('FK_QuestionGroup', ' @PK_QGroup'), ('sortpos', ' 3'), ('identifier_text', " N'23.2'"), ('FK_QuestionType', ' 18'), ('FK_InputType', ' 1'), ('FK_PickListType', ' NULL'), ('WarningQuestion', ' 0'), ('ExternalLinkType', " 'lblQTIsEssentialExt'"), ('QuestionText', " N'Is this interconnection/data exchange mission essential to the HVA Function?'"), ('help_text', ' NULL'), ('indent', ' 1')]
 05/08/2024 08:27:49 AM dbparse inserts: [('PK_Question', '64764'), ('FormName', ' @FormName'), ('FK_QuestionGroup', ' @PK_QGroup'), ('sortpos', ' 4'), ('identifier_text', " N'23.3'"), ('FK_QuestionType', ' 18'), ('FK_InputType', ' 1'), ('FK_PickListType', ' NULL'), ('WarningQuestion', ' 0'), ('ExternalLinkType', " 'lblQTIsPriority'"), ('QuestionText', " N'Is this Interconnection or data exchange a high priority for this HVA or the connecting system?'"), ('help_text', ' NULL'), ('indent', ' 1')]
 05/08/2024 08:27:49 AM dbparse inserts: [('PK_Question', '64765'), ('FormName', ' @FormName'), ('FK_QuestionGroup', ' @PK_QGroup'), ('sortpos', ' 5'), ('identifier_text', " N'23.4'"), ('FK_QuestionType', ' 18'), ('FK_InputType', ' 1'), ('FK_PickListType', ' NULL'), ('WarningQuestion', ' 0'), ('ExternalLinkType', " 'lblQTTransRecExt'"), ('QuestionText', " N'Is this Interconnection Transmit~comma~ Receive~comma~ or Both?'"), ('help_text', ' NULL'), ('indent', ' 1')]
+05/09/2024 10:16:50 AM init
+05/09/2024 10:24:19 AM init
+05/09/2024 10:24:46 AM Starting new HTTPS connection (1): raw.githubusercontent.com:443
+05/09/2024 10:24:46 AM https://raw.githubusercontent.com:443 "GET /GSA/marketplace-fedramp-gov-data/main/data.json HTTP/1.1" 200 474474
+05/09/2024 10:25:16 AM Starting new HTTPS connection (1): raw.githubusercontent.com:443
+05/09/2024 10:25:16 AM https://raw.githubusercontent.com:443 "GET /GSA/marketplace-fedramp-gov-data/main/data.json HTTP/1.1" 200 474474
+05/09/2024 10:27:29 AM Starting new HTTPS connection (1): raw.githubusercontent.com:443
+05/09/2024 10:27:29 AM https://raw.githubusercontent.com:443 "GET /GSA/marketplace-fedramp-gov-data/main/data.json HTTP/1.1" 200 474474
+05/09/2024 10:43:36 AM Starting new HTTPS connection (1): raw.githubusercontent.com:443
+05/09/2024 10:43:36 AM https://raw.githubusercontent.com:443 "GET /GSA/marketplace-fedramp-gov-data/main/data.json HTTP/1.1" 200 474474
+05/09/2024 10:45:23 AM Starting new HTTPS connection (1): raw.githubusercontent.com:443
+05/09/2024 10:45:23 AM https://raw.githubusercontent.com:443 "GET /GSA/marketplace-fedramp-gov-data/main/data.json HTTP/1.1" 200 474474
+05/09/2024 10:45:40 AM Starting new HTTPS connection (1): raw.githubusercontent.com:443
+05/09/2024 10:45:41 AM https://raw.githubusercontent.com:443 "GET /GSA/marketplace-fedramp-gov-data/main/data.json HTTP/1.1" 200 474474
+05/09/2024 10:59:09 AM Note: NumExpr detected 12 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 8.
+05/09/2024 10:59:09 AM NumExpr defaulting to 8 threads.
+05/09/2024 11:37:53 AM Starting new HTTPS connection (1): raw.githubusercontent.com:443
+05/09/2024 11:37:53 AM https://raw.githubusercontent.com:443 "GET /GSA/marketplace-fedramp-gov-data/main/data.json HTTP/1.1" 200 474474
+05/09/2024 11:38:02 AM Starting new HTTPS connection (1): raw.githubusercontent.com:443
+05/09/2024 11:38:02 AM https://raw.githubusercontent.com:443 "GET /GSA/marketplace-fedramp-gov-data/main/data.json HTTP/1.1" 200 474474
+05/10/2024 10:30:09 AM init
+05/10/2024 10:46:28 AM init
+05/13/2024 08:30:33 AM init
+05/13/2024 08:34:06 AM init
