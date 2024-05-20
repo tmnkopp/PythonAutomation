@@ -1192,3 +1192,15 @@
 05/10/2024 10:46:28 AM init
 05/13/2024 08:30:33 AM init
 05/13/2024 08:34:06 AM init
+05/13/2024 03:03:12 PM init
+05/13/2024 03:03:23 PM init
+05/14/2024 10:15:43 AM init
+05/15/2024 10:10:05 AM init
+05/15/2024 02:45:08 PM init
+05/15/2024 02:50:02 PM Note: NumExpr detected 12 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 8.
+05/15/2024 02:50:02 PM NumExpr defaulting to 8 threads.
+05/16/2024 09:50:53 AM init
+05/16/2024 12:51:10 PM init
+05/16/2024 01:18:31 PM init
+05/17/2024 01:40:50 PM init
+05/17/2024 02:51:02 PM init
