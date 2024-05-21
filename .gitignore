@@ -16,3 +16,6 @@ out/
 *.json
 *.sql
 DHWReader.*
+*scrape*.ipynb
+
+
