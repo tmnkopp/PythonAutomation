@@ -39,7 +39,9 @@ class jiradriver():
             options = Options() 
             options.add_argument("--window-size=1220,980")  
             options.add_argument('--log-level=3')
-            driver = webdriver.Chrome(executable_path=ChromeDriverManager().install() ,options=options) 
+            path = ChromeDriverManager().install()
+            path = r'C:\Users\Tim\.wdm\drivers\chromedriver\win64\127.0.6533.72\chromedriver-win32\chromedriver.exe'
+            driver = webdriver.Chrome(executable_path=path, options=options) 
             driver.get(f"https://dayman.cyber-balance.com/jira/login.jsp")  
             driver.find_element(By.XPATH, '//input[contains(@id, "user")]').send_keys(config['user'])
             driver.find_element(By.XPATH, '//input[contains(@id, "pass")]').send_keys(config['pass']) 
