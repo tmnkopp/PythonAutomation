@@ -10,14 +10,16 @@ from selenium.webdriver.support import expected_conditions as EC
 from datetime import datetime, date, timedelta
 import pymongo
 import logging  
+ 
 
 class jira_context():
     def __init__(self):  
         self.logger=self._get_logger()
         self.config=self._get_config()
     def _get_config(self):
+        dir_path = os.path.dirname(os.path.realpath(__file__)).replace('\\lib','\\') 
         config=''
-        with open(r'C:\Users\Tim\source\repos\Py\snippets\CodeGenerators\config.json') as f:
+        with open(dir_path + r'config.json') as f:
             config = json.loads(f.read())  
         return config
     def _get_logger(self):
@@ -35,12 +37,14 @@ class jiradriver():
         self.issues=None
     def init(self):
         if self.driver==None:
-            config=self.ctx.config
+            config=self.ctx.config 
             options = Options() 
             options.add_argument("--window-size=1220,980")  
             options.add_argument('--log-level=3')
-            path = ChromeDriverManager().install()
-            path = r'C:\Users\Tim\.wdm\drivers\chromedriver\win64\127.0.6533.72\chromedriver-win32\chromedriver.exe'
+            path = ChromeDriverManager().install() 
+            if 'driver_path' in config.keys():
+                path=config['driver_path']     
+                print('driver_path: ' + path)
             driver = webdriver.Chrome(executable_path=path, options=options) 
             driver.get(f"https://dayman.cyber-balance.com/jira/login.jsp")  
             driver.find_element(By.XPATH, '//input[contains(@id, "user")]').send_keys(config['user'])
