@@ -1,4 +1,4 @@
-import re, sys,json
+import re, sys,json , random
 from sqlalchemy import func, create_engine
 import pandas as pd
 import nltk
@@ -10,7 +10,13 @@ from difflib import SequenceMatcher
 from lib.script_generator import script_generator 
 sw=stopwords.words('english')
 ps=PorterStemmer()  
+
+config = {}
+with open('config.json', 'r') as f: 
+    config=json.loads(f.read())  
+connstr=config['connstr']
  
+
 def generate_id(t, limit=15): 
     if type(t) == list: 
         t=str(t)
@@ -155,3 +161,78 @@ def SQL_INSERT_FROM_DF(SOURCE, TABLE_NAME='@T', Print=False):
     if Print:
         print(';\n'.join(sql_texts))       
     return sql_texts, sql_create, temp_table      
+
+
+def to_proper(s):
+    n=''
+    for i in range(len(s[:-1])):  
+        n=n+s[i]
+        if ord(s[i]) > 96 and ord(s[i+1]) < 97: n=n+ ' '
+    return n+s[-1]    
+        
+def normalize_if_df(df):
+    df.drop( columns=[c for c in df.columns if '__' in c ] , inplace=True )   
+    cols = list(df) 
+    if 'PK_PICKLISTTYPE' not in cols: df['PK_PICKLISTTYPE'] = 0
+    if 'HEADER' not in cols: df['HEADER'] = df['COLUMN_NAME'].apply(to_proper)
+    if 'DATA_TYPE' not in cols: df['DATA_TYPE'] = 'NVARCHAR'
+    if 'CHARACTER_MAXIMUM_LENGTH' not in cols: df['CHARACTER_MAXIMUM_LENGTH'] = 4000
+    df['DATA_TYPE']=df['DATA_TYPE'].str.upper()  
+    df['CHARACTER_MAXIMUM_LENGTH']=df['CHARACTER_MAXIMUM_LENGTH'].fillna(0).astype(int)
+    df['PK_PICKLISTTYPE']=df['PK_PICKLISTTYPE'].fillna(0).astype(int)
+    df['CHARACTER_MAXIMUM_LENGTH']=df['CHARACTER_MAXIMUM_LENGTH'].apply(lambda s: 4000 if s < 0 else s )
+    df['DT'] = ''
+    for i,r in df.iterrows():
+        if 'VARCHAR' in r['DATA_TYPE']:
+            df.loc[i, 'DT'] = df.loc[i, 'COLUMN_NAME'] + f" NVARCHAR({ df.loc[i, 'CHARACTER_MAXIMUM_LENGTH'] }) "
+        else:
+            df.loc[i, 'DT'] = f"{df.loc[i, 'COLUMN_NAME']} {df.loc[i, 'DATA_TYPE']} "
+    df[cols] = df[cols].astype(str) 
+    df=df.loc[:, ['COLUMN_NAME','DATA_TYPE','CHARACTER_MAXIMUM_LENGTH','HEADER', 'PK_PICKLISTTYPE', 'DT' ]]
+    return df
+
+def df_fromDataFields(path): 
+    lst=[]
+    cols=[]
+    with open(path, 'r') as f:   
+        g=re.search("<DataFields>(.*)<\/Data", f.read(), flags=re.DOTALL)    
+        lst=g.groups(0)[0].split('<CB:DataField')[1:] 
+        for l in lst:
+            COLUMN_NAME = re.search('DBColumnName="(\w+)"\s', l ).groups(0)[0]
+            d={'COLUMN_NAME':COLUMN_NAME}
+            d['HEADER']=COLUMN_NAME
+            if 'ImportColumnName' in l: 
+                d['HEADER']=re.search('ImportColumnName="([^"]+)"\s', l ).groups(0)[0] 
+            PK_PICKLISTTYPE = re.search('PickListTypeID="([0-9]+)"\s', l )
+            if PK_PICKLISTTYPE: 
+                d['PK_PICKLISTTYPE'] = PK_PICKLISTTYPE.groups(0)[0]
+            
+            cols.append(d)
+    return normalize_if_df(pd.DataFrame(cols))
+
+
+def get_randomDisplayValue(PK_PICKLISTTYPE):
+    config = {}
+    with open('config.json', 'r') as f: 
+        config=json.loads(f.read())  
+    connstr=config['connstr']
+    pk = sql_todf("SELECT DisplayValue, PK_Picklist,PK_PickListType FROM vwPicklists  ", connstr)
+    DisplayValues = list(pk.loc[ pk["PK_PickListType"] ==int(PK_PICKLISTTYPE)  ]['DisplayValue'])  
+    return random.choice(DisplayValues)
+
+
+def components():
+    components = sql_todf(""" 
+    SELECT A.PK_Component AGENCY_PK, A.Component AS AGENCY, CONVERT(INT, b.PK_Component) AS Bureau_PK , b.Component AS Bureau 
+    FROM [Component List] A 
+    INNER JOIN [Component List] B ON B.FK_PK_Component=A.PK_Component AND B.IsActive = 1 
+    WHERE A.IsActive = 1 AND A.FK_PK_Component IS NULL AND A.PK_Component < 200
+    ORDER BY AGENCY_PK ASC
+    """, connstr)
+    components['Bureau_PK']=components['Bureau_PK'].fillna(0).astype(int) 
+    return components
+
+def rand_component(): 
+    components = components()
+    component = components.iloc[random.randint(0,len(components))]
+    return component

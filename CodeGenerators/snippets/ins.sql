@@ -1,1 +1,1 @@
-(00000,@FormName, @PK_QGroup+0,1,N'{ID}',{PK_QuestionType},1,{PK_PicklistType},0,NULL,N'{Question}',NULL)
+,({PK_Question},@FormName,@PK_QGroup+0,0,N'{IdText}',NULL,NULL,NULL,{FK_QuestionType},NULL,NULL,NULL,NULL,NULL,NULL,N'{QText}',NULL)
