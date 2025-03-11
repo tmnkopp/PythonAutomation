@@ -159,7 +159,7 @@ def SQL_INSERT_FROM_DF(SOURCE, TABLE_NAME='@T', Print=False):
     for index, row in SOURCE.iterrows():       
         sql_texts.append('INSERT INTO '+TABLE_NAME+' ('+ str(', '.join(columns))+ ') VALUES '+ str(tuple(row.values)))     
     if Print:
-        print(';\n'.join(sql_texts))       
+        print(';'.join(sql_texts))       
     return sql_texts, sql_create, temp_table      
 
 
