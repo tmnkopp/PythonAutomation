@@ -1,17 +1,20 @@
-def gen(left,right,tups,n,res):
-    if left == right and (left + right) == 2*n:
-        res.append(tups)
-        return
-    if left < n:
-        tups.append((left+1, right))
-        gen(left+1,right,tups,n,res)
+class Solution(object):
+    def gen(self,left,right,s,n,res): 
+        print(s)
+        if len(s) == n*2: 
+            res.append(s) 
+            return
+        
+        if left < n: 
+            self.gen(left+1,right,s+"(",n,res) 
 
-    if right < left:
-        tups.append((left,right+1))
-        gen(left,right+1,tups,n,res)
-
-res = []
-tups=[]
-t=()
-gen(0,0,tups,2,res)
-print(res)
+        if right < left: 
+            self.gen(left,right+1,s+")",n,res)
+        
+    def generateParenthesis(self, n): 
+        res = []
+        self.gen(0,0,"",n,res)
+        return res
+        
+sol = Solution()
+sol.generateParenthesis(2)

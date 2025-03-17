@@ -39,7 +39,7 @@ class question_type_recommender():
             self.vectorizer = pickle.load(open('cache/qtr_vectorizer.sav', 'rb')) 
             return
         else:
-            self.model = LogisticRegression() 
+            self.model = LogisticRegression( solver='liblinear' ) 
             self.questions = self._sqltodf(f"""
                 SELECT PK_Question, FK_QuestionType, Code, QuestionText 
                 FROM fsma_Questions 
