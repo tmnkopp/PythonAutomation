@@ -109,7 +109,7 @@ def _sql_todf(query,connstr):
     return df  
 
 def _encoder(s):
-    length = 12
+    length = 10
     s = ''.join([ps.stem(w) for w in s.split(' ') if w.lower() not in sw]) 
     s=s.upper().strip() 
     s=re.sub('[^A-Z0-9]','',s)

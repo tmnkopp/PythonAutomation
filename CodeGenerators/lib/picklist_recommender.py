@@ -30,6 +30,8 @@ class picklist_recommender():
         self.recommend_result={}
         self.input_list=[]
         self.cache=self.load_cache()
+        self.MAX_PK_Picklist=0
+        self.MAX_PK_PicklistType=0
         self.df = self._sqltodf(f"""
         SELECT PK_Picklist, PK_PicklistType, UsageField, DisplayValue from vwPicklists 
         WHERE {picklist_where}
@@ -41,13 +43,14 @@ class picklist_recommender():
         if normalizer==None:
             normalizer=self.normalize
         self.input_list=input_list
-        df = self.df 
+        df = self.df  
         dmx=df.loc[len(df)-1, ['PK_Picklist','PK_PicklistType']].to_dict()    
         df = df.groupby(['PK_PicklistType','UsageField'], as_index = False).agg({'DisplayValue': ' '.join, 'PK_Picklist':max})
         df['MAX_PK_Picklist']= int(dmx['PK_Picklist'])     
         df['MAX_PK_PicklistType']= int(dmx['PK_PicklistType'])  
+
         df['DisplayValue'] = df['DisplayValue'].apply(normalizer) 
-       
+        
         #df=df.sort_values( by='PK_PicklistType', ascending=False)
         self.db_picks=df
         input=''
