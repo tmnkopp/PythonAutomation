@@ -1,22 +1,7 @@
-import copy
-cnt = 1
-matrix = [[f'{j},{i}' for i in range(3)] for j in range(3) ]
-for r in range(len(matrix)):
-    for c in range(len(matrix[r])):
-        matrix[r][c]=cnt
-        cnt+=1
-print(matrix) 
-result = copy.deepcopy(matrix[::-1])
+ 
 
-r = zip(matrix[0], matrix[1], matrix[2])
-r = [list(l) for l in list(r)]
-print(r)
-
-for c in range(len(matrix)):
-    for r in range(len(matrix[c]) -1, -1, -1):  
-        result[c][2-r]=matrix[r][c]
-
-
+t = sum((1,2) ) 
+t   
 
 class TreeNode:
     def __init__(self, val, left = None, right = None):

@@ -19,7 +19,7 @@ def from_list(elements):
             parent_node.right = node
         nodes.append(node)
 
-    return root_node
+    return root_node 
 
 
 root = from_list([1,2,5,3,4,None,6])

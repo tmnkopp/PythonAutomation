@@ -35,12 +35,15 @@ class jiradriver():
         self.driver=None 
         self.ctx=jira_context()
         self.issues=None
-    def init(self):
+    def init(self, chrome_options={}):
         if self.driver==None:
             config=self.ctx.config 
             options = Options() 
             options.add_argument("--window-size=1220,980")  
-            options.add_argument('--log-level=3')
+            options.add_argument('--log-level=3') 
+            for k in chrome_options.keys():
+                if chrome_options[k]:
+                    options.add_argument(k)
             path = ChromeDriverManager().install() 
             if 'driver_path' in config.keys():
                 path=config['driver_path']     
@@ -58,8 +61,20 @@ class jiradriver():
                 if h != self.driver.window_handles[0]: 
                     self.driver.close()  
             self.driver.switch_to.window(self.driver.window_handles[0])
-            self.driver.get(f'https://dayman.cyber-balance.com/jira/secure/Dashboard.jspa')
+            self.driver.get(f'https://dayman.cyber-balance.com/jira/secure/Dashboard.jspa') 
         return self
+    
+    def print_issues(self):
+        self.driver.get(f'https://dayman.cyber-balance.com/jira/secure/Dashboard.jspa')
+        time.sleep(.5)
+        xpath="//table[@class='issue-table']//tr[contains(@class, 'issuerow')]"  
+        elements = WebDriverWait(self.driver, timeout=10).until(lambda d: d.find_elements_by_xpath(xpath)) 
+        for e in elements:
+            key = e.get_attribute('data-issuekey')
+            desc = e.find_elements_by_xpath("td[contains(@class, 'summary')]")   
+            if len(desc) >=0 :
+                print(f"{key} {desc[0].text }" )
+
     def log(self, issues=None, time_spent='20m'):
         if issues==None:
             issues=self.issues
