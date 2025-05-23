@@ -13,7 +13,7 @@ from sklearn.feature_extraction.text import CountVectorizer
 from sklearn.metrics import classification_report
 
 class question_type_recommender():
-    def __init__(self, ctx, verbose=False, use_cache=True, codes = ['YN','CNT','TXT','PICK','FREQ','DEC','MULTICHECKBOX' ] ):  
+    def __init__(self, ctx, verbose=False, use_cache=True, codes = ['YN','CNT','TXT','PICK','FREQ','DEC','MULTICHECKBOX', 'CASPICK'  ] ):  
         self.ctx=ctx
         self.connstr = ctx.config['connstr'] 
         self.recommend_result={}

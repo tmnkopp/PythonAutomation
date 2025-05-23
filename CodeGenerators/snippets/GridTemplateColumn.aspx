@@ -1,8 +1,8 @@
-<telerik:GridTemplateColumn UniqueName="{COLUMN_NAME}" HeaderText="{COLUMN_NAME}"> 
+<CB:CBGridTemplateColumn UniqueName="{COLUMN_NAME}" HeaderText="{COLUMN_NAME}"> 
     <EditItemTemplate>
-        <%-- --%> 
+        <asp:TextBox ID="{COLUMN_NAME}" runat="server" /> 
     </EditItemTemplate>
     <ItemTemplate>
-        <asp:Label ID="{COLUMN_NAME}" runat="server" Text='<%# Bind("{Bind_COLUMN_NAME}") %>'></asp:Label>
+        <asp:Label ID="{COLUMN_NAME}" runat="server" Text='<%# Bind("{COLUMN_NAME}") %>'></asp:Label>
     </ItemTemplate> 
-</telerik:GridTemplateColumn>
+</CB:CBGridTemplateColumn>

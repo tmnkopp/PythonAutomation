@@ -10,5 +10,6 @@
     <td class="ControlColumn" >
         <uc:CBoptionalLinks ID="CBoptionalLinks_{idt}" runat="server" LinkEditID="CBPicklist_{idt}"  ShowAudit="True" ShowHelp="True" ShowNarrative="true" AuditRecs="20" />
     </td>
+    <td class="JSOptionalLinkFontStyle"></td>
 </tr>
 

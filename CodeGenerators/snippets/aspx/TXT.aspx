@@ -8,8 +8,6 @@
             IsReadOnly="false" NullDisplay="Blank" UseSpellCheck="false" MaxLength="4000"
             AllowNA="false" TextMode="1" Columns="100" Rows="5" />
     </td>
-    <td class="ControlColumn" >
-        <uc:CBoptionalLinks ID="CBoptionalLinks_{idt}" runat="server" LinkEditID="CBtext_{idt}"  ShowAudit="True" ShowHelp="True" ShowNarrative="true" AuditRecs="20" />
-    </td>
+    <td class="JSOptionalLinkFontStyle"></td>
 </tr>
 

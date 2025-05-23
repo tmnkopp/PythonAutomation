@@ -18,14 +18,14 @@ class script_generator():
         st=''  
         if code_template_path==None:
             code_template_path=self.ctx.get_template() 
-        self.ctx.logger.info(f'code_template_path: {code_template_path}')
+        self.ctx.logger.debug(f'code_template_path: {code_template_path}')
         code_path=code_template_path
         for i,r in df.iterrows():  
             snippet_col = re.search('(\{.+\})',code_template_path)
             if snippet_col:
                 snippet_col=snippet_col.groups(1)[0]
                 code_path = code_template_path.replace( snippet_col , r[snippet_col] )  
-                self.ctx.logger.info(f'snippet_col: {snippet_col}')
+                self.ctx.logger.debug(f'snippet_col: {snippet_col}')
             try:
                 self.ext = code_template_path[code_template_path.index('.'):] 
             except Exception as e:  
@@ -33,7 +33,7 @@ class script_generator():
                 raise
             try:  
                 code_template_read = ''
-                self.ctx.logger.info(f'path.exists: {code_path} {os.path.exists(code_path)}')
+                self.ctx.logger.debug(f'path.exists: {code_path} {os.path.exists(code_path)}')
                 if os.path.exists(code_path):
                     with open(code_path, 'r', encoding=self.ctx.config['encoding'], errors='replace') as f: 
                         code_template_read = f.read() 

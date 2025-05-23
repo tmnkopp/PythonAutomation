@@ -23,6 +23,7 @@ class db_parser():
             , FK_QuestionType [{FK_QuestionType}]  
             , PK_Question as [{PK_Question}]
             , CONVERT(NVARCHAR(9), PK_PickListType) as [{PK_PickListType}]
+            , CONVERT(NVARCHAR(9), PK_PickListType) as [{FK_PickListType}]
             , sortpos [{sortpos}]
             , QTEXT as [{QuestionText}]  
             , LEFT(QTEXT, 75) AS [{QT_ABBR}]
